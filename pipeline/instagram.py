@@ -72,7 +72,7 @@ def container(caption: str, video_url: str | None, cover_url: str | None, thumb_
         params["video_url"] = video_url
     else:
         params["upload_type"] = "resumable"
-    return call("POST", f"{config.IG_USER_ID}/media", params)
+    return call("POST", f"{config.IG_ACCOUNT}/media", params)
 
 
 def upload(uri: str, video: pathlib.Path) -> None:
@@ -95,8 +95,18 @@ def wait_ready(container_id: str, attempts: int = 60, pause: int = 10) -> None:
     raise ApiError("container was not ready in time")
 
 
-def publish(video: pathlib.Path, caption: str, *, video_url: str | None = None, cover_url: str | None = None,
-            thumb_offset_ms: int | None = None) -> dict:
+def account() -> dict:
+    return call("GET", config.IG_ACCOUNT, {"fields": "username,followers_count,media_count"})
+
+
+def comments(media_id: str) -> list[dict]:
+    data = call("GET", f"{media_id}/comments", {"fields": "text,timestamp,like_count", "limit": "50"}).get("data", [])
+    return [{"text": entry.get("text", ""), "likes": entry.get("like_count", 0)} for entry in data]
+
+
+def prepare(video: pathlib.Path, caption: str, *, video_url: str | None = None, cover_url: str | None = None,
+            thumb_offset_ms: int | None = None) -> str:
+    """Create a container and wait until Instagram has processed the video. Nothing is posted yet."""
     if config.IG_LOGIN == "instagram" and not video_url:
         raise ApiError("Instagram Login needs a public video URL (set MEDIA_BASE_URL)")
     if video_url:
@@ -107,7 +117,13 @@ def publish(video: pathlib.Path, caption: str, *, video_url: str | None = None, 
     if not video_url:
         upload(created["uri"], video)
     wait_ready(created["id"])
-    media_id = call("POST", f"{config.IG_USER_ID}/media_publish", {"creation_id": created["id"]})["id"]
+    return created["id"]
+
+
+def publish(video: pathlib.Path, caption: str, *, video_url: str | None = None, cover_url: str | None = None,
+            thumb_offset_ms: int | None = None) -> dict:
+    container_id = prepare(video, caption, video_url=video_url, cover_url=cover_url, thumb_offset_ms=thumb_offset_ms)
+    media_id = call("POST", f"{config.IG_ACCOUNT}/media_publish", {"creation_id": container_id})["id"]
     link = call("GET", media_id, {"fields": "permalink"}).get("permalink")
     return {"media_id": media_id, "permalink": link}
 

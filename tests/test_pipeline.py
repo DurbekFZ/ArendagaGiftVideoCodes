@@ -87,7 +87,7 @@ def test_score_rewards_watch_time_and_sharing():
 def test_publish_with_hosted_video(monkeypatch):
     calls = []
     monkeypatch.setattr(instagram.config, "IG_LOGIN", "instagram")
-    monkeypatch.setattr(instagram.config, "IG_USER_ID", "42")
+    monkeypatch.setattr(instagram.config, "IG_ACCOUNT", "42")
     monkeypatch.setattr(instagram, "wait_public", lambda url: calls.append(("public", url)))
     def fake(method, path, params=None):
         calls.append((method, path, params))
@@ -110,7 +110,7 @@ def test_publish_with_hosted_video(monkeypatch):
 def test_publish_with_direct_upload_uses_thumbnail_offset(monkeypatch, tmp_path):
     created, uploaded = {}, []
     monkeypatch.setattr(instagram.config, "IG_LOGIN", "facebook")
-    monkeypatch.setattr(instagram.config, "IG_USER_ID", "42")
+    monkeypatch.setattr(instagram.config, "IG_ACCOUNT", "42")
     monkeypatch.setattr(instagram, "upload", lambda uri, video: uploaded.append(uri))
     def fake(method, path, params=None):
         if path == "42/media":

@@ -7,6 +7,12 @@ on:
     - cron: '13 13 * * *'   # 18:13
     - cron: '37 16 * * *'   # 21:37
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "post: publish a video. check: test the Instagram connection without posting."
+        type: choice
+        options: [post, check]
+        default: post
 
 concurrency:
   group: reels
@@ -20,9 +26,10 @@ env:
   IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
   IG_USER_ID: ${{ vars.IG_USER_ID }}
   IG_LOGIN: ${{ vars.IG_LOGIN || 'instagram' }}
-  MEDIA_BASE_URL: ${{ vars.MEDIA_BASE_URL }}
-  MEDIA_REPO: ${{ vars.MEDIA_REPO }}
-  POSTS_PER_DAY: ${{ vars.POSTS_PER_DAY || '4' }}
+  # Rendered files are served from this repository's `media` branch.
+  MEDIA_BASE_URL: ${{ vars.MEDIA_BASE_URL || format('https://raw.githubusercontent.com/{0}/media', github.repository) }}
+  POSTS_PER_DAY: ${{ vars.POSTS_PER_DAY || '2' }}
+  MODE: ${{ inputs.mode || 'post' }}
 
 jobs:
   post:
@@ -81,24 +88,31 @@ jobs:
           python -m pipeline.run render
 
       - name: Host the video for Instagram
-        if: steps.slot.outputs.run == 'true' && env.MEDIA_REPO != '' && env.IG_ACCESS_TOKEN != ''
+        if: steps.slot.outputs.run == 'true' && env.IG_ACCESS_TOKEN != ''
         env:
-          MEDIA_REPO_TOKEN: ${{ secrets.MEDIA_REPO_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
-          git clone --depth 1 "https://x-access-token:${MEDIA_REPO_TOKEN}@github.com/${MEDIA_REPO}.git" media
-          cp out/*.mp4 out/*.jpg media/
-          cd media
-          touch .nojekyll
-          # Keep two weeks of files so the repository stays small.
-          find . -maxdepth 1 \( -name '*.mp4' -o -name '*.jpg' \) -mtime +14 -delete
+          mkdir media && cd media
+          git init -q
+          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          if git fetch -q --depth 1 origin media; then git checkout -q FETCH_HEAD -- .; fi
+          cp ../out/*.mp4 ../out/*.jpg .
+          # File names start with the date, so sorting by name keeps the newest forty.
+          ls *.mp4 | sort | head -n -40 | while read -r old; do rm -f "$old" "${old%.mp4}.jpg"; done
+          # One commit, force-pushed: the branch never accumulates history.
+          git checkout -q --orphan media
           git config user.name "reels-bot"
           git config user.email "reels-bot@users.noreply.github.com"
           git add -A
-          git commit -q -m "Add $(ls ../out/*.mp4 | xargs -n1 basename)"
-          git push -q
+          git commit -q -m "Media files"
+          git push -q -f origin media
+
+      - name: Check the Instagram connection
+        if: steps.slot.outputs.run == 'true' && env.MODE == 'check'
+        run: python -m pipeline.run check
 
       - name: Publish
-        if: steps.slot.outputs.run == 'true'
+        if: steps.slot.outputs.run == 'true' && env.MODE == 'post'
         run: python -m pipeline.run publish
 
       - name: Keep the video for review

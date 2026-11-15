@@ -21,6 +21,8 @@ IG_LOGIN = os.environ.get("IG_LOGIN", "instagram")
 IG_ACCESS_TOKEN = secret("IG_ACCESS_TOKEN")
 IG_USER_ID = secret("IG_USER_ID")
 IG_API_VERSION = os.environ.get("IG_API_VERSION", "v27.0")
+# With Instagram Login the token itself identifies the account.
+IG_ACCOUNT = "me" if IG_LOGIN == "instagram" else IG_USER_ID
 # Public base URL under which rendered files are reachable, without trailing slash.
 MEDIA_BASE_URL = os.environ.get("MEDIA_BASE_URL", "").rstrip("/")
 
