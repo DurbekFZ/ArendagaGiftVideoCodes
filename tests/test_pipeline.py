@@ -146,3 +146,9 @@ def test_queue_item_waits_while_its_gift_is_rented(tmp_path):
     queue_item(tmp_path, "V20261116a", ["CandyCane-194062"])
     queue_item(tmp_path, "V20261116b", ["ViceCream-48461"])
     assert plan.from_queue(tmp_path, CATALOG, [])["queue_id"] == "V20261116b"
+
+
+def test_queue_item_on_hold_is_not_posted(tmp_path):
+    (tmp_path / "V1.json").write_text(json.dumps(
+        {"id": "V1", "slugs": ["MoonPendant-95850"], "caption": "matn", "hero_ms": 1, "hold": True}))
+    assert plan.from_queue(tmp_path, CATALOG, []) is None

@@ -22,7 +22,8 @@ def render(plan: dict, name: str) -> dict:
     if plan.get("music"):  # a bed composed for this one video: public/audio/<name>.wav
         music = plan["music"]
         audio.OUT.mkdir(parents=True, exist_ok=True)
-        audio.bed(f"{music['name']}.wav", music["bpm"], music["chords"], music["seconds"], music["energy"])
+        audio.bed(f"{music['name']}.wav", music["bpm"], music["chords"], music["seconds"], music["energy"],
+                  music.get("drums", True))
     props = dict(plan["props"])
     if plan.get("voice"):
         spoken = plan["voice"]

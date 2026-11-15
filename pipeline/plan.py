@@ -55,13 +55,13 @@ def pick_gifts(style: str, hook: str, catalog: list[dict], posts: list[dict], rn
 
 
 def from_queue(queue_dir, catalog: list[dict], posts: list[dict]) -> dict | None:
-    """The oldest hand-made video that is not posted yet and whose gifts are all free to rent."""
+    """The oldest hand-made video that is not posted yet, not on hold, and whose gifts are all free to rent."""
     posted = {post.get("queue_id") for post in posts}
     available = {item["id"] for item in catalog if item["status"] == "available"}
     for path in sorted(queue_dir.glob("*.json")):
         item = json.loads(path.read_text())
         gift_ids = [slug.lower() for slug in item["slugs"]]
-        if item["id"] in posted or not set(gift_ids) <= available:
+        if item.get("hold") or item["id"] in posted or not set(gift_ids) <= available:
             continue
         return {"style": "custom", "hook": item["id"], "queue_id": item["id"], "gifts": gift_ids,
                 "slugs": item["slugs"], "caption": item["caption"], "composition": item["id"], "props": {},

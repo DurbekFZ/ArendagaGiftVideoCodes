@@ -10,6 +10,8 @@ before they go out, so each session is the only quality gate.
 - `queue/<id>.json` holds finished videos waiting to be posted. At each slot
   `.github/workflows/reels.yml` posts the oldest one whose gifts are free to rent.
   With an empty queue it falls back to the template library in `pipeline/styles.py`.
+  An entry with `"hold": true` waits for the owner's approval and is never posted;
+  scheduled sessions do not set or clear that flag.
 - `src/videos/V*.tsx` are the hand-made videos (auto-registered, see `registry.tsx`).
 - `state/posts.json` is the record of every post with Instagram insights, comments
   and the concept behind it. `state/account.json` tracks followers over time.
@@ -89,7 +91,7 @@ and choose something different on most of those axes:
 - **Type:** Unbounded, Manrope and Playfair Display are bundled; add another
   `@fontsource/*` family when a concept calls for it.
 - **Sound:** do not reuse the stock beds twice in a row. Give the video its own
-  music with `"music": {"name": "bed_<id>", "bpm", "chords", "seconds", "energy"}`
+  music with `"music": {"name": "bed_<id>", "bpm", "chords", "seconds", "energy", "drums"?}`
   in the queue entry (chords are lists of MIDI notes; see `pipeline/audio.py`),
   or add new synthesis there (other drums, bass lines, instruments, effects).
   Some videos silent-with-music, some voiced.
@@ -103,6 +105,9 @@ avoid them.
 ## Rules for content
 
 - Uzbek, Latin script, with `‘` in o‘ and g‘. Short, spoken, no officialese.
+- Address the viewer formally, always "siz": oling, profilingizda, xohlaysizmi.
+  Never "sen" forms (ol, profilingda, xohlaysanmi), in video text, voice, covers
+  and captions alike.
 - Only true claims: real prices, real rarity percentages, rental from 3 to 30
   days, nothing about ownership, investment or earnings. The gift is displayed on
   the renter's profile; it is not transferred to them.

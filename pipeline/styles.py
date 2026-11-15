@@ -17,7 +17,7 @@ def showcase(gifts, hook, rng):
     hooks = {
         "no_buy": (["Bu giftni", "*sotib* *olish*", "shart emas"], ["Sotib olish", "*shart* *emas*"]),
         "not_everyone": (["Bunday gift", "*hammada*", "yo‘q"], ["Hammada", "*yo‘q* gift"]),
-        "your_profile": (["Profilingga", "*shu* *gift*", "yarashadi"], ["Profilingga", "*yarashadi*"]),
+        "your_profile": (["Profilingizga", "*shu* *gift*", "yarashadi"], ["Profilingizga", "*yarashadi*"]),
     }
     lines, cover = hooks[hook]
     return {"composition": "Showcase", "props": {"id": gift["id"], "hook": lines},
@@ -39,7 +39,7 @@ def profile(gifts, hook, rng):
     return {"composition": "Profile", "props": {"id": gift["id"]}, "voice": {
                 "name": "profile", "voice": rng.choice(["uz-UZ-MadinaNeural", "uz-UZ-SardorNeural"]),
                 "lines": scripts[hook]},
-            "cover": {"id": gift["id"], "headline": ["Profilingda", "*shu* *tursa?*"]}, "hero_ms": 2500}
+            "cover": {"id": gift["id"], "headline": ["Profilingizda", "*shu* *tursa?*"]}, "hero_ms": 2500}
 
 
 def top3(gifts, hook, rng):
@@ -75,7 +75,7 @@ def steps(gifts, hook, rng):
         "pay": ["Giftni tanlang", "Muddatni belgilang", "Profilingizda!"],
     }
     return {"composition": "Steps", "props": {"id": gift["id"], "steps": variants[hook]},
-            "cover": {"id": gift["id"], "headline": ["3 qadamda", "*ijaraga* ol"]}, "hero_ms": 4600}
+            "cover": {"id": gift["id"], "headline": ["3 qadamda", "*ijaraga* oling"]}, "hero_ms": 4600}
 
 
 # count: gifts needed. rank: how gifts are picked for multi-gift styles.

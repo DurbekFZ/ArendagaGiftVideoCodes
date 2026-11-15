@@ -33,7 +33,7 @@ const Cover: React.FC<{id: string; headline: string[]; badge?: string}> = ({id, 
           boxShadow: '0 16px 40px rgba(0,0,0,.35)'}}>{badge}</div>
       )}
       <div style={{position: 'absolute', left: 60, right: 60, top: 1200, textAlign: 'center', fontFamily: DISPLAY, fontWeight: 900,
-        fontSize: 94, lineHeight: 1.14, textTransform: 'uppercase', color: '#fff',
+        fontSize: 84, lineHeight: 1.16, textTransform: 'uppercase', color: '#fff',
         textShadow: '0 8px 0 rgba(0,0,0,.3), 0 20px 50px rgba(0,0,0,.55)'}}>
         {headline.map((line, i) => (
           <div key={i}>{line.split(' ').map((word, w) => (

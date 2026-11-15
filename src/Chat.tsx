@@ -12,7 +12,7 @@ const LINE = SIZE * 1.3;
 const PER_LINE = 25; // rough characters per bubble line
 
 export const chatScript = (price: number): ChatMessage[] => [
-  {from: 'them', text: 'Profilingdagi gift zo‘r-ku! Qayerdan?', at: 6},
+  {from: 'them', text: 'Profilingizdagi gift zo‘r-ku! Qayerdan?', at: 6},
   {from: 'me', text: 'Ijaraga oldim', at: 50},
   {from: 'them', text: 'Ijaraga?! Qimmatdir...', at: 88},
   {from: 'me', text: `Kuniga atigi ${money(price)} so‘m`, at: 130},

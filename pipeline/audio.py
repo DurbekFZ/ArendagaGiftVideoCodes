@@ -94,7 +94,7 @@ def bass(note, seconds):
     return (np.sin(phase) + 0.3 * np.sin(2 * phase)) * np.minimum(1, x / 0.01) * np.exp(-x * 2.2)
 
 
-def bed(name, bpm, chords, seconds, energy):
+def bed(name, bpm, chords, seconds, energy, drums=True):
     beat = 60 / bpm
     track = np.zeros(int(SR * seconds))
     bar = beat * 4
@@ -107,13 +107,15 @@ def bed(name, bpm, chords, seconds, energy):
         for step in range(8):
             when = at + step * beat / 2
             if step % 2 == 0:
-                place(track, kick(), when, 0.9 if step % 4 == 0 else 0.75 * energy)
-                place(track, bass(root, beat * 0.9), when, 0.34)
-            place(track, hat(), when, 0.12 if step % 2 else 0.06)
-            if energy > 0.7:
-                place(track, hat(0.03), when + beat / 4, 0.05)
-            if step in (2, 6):
-                place(track, clap(), when, 0.3 * energy)
+                if drums:
+                    place(track, kick(), when, 0.9 if step % 4 == 0 else 0.75 * energy)
+                place(track, bass(root, beat * 0.9), when, 0.34 if drums else 0.2)
+            if drums:
+                place(track, hat(), when, 0.12 if step % 2 else 0.06)
+                if energy > 0.7:
+                    place(track, hat(0.03), when + beat / 4, 0.05)
+                if step in (2, 6):
+                    place(track, clap(), when, 0.3 * energy)
             arp = chord[(step * 2 + index) % len(chord)] + 12
             place(track, pluck(arp), when, 0.16)
     fade = int(SR * 1.2)
