@@ -37,7 +37,8 @@ export const useGifts = (ids: string[]): GiftData[] | null => {
     const load = (id: string) => Promise.all(['meta', 'gift', 'pattern'].map((name) =>
       fetch(staticFile(`gifts/${id}/${name}.json`)).then((r) => r.json())))
       .then(([meta, gift, pattern]) => ({meta, gift, pattern}));
-    const fonts = ['900 10px Unbounded', '700 10px Unbounded', '800 10px Manrope', '500 10px Manrope']
+    const fonts = ['900 10px Unbounded', '700 10px Unbounded', '800 10px Manrope', '500 10px Manrope',
+      '700 10px "Playfair Display"', 'italic 700 10px "Playfair Display"']
       .map((font) => document.fonts.load(font, 'Oʻg‘ 123'));
     Promise.all([Promise.all(ids.map(load)), ...fonts])
       .then(([loaded]) => { setData(loaded as GiftData[]); continueRender(handle); })

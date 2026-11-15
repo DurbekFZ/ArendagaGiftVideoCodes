@@ -2,11 +2,16 @@ import '@fontsource/unbounded/700.css';
 import '@fontsource/unbounded/900.css';
 import '@fontsource/manrope/500.css';
 import '@fontsource/manrope/800.css';
+import '@fontsource/playfair-display/700.css';
+import '@fontsource/playfair-display/700-italic.css';
 import React from 'react';
 import {AbsoluteFill, Composition, Img, staticFile} from 'remotion';
 import {BODY, BRAND, Backdrop, DISPLAY, FPS, Gift, H, Rays, Sparkles, W, lighten, useGifts} from './kit';
+import {Chat, chatFrames, chatScript} from './Chat';
+import {LUXE_FRAMES, Luxe} from './Luxe';
 import {Profile, VoiceLine, profileFrames} from './Profile';
 import {SHOWCASE_FRAMES, Showcase} from './Showcase';
+import {STEPS_FRAMES, Steps} from './Steps';
 import {TOP3_FRAMES, Top3} from './Top3';
 
 /** Still cover: big readable headline, the gift, brand mark. */
@@ -56,6 +61,12 @@ export const Root: React.FC = () => (
       }} />
     <Composition id="Top3" component={Top3} width={W} height={H} fps={FPS} durationInFrames={TOP3_FRAMES}
       defaultProps={{ids: ['libertyfigure-188694', 'vicecream-48461', 'jinglebells-64028'], headline: ['Eng noyob', '*3 ta* gift']}} />
+    <Composition id="Luxe" component={Luxe} width={W} height={H} fps={FPS} durationInFrames={LUXE_FRAMES}
+      defaultProps={{id: 'candycane-194062', price: 750, discount: 7 as number | undefined}} />
+    <Composition id="Chat" component={Chat} width={W} height={H} fps={FPS} durationInFrames={chatFrames(chatScript(0))}
+      defaultProps={{id: 'chillflame-164026', price: 750}} />
+    <Composition id="Steps" component={Steps} width={W} height={H} fps={FPS} durationInFrames={STEPS_FRAMES}
+      defaultProps={{id: 'vicecream-48461', steps: ['Botni oching', 'Giftni tanlang', 'Profilingizda!']}} />
     <Composition id="Cover" component={Cover} width={W} height={H} fps={FPS} durationInFrames={1}
       defaultProps={{id: 'moonpendant-95850', headline: ['Sotib olish', '*shart emas*'], badge: undefined as string | undefined}} />
   </>

@@ -18,6 +18,9 @@ Instagram'ga joylash hali qo'shilmagan.
 | `src/Showcase.tsx` | "Namoyish" stili: xira ko'rinish, keskin ochilish, noyoblik, chaqiriq |
 | `src/Profile.tsx` | "Profil" stili (ovozli): oddiy profil gift tushgach o'zgaradi |
 | `src/Top3.tsx` | "Top-3" stili: uchta giftning tez sanog'i |
+| `src/Luxe.tsx` | "Narx" stili: qora-oltin, siluet, kunlik narx sanab chiqadi |
+| `src/Chat.tsx` | "Chat" stili: yozishma orqali hikoya, gift xabar bo'lib keladi |
+| `src/Steps.tsx` | "Qadamlar" stili: och fon, uch qadam, oxirida gift rangi ekranni egallaydi |
 | `src/Root.tsx` | Kompozitsiyalar ro'yxati va muqova |
 
 ## Ishga tushirish
