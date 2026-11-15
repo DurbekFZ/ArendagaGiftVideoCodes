@@ -127,3 +127,22 @@ def test_instagram_login_requires_a_public_video(monkeypatch):
     monkeypatch.setattr(instagram.config, "IG_LOGIN", "instagram")
     with pytest.raises(instagram.ApiError):
         instagram.publish(pathlib.Path("v.mp4"), "matn")
+
+
+def queue_item(tmp_path, name, slugs):
+    (tmp_path / f"{name}.json").write_text(json.dumps(
+        {"id": name, "slugs": slugs, "caption": "matn", "hero_ms": 2000, "concept": {"title": "g'oya"}}))
+
+
+def test_queue_item_comes_first_and_only_once(tmp_path):
+    queue_item(tmp_path, "V20261116a", ["MoonPendant-95850"])
+    chosen = plan.from_queue(tmp_path, CATALOG, [])
+    assert chosen["composition"] == "V20261116a" and chosen["cover_composition"] == "V20261116aCover"
+    assert chosen["style"] == "custom" and chosen["gifts"] == ["moonpendant-95850"]
+    assert plan.from_queue(tmp_path, CATALOG, [{"queue_id": "V20261116a"}]) is None
+
+
+def test_queue_item_waits_while_its_gift_is_rented(tmp_path):
+    queue_item(tmp_path, "V20261116a", ["CandyCane-194062"])
+    queue_item(tmp_path, "V20261116b", ["ViceCream-48461"])
+    assert plan.from_queue(tmp_path, CATALOG, [])["queue_id"] == "V20261116b"

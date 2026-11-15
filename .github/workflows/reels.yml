@@ -25,7 +25,7 @@ env:
   MARKETING_FEED_TOKEN: ${{ secrets.MARKETING_FEED_TOKEN }}
   IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
   IG_USER_ID: ${{ vars.IG_USER_ID }}
-  IG_LOGIN: ${{ vars.IG_LOGIN || 'instagram' }}
+  IG_LOGIN: ${{ vars.IG_LOGIN || 'auto' }}
   # Rendered files are served from this repository's `media` branch.
   MEDIA_BASE_URL: ${{ vars.MEDIA_BASE_URL || format('https://raw.githubusercontent.com/{0}/media', github.repository) }}
   POSTS_PER_DAY: ${{ vars.POSTS_PER_DAY || '2' }}
@@ -116,7 +116,7 @@ jobs:
         run: python -m pipeline.run publish
 
       - name: Keep the video for review
-        if: steps.slot.outputs.run == 'true'
+        if: always() && steps.slot.outputs.run == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: reel-${{ github.run_id }}
@@ -131,5 +131,5 @@ jobs:
         run: |
           git config user.name "reels-bot"
           git config user.email "reels-bot@users.noreply.github.com"
-          git add state/posts.json 2>/dev/null || true
+          git add -A state queue
           git diff --cached --quiet || (git commit -q -m "Record post and statistics" && git push -q)

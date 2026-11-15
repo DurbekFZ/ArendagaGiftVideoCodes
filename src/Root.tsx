@@ -13,6 +13,7 @@ import {Profile, VoiceLine, profileFrames} from './Profile';
 import {SHOWCASE_FRAMES, Showcase} from './Showcase';
 import {STEPS_FRAMES, Steps} from './Steps';
 import {TOP3_FRAMES, Top3} from './Top3';
+import {CustomCompositions} from './videos/registry';
 
 /** Still cover: big readable headline, the gift, brand mark. */
 const Cover: React.FC<{id: string; headline: string[]; badge?: string}> = ({id, headline, badge}) => {
@@ -69,5 +70,6 @@ export const Root: React.FC = () => (
       defaultProps={{id: 'vicecream-48461', steps: ['Botni oching', 'Giftni tanlang', 'Profilingizda!']}} />
     <Composition id="Cover" component={Cover} width={W} height={H} fps={FPS} durationInFrames={1}
       defaultProps={{id: 'moonpendant-95850', headline: ['Sotib olish', '*shart emas*'], badge: undefined as string | undefined}} />
+    <CustomCompositions />
   </>
 );

@@ -22,7 +22,9 @@ def render(plan: dict, name: str) -> dict:
     props = dict(plan["props"])
     if plan.get("voice"):
         spoken = plan["voice"]
-        props["lines"] = voice.record(spoken["name"], spoken["voice"], spoken["lines"])
+        lines = voice.record(spoken["name"], spoken["voice"], spoken["lines"])
+        if plan["style"] != "custom":  # hand-made videos read their lines from the recorded file
+            props["lines"] = lines
 
     config.OUT.mkdir(exist_ok=True)
     video, cover = config.OUT / f"{name}.mp4", config.OUT / f"{name}.jpg"
@@ -33,6 +35,6 @@ def render(plan: dict, name: str) -> dict:
     run("npx", "remotion", "bundle", "src/index.ts", "--out-dir=build", "--log=error")
     run("npx", "remotion", "render", "build", plan["composition"], str(video),
         f"--props={video_props}", "--crf=20", "--log=error")
-    run("npx", "remotion", "still", "build", "Cover", str(cover), f"--props={cover_props}",
+    run("npx", "remotion", "still", "build", plan.get("cover_composition", "Cover"), str(cover), f"--props={cover_props}",
         "--jpeg-quality=90", "--log=error")
     return {"video": str(video), "cover_file": str(cover), "seconds": round(seconds(video), 2)}

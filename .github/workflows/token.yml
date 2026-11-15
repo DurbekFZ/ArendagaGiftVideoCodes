@@ -9,7 +9,6 @@ on:
 jobs:
   refresh:
     runs-on: ubuntu-24.04
-    if: vars.IG_LOGIN != 'facebook'
     env:
       IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
       GH_TOKEN: ${{ secrets.MEDIA_REPO_TOKEN }}
@@ -21,6 +20,8 @@ jobs:
       - name: Refresh and store
         if: env.IG_ACCESS_TOKEN != '' && env.GH_TOKEN != ''
         run: |
+          # Only Instagram Login tokens expire this way and can be refreshed like this.
+          case "$IG_ACCESS_TOKEN" in EAA*) echo "Facebook Login token: nothing to refresh"; exit 0 ;; esac
           # Never overwrite the stored token with an empty value if the refresh fails.
           token=$(python -m pipeline.token)
           test -n "$token"
