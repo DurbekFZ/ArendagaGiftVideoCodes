@@ -95,7 +95,22 @@ def wait_ready(container_id: str, attempts: int = 60, pause: int = 10) -> None:
     raise ApiError("container was not ready in time")
 
 
+def discover_account() -> str:
+    """With Facebook Login and no IG_USER_ID, find the Instagram account linked to the user's Page."""
+    pages = call("GET", "me/accounts", {"fields": "name,instagram_business_account{id,username}"}).get("data", [])
+    linked = [page["instagram_business_account"] for page in pages if page.get("instagram_business_account")]
+    if not linked:
+        raise ApiError("no Instagram professional account is linked to a Facebook Page this token can see")
+    return linked[0]["id"]
+
+
+def ensure_account() -> None:
+    if not config.IG_ACCOUNT:
+        config.IG_ACCOUNT = discover_account()
+
+
 def account() -> dict:
+    ensure_account()
     return call("GET", config.IG_ACCOUNT, {"fields": "username,followers_count,media_count"})
 
 
@@ -107,6 +122,7 @@ def comments(media_id: str) -> list[dict]:
 def prepare(video: pathlib.Path, caption: str, *, video_url: str | None = None, cover_url: str | None = None,
             thumb_offset_ms: int | None = None) -> str:
     """Create a container and wait until Instagram has processed the video. Nothing is posted yet."""
+    ensure_account()
     if config.IG_LOGIN == "instagram" and not video_url:
         raise ApiError("Instagram Login needs a public video URL (set MEDIA_BASE_URL)")
     if video_url:

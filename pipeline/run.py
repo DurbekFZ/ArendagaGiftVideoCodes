@@ -82,7 +82,7 @@ def do_check() -> None:
 
 def do_publish() -> None:
     chosen = json.loads(PLAN.read_text())
-    if not (config.IG_ACCESS_TOKEN and config.IG_ACCOUNT):
+    if not config.IG_ACCESS_TOKEN:
         print("dry run: Instagram credentials are not set, nothing was published")
         return
     result = instagram.publish(pathlib.Path(chosen["video"]), chosen["caption"], **media_urls(chosen))

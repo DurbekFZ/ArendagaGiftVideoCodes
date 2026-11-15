@@ -24,7 +24,7 @@ permissions:
 env:
   MARKETING_FEED_TOKEN: ${{ secrets.MARKETING_FEED_TOKEN }}
   IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-  IG_USER_ID: ${{ vars.IG_USER_ID }}
+  IG_USER_ID: ${{ vars.IG_USER_ID || secrets.IG_USER_ID }}
   IG_LOGIN: ${{ vars.IG_LOGIN || 'auto' }}
   # Rendered files are served from this repository's `media` branch.
   MEDIA_BASE_URL: ${{ vars.MEDIA_BASE_URL || format('https://raw.githubusercontent.com/{0}/media', github.repository) }}
