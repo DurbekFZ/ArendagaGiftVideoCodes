@@ -1,0 +1,8 @@
+node_modules/
+build/
+out/
+public/gifts/
+public/audio/voice/
+__pycache__/
+.env
+public/audio/*.wav
