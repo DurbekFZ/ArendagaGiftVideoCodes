@@ -23,21 +23,21 @@ def duration(path: pathlib.Path) -> float:
     return float(out.stdout.strip())
 
 
-async def speak(name: str, voice: str, lines: list[str]) -> list[dict]:
+async def speak(name: str, voice: str, lines: list[str], rate: str = "+8%", pitch: str = "+0Hz") -> list[dict]:
     target = ROOT / name
     target.mkdir(parents=True, exist_ok=True)
     result = []
     for index, line in enumerate(lines):
         path = target / f"{index}.mp3"
-        await edge_tts.Communicate(line, voice, rate="+8%", proxy=PROXY).save(str(path))
+        await edge_tts.Communicate(line, voice, rate=rate, pitch=pitch, proxy=PROXY).save(str(path))
         result.append({"file": f"audio/voice/{name}/{index}.mp3", "text": line,
                        "seconds": round(duration(path), 3)})
     (target / "lines.json").write_text(json.dumps(result, ensure_ascii=False, indent=2))
     return result
 
 
-def record(name: str, voice: str, lines: list[str]) -> list[dict]:
-    return asyncio.run(speak(name, voice, lines))
+def record(name: str, voice: str, lines: list[str], rate: str = "+8%", pitch: str = "+0Hz") -> list[dict]:
+    return asyncio.run(speak(name, voice, lines, rate, pitch))
 
 
 if __name__ == "__main__":

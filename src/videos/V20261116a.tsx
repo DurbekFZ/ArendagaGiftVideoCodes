@@ -78,9 +78,9 @@ const Video: React.FC = () => {
 
       {/* Question and options */}
       <div style={{opacity: 1 - outro, transform: `translateY(${outro * 260}px)`}}>
-        <div style={{position: 'absolute', left: 0, right: 0, top: 1030, textAlign: 'center', fontFamily: BODY, fontWeight: 800,
-          fontSize: 58, color: '#fff', opacity: question, transform: `translateY(${(1 - question) * 30}px)`}}>
-          {data.meta.title} — kunlik ijarasi qancha?
+        <div style={{position: 'absolute', left: 70, right: 210, top: 1030, textAlign: 'left', fontFamily: BODY, fontWeight: 800,
+          fontSize: 60, color: '#fff', opacity: question, transform: `translateY(${(1 - question) * 30}px)`}}>
+          Kunlik ijarasi qancha?
         </div>
         {OPTIONS.map((label, i) => {
           const enter = spring({frame: frame - ASK - i * 9, fps, config: {damping: 12, stiffness: 170, mass: 0.7}});
@@ -89,7 +89,7 @@ const Video: React.FC = () => {
           const wrongShake = revealed && !right ? Math.sin((frame - REVEAL) * 1.6) * Math.max(0, 10 - (frame - REVEAL)) : 0;
           const wiggle = counting ? Math.sin(frame / 3 + i * 2) * 2.5 : 0;
           return (
-            <div key={label} style={{position: 'absolute', left: 90, right: 90, top: 1128 + i * 140, height: 118, borderRadius: 34,
+            <div key={label} style={{position: 'absolute', left: 70, right: 210, top: 1128 + i * 140, height: 118, borderRadius: 34,
               display: 'flex', alignItems: 'center', padding: '0 28px', gap: 26, opacity: Math.min(1, enter * 1.5) * (revealed && !right ? 0.42 : 1),
               transform: `translateX(${(1 - enter) * (i % 2 ? 500 : -500) + wrongShake}px) rotate(${wiggle * 0.25}deg) scale(${revealed && right ? 1 + hit * 0.07 : 1})`,
               background: revealed && right ? LIME : '#fff', boxShadow: `10px 10px 0 ${INK}`, border: `5px solid ${INK}`}}>
@@ -113,7 +113,7 @@ const Video: React.FC = () => {
         const y = 1200 + Math.sin(angle) * speed * t + 900 * t * t;
         return (
           <div key={i} style={{position: 'absolute', left: x, top: y, width: 22, height: 34, borderRadius: 6,
-            background: [LIME, '#fff', '#ff5fa2', BRAND.gold][i % 4], opacity: interpolate(t, [1.4, 2.3], [1, 0], clamp),
+            background: [LIME, '#fff', '#b9a4ff'][i % 3], opacity: interpolate(t, [1.4, 2.3], [1, 0], clamp),
             transform: `rotate(${frame * (8 + i % 7) + i * 40}deg)`}} />
         );
       })}
@@ -123,19 +123,19 @@ const Video: React.FC = () => {
         <>
           <div style={{position: 'absolute', left: 0, right: 0, top: 250, textAlign: 'center', fontFamily: BODY, fontWeight: 800,
             fontSize: 56, color: '#fff', opacity: outro}}>Ha, kuniga atigi</div>
-          <div style={{position: 'absolute', left: 0, right: 0, top: 980, textAlign: 'center', transform: `scale(${outro}) rotate(-2deg)`}}>
-            <span style={{display: 'inline-block', fontFamily: DISPLAY, fontWeight: 900, fontSize: 150, lineHeight: 1, color: INK,
+          <div style={{position: 'absolute', left: 0, right: 150, top: 990, textAlign: 'center', transform: `scale(${outro}) rotate(-2deg)`}}>
+            <span style={{display: 'inline-block', fontFamily: DISPLAY, fontWeight: 900, fontSize: 118, lineHeight: 1, color: INK,
               background: LIME, padding: '20px 46px 26px', borderRadius: 36, boxShadow: `14px 14px 0 ${INK}`}}>850 so‘m</span>
           </div>
           {[['Ijaraga oling', 0], ['3 kundan 30 kungacha', 1]].map(([text, i]) => {
             const s = spring({frame: frame - OUTRO - 14 - (i as number) * 8, fps, config: {damping: 13}});
             return (
-              <div key={text} style={{position: 'absolute', left: 0, right: 0, top: 1200 + (i as number) * 86, textAlign: 'center',
+              <div key={text} style={{position: 'absolute', left: 0, right: 150, top: 1200 + (i as number) * 86, textAlign: 'center',
                 fontFamily: i ? BODY : DISPLAY, fontWeight: i ? 800 : 900, fontSize: i ? 48 : 70, color: '#fff', opacity: s,
                 transform: `translateY(${(1 - s) * 30}px)`}}>{text}</div>
             );
           })}
-          <div style={{position: 'absolute', left: 0, right: 0, top: 1352, display: 'flex', justifyContent: 'center',
+          <div style={{position: 'absolute', left: 0, right: 150, top: 1352, display: 'flex', justifyContent: 'center',
             transform: `scale(${spring({frame: frame - OUTRO - 30, fps, config: {damping: 11, stiffness: 160}})})`}}>
             <div style={{display: 'flex', alignItems: 'center', gap: 20, padding: '16px 40px 16px 18px', borderRadius: 999,
               background: '#fff', border: `5px solid ${INK}`, boxShadow: `8px 8px 0 ${INK}`}}>
@@ -146,7 +146,7 @@ const Video: React.FC = () => {
         </>
       )}
       {frame >= OUTRO + 44 && (
-        <div style={{position: 'absolute', left: 0, right: 0, top: 1490, textAlign: 'center', fontFamily: BODY, fontWeight: 800,
+        <div style={{position: 'absolute', left: 0, right: 150, top: 1490, textAlign: 'center', fontFamily: BODY, fontWeight: 800,
           fontSize: 44, color: LIME, transform: `translateY(${Math.sin(frame / 5) * 8}px)`}}>↑ Havola profilda</div>
       )}
       <AbsoluteFill style={{background: '#fff', opacity: interpolate(frame, [REVEAL - 1, REVEAL, REVEAL + 9], [0, 0.85, 0], clamp)}} />
@@ -174,7 +174,7 @@ const Cover: React.FC = () => {
       <div style={{position: 'absolute', left: W / 2 - 310, top: 470, width: 620, height: 620, borderRadius: '50%', background: 'rgba(20,16,31,.28)'}} />
       <Gift data={gifts[0]} y={780} size={580} />
       {['8 500 so‘m', '??? so‘m', '3 000 so‘m'].map((label, i) => (
-        <div key={label} style={{position: 'absolute', left: 150, right: 150, top: 1170 + i * 128, height: 106, borderRadius: 30,
+        <div key={label} style={{position: 'absolute', left: 110, right: 230, top: 1170 + i * 128, height: 106, borderRadius: 30,
           display: 'flex', alignItems: 'center', padding: '0 24px', gap: 22, background: i === 1 ? LIME : '#fff',
           border: `5px solid ${INK}`, boxShadow: `9px 9px 0 ${INK}`, transform: `rotate(${(i - 1) * 1.5}deg)`}}>
           <div style={{width: 66, height: 66, borderRadius: 20, background: INK, color: '#fff', fontFamily: DISPLAY, fontWeight: 900,

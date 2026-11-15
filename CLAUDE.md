@@ -40,15 +40,65 @@ before they go out, so each session is the only quality gate.
    the layout of an existing video. Write `queue/<id>.json`:
    `{"id", "slugs", "caption", "hero_ms", "voice"?, "concept": {"title", "hook",
    "format", "why", "differs"}}`. Voice is optional: `{"name": <id>, "voice":
-   "uz-UZ-MadinaNeural" | "uz-UZ-SardorNeural", "lines": [...]}`.
+   "uz-UZ-MadinaNeural" | "uz-UZ-SardorNeural", "lines": [...], "rate"?, "pitch"?}`.
+   Own music is optional too; see Variety.
 6. **Review.** `python -m pipeline.preview <id>`, then look at the contact sheet
    and the cover. Fix and re-render until: no text is clipped or overlapping, the
-   opening frame is striking, nothing important sits in the top 220 px or bottom
-   380 px (Instagram's interface covers them), the cover reads at thumbnail size,
-   and the video runs 7 to 20 seconds.
+   opening frame is striking, everything important is inside the safe area below,
+   the palette is harmonious, the cover reads at thumbnail size, and the video
+   runs 7 to 20 seconds.
 7. **Ship.** Run `npx tsc` and `python -m pytest -q tests`. Append to
    `docs/journal.md` (date, findings, concept, what to watch for). Commit and
    push to the default branch.
+
+## Safe area (1080 x 1920)
+
+Instagram draws its interface over the video. Keep text, prices, the gift and
+the call to action out of:
+
+- the top 220 px (account bar);
+- the bottom 380 px (caption and audio line);
+- the right 200 px between y = 850 and y = 1560 (like, comment, share, repost
+  and the three-dot menu). Lay lower-half content out between x = 70 and x = 870,
+  left-aligned or centred on x = 470 rather than on the frame centre.
+
+Backgrounds and decoration may fill the whole frame.
+
+## Colour
+
+The owner's feedback on the first video: good colours, but not in harmony with
+each other. Build each palette deliberately:
+
+- start from the gift's own colours (`meta.colors` and the artwork itself), then
+  choose one background family, one accent and one neutral; at most one extra hue;
+- derive the others by a rule (analogous, complementary or split-complementary to
+  the gift), and keep saturation and lightness consistent across the set;
+- check that the gift does not vanish into the background or clash with it, and
+  that text contrast is strong; confetti, badges and buttons reuse palette colours.
+
+## Variety
+
+Consecutive videos must not look or sound alike. Before building, list the last
+five posts' format, palette, typography, pacing, music and voice from the journal,
+and choose something different on most of those axes:
+
+- **Format:** quiz, story, comparison, myth and fact, countdown, tutorial,
+  point-of-view, reveal, list, question to the viewer, and new ones you invent.
+- **Look:** change the visual world (dark luxury, paper, neon, flat blocks,
+  gradient glass, monochrome with one accent, ...), layout and motion language.
+- **Type:** Unbounded, Manrope and Playfair Display are bundled; add another
+  `@fontsource/*` family when a concept calls for it.
+- **Sound:** do not reuse the stock beds twice in a row. Give the video its own
+  music with `"music": {"name": "bed_<id>", "bpm", "chords", "seconds", "energy"}`
+  in the queue entry (chords are lists of MIDI notes; see `pipeline/audio.py`),
+  or add new synthesis there (other drums, bass lines, instruments, effects).
+  Some videos silent-with-music, some voiced.
+- **Voice:** alternate `uz-UZ-MadinaNeural` and `uz-UZ-SardorNeural`, and vary
+  delivery with `"rate"` (for example `"+0%"`, `"+15%"`) and `"pitch"`
+  (for example `"-4Hz"`, `"+6Hz"`) in the voice entry.
+
+Record in the journal which choices each video made, so the next session can
+avoid them.
 
 ## Rules for content
 

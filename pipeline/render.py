@@ -19,10 +19,15 @@ def render(plan: dict, name: str) -> dict:
     for slug in plan["slugs"]:
         gifts.prepare(slug)
     audio.ensure()
+    if plan.get("music"):  # a bed composed for this one video: public/audio/<name>.wav
+        music = plan["music"]
+        audio.OUT.mkdir(parents=True, exist_ok=True)
+        audio.bed(f"{music['name']}.wav", music["bpm"], music["chords"], music["seconds"], music["energy"])
     props = dict(plan["props"])
     if plan.get("voice"):
         spoken = plan["voice"]
-        lines = voice.record(spoken["name"], spoken["voice"], spoken["lines"])
+        lines = voice.record(spoken["name"], spoken["voice"], spoken["lines"],
+                             spoken.get("rate", "+8%"), spoken.get("pitch", "+0Hz"))
         if plan["style"] != "custom":  # hand-made videos read their lines from the recorded file
             props["lines"] = lines
 

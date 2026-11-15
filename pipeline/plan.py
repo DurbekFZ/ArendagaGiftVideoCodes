@@ -66,7 +66,7 @@ def from_queue(queue_dir, catalog: list[dict], posts: list[dict]) -> dict | None
         return {"style": "custom", "hook": item["id"], "queue_id": item["id"], "gifts": gift_ids,
                 "slugs": item["slugs"], "caption": item["caption"], "composition": item["id"], "props": {},
                 "cover_composition": f"{item['id']}Cover", "cover": {}, "hero_ms": item["hero_ms"],
-                "voice": item.get("voice"), "concept": item.get("concept")}
+                "voice": item.get("voice"), "music": item.get("music"), "concept": item.get("concept")}
     return None
 
 
