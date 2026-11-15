@@ -60,7 +60,7 @@ export const Root: React.FC = () => (
         return {props: {...props, lines}, durationInFrames: profileFrames(lines, FPS)};
       }} />
     <Composition id="Top3" component={Top3} width={W} height={H} fps={FPS} durationInFrames={TOP3_FRAMES}
-      defaultProps={{ids: ['libertyfigure-188694', 'vicecream-48461', 'jinglebells-64028'], headline: ['Eng noyob', '*3 ta* gift']}} />
+      defaultProps={{ids: ['libertyfigure-188694', 'vicecream-48461', 'jinglebells-64028'], headline: ['Eng noyob', '*3* *ta* gift'], prices: undefined as number[] | undefined}} />
     <Composition id="Luxe" component={Luxe} width={W} height={H} fps={FPS} durationInFrames={LUXE_FRAMES}
       defaultProps={{id: 'candycane-194062', price: 750, discount: 7 as number | undefined}} />
     <Composition id="Chat" component={Chat} width={W} height={H} fps={FPS} durationInFrames={chatFrames(chatScript(0))}

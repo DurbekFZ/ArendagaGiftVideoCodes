@@ -1,5 +1,6 @@
 import React from 'react';
 import {AbsoluteFill, Audio, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+import {money} from './Luxe';
 import {BODY, BRAND, Backdrop, Cta, DISPLAY, Flash, Gift, GiftData, H, Rays, Slam, Sparkles, W, clamp, lighten, useGifts} from './kit';
 
 const INTRO = 50;
@@ -7,7 +8,7 @@ const EACH = 78;
 const OUTRO = 100;
 export const TOP3_FRAMES = INTRO + EACH * 3 + OUTRO;
 
-const Rank: React.FC<{data: GiftData; rank: number}> = ({data, rank}) => {
+const Rank: React.FC<{data: GiftData; rank: number; price?: number}> = ({data, rank, price}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const {meta} = data;
@@ -16,6 +17,7 @@ const Rank: React.FC<{data: GiftData; rank: number}> = ({data, rank}) => {
   const text = spring({frame: frame - 10, fps, config: {damping: 13}});
   const rarity = meta.model.rarity ?? 0;
   const shown = interpolate(frame, [14, 38], [Math.min(100, rarity * 8), rarity], clamp);
+  const cost = price === undefined ? 0 : interpolate(frame, [14, 38], [0, price], clamp);
   // Whip in from the right over the previous scene, with a touch of motion blur.
   const x = (1 - enter) * W;
   const smear = (1 - Math.min(1, enter)) * 26;
@@ -40,16 +42,21 @@ const Rank: React.FC<{data: GiftData; rank: number}> = ({data, rank}) => {
         </div>
         <div style={{display: 'inline-flex', alignItems: 'baseline', gap: 18, marginTop: 30, padding: '14px 40px', borderRadius: 34,
           background: 'rgba(12,14,18,.5)', border: '2px solid rgba(255,255,255,.22)'}}>
-          <span style={{fontFamily: BODY, fontWeight: 800, fontSize: 40, color: 'rgba(255,255,255,.75)'}}>faqat</span>
-          <span style={{fontFamily: DISPLAY, fontWeight: 900, fontSize: 96, color: tint}}>{shown.toFixed(1)}%</span>
+          <span style={{fontFamily: BODY, fontWeight: 800, fontSize: 40, color: 'rgba(255,255,255,.75)'}}>
+            {price === undefined ? 'faqat' : 'kuniga'}
+          </span>
+          <span style={{fontFamily: DISPLAY, fontWeight: 900, fontSize: price === undefined ? 96 : 84, color: tint}}>
+            {price === undefined ? `${shown.toFixed(1)}%` : `${money(cost)} so‘m`}
+          </span>
         </div>
       </div>
     </AbsoluteFill>
   );
 };
 
-/** Style C: fast countdown of three gifts (ids ordered third, second, first place). */
-export const Top3: React.FC<{ids: string[]; headline: string[]}> = ({ids, headline}) => {
+/** Style C: fast countdown of three gifts (ids ordered third, second, first place).
+ * With `prices` each scene shows the daily price instead of the model rarity. */
+export const Top3: React.FC<{ids: string[]; headline: string[]; prices?: number[]}> = ({ids, headline, prices}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const gifts = useGifts(ids);
@@ -74,7 +81,7 @@ export const Top3: React.FC<{ids: string[]; headline: string[]}> = ({ids, headli
 
       {gifts.map((data, i) => (
         <Sequence key={data.meta.id} from={INTRO + i * EACH} durationInFrames={EACH + (i === 2 ? 0 : 14)}>
-          <Rank data={data} rank={3 - i} />
+          <Rank data={data} rank={3 - i} price={prices?.[i]} />
         </Sequence>
       ))}
 

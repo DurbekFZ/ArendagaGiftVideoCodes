@@ -1,6 +1,6 @@
 """Generate Uzbek voice-over lines with edge-tts, one file per line.
 
-Usage: python3 scripts/make_voice.py <name> <voice> "line 1" "line 2" ...
+Usage: python3 -m pipeline.voice <name> <voice> "line 1" "line 2" ...
 Writes public/audio/voice/<name>/<n>.mp3 and public/audio/voice/<name>/lines.json
 (with measured durations so captions stay in sync).
 """
@@ -23,7 +23,7 @@ def duration(path: pathlib.Path) -> float:
     return float(out.stdout.strip())
 
 
-async def main(name: str, voice: str, lines: list[str]) -> None:
+async def speak(name: str, voice: str, lines: list[str]) -> list[dict]:
     target = ROOT / name
     target.mkdir(parents=True, exist_ok=True)
     result = []
@@ -33,8 +33,12 @@ async def main(name: str, voice: str, lines: list[str]) -> None:
         result.append({"file": f"audio/voice/{name}/{index}.mp3", "text": line,
                        "seconds": round(duration(path), 3)})
     (target / "lines.json").write_text(json.dumps(result, ensure_ascii=False, indent=2))
-    print(json.dumps(result, ensure_ascii=False))
+    return result
+
+
+def record(name: str, voice: str, lines: list[str]) -> list[dict]:
+    return asyncio.run(speak(name, voice, lines))
 
 
 if __name__ == "__main__":
-    asyncio.run(main(sys.argv[1], sys.argv[2], sys.argv[3:]))
+    print(json.dumps(record(sys.argv[1], sys.argv[2], sys.argv[3:]), ensure_ascii=False))

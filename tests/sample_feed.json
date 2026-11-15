@@ -1,0 +1,7 @@
+{"generatedAt": "2026-11-15T00:00:00+00:00", "items": [
+ {"id": "candycane-194062", "slug": "CandyCane-194062", "title": "Candy Cane", "number": 194062, "telegramUrl": "https://t.me/nft/CandyCane-194062", "dailyPrice": 750, "discounts": [0, 3, 5, 7], "status": "rented", "createdAt": "2026-10-24T04:40:00+00:00"},
+ {"id": "chillflame-164026", "slug": "ChillFlame-164026", "title": "Chill Flame", "number": 164026, "telegramUrl": "https://t.me/nft/ChillFlame-164026", "dailyPrice": 750, "discounts": [0, 3, 5, 7], "status": "available", "createdAt": "2026-10-21T17:42:11+00:00"},
+ {"id": "moonpendant-95850", "slug": "MoonPendant-95850", "title": "Moon Pendant", "number": 95850, "telegramUrl": "https://t.me/nft/MoonPendant-95850", "dailyPrice": 900, "discounts": [0, 3, 5, 7], "status": "available", "createdAt": "2026-10-21T17:42:11+00:00"},
+ {"id": "jinglebells-64028", "slug": "JingleBells-64028", "title": "Jingle Bells", "number": 64028, "telegramUrl": "https://t.me/nft/JingleBells-64028", "dailyPrice": 1500, "discounts": [0, 0, 0, 0], "status": "available", "createdAt": "2026-10-21T17:42:11+00:00"},
+ {"id": "vicecream-48461", "slug": "ViceCream-48461", "title": "Vice Cream", "number": 48461, "telegramUrl": "https://t.me/nft/ViceCream-48461", "dailyPrice": 1200, "discounts": [0, 3, 5, 7], "status": "available", "createdAt": "2026-10-21T17:42:11+00:00"}
+]}

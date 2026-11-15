@@ -1,6 +1,6 @@
-"""Fetch one Telegram NFT gift by slug and prepare render assets.
+"""Fetch Telegram NFT gifts by slug and prepare render assets.
 
-Usage: python3 -I scripts/fetch_gift.py MoonPendant-95850 [more slugs...]
+Usage: python3 -m pipeline.gifts MoonPendant-95850 [more slugs...]
 Writes public/gifts/<id>/{gift.json,pattern.json,meta.json}.
 Everything is derived from public Telegram/Fragment pages; no credentials.
 """
@@ -35,20 +35,31 @@ def attribute(page: str, name: str):
     return {"name": label, "rarity": float(rarity.group(1)) if rarity else None}
 
 
-def prepare(slug: str) -> dict:
+def describe(slug: str) -> dict:
+    """Read a gift's public page: name, attributes with rarity, and colours."""
     if not SLUG.fullmatch(slug):
         raise ValueError(f"bad slug: {slug}")
-    gift_id = slug.lower()
     page = get(f"https://t.me/nft/{slug}").decode("utf-8", "replace")
-    animation = json.loads(get(f"https://nft.fragment.com/gift/{gift_id}.lottie.json"))
-
     title = re.search(r'<meta property="og:title" content="([^"]*)"', page)
     stops = re.findall(r'<stop stop-color="(#[0-9a-fA-F]{6})"', page)
     pattern_color = re.search(r'flood-color="(#[0-9a-fA-F]{6})"', page)
     if not title or len(stops) < 2:
         raise ValueError(f"unexpected gift page: {slug}")
     name, _, number = html.unescape(title.group(1)).rpartition(" #")
+    return {
+        "id": slug.lower(), "slug": slug, "title": name, "number": int(number),
+        "url": f"https://t.me/nft/{slug}",
+        "model": attribute(page, "Model"), "backdrop": attribute(page, "Backdrop"),
+        "symbol": attribute(page, "Symbol"),
+        "colors": {"center": stops[0], "edge": stops[1],
+                   "pattern": pattern_color.group(1) if pattern_color else stops[1]},
+    }
 
+
+def prepare(slug: str) -> dict:
+    """Download the animation and write everything the renderer needs."""
+    meta = describe(slug)
+    animation = json.loads(get(f"https://nft.fragment.com/gift/{meta['id']}.lottie.json"))
     layers = {layer.get("nm"): layer for layer in animation["layers"]}
     if "Gift" not in layers:
         raise ValueError(f"unexpected animation layout: {slug}")
@@ -56,18 +67,7 @@ def prepare(slug: str) -> dict:
     gift["layers"] = [layers["Gift"]]
     pattern = copy.deepcopy(animation)
     pattern["layers"] = [layers[n] for n in ("Pattern", "Color Icon") if n in layers]
-
-    meta = {
-        "id": gift_id, "slug": slug, "title": name, "number": int(number),
-        "url": f"https://t.me/nft/{slug}",
-        "model": attribute(page, "Model"), "backdrop": attribute(page, "Backdrop"),
-        "symbol": attribute(page, "Symbol"),
-        "colors": {"center": stops[0], "edge": stops[1],
-                   "pattern": pattern_color.group(1) if pattern_color else stops[1]},
-        "fps": animation.get("fr", 60),
-        "inPoint": animation.get("ip", 0), "outPoint": animation.get("op", 180),
-    }
-    target = ROOT / gift_id
+    target = ROOT / meta["id"]
     target.mkdir(parents=True, exist_ok=True)
     (target / "gift.json").write_text(json.dumps(gift, separators=(",", ":")))
     (target / "pattern.json").write_text(json.dumps(pattern, separators=(",", ":")))

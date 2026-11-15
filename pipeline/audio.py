@@ -1,6 +1,6 @@
 """Synthesize original (licence-free) music beds and sound effects.
 
-Usage: python3 scripts/make_audio.py
+Usage: python3 -m pipeline.audio
 Writes public/audio/{bed_*.wav,whoosh.wav,impact.wav,pop.wav,riser.wav}.
 """
 import pathlib
@@ -152,7 +152,7 @@ def riser():
     save("riser.wav", (lowpass(noise, sweep) + tone) * (x / 1.4) ** 1.6)
 
 
-if __name__ == "__main__":
+def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
     bed("bed_cinematic.wav", 92, [[57, 60, 64, 67], [53, 57, 60, 64], [48, 55, 60, 64], [55, 59, 62, 67]], 16, 0.55)
@@ -162,4 +162,14 @@ if __name__ == "__main__":
     impact()
     pop()
     riser()
+
+
+def ensure():
+    """Synthesize the sound set once; later runs reuse it."""
+    if not (OUT / "riser.wav").exists():
+        build()
+
+
+if __name__ == "__main__":
+    build()
     print("audio ready:", sorted(p.name for p in OUT.glob("*.wav")))

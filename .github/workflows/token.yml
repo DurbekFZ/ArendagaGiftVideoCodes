@@ -1,0 +1,27 @@
+name: Refresh Instagram token
+
+# Instagram Login tokens last 60 days; refreshing twice a month keeps the autopilot alive.
+on:
+  schedule:
+    - cron: '9 1 1,15 * *'
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-24.04
+    if: vars.IG_LOGIN != 'facebook'
+    env:
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      GH_TOKEN: ${{ secrets.MEDIA_REPO_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Refresh and store
+        if: env.IG_ACCESS_TOKEN != '' && env.GH_TOKEN != ''
+        run: |
+          # Never overwrite the stored token with an empty value if the refresh fails.
+          token=$(python -m pipeline.token)
+          test -n "$token"
+          printf %s "$token" | gh secret set IG_ACCESS_TOKEN --repo "$GITHUB_REPOSITORY"

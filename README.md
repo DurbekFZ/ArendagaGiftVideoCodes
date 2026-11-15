@@ -1,43 +1,78 @@
 # ArendagaGift Reels
 
-Arendaga Gift uchun Instagram Reels videolarini avtomatik yasaydigan loyiha.
+Arendaga Gift uchun Instagram Reels avtopiloti: katalogdan gift tanlaydi,
+video va muqova yasaydi, Instagram'ga joylaydi va natijalardan o'rganadi.
 
-## Hozirgi holat
+## Qanday ishlaydi
 
-Video yasash qismi ishlaydi; katalogdan o'qish, stil tanlash algoritmi va
-Instagram'ga joylash hali qo'shilmagan.
+~~~text
+GitHub Actions (kuniga 2-4 marta)
+  1. statistika   oldingi videolarning ko'rsatkichlarini yangilaydi
+  2. reja         katalogni o'qiydi; stil, hook va giftni tanlaydi
+  3. render       gift animatsiyasi + ovoz + musiqa -> video va muqova
+  4. joylash      Instagram rasmiy API orqali Reels
+  5. yozuv        state/posts.json ga natijani yozadi
+~~~
 
-## Tuzilishi
+Instagram ma'lumotlari sozlanmagan bo'lsa 4-qadam "quruq rejim"da o'tadi:
+hech narsa joylanmaydi, video Actions sahifasida artifact sifatida turadi.
 
-| Yo'l | Vazifasi |
-| --- | --- |
-| `scripts/fetch_gift.py` | Gift slug'i bo'yicha animatsiya, ranglar va noyoblik ma'lumotini yuklaydi |
-| `scripts/make_audio.py` | Musiqa va ovoz effektlarini sintez qiladi (litsenziyasiz, o'zimizniki) |
-| `scripts/make_voice.py` | edge-tts bilan o'zbekcha ovoz yozadi |
-| `src/kit.tsx` | Umumiy animatsiya qismlari: fon, gift, matn, tugma |
-| `src/Showcase.tsx` | "Namoyish" stili: xira ko'rinish, keskin ochilish, noyoblik, chaqiriq |
-| `src/Profile.tsx` | "Profil" stili (ovozli): oddiy profil gift tushgach o'zgaradi |
-| `src/Top3.tsx` | "Top-3" stili: uchta giftning tez sanog'i |
-| `src/Luxe.tsx` | "Narx" stili: qora-oltin, siluet, kunlik narx sanab chiqadi |
-| `src/Chat.tsx` | "Chat" stili: yozishma orqali hikoya, gift xabar bo'lib keladi |
-| `src/Steps.tsx` | "Qadamlar" stili: och fon, uch qadam, oxirida gift rangi ekranni egallaydi |
-| `src/Root.tsx` | Kompozitsiyalar ro'yxati va muqova |
+## Stillar
 
-## Ishga tushirish
+| Stil | Fayl | Ko'rinishi |
+| --- | --- | --- |
+| `showcase` | `src/Showcase.tsx` | Xira ko'rinish, keskin ochilish, noyoblik foizlari |
+| `profile` | `src/Profile.tsx` | Ovozli; oddiy profil gift tushgach o'zgaradi |
+| `top3` | `src/Top3.tsx` | Eng noyob yoki eng arzon uchlik, tez sanoq |
+| `luxe` | `src/Luxe.tsx` | Qora-oltin; "kuniga qancha?" va narx sanab chiqadi |
+| `chat` | `src/Chat.tsx` | Yozishma orqali hikoya |
+| `steps` | `src/Steps.tsx` | Och fon, uch qadam |
 
-Talab: Node.js 22, Python 3.12+, ffmpeg, Chromium.
+Yangi stil qo'shish: `src/` da kompozitsiya yozing, `src/Root.tsx` ga
+ro'yxatdan o'tkazing va `pipeline/styles.py` dagi `STYLES` ga qo'shing.
+
+## Tanlash algoritmi
+
+`pipeline/bandit.py` Thompson sampling qo'llaydi. Har bir videoning bahosi
+ko'rishlar, o'rtacha tomosha vaqti, dastlabki 3 soniyada o'tkazib yuborish
+ulushi, ulashish, saqlash va izohlardan hisoblanadi. Yaxshi natija bergan stil
+va hook ko'proq tanlanadi, lekin yangilari ham sinab turiladi. Qoidalar:
+
+- ketma-ket ikki video bir xil stilda bo'lmaydi;
+- ijarada turgan gift reklama qilinmaydi;
+- bir gift oxirgi 6 ta videoda qatnashgan bo'lsa, navbat boshqasiga beriladi.
+
+## Sozlash (GitHub: Settings -> Secrets and variables -> Actions)
+
+| Nomi | Turi | Qiymati |
+| --- | --- | --- |
+| `MARKETING_FEED_TOKEN` | secret | Serverdagi katalog endpointi kaliti |
+| `IG_ACCESS_TOKEN` | secret | Instagram uzoq muddatli tokeni |
+| `IG_USER_ID` | variable | Instagram professional akkaunt ID raqami |
+| `IG_LOGIN` | variable | `instagram` (standart) yoki `facebook` |
+| `MEDIA_REPO` | variable | Videolar turadigan ochiq repo, masalan `DurbekFZ/ArendagaGiftVideo` |
+| `MEDIA_BASE_URL` | variable | O'sha reponing GitHub Pages manzili |
+| `MEDIA_REPO_TOKEN` | secret | `MEDIA_REPO` ga yozish huquqli fine-grained token |
+| `POSTS_PER_DAY` | variable | `2`, `3` yoki `4` (standart `4`) |
+
+`IG_LOGIN=instagram` bo'lsa Instagram videoni ochiq manzildan yuklab oladi,
+shuning uchun `MEDIA_*` qiymatlari kerak. `IG_LOGIN=facebook` bo'lsa fayl
+to'g'ridan-to'g'ri yuklanadi va `MEDIA_*` shart emas (muqova o'rniga videodagi
+eng yaxshi kadr olinadi).
+
+## Mahalliy ishga tushirish
+
+Talab: Node.js 22, Python 3.12+, ffmpeg.
 
 ~~~bash
 npm ci
-pip install edge-tts numpy
-python3 scripts/fetch_gift.py MoonPendant-95850
-python3 scripts/make_audio.py
-npm run bundle
-npx remotion render build Showcase out/showcase.mp4 --props='{"id":"moonpendant-95850","hook":["Bu giftni","*sotib* *olish*","shart emas"]}'
+pip install -r requirements.txt pytest
+python -m pytest -q tests
+MARKETING_FEED_FILE=tests/sample_feed.json python -m pipeline.run plan
+python -m pipeline.run render
 ~~~
 
-Tizimdagi Chromium'dan foydalanish uchun `CHROME_PATH` muhit o'zgaruvchisini
-uning yo'liga o'rnating.
+Tizimdagi Chromium'dan foydalanish uchun `CHROME_PATH` ni uning yo'liga
+o'rnating; aks holda `npx remotion browser ensure` o'zi yuklab oladi.
 
-Maxfiy qiymatlar (`MARKETING_FEED_TOKEN`, Instagram tokeni) faqat GitHub
-Actions secrets'da turadi, repoga yozilmaydi.
+Maxfiy qiymatlar faqat GitHub Actions secrets'da turadi, repoga yozilmaydi.
