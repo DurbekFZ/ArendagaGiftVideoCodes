@@ -12,18 +12,18 @@
   "media_id": "18107838587362023",
   "permalink": "https://www.instagram.com/reel/DfzVHXPAQJG/",
   "metrics": {
-   "views": 69,
-   "reach": 59,
-   "likes": 2,
+   "views": 89,
+   "reach": 73,
+   "likes": 3,
    "comments": 0,
    "shares": 0,
    "saved": 0,
-   "total_interactions": 2,
-   "ig_reels_avg_watch_time": 2460,
-   "ig_reels_video_view_total_time": 162378,
-   "reels_skip_rate": 87.5
+   "total_interactions": 3,
+   "ig_reels_avg_watch_time": 2189,
+   "ig_reels_video_view_total_time": 175120,
+   "reels_skip_rate": 83.3
   },
-  "score": 36.79,
+  "score": 48.55,
   "comments": [],
   "queue_id": "V20261116b",
   "concept": {
@@ -33,7 +33,7 @@
    "why": "Statistika hali yo‘q. Giftning o‘z chizgisi yaqindan juda boy ko‘rinadi; noyoblik foizi va past narx asosiy dalillar.",
    "differs": "Sapfir-oltin-krem palitra giftning o‘zidan olingan; Playfair kursiv; barabansiz sokin musiqa; Sardor ovozi; chap tomonga tekislangan matn."
   },
-  "measured_at": "2026-11-16T16:41:50+00:00"
+  "measured_at": "2026-11-16T17:33:30+00:00"
  },
  {
   "name": "20261116-1843-V20261116c",
@@ -48,18 +48,18 @@
   "media_id": "17918878248536935",
   "permalink": "https://www.instagram.com/reel/Dfzfj_eD7ZS/",
   "metrics": {
-   "views": 132,
-   "reach": 108,
-   "likes": 3,
+   "views": 139,
+   "reach": 130,
+   "likes": 4,
    "comments": 0,
    "shares": 0,
    "saved": 0,
-   "total_interactions": 3,
-   "ig_reels_avg_watch_time": 2339,
-   "ig_reels_video_view_total_time": 247995,
-   "reels_skip_rate": 73
+   "total_interactions": 4,
+   "ig_reels_avg_watch_time": 2243,
+   "ig_reels_video_view_total_time": 291656,
+   "reels_skip_rate": 85.3
   },
-  "score": 72.36,
+  "score": 74.18,
   "comments": [],
   "queue_id": "V20261116c",
   "concept": {
@@ -69,7 +69,7 @@
    "why": "Statistika hali yo‘q (birinchi post metrikasiz). Mif-fakt formati ijara g‘oyasini tushuntiradi va izohga undaydi; birinchi soniyada matn va zarba bilan to‘xtatadi.",
    "differs": "Qog‘oz-plakat dunyosi (krem qog‘oz, siyoh, magenta, shifer-ko‘k), Anton shrifti, muhr va o‘tishlar tez, matn esa o‘qishga yetarli turadi (raund 7-7,5 s), ovozsiz, barabanli 132 bpm o‘z musiqasi, yangi gift Jack-in-the-Box."
   },
-  "measured_at": "2026-11-16T16:41:50+00:00"
+  "measured_at": "2026-11-16T17:33:30+00:00"
  },
  {
   "name": "20261116-2005-V20261116d",
@@ -84,18 +84,18 @@
   "media_id": "18078071237726515",
   "permalink": "https://www.instagram.com/reel/Dfzo8fkGea_/",
   "metrics": {
-   "views": 3,
-   "reach": 1,
-   "likes": 2,
+   "views": 4,
+   "reach": 2,
+   "likes": 3,
    "comments": 0,
    "shares": 0,
    "saved": 0,
-   "total_interactions": 2,
-   "ig_reels_avg_watch_time": 14216,
-   "ig_reels_video_view_total_time": 28433,
+   "total_interactions": 3,
+   "ig_reels_avg_watch_time": 9975,
+   "ig_reels_video_view_total_time": 29925,
    "reels_skip_rate": 100
   },
-  "score": 6.07,
+  "score": 8.41,
   "comments": [],
   "queue_id": "V20261116d",
   "concept": {
@@ -105,7 +105,7 @@
    "why": "Statistika hali yo‘q (ikki post, metrikalar kelmagan). Oldingi ikki videodan (ovozli sekin makro, ovozsiz tez mif-fakt) farqli, qiziq va tushunarli o‘rta ritmdagi ovozli formatni sinaymiz.",
    "differs": "Format retsept (yangi), sehrli tun dunyosi: to‘q baqlajon-binafsha fon, firuza nur va pushti pufakchalar; Fraunces shrifti (yangi); Madina ovozi; o‘z musiqasi 96 bpm, yengil baraban; pufakcha effektlari; yangi gift Hex Pot."
   },
-  "measured_at": "2026-11-16T16:41:50+00:00"
+  "measured_at": "2026-11-16T17:33:30+00:00"
  },
  {
   "name": "20261116-2118-V20261116e",
@@ -119,8 +119,19 @@
   "seconds": 17.6,
   "media_id": "17886316707524845",
   "permalink": "https://www.instagram.com/reel/DfzxPGIiBpR/",
-  "metrics": null,
-  "score": null,
+  "metrics": {
+   "views": 38,
+   "reach": 28,
+   "likes": 2,
+   "comments": 0,
+   "shares": 0,
+   "saved": 0,
+   "total_interactions": 2,
+   "ig_reels_avg_watch_time": 5149,
+   "ig_reels_video_view_total_time": 154490,
+   "reels_skip_rate": 61.8
+  },
+  "score": 26.55,
   "comments": [],
   "queue_id": "V20261116e",
   "concept": {
@@ -129,7 +140,8 @@
    "format": "Ochiladigan raqam / tablo xabarlari: savol, narx, keyin ikki qisqa xabar va yakun",
    "why": "Birinchi statistika: ko‘pchilik 3 soniyada ketyapti, birinchi kadrda yirik matn bo‘lgan video yaxshiroq ushladi. Shuning uchun 0-kadrda yirik savol + gift, 2 soniyagacha ochilishi kutiladigan raqam.",
    "differs": "Yangi dunyo: tungi navy fon, qor, sariq (amber) split-flap harflar; JetBrains Mono shrifti (yangi); ovozsiz, o‘z musiqasi 112 bpm G-major; yangi tovushlar (tablo shaqirlashi, qo‘ng‘iroq); yangi gift Jingle Bells; matnlar tablo kataklarida."
-  }
+  },
+  "measured_at": "2026-11-16T17:33:30+00:00"
  },
  {
   "name": "20261116-2143-V20261116f",
