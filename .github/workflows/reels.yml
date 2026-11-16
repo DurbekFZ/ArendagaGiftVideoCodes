@@ -52,7 +52,13 @@ jobs:
 
       - name: Diagnose the Instagram token
         if: env.MODE == 'check' && github.event_name == 'workflow_dispatch'
-        run: python3 -m pipeline.stats diagnose || true
+        run: |
+          # Saved to the repository so the result can be read without opening the logs (it holds no secrets).
+          python3 -m pipeline.stats diagnose 2>&1 | tee state/diagnosis.txt || true
+          git config user.name "reels-bot"
+          git config user.email "reels-bot@users.noreply.github.com"
+          git add state/diagnosis.txt
+          git diff --cached --quiet || (git commit -q -m "Record token diagnosis" && git pull -q --rebase && git push -q)
 
       - name: Decide whether a post is due
         id: slot
