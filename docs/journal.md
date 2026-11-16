@@ -69,3 +69,6 @@ uchta mif o‘rniga ikkita (uchinchi "3–30 kun" fakti yakuniy kadrga o‘tdi).
 yo‘qoladi, shuning uchun ekranda bir vaqtda ~7 so‘zdan ko‘p bo‘lmaydi. "1,5%" belgisi olib tashlandi (fakt kartasi bilan bir vaqtda chiqardi).
 Yakun: "Ijaraga oling / kuniga 750 so‘m · 3–30 kun", bir soniyadan keyin bot va "Havola profilda"; ikkisi ham 3 s dan ko‘p turadi.
 Uzunligi 19,2 s. Muhr va o‘tishlar avvalgidek tez. `hold` egasi qo‘ygandek qoldirildi.
+
+**Joylandi (2026-11-16 18:45).** V20261116c "Mif yoki fakt" — sekinlashtirilgan versiya (2 ta mif, 19,2 soniya).
+Bugungi ikki post chiqdi; bundan keyingi video navbatda ertangi kunni kutadi.

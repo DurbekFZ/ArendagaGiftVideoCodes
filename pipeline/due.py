@@ -4,12 +4,14 @@ GitHub starts scheduled workflows late, sometimes by hours, so the workflow wake
 every hour and this decides by what has already been posted today rather than by
 the hour it happened to wake at.
 
-Usage: python3 -m pipeline.due   -> prints "true" or "false"
+Usage: python3 -m pipeline.due            is a scheduled post due?   -> "true" or "false"
+       python3 -m pipeline.due arrival    post a just-pushed queue entry now?
 """
 import datetime
 import json
 import os
 import pathlib
+import sys
 
 STATE = pathlib.Path(__file__).resolve().parent.parent / "state" / "posts.json"
 OFFSET = datetime.timedelta(hours=5)  # Tashkent
@@ -28,7 +30,19 @@ def due(posts: list[dict], now: datetime.datetime, per_day: int) -> bool:
     return passed > today and not recent
 
 
+def on_arrival(posts: list[dict], now: datetime.datetime, per_day: int, queue: list[dict]) -> bool:
+    """A queue entry was just pushed: post it now unless today's quota is already used."""
+    local = now + OFFSET
+    today = sum((datetime.datetime.fromisoformat(post["published_at"]) + OFFSET).date() == local.date() for post in posts)
+    return today < per_day and any(not item.get("hold") for item in queue)
+
+
 if __name__ == "__main__":
     posts = json.loads(STATE.read_text()) if STATE.exists() else []
     now = datetime.datetime.now(datetime.timezone.utc)
-    print(str(due(posts, now, int(os.environ.get("POSTS_PER_DAY") or 2))).lower())
+    per_day = int(os.environ.get("POSTS_PER_DAY") or 2)
+    if sys.argv[1:] == ["arrival"]:
+        queue = [json.loads(path.read_text()) for path in (STATE.parent.parent / "queue").glob("*.json")]
+        print(str(on_arrival(posts, now, per_day, queue)).lower())
+    else:
+        print(str(due(posts, now, per_day)).lower())

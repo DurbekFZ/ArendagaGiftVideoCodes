@@ -46,9 +46,10 @@ jobs:
         run: |
           run=$(python3 -m pipeline.due)
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then run=true; fi
-          # A push to the queue posts at once, provided something in it is ready to go.
+          # A push to the queue posts at once if something is ready and today's quota is not used up;
+          # otherwise the entry waits for the next scheduled slot.
           if [ "${{ github.event_name }}" = "push" ]; then
-            run=$(python3 -c "import json,glob; print(str(any(not json.load(open(f)).get('hold') for f in glob.glob('queue/*.json'))).lower())")
+            run=$(python3 -m pipeline.due arrival)
           fi
           if [ -z "$MARKETING_FEED_TOKEN" ]; then
             echo "::warning::MARKETING_FEED_TOKEN secret is not set; nothing to do."

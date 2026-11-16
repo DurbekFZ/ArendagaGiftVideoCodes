@@ -191,3 +191,13 @@ def test_posts_keep_their_distance():
 def test_yesterdays_posts_do_not_count_for_today():
     posted = [{"published_at": at(21, 40, day=15).isoformat()}]
     assert due.due(posted, at(12, 50), 2)
+
+
+def test_arrival_posts_until_the_daily_quota_is_used():
+    ready, held = [{"id": "V1"}], [{"id": "V1", "hold": True}]
+    one = [{"published_at": at(17, 10).isoformat()}]
+    two = one + [{"published_at": at(18, 45).isoformat()}]
+    assert due.on_arrival(one, at(18, 40), 2, ready)
+    assert not due.on_arrival(one, at(18, 40), 2, held)
+    assert not due.on_arrival(two, at(19, 50), 2, ready)
+    assert due.on_arrival(two, at(10, 50, day=17), 2, ready)
