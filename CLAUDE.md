@@ -54,7 +54,7 @@ before they go out, so each session is the only quality gate.
    and the cover. Fix and re-render until: no text is clipped or overlapping, the
    opening frame is striking, everything important is inside the safe area below,
    the palette is harmonious, the cover reads at thumbnail size, and the video
-   runs 7 to 20 seconds.
+   runs 13 to 20 seconds.
 7. **Ship.** Run `npx tsc` and `python -m pytest -q tests`. Append to
    `docs/journal.md` (date, findings, concept, what to watch for). Commit and
    push to the default branch.
@@ -94,6 +94,19 @@ The owner's feedback on the second video:
 - Make the gift large. The artwork fills only about half of its 512 px box, so
   size the box by what is visible, and avoid big empty areas around it.
 - Voice-over is optional, not a default: mix silent and voiced videos.
+
+## Opening and length
+
+First insights (two posts, so weak evidence): viewers watched 2.6 seconds on
+average and 69-86% left within the first three seconds. The video that opened on
+large, clear text held more of them than the one with a slow, pretty entrance.
+
+- Frame one must already carry the hook: a short question or bold claim in large
+  type, with the gift visible. No slow fades, no logo, no scene-setting first.
+- Give a reason to stay within the first two seconds (an open question, a number
+  about to be revealed, something about to happen to the gift).
+- Length stays 13 to 20 seconds. The owner rejected cutting videos to 8-12 seconds
+  as too short; fix the opening instead of shortening the video.
 
 ## Reading pace
 

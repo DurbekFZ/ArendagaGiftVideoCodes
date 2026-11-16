@@ -113,4 +113,7 @@ Yangi effekt: `bubble.wav` (pufakchalar, `pipeline/audio.py` ga qo‘shildi). Ov
 **Dastlabki xulosa (ma’lumot juda kam, ehtiyot bo‘lib o‘qing).** Ikkala videoda ham o‘rtacha tomosha atigi 2,6 soniya:
 ko‘pchilik birinchi 3 soniyada ketyapti. Birinchi kadrda darhol yirik, tushunarli matn turgan video ("Mif yoki fakt")
 sekin ochiladigan videodan ("Makro") yaxshiroq ushladi (69% ga qarshi 86%). Keyingi videolarda sinab ko‘rish kerak:
-birinchi soniyada savol yoki kuchli da’vo yozuvi + gift darhol ko‘rinsin; 8–12 soniyalik qisqa videolar; sekin kirish yo‘q.
+birinchi soniyada savol yoki kuchli da’vo yozuvi + gift darhol ko‘rinsin; sekin kirish yo‘q.
+
+**Egasining qarori.** Videolarni 8–12 soniyagacha qisqartirmaslik kerak: "juda qisqa bo‘lib qoladi". Uzunlik 13–20 soniya
+qoladi; yechim qisqartirish emas, kuchli birinchi soniya.
