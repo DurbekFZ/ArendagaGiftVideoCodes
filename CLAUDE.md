@@ -11,7 +11,8 @@ before they go out, so each session is the only quality gate.
   `.github/workflows/reels.yml` posts the oldest one whose gifts are free to rent.
   With an empty queue it falls back to the template library in `pipeline/styles.py`.
   An entry with `"hold": true` waits for the owner's approval and is never posted;
-  scheduled sessions do not set or clear that flag.
+  `"priority": 1` posts before the others. Both are the owner's decisions:
+  scheduled sessions do not set, change or clear them.
 - `src/videos/V*.tsx` are the hand-made videos (auto-registered, see `registry.tsx`).
 - `state/posts.json` is the record of every post with Instagram insights, comments
   and the concept behind it. `state/account.json` tracks followers over time.
@@ -77,6 +78,17 @@ each other. Build each palette deliberately:
   the gift), and keep saturation and lightness consistent across the set;
 - check that the gift does not vanish into the background or clash with it, and
   that text contrast is strong; confetti, badges and buttons reuse palette colours.
+
+## Showing the gift
+
+The owner's feedback on the second video:
+
+- Never show the gift distorted or squeezed. Some gifts turn in their own
+  animation and look narrow mid-turn; when a scene holds on the gift, hold a pose
+  that faces the viewer squarely (render a few poses first and pick one).
+- Make the gift large. The artwork fills only about half of its 512 px box, so
+  size the box by what is visible, and avoid big empty areas around it.
+- Voice-over is optional, not a default: mix silent and voiced videos.
 
 ## Variety
 

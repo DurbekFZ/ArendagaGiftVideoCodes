@@ -32,4 +32,7 @@ sekin uzoqlashish va narx (kuniga 750 so‘m). Ovozli (Sardor, sokin), 19,6 soni
 (giftning o‘zidan). Shrift: Playfair Display kursiv + Manrope. Musiqa: o‘ziga xos, barabansiz, 72 bpm. Ovoz: Sardor, tezlik +0%, -2Hz.
 Matn chapga tekislangan.
 
-**Holat.** Egasi ko‘rib tasdiqlaguncha `hold` belgisi bilan kutmoqda.
+**Egasining fikri.** "Zo‘r chiqqan". Tuzatildi: yakuniy sahnada kulon burilgan holatda siqilgandek ko‘ringan va kichik edi —
+endi doim to‘liq yuzi bilan va katta. Ovoz har doim ham shart emas.
+
+**Holat.** Tasdiqlandi, birinchi bo‘lib joylanadi (`priority`).

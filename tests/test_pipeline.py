@@ -152,3 +152,10 @@ def test_queue_item_on_hold_is_not_posted(tmp_path):
     (tmp_path / "V1.json").write_text(json.dumps(
         {"id": "V1", "slugs": ["MoonPendant-95850"], "caption": "matn", "hero_ms": 1, "hold": True}))
     assert plan.from_queue(tmp_path, CATALOG, []) is None
+
+
+def test_priority_moves_a_queue_item_to_the_front(tmp_path):
+    queue_item(tmp_path, "V20261116a", ["ViceCream-48461"])
+    (tmp_path / "V20261116b.json").write_text(json.dumps(
+        {"id": "V20261116b", "slugs": ["MoonPendant-95850"], "caption": "matn", "hero_ms": 1, "priority": 1}))
+    assert plan.from_queue(tmp_path, CATALOG, [])["queue_id"] == "V20261116b"

@@ -58,8 +58,9 @@ def from_queue(queue_dir, catalog: list[dict], posts: list[dict]) -> dict | None
     """The oldest hand-made video that is not posted yet, not on hold, and whose gifts are all free to rent."""
     posted = {post.get("queue_id") for post in posts}
     available = {item["id"] for item in catalog if item["status"] == "available"}
-    for path in sorted(queue_dir.glob("*.json")):
-        item = json.loads(path.read_text())
+    items = [json.loads(path.read_text()) for path in sorted(queue_dir.glob("*.json"))]
+    # The owner can move a video to the front with "priority"; otherwise oldest id first.
+    for item in sorted(items, key=lambda entry: (-entry.get("priority", 0), entry["id"])):
         gift_ids = [slug.lower() for slug in item["slugs"]]
         if item.get("hold") or item["id"] in posted or not set(gift_ids) <= available:
             continue

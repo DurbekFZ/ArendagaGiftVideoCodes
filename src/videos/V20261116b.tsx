@@ -31,7 +31,8 @@ const total = (lines: VoiceLine[]) => {
   return at[at.length - 1] + Math.round(lines[lines.length - 1].seconds * 30) + TAIL;
 };
 
-/** The pendant drawn at an exact moment of its own animation: a 180-frame loop whose frames 135-172 face the viewer. */
+/** The pendant drawn at an exact moment of its own animation: a 180-frame loop whose frames 146-166 face the viewer squarely.
+ * Outside that window the disc is turned and looks squeezed, so the video never leaves it. */
 const Pendant: React.FC<{data: GiftData; pose: number; left: number; top: number; size: number; shadow?: boolean}> =
   ({data, pose, left, top, size, shadow = true}) => (
     <div style={{position: 'absolute', left, top, width: size, height: size,
@@ -114,16 +115,17 @@ const Video: React.FC<{lines: VoiceLine[]}> = ({lines}) => {
     {from: middle, to: pull, fx: 0.5, fy: 0.42, zoom: 1.9, dx: 0, dy: 0.5},
   ];
   const shot = shots.find((candidate) => frame < candidate.to) ?? shots[2];
-  const macroPose = 137 + Math.min(frame, pull) * 0.12; // slow turn inside the window that faces the viewer
+  const pose = 148 + Math.min(frame, pull) * 0.05 + Math.sin(Math.max(0, frame - pull) / 34) * 3; // always square to the viewer
 
   // Pull-back: from the last close-up to the whole pendant, then it lifts for the closing lines.
   const back = spring({frame: frame - pull, fps, config: {damping: 20, stiffness: 46, mass: 1.1}});
   const lift = spring({frame: frame - cta, fps, config: {damping: 18, stiffness: 70}});
   const last = shots[2];
   const local = Math.min(frame, pull) - last.from;
-  const wholeSize = interpolate(lift, [0, 1], [820, 660]);
+  // The artwork fills about half of its box, so the box is far larger than the frame.
+  const wholeSize = interpolate(lift, [0, 1], [1500, 1300]);
   const wholeX = W / 2;
-  const wholeY = interpolate(lift, [0, 1], [760, 590]);
+  const wholeY = interpolate(lift, [0, 1], [700, 600]);
 
   let size: number, left: number, top: number;
   if (frame < pull) {
@@ -139,10 +141,6 @@ const Video: React.FC<{lines: VoiceLine[]}> = ({lines}) => {
     left = interpolate(back, [0, 1], [fromLeft, wholeX - wholeSize / 2]);
     top = interpolate(back, [0, 1], [fromTop, wholeY - wholeSize / 2 + Math.sin(frame / 20) * 8]);
   }
-  // After the pull-back starts the pendant makes one full turn, then settles facing the viewer again.
-  const turn = 317 - macroPose;
-  const since = frame - pull;
-  const pose = frame < pull ? macroPose : macroPose + Math.min(since * 1.7, turn) + Math.max(0, since - turn / 1.7) * 0.1;
   const cut = Math.min(...shots.slice(1).map((s) => Math.abs(frame - s.from)));
 
   const closing = (delay: number) => spring({frame: frame - cta - delay, fps, config: {damping: 16, stiffness: 90}});
@@ -161,7 +159,7 @@ const Video: React.FC<{lines: VoiceLine[]}> = ({lines}) => {
       {/* Soft cut between close-ups */}
       <AbsoluteFill style={{background: CREAM, opacity: frame < pull ? interpolate(cut, [0, 5], [0.5, 0], clamp) : 0}} />
 
-      <div style={{position: 'absolute', left: LEFT, top: 250, opacity: interpolate(frame, [4, 18, cta - 10, cta], [0, 1, 1, 0], clamp)}}>
+      <div style={{position: 'absolute', left: LEFT, top: 250, opacity: interpolate(frame, [4, 18, pull - 8, pull + 4], [0, 1, 1, 0], clamp)}}>
         <Label>Moon Pendant · #{data.meta.number}</Label>
       </div>
 
@@ -171,16 +169,16 @@ const Video: React.FC<{lines: VoiceLine[]}> = ({lines}) => {
         <span style={{fontStyle: 'normal', fontSize: 230, color: GOLD, lineHeight: 0.92}}>3%</span>
         <div style={{fontSize: 72}}>giftdagina bor</div>
       </Lines>
-      <Lines at={pull + 12} until={cta} top={1240} label="Xushxabar">Sotib olish<br />shart emas</Lines>
+      <Lines at={pull + 12} until={cta} top={1220} label="Xushxabar">Sotib olish<br />shart emas</Lines>
 
       {frame >= cta && (
-        <div style={{position: 'absolute', left: LEFT, width: 800, top: 1010}}>
+        <div style={{position: 'absolute', left: LEFT, width: 800, top: 1030}}>
           <div style={{opacity: closing(4), transform: `translateY(${(1 - closing(4)) * 40}px)`}}><Label>Ijaraga oling</Label></div>
           <div style={{fontFamily: SERIF, fontWeight: 700, fontStyle: 'italic', fontSize: 80, color: CREAM, marginTop: 20,
             opacity: closing(10), transform: `translateY(${(1 - closing(10)) * 40}px)`}}>kuniga</div>
-          <div style={{fontFamily: SERIF, fontWeight: 700, fontSize: 168, lineHeight: 1, color: GOLD, marginTop: -6,
+          <div style={{fontFamily: SERIF, fontWeight: 700, fontSize: 188, lineHeight: 1, color: GOLD, marginTop: -8,
             opacity: closing(16), transform: `translateY(${(1 - closing(16)) * 40}px)`}}>
-            750 <span style={{fontSize: 84, fontStyle: 'italic'}}>so‘m</span>
+            750 <span style={{fontSize: 92, fontStyle: 'italic'}}>so‘m</span>
           </div>
           <div style={{fontFamily: BODY, fontWeight: 500, fontSize: 40, color: 'rgba(246,234,210,.82)', marginTop: 14,
             opacity: closing(24)}}>3 kundan 30 kungacha</div>
@@ -214,7 +212,7 @@ const Cover: React.FC = () => {
     <AbsoluteFill style={{background: NAVY}}>
       <Sapphire glowY={0.36} />
       <Bokeh opacity={0.8} />
-      <Pendant data={gifts[0]} pose={150} left={W / 2 - 470} top={220} size={940} />
+      <Pendant data={gifts[0]} pose={150} left={W / 2 - 660} top={-30} size={1320} />
       <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(4,8,26,.35) 0%, transparent 18%, transparent 52%, rgba(4,8,26,.86) 80%)'}} />
       <div style={{position: 'absolute', left: LEFT, width: 800, top: 1150}}>
         <Label>Moon Pendant</Label>
