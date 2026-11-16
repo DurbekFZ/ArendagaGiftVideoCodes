@@ -186,3 +186,35 @@ Keyingi video uchun: kalimba, och pastel fon, Fredoka va topishmoq formatini tak
 **Sifat sozlamalari (2026-11-16 kech).** Egasi "eng yuqori sifatda yuklayapsanmi?" deb so‘radi. Tekshiruv: o‘lcham to‘g‘ri
 (1080×1920, 30 kadr), lekin kadrlar JPEG orqali o‘tgan, sifat darajasi o‘rtacha (CRF 20) va rang BT.601/to‘liq diapazon deb
 belgilangan edi. Endi: PNG kadrlar, CRF 14, BT.709 standart diapazon, ovoz 320 kbit/s. Shu paytgacha chiqqan 5 ta video eski sozlamada.
+
+## 2026-11-16 — V20261116g "Ijara cheki"
+
+**Tahlil (16:41 UTC o‘lchovi).** "Mif yoki fakt" (c): 132 ko‘rish, 108 qamrov, o‘rtacha tomosha 2,3 s, o‘tkazib yuborish 73%.
+"Makro" (b): 69 ko‘rish, 59 qamrov, 2,5 s, 87,5%. "Retsept" (d): 3 ko‘rish (hali erta); "Tablo" (e) va "Topishmoq" (f)
+metrikasi yo‘q. Ulashish, saqlash va izoh hamma joyda 0, like 2–3; obunachi 1 ta, o‘zgarmagan. Ma’lumot hali juda kam:
+kuchsiz yo‘nalish o‘zgarmadi — birinchi kadrda yirik matn bor video (c) sekin ochiladigandan (b) yaxshiroq ushlagan va
+ko‘proq qamrovga chiqqan. Shuning uchun: 0-kadrda yirik savol + katta gift + "ochilishi kutilayotgan raqam".
+Saqlash 0 — aniq hisob-kitob (chek) saqlashga arziydigan narsa bo‘lishi mumkin.
+
+**G‘oya.** Chek / hisob-kitob formati (yangi). 0-kadr: "30 kun profilingizda. Hisobi qancha?", katta Candy Cane #194062
+(Amber Glitter, 2,6%) va printerdan chiqayotgan chek: "JAMI" raqamlari aylanib turibdi. Keyin termal printer chekni
+qator-qator chop etadi: Gift — Candy Cane; Kuniga — 750 so‘m; × 30 kun — 22 500; −7% chegirma — −1 575; jami 20 925 so‘m
+(qo‘ng‘iroqcha chalinadi), chek yirtib olinadi, @ArendagaGiftBot va "↑ Havola profilda". 20,0 s, ovozsiz.
+Hisob katalogdan: kuniga 750, 30 kunlik chegirma 7%. "3 kundan 30 kungacha" captionda.
+
+**O‘qish tezligi.** Hook 0-kadrdan 3,5 s (5 so‘z + "JAMI", 3,2 s kerak). Har qator qog‘oz to‘xtagach chop etiladi
+va keyingi qatorgacha 2,4 s to‘liq turadi (3 so‘z); oldingi qator xiralashadi (0,3), undan oldingisi yo‘qoladi.
+Jami 4,0 s, bot va havola ~3 s. Ekranda ≈7 so‘z (yakunda 8 ta qisqa so‘z/raqam).
+Gift o‘z animatsiyasida burilib torayadi, shuning uchun 0-kadr pozasi ushlab turiladi.
+
+**Nimani kuzatish kerak.** Saqlash (save) paydo bo‘ladimi; 3 soniyada o‘tkazib yuborish 73% dan pastmi (aylanayotgan
+JAMI ushlaydimi); o‘rtacha tomosha 3,5 s dan (hook tugashi) oshadimi; aniq "20 925 so‘m" izoh yoki savol uyg‘otadimi.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: chek / hisob-kitob (yangi). Ko‘rinish: qarag‘ay-yashil fon (#18402f → #0d2620)
+ustida keng, tusma-tus diagonal "konfet" chiziqlari; oq termal qog‘oz chek, tishli qirralar, qora printer; harakat tili —
+stepper motordek "sakrab" suriladigan qog‘oz, qator yuqoridan pastga chop etiladi, yirtish. Palitra: konfet qizil #e23a3f
+(giftdan, yagona to‘yingan rang), qarag‘ay yashil (gift fonining oilasi, komplementar), qog‘oz #f4efe4 va siyoh #1f2421.
+Shrift: Space Grotesk 700 + Space Mono (ikkalasi yangi qo‘shildi). Musiqa: `lofi`, 80 bpm, Eb-major (root 51), seed 23,
+`bed_V20261116g`. Yangi tovushlar `pipeline/audio.py` da: `printer.wav` (termal printer), `tear.wav` (qog‘oz yirtilishi),
+`till.wav` (kassa qo‘ng‘irog‘i). Ovoz: yo‘q. Gift: Candy Cane (yangi). Matn chek ichida, x 110–830 (markaz x = 470).
+Keyingi video uchun: lofi, yashil-qizil, mono shrift va chek formatini takrorlamang.

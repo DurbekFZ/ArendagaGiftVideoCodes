@@ -213,6 +213,38 @@ def sparkle():
     save("sparkle.wav", track)
 
 
+def printer():
+    """A thermal receipt printer feeding one line: a buzzing stepper burst with a soft paper rustle (about 0.45 s)."""
+    x = t(0.45)
+    env = np.sin(np.pi * np.clip(x / 0.42, 0, 1)) ** 0.6 * (x < 0.42)
+    steps = np.sign(np.sin(2 * np.pi * 410 * x)) * 0.25 + np.sin(2 * np.pi * 820 * x) * 0.2
+    flutter = 0.6 + 0.4 * np.sign(np.sin(2 * np.pi * 31 * x))
+    noise = rng.standard_normal(len(x))
+    rustle = (noise - lowpass(noise, 2500)) * 0.35
+    save("printer.wav", lowpass((steps * flutter + rustle) * env, 5200))
+
+
+def tear():
+    """Paper torn off a receipt edge: a quick rip of crackling noise that rises and stops (about 0.4 s)."""
+    track = np.zeros(int(SR * 0.45))
+    at = 0.0
+    while at < 0.32:
+        x = t(0.012)
+        noise = rng.standard_normal(len(x))
+        place(track, (noise - lowpass(noise, 1400)) * np.exp(-x * 300), at, 0.4 + 0.6 * (at / 0.32))
+        at += 0.004 + rng.uniform(0, 0.006)
+    save("tear.wav", track)
+
+
+def till():
+    """A small counter bell struck once: bright, round, with a warm low partial (for a total being rung up)."""
+    x = t(1.8)
+    base = hz(83)
+    out = sum(a * np.sin(2 * np.pi * base * r * x) * np.exp(-x * d)
+              for r, a, d in ((0.5, 0.35, 2.0), (1.0, 1.0, 2.6), (2.42, 0.4, 5.5), (3.9, 0.18, 9.0)))
+    save("till.wav", out * np.minimum(1, x / 0.0015))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -228,6 +260,9 @@ def build():
     chime()
     glass()
     sparkle()
+    printer()
+    tear()
+    till()
 
 
 def ensure():
@@ -244,6 +279,10 @@ def ensure():
         glass()
     if not (OUT / "sparkle.wav").exists():
         sparkle()
+    if not (OUT / "till.wav").exists():
+        printer()
+        tear()
+        till()
 
 
 if __name__ == "__main__":
