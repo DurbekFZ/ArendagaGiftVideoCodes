@@ -166,6 +166,34 @@ def bubble():
     save("bubble.wav", track)
 
 
+def flaps():
+    """Split-flap board clatter: a dense run of plastic flap clicks that slows and stops (about 1.1 s)."""
+    track = np.zeros(int(SR * 1.25))
+    at, gap = 0.0, 0.018
+    while at < 1.05:
+        x = t(0.025)
+        noise = rng.standard_normal(len(x))
+        click = (noise - lowpass(noise, 1800)) * np.exp(-x * 260)
+        knock = np.sin(2 * np.pi * (900 + rng.uniform(-150, 150)) * x) * np.exp(-x * 320) * 0.6
+        place(track, click + knock, at, 0.55 + 0.45 * rng.uniform())
+        at += gap * (1 + rng.uniform(-0.3, 0.3))
+        gap *= 1.035
+    x = t(0.06)  # the last flap lands a little harder
+    place(track, (rng.standard_normal(len(x)) * 0.6 + np.sin(2 * np.pi * 420 * x)) * np.exp(-x * 120), at, 1.2)
+    save("flaps.wav", track)
+
+
+def chime():
+    """Two small bells struck together, inharmonic partials (for bells and reveals)."""
+    x = t(2.2)
+    out = np.zeros(len(x))
+    for base, delay, gain in ((hz(88), 0.0, 1.0), (hz(93), 0.045, 0.8)):
+        shifted = np.clip(x - delay, 0, None)
+        for ratio, amp, decay in ((1.0, 1.0, 2.2), (2.76, 0.45, 4.0), (5.4, 0.22, 7.0), (8.9, 0.1, 11.0)):
+            out += gain * amp * np.sin(2 * np.pi * base * ratio * shifted) * np.exp(-shifted * decay) * (x >= delay)
+    save("chime.wav", out * np.minimum(1, x / 0.002))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -177,14 +205,20 @@ def build():
     pop()
     riser()
     bubble()
+    flaps()
+    chime()
 
 
 def ensure():
     """Synthesize the sound set once; later runs reuse it."""
     if not (OUT / "riser.wav").exists():
         build()
-    elif not (OUT / "bubble.wav").exists():
+    if not (OUT / "bubble.wav").exists():
         bubble()
+    if not (OUT / "flaps.wav").exists():
+        flaps()
+    if not (OUT / "chime.wav").exists():
+        chime()
 
 
 if __name__ == "__main__":

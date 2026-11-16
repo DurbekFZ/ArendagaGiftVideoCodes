@@ -117,3 +117,31 @@ birinchi soniyada savol yoki kuchli da’vo yozuvi + gift darhol ko‘rinsin; se
 
 **Egasining qarori.** Videolarni 8–12 soniyagacha qisqartirmaslik kerak: "juda qisqa bo‘lib qoladi". Uzunlik 13–20 soniya
 qoladi; yechim qisqartirish emas, kuchli birinchi soniya.
+
+## 2026-11-16 — V20261116e "Tablo"
+
+**Tahlil.** Metrikasi bor ikki post: "Mif yoki fakt" (ovozsiz, birinchi kadrda yirik matn) 104 ko‘rish, 82 qamrov,
+o‘tkazib yuborish 69,4%; "Makro" (ovozli, sekin kirish) 63 ko‘rish, 52 qamrov, 86,2%. Ikkalasida ham o‘rtacha tomosha
+2,6 s (videoning ~13%), ulashish 0, saqlash 0, izoh 0, like 2 tadan. "Retsept" (V20261116d) metrikasi hali kelmagan.
+Obunachi 1 ta. Faqat ikki nuqta — kuchli xulosa yo‘q, lekin yo‘nalish bir xil: yirik matn + tez ochilish yaxshiroq,
+ovozsiz post ham yomon emas. Asosiy muammo — birinchi 3 soniya, shuning uchun bu video butunlay shunga qurildi.
+
+**G‘oya.** Aeroport/vokzal tablosi (split-flap). 0-kadrdayoq tabloda "KUNIGA QANCHA?" turibdi, pastida yirik
+Jingle Bells #64028 (Blue Sapphire modeli, 0,3%), narx qatoridagi raqamlar shaqillab aylanmoqda — 2 soniyada
+"1 000 SO‘M" ga to‘xtaydi, qo‘ng‘iroq jiringlaydi. Keyin tablo varaqlanadi: "SOTIB OLISH SHART EMAS" →
+"3–30 KUN PROFILDA TURADI" → "IJARA KUNIGA 1 000 SO‘M" + @ArendagaGiftBot + "↑ Havola profilda". 17,6 s.
+
+**O‘qish tezligi.** Har xabar harflar to‘xtagach ~2,9 s turadi (4 so‘z uchun 2,8 s kerak); narx ochilgandan keyin 2,9 s;
+yakuniy narx 4,1 s, bot va havola ~4 s. Ekranda bir vaqtda ≤ 7 so‘z. Gift o‘z animatsiyasida yonboshga burilib
+kichrayadi, shuning uchun animatsiyaning 0-kadri (to‘g‘ri, eng katta poza) ushlab turiladi; harakat — suzish va
+har xabarda qo‘ng‘iroqdek tebranish.
+
+**Nimani kuzatish kerak.** 3 soniyada o‘tkazib yuborish 69% dan pastga tushadimi (aylanayotgan raqam ushlab turadimi);
+o‘rtacha tomosha 2,6 s dan oshib, narx ochiladigan 2,1 s dan o‘tadimi; 1 000 so‘m (oldingilari 750) reaksiyaga ta’sir qiladimi.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: ochiladigan raqam / tablo xabarlari (yangi). Ko‘rinish: tungi navy fon
+(#0b1526 → #16294a), qor zarralari, gift ostida ko‘k nur, qora tablo kataklari. Palitra: navy (gift ko‘kiga analog),
+amber #ffb43c (komplementar urg‘u, harflar), muzdek oq #e9f1fa (neytral). Shrift: JetBrains Mono 800 (yangi qo‘shildi) +
+Manrope (kichik sarlavha). Musiqa: o‘ziga xos `bed_V20261116e`, 112 bpm, G-major (G–Em–C–D), barabanli, energiya 0,6.
+Yangi tovushlar `pipeline/audio.py` da: `flaps.wav` (tablo shaqirlashi), `chime.wav` (qo‘ng‘iroq). Ovoz: yo‘q.
+Gift: Jingle Bells (yangi). Matn tablo kataklarida, x = 70 dan chapga tekislangan.
