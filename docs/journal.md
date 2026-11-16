@@ -62,3 +62,10 @@ shifer-ko‘k nuqtali rastr, qora siyoh "wipe" o‘tishlar, muhr. Palitra: krem 
 
 **Egasining fikri (V20261116c).** "Juda tez, o‘qishga ulgurmayapman." Video `hold` ga qo‘yildi; o‘qish tezligi qoidasi
 `CLAUDE.md` ga qo‘shildi ("Reading pace"). Tuzatilgach joylanadi. Bundan keyin navbatga tushgan video darhol joylanadi.
+
+**Qayta ishlandi (2026-11-16, egasining fikri: "juda tez, o‘qib ulgurmadim").** "O‘qish tezligi" qoidasiga moslandi:
+uchta mif o‘rniga ikkita (uchinchi "3–30 kun" fakti yakuniy kadrga o‘tdi). Har bir matn bloki to‘liq ko‘ringan holda
+(1,2 s + 0,4 s × so‘z) turadi: 1-mif 3,6 s, 1-fakt 3,2 s, 2-mif 2,9 s, 2-fakt 3,1 s. Mif fakt kartasi chiqishidan oldin
+yo‘qoladi, shuning uchun ekranda bir vaqtda ~7 so‘zdan ko‘p bo‘lmaydi. "1,5%" belgisi olib tashlandi (fakt kartasi bilan bir vaqtda chiqardi).
+Yakun: "Ijaraga oling / kuniga 750 so‘m · 3–30 kun", bir soniyadan keyin bot va "Havola profilda"; ikkisi ham 3 s dan ko‘p turadi.
+Uzunligi 19,2 s. Muhr va o‘tishlar avvalgidek tez. `hold` egasi qo‘ygandek qoldirildi.

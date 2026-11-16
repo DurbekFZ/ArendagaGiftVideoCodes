@@ -7,7 +7,7 @@ import {
 import {BODY, BRAND, Gift, GiftData, H, W, clamp, useGifts} from '../kit';
 import type {CustomVideo} from './registry';
 
-// "Mif yoki fakt": three common beliefs about Telegram gifts get stamped MIF on a printed poster,
+// "Mif yoki fakt": two common beliefs about Telegram gifts get stamped MIF on a printed poster,
 // each answered by a fact card. Silent, fast, flat paper-and-ink look.
 const ID = 'V20261116c';
 const GIFT = 'jackinthebox-71197';
@@ -20,9 +20,6 @@ const MAGENTA = '#d9367f';
 const SLATE = '#5f6f86';
 const LEFT = 70;
 const WIDTH = 800; // lower-half content stays between x = 70 and x = 870
-const ROUND = 120;
-const CTA = ROUND * 3;
-const FRAMES = CTA + 112;
 
 const useAnton = () => {
   const [handle] = useState(() => delayRender('anton'));
@@ -69,102 +66,67 @@ const Stamp: React.FC<{at: number; x: number; y: number; word: string; color: st
     );
   };
 
-type Visual = 'gift' | 'days' | 'rare';
-type Round = {statement: string[]; fact: React.ReactNode; visual: Visual};
+// Reading pace: each text block rests fully visible for at least 1.2 s + 0.4 s per word,
+// and the statement leaves before the fact card arrives, so no more than about seven words are on screen.
+type Round = {statement: string[]; fact: React.ReactNode; length: number; stampAt: number; statementEnd: number; cardAt: number};
 
 const ROUNDS: Round[] = [
-  {statement: ['Noyob giftni', 'faqat sotib', 'olish', 'mumkin'], visual: 'gift',
-    fact: <>Ijaraga ham olsa bo‘ladi. Gift <span style={{color: PAPER, textDecoration: 'underline'}}>profilingizda</span> turadi.</>},
-  {statement: ['Ijara faqat', 'uzoq', 'muddatga'], visual: 'days',
-    fact: <>3 kundan 30 kungacha: muddatni o‘zingiz tanlaysiz. 30 kunga −7% chegirma.</>},
-  {statement: ['Noyob gift', 'doim', 'qimmat'], visual: 'rare',
-    fact: <>Let’s Rock modeli giftlarning atigi 1,5 foizida bor. Ijarasi kuniga 750 so‘m.</>},
+  // 6 words: visible 0-108 (3.6 s). Fact, 5 words: settled at 126, holds to 222 (3.2 s).
+  {statement: ['Noyob giftni', 'faqat sotib', 'olish', 'mumkin'], length: 224, stampAt: 12, statementEnd: 108, cardAt: 114,
+    fact: <>Ijaraga ham bo‘ladi: gift <span style={{textDecoration: 'underline'}}>profilingizda</span> turadi.</>},
+  // 4 words: settled at 10, holds to 96 (2.9 s). Fact, 6 words: settled at 120, holds to 212 (3.1 s).
+  {statement: ['Noyob gift', 'doim', 'qimmat'], length: 212, stampAt: 22, statementEnd: 96, cardAt: 108,
+    fact: <>Let’s Rock modeli atigi 1,5% giftda bor.</>},
 ];
-
-const DaysMeter: React.FC<{t: number; f: number}> = ({t, f}) => {
-  const value = Math.round(interpolate(f, [60, 96], [3, 30], clamp));
-  const knob = (value - 3) / 27;
-  return (
-    <div style={{position: 'absolute', left: LEFT, width: WIDTH, top: 560, opacity: Math.min(1, t * 1.5),
-      transform: `translateY(${(1 - t) * 60}px)`}}>
-      <div style={{display: 'flex', alignItems: 'baseline', gap: 26}}>
-        <span style={{fontFamily: POSTER, fontSize: 380, lineHeight: 0.9, color: INK}}>{value}</span>
-        <span style={{fontFamily: POSTER, fontSize: 130, color: MAGENTA}}>kun</span>
-      </div>
-      <div style={{position: 'relative', height: 90, marginTop: 36}}>
-        <div style={{position: 'absolute', left: 0, right: 0, top: 38, height: 14, borderRadius: 7, background: PAPER_DEEP,
-          boxShadow: `inset 0 0 0 3px ${INK}`}} />
-        <div style={{position: 'absolute', left: 0, width: `${knob * 100}%`, top: 38, height: 14, borderRadius: 7, background: MAGENTA}} />
-        {[3, 7, 14, 30].map((d) => (
-          <div key={d} style={{position: 'absolute', left: `${((d - 3) / 27) * 100}%`, top: 66, transform: 'translateX(-50%)',
-            fontFamily: BODY, fontWeight: 800, fontSize: 30, color: d <= value ? INK : SLATE}}>{d}</div>
-        ))}
-        <div style={{position: 'absolute', left: `calc(${knob * 100}% - 32px)`, top: 13, width: 64, height: 64, borderRadius: '50%',
-          background: PAPER, border: `8px solid ${INK}`}} />
-      </div>
-    </div>
-  );
-};
+const STARTS = ROUNDS.map((_, i) => ROUNDS.slice(0, i).reduce((sum, r) => sum + r.length, 0));
+const CTA = STARTS[1] + ROUNDS[1].length;
+const FRAMES = CTA + 140;
 
 const RoundScene: React.FC<{round: Round; index: number; data: GiftData}> = ({round, index, data}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const f = frame;
-  const stampAt = index === 0 ? 12 : 20;
-  const move = spring({frame: f - 46, fps, config: {damping: 18, stiffness: 120}});
-  const visual = spring({frame: f - 52, fps, config: {damping: 12, stiffness: 130, mass: 0.8}});
-  const card = spring({frame: f - 62, fps, config: {damping: 16, stiffness: 140}});
+  const {stampAt, statementEnd, cardAt} = round;
+  const leave = interpolate(f, [statementEnd, statementEnd + 6], [0, 1], clamp);
+  const visual = spring({frame: f - cardAt, fps, config: {damping: 12, stiffness: 130, mass: 0.8}});
+  const card = spring({frame: f - cardAt - 2, fps, config: {damping: 16, stiffness: 140}});
   const shake = f >= stampAt && f < stampAt + 9 ? (random(`sh-${index}-${f}`) - 0.5) * 26 * (1 - (f - stampAt) / 9) : 0;
   const strike = interpolate(f, [stampAt + 3, stampAt + 11], [0, 1], clamp);
-
-  // Statement: huge in the middle, then shrinks to the top once it has been stamped.
-  const top = interpolate(move, [0, 1], [560, 300]);
-  const scale = interpolate(move, [0, 1], [1, 0.4]);
   return (
     <AbsoluteFill style={{transform: `translate(${shake}px, ${shake * 0.6}px)`}}>
-      <Header text={`Mif yoki fakt? · ${index + 1}/3`} />
-      <div style={{position: 'absolute', left: LEFT, top, width: WIDTH, transformOrigin: 'top left', transform: `scale(${scale})`,
-        opacity: interpolate(move, [0, 1], [1, 0.6])}}>
-        {round.statement.map((line, i) => {
-          const enter = index === 0 ? 1 : spring({frame: f - 2 - i * 4, fps, config: {damping: 13, stiffness: 200}});
-          return (
-            <div key={i} style={{position: 'relative', fontFamily: POSTER, fontSize: 150, lineHeight: 1.04, color: INK, whiteSpace: 'nowrap',
-              width: 'fit-content', textTransform: 'uppercase', opacity: enter, transform: `translateY(${(1 - enter) * 50}px)`}}>
-              {line}
-              <div style={{position: 'absolute', left: -10, top: '52%', height: 22, width: `${strike * 106}%`, background: MAGENTA,
-                transform: `rotate(${i % 2 ? 1.5 : -1.5}deg)`, opacity: 0.92}} />
-            </div>
-          );
-        })}
-      </div>
-      <div style={{opacity: interpolate(move, [0, 0.6], [1, 0], clamp)}}>
-        <Stamp at={stampAt} x={470} y={1340} word="MIF" color={MAGENTA} rotate={-8} />
-      </div>
-
-      {round.visual === 'gift' && (
-        <Gift data={data} x={470} y={820} size={interpolate(visual, [0, 1], [300, 900])} opacity={Math.min(1, visual * 2)} glow={false} />
+      <Header text={`Mif yoki fakt? · ${index + 1}/${ROUNDS.length}`} />
+      {f < statementEnd + 6 && (
+        <div style={{opacity: 1 - leave, transform: `translateY(${-leave * 80}px)`}}>
+          <div style={{position: 'absolute', left: LEFT, top: 560, width: WIDTH}}>
+            {round.statement.map((line, i) => {
+              const enter = index === 0 ? 1 : spring({frame: f - i * 3, fps, config: {damping: 14, stiffness: 220}});
+              return (
+                <div key={i} style={{position: 'relative', fontFamily: POSTER, fontSize: 150, lineHeight: 1.04, color: INK,
+                  whiteSpace: 'nowrap', width: 'fit-content', textTransform: 'uppercase', opacity: enter,
+                  transform: `translateY(${(1 - enter) * 50}px)`}}>
+                  {line}
+                  <div style={{position: 'absolute', left: -10, top: '52%', height: 22, width: `${strike * 106}%`, background: MAGENTA,
+                    transform: `rotate(${i % 2 ? 1.5 : -1.5}deg)`, opacity: 0.92}} />
+                </div>
+              );
+            })}
+          </div>
+          <Stamp at={stampAt} x={470} y={1340} word="MIF" color={MAGENTA} rotate={-8} />
+        </div>
       )}
-      {round.visual === 'rare' && (
+
+      {f >= cardAt && (
         <>
-          <Gift data={data} x={440} y={830} size={interpolate(visual, [0, 1], [300, 860])} opacity={Math.min(1, visual * 2)} glow={false} />
-          <div style={{position: 'absolute', left: 640, top: 470, width: 250, height: 250, borderRadius: '50%', background: INK,
-            display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-            transform: `scale(${spring({frame: f - 66, fps, config: {damping: 9, stiffness: 160}})}) rotate(${12 + Math.sin(f / 14) * 4}deg)`}}>
-            <span style={{fontFamily: POSTER, fontSize: 104, lineHeight: 1, color: PAPER}}>1,5%</span>
-            <span style={{fontFamily: BODY, fontWeight: 800, fontSize: 26, letterSpacing: 4, color: MAGENTA}}>NOYOBLIK</span>
+          <Gift data={data} x={470} y={760} size={interpolate(visual, [0, 1], [300, 960])} opacity={Math.min(1, visual * 2)} glow={false} />
+          <div style={{position: 'absolute', left: LEFT, width: WIDTH, top: 1170, padding: '34px 40px 40px', borderRadius: 30,
+            background: MAGENTA, boxShadow: `14px 14px 0 ${INK}`, opacity: Math.min(1, card * 2),
+            transform: `translateY(${(1 - card) * 300}px) rotate(${(1 - card) * -4}deg)`}}>
+            <div style={{display: 'inline-block', fontFamily: POSTER, fontSize: 56, lineHeight: 1, color: MAGENTA, background: PAPER,
+              padding: '10px 22px 8px', borderRadius: 12, letterSpacing: 3}}>FAKT</div>
+            <div style={{fontFamily: BODY, fontWeight: 800, fontSize: 58, lineHeight: 1.2, color: '#fff', marginTop: 22}}>{round.fact}</div>
           </div>
         </>
       )}
-      {round.visual === 'days' && <DaysMeter t={visual} f={f} />}
-
-      {/* Fact card */}
-      <div style={{position: 'absolute', left: LEFT, width: WIDTH, top: 1170, padding: '34px 40px 40px', borderRadius: 30,
-        background: MAGENTA, boxShadow: `14px 14px 0 ${INK}`, opacity: Math.min(1, card * 2),
-        transform: `translateY(${(1 - card) * 300}px) rotate(${(1 - card) * -4}deg)`}}>
-        <div style={{display: 'inline-block', fontFamily: POSTER, fontSize: 56, lineHeight: 1, color: MAGENTA, background: PAPER,
-          padding: '10px 22px 8px', borderRadius: 12, letterSpacing: 3}}>FAKT</div>
-        <div style={{fontFamily: BODY, fontWeight: 800, fontSize: 50, lineHeight: 1.22, color: '#fff', marginTop: 22}}>{round.fact}</div>
-      </div>
     </AbsoluteFill>
   );
 };
@@ -190,19 +152,19 @@ const Closing: React.FC<{data: GiftData}> = ({data}) => {
       <Header text="Endi bilasiz" color={PAPER} />
       <Gift data={data} x={470} y={640} size={interpolate(at(2), [0, 1], [400, 940])} opacity={Math.min(1, at(2) * 2)} glow={false} />
       <div style={{position: 'absolute', left: LEFT, width: WIDTH, top: 1000}}>
-        <div style={{fontFamily: POSTER, fontSize: 170, lineHeight: 1, color: PAPER, textTransform: 'uppercase',
-          opacity: at(8), transform: `translateY(${(1 - at(8)) * 60}px)`}}>Ijaraga oling</div>
-        <div style={{fontFamily: BODY, fontWeight: 800, fontSize: 46, color: INK, marginTop: 14, opacity: at(14)}}>
-          kuniga 750 so‘mdan · 3–30 kun
+        <div style={{opacity: at(6), transform: `translateY(${(1 - at(6)) * 60}px)`}}>
+          <div style={{fontFamily: POSTER, fontSize: 170, lineHeight: 1, color: PAPER, textTransform: 'uppercase'}}>Ijaraga oling</div>
+          <div style={{fontFamily: BODY, fontWeight: 800, fontSize: 50, color: INK, marginTop: 14}}>kuniga 750 so‘m · 3–30 kun</div>
         </div>
-        <div style={{display: 'inline-flex', alignItems: 'center', gap: 20, marginTop: 34, padding: '14px 40px 14px 14px',
-          borderRadius: 999, background: INK, boxShadow: `10px 10px 0 rgba(29,26,36,.25)`,
-          opacity: at(22), transform: `scale(${0.8 + at(22) * 0.2})`, transformOrigin: 'left center'}}>
-          <Img src={staticFile('logo.png')} style={{width: 84, height: 84, borderRadius: '50%'}} />
-          <span style={{fontFamily: BODY, fontWeight: 800, fontSize: 46, color: PAPER}}>{BRAND.bot}</span>
+        <div style={{opacity: at(38), transform: `translateY(${(1 - at(38)) * 40}px)`}}>
+          <div style={{display: 'inline-flex', alignItems: 'center', gap: 20, marginTop: 34, padding: '14px 40px 14px 14px',
+            borderRadius: 999, background: INK, boxShadow: `10px 10px 0 rgba(29,26,36,.25)`}}>
+            <Img src={staticFile('logo.png')} style={{width: 84, height: 84, borderRadius: '50%'}} />
+            <span style={{fontFamily: BODY, fontWeight: 800, fontSize: 46, color: PAPER}}>{BRAND.bot}</span>
+          </div>
+          <div style={{fontFamily: POSTER, fontSize: 64, letterSpacing: 3, color: PAPER, marginTop: 30,
+            transform: `translateY(${-nudge}px)`}}>↑ HAVOLA PROFILDA</div>
         </div>
-        <div style={{fontFamily: POSTER, fontSize: 64, letterSpacing: 3, color: PAPER, marginTop: 30, opacity: at(32),
-          transform: `translateY(${-nudge * at(32)}px)`}}>↑ HAVOLA PROFILDA</div>
       </div>
     </AbsoluteFill>
   );
@@ -217,21 +179,20 @@ const Video: React.FC = () => {
     <AbsoluteFill style={{background: PAPER}}>
       <Paper />
       {ROUNDS.map((round, i) => (
-        <Sequence key={i} from={i * ROUND} durationInFrames={ROUND}>
+        <Sequence key={i} from={STARTS[i]} durationInFrames={round.length}>
           <RoundScene round={round} index={i} data={data} />
         </Sequence>
       ))}
       <Sequence from={CTA}><Closing data={data} /></Sequence>
-      <Wipe at={ROUND} color={INK} />
-      <Wipe at={ROUND * 2} color={INK} />
+      <Wipe at={STARTS[1]} color={INK} />
       <Wipe at={CTA} color={INK} />
 
       <Audio src={staticFile(`audio/bed_${ID}.wav`)} volume={(f) => interpolate(f, [0, 4, FRAMES - 24, FRAMES - 1], [0, 0.5, 0.5, 0], clamp)} />
-      {ROUNDS.map((_, i) => (
+      {ROUNDS.map((round, i) => (
         <React.Fragment key={i}>
-          <Sequence from={i * ROUND + (i === 0 ? 12 : 20)}><Audio src={staticFile('audio/impact.wav')} volume={0.55} /></Sequence>
-          <Sequence from={i * ROUND + 62}><Audio src={staticFile('audio/pop.wav')} volume={0.45} /></Sequence>
-          {i > 0 && <Sequence from={i * ROUND - 8}><Audio src={staticFile('audio/whoosh.wav')} volume={0.35} /></Sequence>}
+          <Sequence from={STARTS[i] + round.stampAt}><Audio src={staticFile('audio/impact.wav')} volume={0.55} /></Sequence>
+          <Sequence from={STARTS[i] + round.cardAt}><Audio src={staticFile('audio/pop.wav')} volume={0.45} /></Sequence>
+          {i > 0 && <Sequence from={STARTS[i] - 8}><Audio src={staticFile('audio/whoosh.wav')} volume={0.35} /></Sequence>}
         </React.Fragment>
       ))}
       <Sequence from={CTA - 8}><Audio src={staticFile('audio/whoosh.wav')} volume={0.35} /></Sequence>
@@ -249,7 +210,7 @@ const Cover: React.FC = () => {
       <Header text="Mif yoki fakt?" />
       <div style={{position: 'absolute', left: LEFT, top: 300, width: WIDTH, fontFamily: POSTER, fontSize: 230, lineHeight: 1,
         color: INK, textTransform: 'uppercase', whiteSpace: 'nowrap'}}>
-        3 ta <span style={{color: MAGENTA}}>mif</span>
+        2 ta <span style={{color: MAGENTA}}>mif</span>
         <div style={{fontSize: 96, lineHeight: 1.04, marginTop: 14}}>Telegram giftlar<br />haqida</div>
       </div>
       <Gift data={gifts[0]} x={470} y={1170} size={980} glow={false} />
