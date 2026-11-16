@@ -102,3 +102,15 @@ Yangi effekt: `bubble.wav` (pufakchalar, `pipeline/audio.py` ga qo‘shildi). Ov
 
 **Statistika holati.** Instagram insights o‘qilmayapti: tokenda `instagram_manage_insights` ruxsati yo‘q
 ("Application does not have permission"). Yangi token olinguncha faqat like, izoh va obunachilar soni bor.
+
+## 2026-11-16 21:00 — birinchi statistika (yangi token bilan insights ishlay boshladi)
+
+| Video | Ko‘rishlar | Qamrov | O‘rtacha tomosha | Dastlabki 3 soniyada o‘tkazib yuborish | Like |
+| --- | --- | --- | --- | --- | --- |
+| V20261116b "Makro" (19,6 s, ovozli, sekin) | 63 | 52 | 2,6 s | 86,2% | 2 |
+| V20261116c "Mif yoki fakt" (19,2 s, ovozsiz, yirik matn) | 104 | 82 | 2,6 s | 69,4% | 2 |
+
+**Dastlabki xulosa (ma’lumot juda kam, ehtiyot bo‘lib o‘qing).** Ikkala videoda ham o‘rtacha tomosha atigi 2,6 soniya:
+ko‘pchilik birinchi 3 soniyada ketyapti. Birinchi kadrda darhol yirik, tushunarli matn turgan video ("Mif yoki fakt")
+sekin ochiladigan videodan ("Makro") yaxshiroq ushladi (69% ga qarshi 86%). Keyingi videolarda sinab ko‘rish kerak:
+birinchi soniyada savol yoki kuchli da’vo yozuvi + gift darhol ko‘rinsin; 8–12 soniyalik qisqa videolar; sekin kirish yo‘q.
