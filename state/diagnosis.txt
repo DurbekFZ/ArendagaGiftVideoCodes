@@ -1,4 +1,4 @@
-checked at: 2026-11-16 15:51 UTC
+checked at: 2026-11-16 15:54 UTC
 token kind: facebook; characters: 284; IG_USER_ID set: True
 token valid: True
 permission email: granted
@@ -25,4 +25,27 @@ permission instagram_manage_contents: granted
 permission instagram_manage_engagement: granted
 permission public_profile: granted
 page: instagram=not linked
+page: connected_instagram_account=none
+token expires: 2026-11-16 17:00 UTC
+scope pages_show_list: all accounts
+scope ads_management: all accounts
+scope ads_read: all accounts
+scope business_management: all accounts
+scope instagram_basic: all accounts
+scope instagram_manage_comments: all accounts
+scope instagram_manage_insights: all accounts
+scope instagram_content_publish: all accounts
+scope instagram_manage_messages: all accounts
+scope pages_read_engagement: all accounts
+scope instagram_shopping_tag_products: all accounts
+scope instagram_branded_content_brand: all accounts
+scope instagram_branded_content_creator: all accounts
+scope instagram_branded_content_ads_brand: all accounts
+scope instagram_manage_events: all accounts
+scope instagram_manage_upcoming_events: all accounts
+scope instagram_creator_marketplace_discovery: all accounts
+scope instagram_creator_marketplace_messaging: all accounts
+scope instagram_manage_contents: all accounts
+scope instagram_manage_engagement: all accounts
+business portfolios: 2; instagram accounts in them: none
 account by IG_USER_ID: FAILED - Instagram API 400: Unsupported get request. Object with ID '17841460485044547' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api (code 100, subcode 33)
