@@ -1,9 +1,0 @@
-token kind: facebook; characters: 292; IG_USER_ID set: True
-token belongs to: Durbek Xoldarov
-permission instagram_basic: granted
-permission instagram_manage_comments: granted
-permission instagram_manage_insights: granted
-permission instagram_content_publish: granted
-permission public_profile: granted
-pages: none visible to this token
-account by IG_USER_ID: FAILED - Instagram API 400: Unsupported get request. Object with ID '17841460485044547' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api (code 100, subcode 33)

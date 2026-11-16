@@ -63,9 +63,8 @@ def diagnose() -> None:
             return None
 
     print(f"token kind: {config.IG_LOGIN}; characters: {len(config.IG_ACCESS_TOKEN)}; IG_USER_ID set: {bool(config.IG_USER_ID)}")
-    me = attempt("me", "me", {"fields": "id,name"})
-    if me:
-        print(f"token belongs to: {me.get('name')}")
+    # The output is committed to a public repository: no personal names, only what the token can do.
+    print(f"token valid: {attempt('me', 'me', {'fields': 'id'}) is not None}")
     granted = attempt("permissions", "me/permissions", None)
     if granted:
         for entry in granted.get("data", []):
@@ -77,7 +76,7 @@ def diagnose() -> None:
         for page in pages.get("data", []):
             linked = page.get("instagram_business_account")
             match = bool(linked) and linked.get("id") == config.IG_USER_ID
-            print(f"page {page.get('name')!r}: instagram={'@' + linked.get('username', '?') if linked else 'not linked'}"
+            print(f"page: instagram={'@' + linked.get('username', '?') if linked else 'not linked'}"
                   f"{' (matches IG_USER_ID)' if match else ''}")
     if config.IG_USER_ID:
         attempt("account by IG_USER_ID", config.IG_USER_ID, {"fields": "username"})
