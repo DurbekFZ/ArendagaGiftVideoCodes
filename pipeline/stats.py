@@ -79,6 +79,30 @@ def diagnose() -> None:
             match = bool(linked) and linked.get("id") == config.IG_USER_ID
             print(f"page: instagram={'@' + linked.get('username', '?') if linked else 'not linked'}"
                   f"{' (matches IG_USER_ID)' if match else ''}")
+        for page in pages.get("data", []):
+            other = attempt("page connection", page["id"], {"fields": "connected_instagram_account{id,username}"})
+            if other is not None:
+                connected = other.get("connected_instagram_account")
+                print(f"page: connected_instagram_account={'@' + connected.get('username', '?') if connected else 'none'}")
+    # Which accounts each permission was actually granted for (chosen in the Facebook dialog).
+    debug = attempt("token details", "debug_token", {"input_token": config.IG_ACCESS_TOKEN})
+    if debug:
+        info = debug.get("data", {})
+        expires = info.get("expires_at")
+        print("token expires: " + ("never" if expires == 0 else
+              f"{datetime.datetime.fromtimestamp(expires, datetime.timezone.utc):%Y-%m-%d %H:%M} UTC" if expires else "unknown"))
+        for scope in info.get("granular_scopes", []):
+            targets = scope.get("target_ids")
+            covers = "all accounts" if targets is None else f"{len(targets)} account(s)"
+            mine = "" if targets is None or not config.IG_USER_ID else (
+                " including IG_USER_ID" if config.IG_USER_ID in targets else " NOT including IG_USER_ID")
+            print(f"scope {scope.get('scope')}: {covers}{mine}")
+    businesses = attempt("businesses", "me/businesses", {"fields": "instagram_business_accounts{id,username}"})
+    if businesses is not None:
+        found = [account for business in businesses.get("data", [])
+                 for account in (business.get("instagram_business_accounts") or {}).get("data", [])]
+        print(f"business portfolios: {len(businesses.get('data', []))}; instagram accounts in them: "
+              + (", ".join('@' + account.get('username', '?') for account in found) or "none"))
     if config.IG_USER_ID:
         attempt("account by IG_USER_ID", config.IG_USER_ID, {"fields": "username"})
 
