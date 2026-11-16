@@ -41,6 +41,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Refresh statistics
+        if: env.IG_ACCESS_TOKEN != '' && github.event_name != 'push'
+        run: |
+          python3 -m pipeline.stats || echo "::warning::statistics refresh failed"
+          git config user.name "reels-bot"
+          git config user.email "reels-bot@users.noreply.github.com"
+          git add -A state
+          git diff --cached --quiet || (git commit -q -m "Refresh statistics" && git pull -q --rebase && git push -q)
+
       - name: Decide whether a post is due
         id: slot
         run: |
@@ -78,10 +87,6 @@ jobs:
           npm ci
           pip install -q -r requirements.txt
           npx remotion browser ensure
-
-      - name: Refresh statistics of earlier posts
-        if: steps.slot.outputs.run == 'true' && env.IG_ACCESS_TOKEN != ''
-        run: python -m pipeline.run metrics
 
       - name: Plan and render
         if: steps.slot.outputs.run == 'true'

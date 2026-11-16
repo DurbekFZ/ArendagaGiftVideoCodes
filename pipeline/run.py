@@ -16,11 +16,9 @@ import random
 import subprocess
 import sys
 
-from . import bandit, config, feed, instagram, plan, render
+from . import config, feed, instagram, plan, render, stats
 
 PLAN = config.OUT / "plan.json"
-SCORE_AFTER_HOURS = 3
-SCORE_UNTIL_DAYS = 14
 
 
 def now() -> datetime.datetime:
@@ -99,33 +97,7 @@ def do_publish() -> None:
 
 
 def do_metrics() -> None:
-    posts = plan.load_posts(config.STATE)
-    updated = 0
-    for post in posts:
-        age = now() - datetime.datetime.fromisoformat(post["published_at"])
-        if not (datetime.timedelta(hours=SCORE_AFTER_HOURS) <= age <= datetime.timedelta(days=SCORE_UNTIL_DAYS)):
-            continue
-        try:
-            post["metrics"] = instagram.insights(post["media_id"])
-        except instagram.ApiError as error:  # a deleted post must not block the others
-            print(f"metrics skipped for {post['name']}: {error}")
-            continue
-        post["score"] = round(bandit.score(post["metrics"], post["seconds"]), 2)
-        try:
-            post["comments"] = instagram.comments(post["media_id"])
-        except instagram.ApiError as error:  # comment access is optional
-            print(f"comments skipped for {post['name']}: {error}")
-        updated += 1
-    save_posts(posts)
-    try:
-        profile = instagram.account()
-        history = json.loads(config.ACCOUNT.read_text()) if config.ACCOUNT.exists() else []
-        history.append({"at": now().isoformat(timespec="seconds"), "followers": profile.get("followers_count"),
-                        "media": profile.get("media_count")})
-        config.ACCOUNT.write_text(json.dumps(history[-400:], indent=1) + "\n")
-    except instagram.ApiError as error:
-        print(f"account snapshot skipped: {error}")
-    print(f"metrics updated for {updated} posts")
+    stats.refresh()
 
 
 COMMANDS = {"plan": do_plan, "render": do_render, "publish": do_publish, "metrics": do_metrics, "check": do_check}
