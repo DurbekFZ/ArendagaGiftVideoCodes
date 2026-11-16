@@ -1,1 +1,26 @@
-[]
+[
+ {
+  "name": "20261116-1709-V20261116b",
+  "published_at": "2026-11-16T12:14:23+00:00",
+  "style": "custom",
+  "hook": "V20261116b",
+  "gifts": [
+   "moonpendant-95850"
+  ],
+  "slot_hour": 17,
+  "seconds": 19.58,
+  "media_id": "18107838587362023",
+  "permalink": "https://www.instagram.com/reel/DfzVHXPAQJG/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261116b",
+  "concept": {
+   "title": "Makro",
+   "hook": "Zargarlik reklamasidagi kabi juda yaqin plan va \"Bu shunchaki bezak emas\"",
+   "format": "Ovozli mini-hujjatli: uchta makro kadr, keyin sekin uzoqlashish va narx",
+   "why": "Statistika hali yo‘q. Giftning o‘z chizgisi yaqindan juda boy ko‘rinadi; noyoblik foizi va past narx asosiy dalillar.",
+   "differs": "Sapfir-oltin-krem palitra giftning o‘zidan olingan; Playfair kursiv; barabansiz sokin musiqa; Sardor ovozi; chap tomonga tekislangan matn."
+  }
+ }
+]
