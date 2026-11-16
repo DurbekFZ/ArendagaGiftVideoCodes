@@ -22,5 +22,29 @@
    "why": "Statistika hali yo‘q. Giftning o‘z chizgisi yaqindan juda boy ko‘rinadi; noyoblik foizi va past narx asosiy dalillar.",
    "differs": "Sapfir-oltin-krem palitra giftning o‘zidan olingan; Playfair kursiv; barabansiz sokin musiqa; Sardor ovozi; chap tomonga tekislangan matn."
   }
+ },
+ {
+  "name": "20261116-1843-V20261116c",
+  "published_at": "2026-11-16T13:45:34+00:00",
+  "style": "custom",
+  "hook": "V20261116c",
+  "gifts": [
+   "jackinthebox-71197"
+  ],
+  "slot_hour": 18,
+  "seconds": 19.2,
+  "media_id": "17918878248536935",
+  "permalink": "https://www.instagram.com/reel/Dfzfj_eD7ZS/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261116c",
+  "concept": {
+   "title": "Mif yoki fakt",
+   "hook": "Birinchi kadrda katta \"Noyob giftni faqat sotib olish mumkin\" yozuvi, 0,4 soniyada ustiga \"MIF\" muhri uriladi",
+   "format": "Mif va fakt: ikkita keng tarqalgan fikr muhr bilan rad etiladi, har biriga fakt kartasi; har bir matn bemalol o‘qiladigan vaqt turadi",
+   "why": "Statistika hali yo‘q (birinchi post metrikasiz). Mif-fakt formati ijara g‘oyasini tushuntiradi va izohga undaydi; birinchi soniyada matn va zarba bilan to‘xtatadi.",
+   "differs": "Qog‘oz-plakat dunyosi (krem qog‘oz, siyoh, magenta, shifer-ko‘k), Anton shrifti, muhr va o‘tishlar tez, matn esa o‘qishga yetarli turadi (raund 7-7,5 s), ovozsiz, barabanli 132 bpm o‘z musiqasi, yangi gift Jack-in-the-Box."
+  }
  }
 ]
