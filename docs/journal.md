@@ -182,3 +182,7 @@ qo‘shimcha rang — muz firuza #1ea3dc (Sub-Zero’dan, faqat eng nodir uchun)
 o‘ynoqi, yengil. Effektlar: yangi `glass.wav` (shisha chertish) va `sparkle.wav` (ko‘tariluvchi qo‘ng‘iroqchalar),
 `pipeline/audio.py` ga qo‘shildi; pop yakunda. Ovoz: yo‘q. Matn chapga, x = 70; kartalar x 70–870.
 Keyingi video uchun: kalimba, och pastel fon, Fredoka va topishmoq formatini takrorlamang.
+
+**Sifat sozlamalari (2026-11-16 kech).** Egasi "eng yuqori sifatda yuklayapsanmi?" deb so‘radi. Tekshiruv: o‘lcham to‘g‘ri
+(1080×1920, 30 kadr), lekin kadrlar JPEG orqali o‘tgan, sifat darajasi o‘rtacha (CRF 20) va rang BT.601/to‘liq diapazon deb
+belgilangan edi. Endi: PNG kadrlar, CRF 14, BT.709 standart diapazon, ovoz 320 kbit/s. Shu paytgacha chiqqan 5 ta video eski sozlamada.

@@ -44,7 +44,7 @@ def render(plan: dict, name: str) -> dict:
     # Gift assets and voice lines are served from the bundle's public folder, so bundle after preparing them.
     run("npx", "remotion", "bundle", "src/index.ts", "--out-dir=build", "--log=error")
     run("npx", "remotion", "render", "build", plan["composition"], str(video),
-        f"--props={video_props}", "--crf=20", "--log=error")
+        f"--props={video_props}", "--crf=14", "--log=error")
     run("npx", "remotion", "still", "build", plan.get("cover_composition", "Cover"), str(cover), f"--props={cover_props}",
-        "--jpeg-quality=90", "--log=error")
+        "--image-format=jpeg", "--jpeg-quality=96", "--log=error")
     return {"video": str(video), "cover_file": str(cover), "seconds": round(seconds(video), 2)}
