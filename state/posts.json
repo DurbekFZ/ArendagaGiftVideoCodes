@@ -21,7 +21,8 @@
    "format": "Ovozli mini-hujjatli: uchta makro kadr, keyin sekin uzoqlashish va narx",
    "why": "Statistika hali yo‘q. Giftning o‘z chizgisi yaqindan juda boy ko‘rinadi; noyoblik foizi va past narx asosiy dalillar.",
    "differs": "Sapfir-oltin-krem palitra giftning o‘zidan olingan; Playfair kursiv; barabansiz sokin musiqa; Sardor ovozi; chap tomonga tekislangan matn."
-  }
+  },
+  "metrics_error": "Instagram API 400: (#10) Application does not have permission for this action (code 10, subcode None)"
  },
  {
   "name": "20261116-1843-V20261116c",
@@ -45,6 +46,7 @@
    "format": "Mif va fakt: ikkita keng tarqalgan fikr muhr bilan rad etiladi, har biriga fakt kartasi; har bir matn bemalol o‘qiladigan vaqt turadi",
    "why": "Statistika hali yo‘q (birinchi post metrikasiz). Mif-fakt formati ijara g‘oyasini tushuntiradi va izohga undaydi; birinchi soniyada matn va zarba bilan to‘xtatadi.",
    "differs": "Qog‘oz-plakat dunyosi (krem qog‘oz, siyoh, magenta, shifer-ko‘k), Anton shrifti, muhr va o‘tishlar tez, matn esa o‘qishga yetarli turadi (raund 7-7,5 s), ovozsiz, barabanli 132 bpm o‘z musiqasi, yangi gift Jack-in-the-Box."
-  }
+  },
+  "metrics_error": "Instagram API 400: (#10) Application does not have permission for this action (code 10, subcode None)"
  }
 ]
