@@ -2,7 +2,7 @@
 import json
 import subprocess
 
-from . import audio, config, gifts, voice
+from . import audio, config, gifts, music, voice
 
 
 def run(*command: str) -> None:
@@ -19,11 +19,15 @@ def render(plan: dict, name: str) -> dict:
     for slug in plan["slugs"]:
         gifts.prepare(slug)
     audio.ensure()
-    if plan.get("music"):  # a bed composed for this one video: public/audio/<name>.wav
-        music = plan["music"]
-        audio.OUT.mkdir(parents=True, exist_ok=True)
-        audio.bed(f"{music['name']}.wav", music["bpm"], music["chords"], music["seconds"], music["energy"],
-                  music.get("drums", True))
+    if plan.get("music"):  # music written for this one video: public/audio/<name>.wav
+        track = plan["music"]
+        if "style" in track:
+            music.compose(track["name"], track["style"], track.get("bpm"), track.get("root", 57),
+                          track.get("scale", "minor"), track["seconds"], track.get("seed", 1))
+        else:  # older entries: a chord list for the simple generator
+            audio.OUT.mkdir(parents=True, exist_ok=True)
+            audio.bed(f"{track['name']}.wav", track["bpm"], track["chords"], track["seconds"], track["energy"],
+                      track.get("drums", True))
     props = dict(plan["props"])
     if plan.get("voice"):
         spoken = plan["voice"]

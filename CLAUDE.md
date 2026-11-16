@@ -136,11 +136,19 @@ and choose something different on most of those axes:
   gradient glass, monochrome with one accent, ...), layout and motion language.
 - **Type:** Unbounded, Manrope and Playfair Display are bundled; add another
   `@fontsource/*` family when a concept calls for it.
-- **Sound:** do not reuse the stock beds twice in a row. Give the video its own
-  music with `"music": {"name": "bed_<id>", "bpm", "chords", "seconds", "energy", "drums"?}`
-  in the queue entry (chords are lists of MIDI notes; see `pipeline/audio.py`),
-  or add new synthesis there (other drums, bass lines, instruments, effects).
-  Some videos silent-with-music, some voiced.
+- **Sound:** every video gets music written for it, and it must not sound like the
+  last few. The owner asked for this explicitly: never the same backing track, and
+  make it beautiful. In the queue entry:
+  `"music": {"name": "bed_<id>", "style", "bpm", "root", "scale", "seconds", "seed"}`.
+  `style` is one of `lofi`, `ambient`, `synthwave`, `house`, `acoustic`, `kalimba`,
+  `cinematic` (see `pipeline/music.py`); `root` is a MIDI note (48-62), `scale` is
+  `major` or `minor`, and `seed` changes the progression and the melody. Pick a
+  style none of the last three videos used, and a different key, tempo and seed;
+  fit the mood to the video (calm, playful, tense, festive). Play it in the video
+  with `<Audio src={staticFile('audio/bed_<id>.wav')} />` at a volume that leaves
+  room for voice and effects. The stock `bed_*.wav` files are for templates only.
+  You may add a new style or instrument to `pipeline/music.py` when a concept needs
+  one. Vary the effects too: not every reveal needs the same impact and whoosh.
 - **Voice:** alternate `uz-UZ-MadinaNeural` and `uz-UZ-SardorNeural`, and vary
   delivery with `"rate"` (for example `"+0%"`, `"+15%"`) and `"pitch"`
   (for example `"-4Hz"`, `"+6Hz"`) in the voice entry.

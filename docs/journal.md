@@ -145,3 +145,8 @@ amber #ffb43c (komplementar urg‘u, harflar), muzdek oq #e9f1fa (neytral). Shri
 Manrope (kichik sarlavha). Musiqa: o‘ziga xos `bed_V20261116e`, 112 bpm, G-major (G–Em–C–D), barabanli, energiya 0,6.
 Yangi tovushlar `pipeline/audio.py` da: `flaps.wav` (tablo shaqirlashi), `chime.wav` (qo‘ng‘iroq). Ovoz: yo‘q.
 Gift: Jingle Bells (yangi). Matn tablo kataklarida, x = 70 dan chapga tekislangan.
+
+**Egasining talabi (2026-11-16 kechqurun).** Fon musiqasi doim bir xil bo‘lmasin, imkon qadar takrorlanmas va go‘zal bo‘lsin.
+Yangi generator qo‘shildi (`pipeline/music.py`): 7 uslub (lofi, ambient, synthwave, house, acoustic, kalimba, cinematic),
+har safar yangi tonallik, sur’at va ohang. Har bir video o‘z musiqasini oladi; oxirgi uch videodagi uslub takrorlanmaydi.
+Shu paytgacha ishlatilgan musiqa: eski oddiy generator (b: barabansiz 72 bpm; c: 132 bpm barabanli; d va e: jurnalga qarang).

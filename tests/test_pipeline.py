@@ -201,3 +201,16 @@ def test_arrival_posts_until_the_daily_quota_is_used():
     assert not due.on_arrival(one, at(18, 40), 2, held)
     assert not due.on_arrival(two, at(19, 50), 2, ready)
     assert due.on_arrival(two, at(10, 50, day=17), 2, ready)
+
+
+def test_every_music_style_composes_a_distinct_track(tmp_path):
+    from pipeline import music
+    sizes = set()
+    for index, style in enumerate(music.STYLES):
+        path = music.compose(f"t{index}", style, None, 57, "minor", 3, index, tmp_path)
+        data = path.read_bytes()
+        assert len(data) > 3 * 44100 * 4 * 0.9
+        sizes.add(hash(data))
+    assert len(sizes) == len(music.STYLES)
+    with pytest.raises(ValueError):
+        music.compose("x", "polka", None, 57, "minor", 3, 1, tmp_path)
