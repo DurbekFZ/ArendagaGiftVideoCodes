@@ -53,5 +53,36 @@ def refresh() -> None:
     print(f"metrics updated for {updated} posts")
 
 
+def diagnose() -> None:
+    """Print what the token can see: its permissions and the Instagram accounts behind its Pages. No secrets."""
+    def attempt(label, path, params):
+        try:
+            return instagram.call("GET", path, params)
+        except instagram.ApiError as error:
+            print(f"{label}: FAILED - {error}")
+            return None
+
+    print(f"token kind: {config.IG_LOGIN}; characters: {len(config.IG_ACCESS_TOKEN)}; IG_USER_ID set: {bool(config.IG_USER_ID)}")
+    me = attempt("me", "me", {"fields": "id,name"})
+    if me:
+        print(f"token belongs to: {me.get('name')}")
+    granted = attempt("permissions", "me/permissions", None)
+    if granted:
+        for entry in granted.get("data", []):
+            print(f"permission {entry.get('permission')}: {entry.get('status')}")
+    pages = attempt("pages", "me/accounts", {"fields": "name,instagram_business_account{id,username}"})
+    if pages is not None:
+        if not pages.get("data"):
+            print("pages: none visible to this token")
+        for page in pages.get("data", []):
+            linked = page.get("instagram_business_account")
+            match = bool(linked) and linked.get("id") == config.IG_USER_ID
+            print(f"page {page.get('name')!r}: instagram={'@' + linked.get('username', '?') if linked else 'not linked'}"
+                  f"{' (matches IG_USER_ID)' if match else ''}")
+    if config.IG_USER_ID:
+        attempt("account by IG_USER_ID", config.IG_USER_ID, {"fields": "username"})
+
+
 if __name__ == "__main__":
-    refresh()
+    import sys
+    diagnose() if sys.argv[1:] == ["diagnose"] else refresh()

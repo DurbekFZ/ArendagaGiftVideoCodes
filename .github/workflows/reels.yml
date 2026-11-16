@@ -50,6 +50,10 @@ jobs:
           git add -A state
           git diff --cached --quiet || (git commit -q -m "Refresh statistics" && git pull -q --rebase && git push -q)
 
+      - name: Diagnose the Instagram token
+        if: env.MODE == 'check' && github.event_name == 'workflow_dispatch'
+        run: python3 -m pipeline.stats diagnose || true
+
       - name: Decide whether a post is due
         id: slot
         run: |
