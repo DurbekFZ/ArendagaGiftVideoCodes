@@ -130,5 +130,31 @@
    "why": "Birinchi statistika: ko‘pchilik 3 soniyada ketyapti, birinchi kadrda yirik matn bo‘lgan video yaxshiroq ushladi. Shuning uchun 0-kadrda yirik savol + gift, 2 soniyagacha ochilishi kutiladigan raqam.",
    "differs": "Yangi dunyo: tungi navy fon, qor, sariq (amber) split-flap harflar; JetBrains Mono shrifti (yangi); ovozsiz, o‘z musiqasi 112 bpm G-major; yangi tovushlar (tablo shaqirlashi, qo‘ng‘iroq); yangi gift Jingle Bells; matnlar tablo kataklarida."
   }
+ },
+ {
+  "name": "20261116-2143-V20261116f",
+  "published_at": "2026-11-16T16:45:25+00:00",
+  "style": "custom",
+  "hook": "V20261116f",
+  "gifts": [
+   "vicecream-405489",
+   "icecream-192500",
+   "vicecream-48461"
+  ],
+  "slot_hour": 21,
+  "seconds": 19.82,
+  "media_id": "18357647866270629",
+  "permalink": "https://www.instagram.com/reel/Dfz0JGwDr7w/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261116f",
+  "concept": {
+   "title": "Qaysi biri eng nodir?",
+   "hook": "Birinchi kadrda yirik savol \"Qaysi biri eng nodir?\" va shisha kartalarda uchta muzqaymoq gift, har birining ostida yashirin \"?%\"",
+   "format": "Topishmoq / tomoshabinga savol: uchta variant, har biri navbat bilan yaqindan va noyobligi bilan, eng nodiri oxirida",
+   "why": "Oxirgi o‘lchov: b va c da 3 soniyada o‘tkazib yuborish ~80%, o‘rtacha tomosha 2,4–2,6 s. Birinchi kadrda savol + gift, va javobni kutish sababi (yashirin foizlar) bor. Izoh 0 — savol izohga undashi mumkin.",
+   "differs": "Birinchi och (pastel) dunyo: lilak-pushti-shaftoli gradient, muzdek shisha kartalar, sepkillar; Fredoka shrifti (yangi); kalimba musiqasi (yangi generator), F-major 104 bpm; yangi tovushlar glass va sparkle; uchta yangi gift; ovozsiz"
+  }
  }
 ]
