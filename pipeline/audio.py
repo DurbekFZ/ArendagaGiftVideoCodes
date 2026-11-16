@@ -154,6 +154,18 @@ def riser():
     save("riser.wav", (lowpass(noise, sweep) + tone) * (x / 1.4) ** 1.6)
 
 
+def bubble():
+    """A short run of rising water bubbles (for potion and liquid scenes)."""
+    track = np.zeros(int(SR * 0.9))
+    for i, at in enumerate((0.0, 0.11, 0.19, 0.33, 0.42, 0.58, 0.7)):
+        x = t(0.09)
+        start = 380 + 140 * i + rng.uniform(-40, 40)
+        freq = start * (1 + 1.8 * x / 0.09)
+        blip = np.sin(2 * np.pi * np.cumsum(freq) / SR) * np.sin(np.pi * x / 0.09) ** 2
+        place(track, blip, at, 0.6 + 0.4 * rng.uniform())
+    save("bubble.wav", track)
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -164,12 +176,15 @@ def build():
     impact()
     pop()
     riser()
+    bubble()
 
 
 def ensure():
     """Synthesize the sound set once; later runs reuse it."""
     if not (OUT / "riser.wav").exists():
         build()
+    elif not (OUT / "bubble.wav").exists():
+        bubble()
 
 
 if __name__ == "__main__":

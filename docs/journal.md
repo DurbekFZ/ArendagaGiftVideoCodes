@@ -72,3 +72,28 @@ Uzunligi 19,2 s. Muhr va o‘tishlar avvalgidek tez. `hold` egasi qo‘ygandek q
 
 **Joylandi (2026-11-16 18:45).** V20261116c "Mif yoki fakt" — sekinlashtirilgan versiya (2 ta mif, 19,2 soniya).
 Bugungi ikki post chiqdi; bundan keyingi video navbatda ertangi kunni kutadi.
+
+## 2026-11-16 — V20261116d "Noyob profil retsepti"
+
+**Tahlil.** Ikki post bor ("Makro" 17:14, "Mif yoki fakt" 18:45), ikkalasida ham `metrics: null`, izoh yo‘q;
+obunachi 1 ta (bitta o‘lchovda 0 dan 1 ga). Ko‘rishlar, tomosha vaqti, o‘tkazib yuborish, ulashish va saqlash bo‘yicha
+hali hech narsa yo‘q — xulosa chiqarish mumkin emas. Shuning uchun ma’lumot yig‘ishni davom ettiramiz: oldingi ikkisidan
+(ovozli sekin makro / ovozsiz tez plakat) farqli, o‘rta ritmdagi ovozli format.
+
+**G‘oya.** Ijara pazandachilik retsepti sifatida: "Noyob profil retsepti". Qorong‘i tunda sehrli qozon (Hex Pot #42707,
+Sangria modeli 2,5%) qaynab, olovi otilib turadi. 1) Ingrediyent: bitta noyob gift (Hex Pot · atigi 2,5%);
+2) Muddat: 3–30 kun (30 kunga −7%); 3) Aralashtiring: gift profilingizda ko‘rinib turadi; natija: kuniga 750 so‘m,
+@ArendagaGiftBot, havola profilda. Har bosqich orasida qozondan pufakchalar otiladi. 19,6 soniya.
+
+**O‘qish tezligi.** Har bosqichda katta qator darhol, kichik pushti yorliq 1 soniyadan keyin chiqadi; yorliq 2,4–2,8 s
+to‘liq ko‘rinadi, ekranda bir vaqtda 7 so‘zdan oshmaydi. Sahnalar uzunligi ovoz satri va o‘qish vaqtidan kattasiga
+qarab hisoblanadi. Narx va bot 3 soniyadan ko‘p turadi.
+
+**Nimani kuzatish kerak.** Retsept formati saqlash (save) ni oshiradimi; ovozli va o‘rta ritm tomosha vaqtini
+"Makro" va "Mif yoki fakt" bilan solishtirish; birinchi kadrdagi katta qozon to‘xtatadimi.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: retsept / qadam-baqadam (yangi). Ko‘rinish: sehrli tun — to‘q baqlajon-binafsha
+fon (#150b22 → #2c1747), yulduzchalar, ko‘tarilayotgan pufakchalar, qozon ostida firuza nur. Palitra: firuza #3fe0c8 (qozondan,
+urg‘u), pushti #ff5fa8 (pufakchalardan, yorliqlar), sutrang-lilak #f3ecff (matn). Shrift: Fraunces 900 / kursiv (yangi qo‘shildi)
++ Manrope. Musiqa: o‘ziga xos `bed_V20261116d`, 96 bpm, yengil baraban, energiya 0,45, D-minor tusidagi akkordlar, ovoz ostida past.
+Yangi effekt: `bubble.wav` (pufakchalar, `pipeline/audio.py` ga qo‘shildi). Ovoz: Madina, +8%, +3Hz. Matn chapga, x = 70.
