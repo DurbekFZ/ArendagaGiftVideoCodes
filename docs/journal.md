@@ -36,3 +36,7 @@ Matn chapga tekislangan.
 endi doim to‘liq yuzi bilan va katta. Ovoz har doim ham shart emas.
 
 **Holat.** Tasdiqlandi, birinchi bo‘lib joylanadi (`priority`).
+
+**Joylandi (2026-11-16 17:14).** V20261116b "Makro" — birinchi post. Jadvaldagi 12:47 dagi ishga tushish GitHub tomonidan
+4 soat kechikib boshlangani va kod buni o‘tkazib yuborgani uchun qo‘lda yuborildi; endi avtopilot har soatda uyg‘onib,
+"bugun nima chiqishi kerak"ligini tekshiradi.

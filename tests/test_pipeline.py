@@ -1,11 +1,12 @@
 """Planning, learning and publishing logic, without network access."""
+import datetime
 import json
 import pathlib
 import random
 
 import pytest
 
-from pipeline import bandit, feed, instagram, plan, styles
+from pipeline import bandit, due, feed, instagram, plan, styles
 
 CATALOG = feed.parse(json.loads((pathlib.Path(__file__).parent / "sample_feed.json").read_text()))
 RARITY = {"ChillFlame-164026": 3.0, "MoonPendant-95850": 3.0, "JingleBells-64028": 0.3, "ViceCream-48461": 1.5}
@@ -159,3 +160,34 @@ def test_priority_moves_a_queue_item_to_the_front(tmp_path):
     (tmp_path / "V20261116b.json").write_text(json.dumps(
         {"id": "V20261116b", "slugs": ["MoonPendant-95850"], "caption": "matn", "hero_ms": 1, "priority": 1}))
     assert plan.from_queue(tmp_path, CATALOG, [])["queue_id"] == "V20261116b"
+
+
+def at(hour, minute=0, day=16):
+    """A UTC moment given as Tashkent local time."""
+    return datetime.datetime(2026, 11, day, hour, minute, tzinfo=datetime.timezone.utc) - datetime.timedelta(hours=5)
+
+
+def test_a_late_run_still_posts_and_only_once():
+    assert not due.due([], at(11, 30), 2)
+    assert due.due([], at(16, 45), 2)  # the midday run woke four hours late
+    posted = [{"published_at": at(16, 50).isoformat()}]
+    assert not due.due(posted, at(17, 17), 2)
+
+
+def test_evening_post_follows_a_late_midday_post():
+    posted = [{"published_at": at(17, 10).isoformat()}]
+    assert not due.due(posted, at(19, 17), 2)  # evening target not reached
+    assert due.due(posted, at(21, 40), 2)
+    both = posted + [{"published_at": at(21, 45).isoformat()}]
+    assert not due.due(both, at(23, 17), 2)
+
+
+def test_posts_keep_their_distance():
+    posted = [{"published_at": at(20, 30).isoformat()}]
+    assert not due.due(posted, at(21, 40), 2)  # too soon after the previous one
+    assert due.due(posted, at(23, 40), 2)
+
+
+def test_yesterdays_posts_do_not_count_for_today():
+    posted = [{"published_at": at(21, 40, day=15).isoformat()}]
+    assert due.due(posted, at(12, 50), 2)
