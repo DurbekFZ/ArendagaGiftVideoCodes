@@ -150,3 +150,35 @@ Gift: Jingle Bells (yangi). Matn tablo kataklarida, x = 70 dan chapga tekislanga
 Yangi generator qo‘shildi (`pipeline/music.py`): 7 uslub (lofi, ambient, synthwave, house, acoustic, kalimba, cinematic),
 har safar yangi tonallik, sur’at va ohang. Har bir video o‘z musiqasini oladi; oxirgi uch videodagi uslub takrorlanmaydi.
 Shu paytgacha ishlatilgan musiqa: eski oddiy generator (b: barabansiz 72 bpm; c: 132 bpm barabanli; d va e: jurnalga qarang).
+
+## 2026-11-16 — V20261116f "Qaysi biri eng nodir?"
+
+**Tahlil (16:17 UTC o‘lchovi).** "Makro" (b): 68 ko‘rish, 53 qamrov, o‘rtacha tomosha 2,6 s, o‘tkazib yuborish 81%.
+"Mif yoki fakt" (c): 113 ko‘rish, 102 qamrov, 2,4 s, 80,2%. "Retsept" (d): 3 ko‘rish (juda erta, hisobga olinmaydi);
+"Tablo" (e) metrikasi hali yo‘q. Ulashish 0, saqlash 0, izoh 0, like 2 tadan; obunachi 1 ta, o‘zgarmagan.
+Yangi o‘lchovda b va c deyarli tenglashdi (81% va 80%) — avvalgi "yirik matn yaxshiroq" farqi kuchsizlandi.
+Ma’lumot hali juda kam: ishonchli xulosa yo‘q. Aniq bitta narsa: ikkalasida ham 3 soniyada ~80% ketyapti va izoh umuman yo‘q.
+Shuning uchun bu video birinchi kadrda savol + gift beradi va javobni kutishga sabab yaratadi (yashirin "?%"),
+izohga ham undaydi (caption: raqamini izohda yozing).
+
+**G‘oya.** Topishmoq: "Qaysi biri eng nodir?" — muzdek shisha kartalarda uchta muzqaymoq gift (1 Circus, 2 Trio Scoop,
+3 Sub-Zero), har birining ostida yashirin "?%". Keyin har biri navbat bilan yaqindan: nomi va model noyobligi
+(Circus 3%, Trio Scoop 3%, Sub-Zero 1,5% + "ENG NODIRI" muhri). Sub-Zero belgisi bo‘yicha ham eng nodir (0,3%),
+fonlari bir xil (1,5%). Yakun: "Uchalasi ham ijarada" (foizlar ochiq), "Kuniga 750 so‘m", @ArendagaGiftBot,
+"↑ Havola profilda". 19,8 s, ovozsiz. Giftlar: vicecream-405489, icecream-192500, vicecream-48461 (hammasi yangi).
+
+**O‘qish tezligi.** Savol 0-kadrdan 3,0 s; har yaqin plan (3 so‘z) ~2,5 s to‘liq turadi; muhr (2 so‘z) 2,1 s;
+"Uchalasi ham ijarada" 2,7 s; narx 4,1 s, bot va havola 3,0 s. Bloklar bir soniyada ikkitadan kelmaydi; ekranda ≤ 7 so‘z.
+Giftlar o‘z animatsiyasida burilmaydi; 0-kadr pozasi ushlab turiladi (pozalar varag‘i bilan tekshirildi).
+
+**Nimani kuzatish kerak.** Izohlar (raqam yozishadimi — birinchi izohlar?); 3 soniyada o‘tkazib yuborish 80% dan pastmi;
+o‘rtacha tomosha 3 s dan oshadimi (birinchi ochilish 3 s da); och fon qorong‘i fonlardan farq qiladimi.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: topishmoq / tomoshabinga savol, 3 variant (yangi). Ko‘rinish: birinchi och
+dunyo — pastel lilak #e6dbf8 → pushti #f6e1ef → shaftoli #fde4da gradient, xira rangli dog‘lar, muzdek shisha kartalar,
+tushayotgan sepkillar. Palitra: qulupnay urg‘u #e2426f (Circus’dan), to‘q olxo‘ri matn #2b1a3f, oq shisha;
+qo‘shimcha rang — muz firuza #1ea3dc (Sub-Zero’dan, faqat eng nodir uchun). Shrift: Fredoka 600/700 (yangi qo‘shildi)
++ Manrope. Musiqa: yangi generator, `kalimba` uslubi, 104 bpm, F-major (root 53), seed 11, 20 s, `bed_V20261116f` —
+o‘ynoqi, yengil. Effektlar: yangi `glass.wav` (shisha chertish) va `sparkle.wav` (ko‘tariluvchi qo‘ng‘iroqchalar),
+`pipeline/audio.py` ga qo‘shildi; pop yakunda. Ovoz: yo‘q. Matn chapga, x = 70; kartalar x 70–870.
+Keyingi video uchun: kalimba, och pastel fon, Fredoka va topishmoq formatini takrorlamang.

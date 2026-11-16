@@ -194,6 +194,25 @@ def chime():
     save("chime.wav", out * np.minimum(1, x / 0.002))
 
 
+def glass():
+    """A light tap on a glass card: a high, short, slightly detuned ping (softer than pop)."""
+    x = t(0.5)
+    out = sum(a * np.sin(2 * np.pi * f * x) * np.exp(-x * d)
+              for f, a, d in ((hz(96), 1.0, 9.0), (hz(96) * 2.31, 0.35, 16.0), (hz(103), 0.25, 12.0)))
+    save("glass.wav", out * np.minimum(1, x / 0.001))
+
+
+def sparkle():
+    """A rising glissando of tiny bell blips ending on a held shimmer (for a rare-find reveal)."""
+    track = np.zeros(int(SR * 1.6))
+    notes = [84, 88, 91, 96, 100, 103]
+    for i, note in enumerate(notes):
+        x = t(0.9 if i == len(notes) - 1 else 0.35)
+        blip = (np.sin(2 * np.pi * hz(note) * x) + 0.3 * np.sin(2 * np.pi * hz(note) * 2.76 * x) * np.exp(-x * 20))
+        place(track, blip * np.exp(-x * (4 if i == len(notes) - 1 else 12)), i * 0.055, 0.5 + 0.1 * i)
+    save("sparkle.wav", track)
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -207,6 +226,8 @@ def build():
     bubble()
     flaps()
     chime()
+    glass()
+    sparkle()
 
 
 def ensure():
@@ -219,6 +240,10 @@ def ensure():
         flaps()
     if not (OUT / "chime.wav").exists():
         chime()
+    if not (OUT / "glass.wav").exists():
+        glass()
+    if not (OUT / "sparkle.wav").exists():
+        sparkle()
 
 
 if __name__ == "__main__":
