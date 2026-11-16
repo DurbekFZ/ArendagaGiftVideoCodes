@@ -92,7 +92,7 @@ export const Top3: React.FC<{ids: string[]; headline: string[]; prices?: number[
           <Gift key={data.meta.id} data={data} x={W / 2 + (i - 1) * 320 * fan} y={600 - (i === 2 ? 0 : 0) + Math.abs(i - 1) * 50}
             size={i === 1 ? 460 : 370} scale={fan} rotate={(i - 1) * 9 * fan} />
         ))}
-        <Cta at={8} y={960} headline={['Hammasi', '*ijarada*']} />
+        <Cta at={8} y={960} headline={['Hammasini', '*ijaraga* *oling*']} />
       </Sequence>
       {[INTRO, INTRO + EACH, INTRO + EACH * 2, outro].map((at) => <Flash key={at} at={at} length={7} />)}
 

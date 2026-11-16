@@ -38,7 +38,7 @@ const ITEMS: Item[] = [
 const HOOK_END = 90; // "Qaysi biri eng nodir?" visible from frame 0 to 90 (4 words need 84)
 const SPOTS = [[90, 182], [182, 274], [274, 378]]; // name + "model" + % rest ~74 frames (3 words need 72)
 const STAMP = 310; // "ENG NODIRI" (2 words) rests 316..378
-const ALL = 378; // "Uchalasi ham ijarada" rests 384..464 (3 words need 72)
+const ALL = 378; // "Uchalasini ham ijaraga oling" rests 384..464 (4 words need 84; the line stays through the price reveal)
 const PRICE = 464; // "Kuniga 750 so‘m" rests 470..594
 const CTA = 496; // bot + link rest 504..594 (3.0 s)
 const FRAMES = 594; // 19.8 s
@@ -257,7 +257,7 @@ const Scene: React.FC<{gifts: GiftData[]}> = ({gifts}) => {
       <Dots />
       {frame >= ALL && <Row gifts={gifts} enter={ALL} exit={100000} reveal
         pills={interpolate(frame, [PRICE - 6, PRICE], [1, 0], clamp)} />}
-      <Title lines={['Uchalasi ham', 'ijarada']} at={ALL + 2} until={PRICE} size={124} />
+      <Title lines={['Uchalasini ham', 'ijaraga oling']} at={ALL + 2} until={PRICE} size={106} />
       <Price />
     </AbsoluteFill>
   );
