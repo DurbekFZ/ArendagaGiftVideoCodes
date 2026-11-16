@@ -26,7 +26,9 @@ def refresh() -> None:
             post["metrics"] = instagram.insights(post["media_id"])
         except instagram.ApiError as error:  # a deleted post must not block the others
             print(f"metrics skipped for {post['name']}: {error}")
+            post["metrics_error"] = str(error)[:300]  # kept in the record so a session can see why numbers are missing
             continue
+        post.pop("metrics_error", None)
         post["score"] = round(bandit.score(post["metrics"], post["seconds"]), 2)
         post["measured_at"] = now.isoformat(timespec="seconds")
         try:
