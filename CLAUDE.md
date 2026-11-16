@@ -18,6 +18,9 @@ before they go out, so each session is the only quality gate.
   and the concept behind it. `state/account.json` tracks followers over time.
 - `docs/journal.md` is the running creative log: what was learned, what was made.
 - Instagram credentials exist only in GitHub Actions. Sessions never publish.
+- `docs/session-prompt.md` is the brief each creative session is started with. A
+  dispatcher session starts them twice a day with the repository attached, because
+  a session started without it cannot push.
 
 ## Making the next video (scheduled session)
 
