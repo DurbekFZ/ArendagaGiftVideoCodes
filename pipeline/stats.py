@@ -62,6 +62,7 @@ def diagnose() -> None:
             print(f"{label}: FAILED - {error}")
             return None
 
+    print(f"checked at: {datetime.datetime.now(datetime.timezone.utc):%Y-%m-%d %H:%M} UTC")
     print(f"token kind: {config.IG_LOGIN}; characters: {len(config.IG_ACCESS_TOKEN)}; IG_USER_ID set: {bool(config.IG_USER_ID)}")
     # The output is committed to a public repository: no personal names, only what the token can do.
     print(f"token valid: {attempt('me', 'me', {'fields': 'id'}) is not None}")
