@@ -7,8 +7,9 @@ before they go out, so each session is the only quality gate.
 
 ## How the system fits together
 
-- `queue/<id>.json` holds finished videos waiting to be posted. At each slot
-  `.github/workflows/reels.yml` posts the oldest one whose gifts are free to rent.
+- `queue/<id>.json` holds finished videos waiting to be posted. Pushing a queue
+  entry posts it right away (the owner asked for that); the hourly schedule in
+  `.github/workflows/reels.yml` is the safety net and the template fallback.
   With an empty queue it falls back to the template library in `pipeline/styles.py`.
   An entry with `"hold": true` waits for the owner's approval and is never posted;
   `"priority": 1` posts before the others. Both are the owner's decisions:
@@ -92,6 +93,22 @@ The owner's feedback on the second video:
 - Make the gift large. The artwork fills only about half of its 512 px box, so
   size the box by what is visible, and avoid big empty areas around it.
 - Voice-over is optional, not a default: mix silent and voiced videos.
+
+## Reading pace
+
+The owner's feedback on the third video: it moved too fast to read. A viewer
+must be able to read every line once, comfortably, at normal speed:
+
+- each piece of text stays fully visible (after its entrance animation ends) for
+  at least 1.2 seconds plus 0.4 seconds per word; a seven-word line needs 4 seconds;
+- at most about seven words on screen at once, and never two new blocks of text
+  arriving in the same second;
+- the price and the call to action hold for at least 3 seconds at the end;
+- fast cuts, stamps and transitions are fine, but the words must rest between them.
+  If the idea needs more time than 20 seconds allows, cut text, not reading time.
+
+When reviewing, read the video's text aloud against the timeline, not just the
+contact sheet.
 
 ## Variety
 

@@ -59,3 +59,6 @@ Gift: Jack-in-the-Box #71197 (o‘z animatsiyasida aylanmaydi, hamma pozasi to�
 shifer-ko‘k nuqtali rastr, qora siyoh "wipe" o‘tishlar, muhr. Palitra: krem #f1e7d6, siyoh #1d1a24, magenta #d9367f
 (gift qopqog‘idan), shifer #5f6f86 (gift qutisidan). Shrift: Anton (yangi qo‘shildi) + Manrope. Musiqa: o‘ziga xos
 `bed_V20261116c`, 132 bpm, barabanli, energiya 0,95; impact/pop/whoosh effektlari. Ovoz: yo‘q. Matn chapga tekislangan, x = 70.
+
+**Egasining fikri (V20261116c).** "Juda tez, o‘qishga ulgurmayapman." Video `hold` ga qo‘yildi; o‘qish tezligi qoidasi
+`CLAUDE.md` ga qo‘shildi ("Reading pace"). Tuzatilgach joylanadi. Bundan keyin navbatga tushgan video darhol joylanadi.

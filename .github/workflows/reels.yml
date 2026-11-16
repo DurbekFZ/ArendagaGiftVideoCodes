@@ -5,6 +5,10 @@ on:
     # Hourly: GitHub starts scheduled runs late, so each run checks what is due
     # (see pipeline/due.py) instead of relying on the hour it woke at.
     - cron: '17 * * * *'
+  # A new or released queue entry is posted right away.
+  push:
+    branches: ['claude/friendly-keller-nxybhq']
+    paths: ['queue/*.json']
   workflow_dispatch:
     inputs:
       mode:
@@ -42,6 +46,10 @@ jobs:
         run: |
           run=$(python3 -m pipeline.due)
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then run=true; fi
+          # A push to the queue posts at once, provided something in it is ready to go.
+          if [ "${{ github.event_name }}" = "push" ]; then
+            run=$(python3 -c "import json,glob; print(str(any(not json.load(open(f)).get('hold') for f in glob.glob('queue/*.json'))).lower())")
+          fi
           if [ -z "$MARKETING_FEED_TOKEN" ]; then
             echo "::warning::MARKETING_FEED_TOKEN secret is not set; nothing to do."
             run=false
