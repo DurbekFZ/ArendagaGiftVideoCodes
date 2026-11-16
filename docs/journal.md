@@ -97,3 +97,8 @@ fon (#150b22 → #2c1747), yulduzchalar, ko‘tarilayotgan pufakchalar, qozon os
 urg‘u), pushti #ff5fa8 (pufakchalardan, yorliqlar), sutrang-lilak #f3ecff (matn). Shrift: Fraunces 900 / kursiv (yangi qo‘shildi)
 + Manrope. Musiqa: o‘ziga xos `bed_V20261116d`, 96 bpm, yengil baraban, energiya 0,45, D-minor tusidagi akkordlar, ovoz ostida past.
 Yangi effekt: `bubble.wav` (pufakchalar, `pipeline/audio.py` ga qo‘shildi). Ovoz: Madina, +8%, +3Hz. Matn chapga, x = 70.
+
+**Joylandi (2026-11-16 20:05).** V20261116d "Noyob profil retsepti" — egasi shu kunning o‘zida chiqarishni so‘radi (kunning 3-posti).
+
+**Statistika holati.** Instagram insights o‘qilmayapti: tokenda `instagram_manage_insights` ruxsati yo‘q
+("Application does not have permission"). Yangi token olinguncha faqat like, izoh va obunachilar soni bor.

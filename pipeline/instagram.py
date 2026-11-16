@@ -149,6 +149,12 @@ def insights(media_id: str) -> dict:
     return {entry["name"]: (entry.get("values") or [{}])[0].get("value", 0) for entry in data}
 
 
+def basic_counts(media_id: str) -> dict:
+    """Likes and comments only: readable without the insights permission."""
+    data = call("GET", media_id, {"fields": "like_count,comments_count"})
+    return {"likes": data.get("like_count", 0), "comments": data.get("comments_count", 0)}
+
+
 def refreshed_token() -> str:
     """Extend a long-lived Instagram Login token (valid 60 days, refreshable after 24 hours)."""
     return call("GET", "refresh_access_token", {"grant_type": "ig_refresh_token"})["access_token"]

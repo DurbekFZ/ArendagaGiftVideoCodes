@@ -32,7 +32,8 @@ before they go out, so each session is the only quality gate.
    shares, saves and follower change. Read the comments. Write down what the best
    and worst posts have in common: hook wording, first frame, pacing, voice or
    silent, price shown or not, gift, posting slot. Few data points mean weak
-   conclusions; say so instead of over-fitting.
+   conclusions; say so instead of over-fitting. A post with `metrics_error` has
+   only likes and comments (the token lacks the insights permission): say so.
 3. **Read the catalogue.** `python -c "from pipeline import feed; print(feed.fetch())"`
    (needs `MARKETING_FEED_TOKEN`). Use only gifts with status `available`, real
    prices and discounts from the feed, and real attributes from
