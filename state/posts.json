@@ -106,5 +106,29 @@
    "differs": "Format retsept (yangi), sehrli tun dunyosi: to‘q baqlajon-binafsha fon, firuza nur va pushti pufakchalar; Fraunces shrifti (yangi); Madina ovozi; o‘z musiqasi 96 bpm, yengil baraban; pufakcha effektlari; yangi gift Hex Pot."
   },
   "measured_at": "2026-11-16T16:17:32+00:00"
+ },
+ {
+  "name": "20261116-2118-V20261116e",
+  "published_at": "2026-11-16T16:20:03+00:00",
+  "style": "custom",
+  "hook": "V20261116e",
+  "gifts": [
+   "jinglebells-64028"
+  ],
+  "slot_hour": 21,
+  "seconds": 17.6,
+  "media_id": "17886316707524845",
+  "permalink": "https://www.instagram.com/reel/DfzxPGIiBpR/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261116e",
+  "concept": {
+   "title": "Tablo",
+   "hook": "Birinchi kadrda aeroport tablosi: \"KUNIGA QANCHA?\" va narx qatori shaqillab aylanmoqda; 2 soniyada \"1 000 SO‘M\" ga to‘xtaydi",
+   "format": "Ochiladigan raqam / tablo xabarlari: savol, narx, keyin ikki qisqa xabar va yakun",
+   "why": "Birinchi statistika: ko‘pchilik 3 soniyada ketyapti, birinchi kadrda yirik matn bo‘lgan video yaxshiroq ushladi. Shuning uchun 0-kadrda yirik savol + gift, 2 soniyagacha ochilishi kutiladigan raqam.",
+   "differs": "Yangi dunyo: tungi navy fon, qor, sariq (amber) split-flap harflar; JetBrains Mono shrifti (yangi); ovozsiz, o‘z musiqasi 112 bpm G-major; yangi tovushlar (tablo shaqirlashi, qo‘ng‘iroq); yangi gift Jingle Bells; matnlar tablo kataklarida."
+  }
  }
 ]
