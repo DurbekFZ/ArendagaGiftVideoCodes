@@ -48,5 +48,29 @@
    "differs": "Qog‘oz-plakat dunyosi (krem qog‘oz, siyoh, magenta, shifer-ko‘k), Anton shrifti, muhr va o‘tishlar tez, matn esa o‘qishga yetarli turadi (raund 7-7,5 s), ovozsiz, barabanli 132 bpm o‘z musiqasi, yangi gift Jack-in-the-Box."
   },
   "metrics_error": "Instagram API 400: (#10) Application does not have permission for this action (code 10, subcode None)"
+ },
+ {
+  "name": "20261116-2005-V20261116d",
+  "published_at": "2026-11-16T15:07:31+00:00",
+  "style": "custom",
+  "hook": "V20261116d",
+  "gifts": [
+   "hexpot-42707"
+  ],
+  "slot_hour": 20,
+  "seconds": 19.65,
+  "media_id": "18078071237726515",
+  "permalink": "https://www.instagram.com/reel/Dfzo8fkGea_/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261116d",
+  "concept": {
+   "title": "Noyob profil retsepti",
+   "hook": "Qorong‘i binafsha fonda qozon (Hex Pot) qaynab, otilib chiqadi; ustida \"Noyob profil retsepti\" yozuvi",
+   "format": "Retsept: ingrediyentlar (gift, muddat), \"aralashtiring\" bosqichi va natija — ijara qanday ishlashini pazandachilik tilida tushuntiradi",
+   "why": "Statistika hali yo‘q (ikki post, metrikalar kelmagan). Oldingi ikki videodan (ovozli sekin makro, ovozsiz tez mif-fakt) farqli, qiziq va tushunarli o‘rta ritmdagi ovozli formatni sinaymiz.",
+   "differs": "Format retsept (yangi), sehrli tun dunyosi: to‘q baqlajon-binafsha fon, firuza nur va pushti pufakchalar; Fraunces shrifti (yangi); Madina ovozi; o‘z musiqasi 96 bpm, yengil baraban; pufakcha effektlari; yangi gift Hex Pot."
+  }
  }
 ]
