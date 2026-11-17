@@ -41,15 +41,29 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The newest commit on the branch, not the one the event was created for: an earlier
+          # queued run may have recorded statistics or a post in the meantime.
+          ref: ${{ github.ref_name }}
 
       - name: Refresh statistics
         if: env.IG_ACCESS_TOKEN != ''
         run: |
-          python3 -m pipeline.stats || echo "::warning::statistics refresh failed"
           git config user.name "reels-bot"
           git config user.email "reels-bot@users.noreply.github.com"
+          git pull -q --rebase
+          python3 -m pipeline.stats || echo "::warning::statistics refresh failed"
           git add -A state
-          git diff --cached --quiet || (git commit -q -m "Refresh statistics" && git pull -q --rebase && git push -q)
+          # Statistics are refreshed again on the next run, so a lost race is dropped rather than failing the post.
+          if ! git diff --cached --quiet; then
+            git commit -q -m "Refresh statistics"
+            if ! (git pull -q --rebase && git push -q); then
+              git rebase --abort 2>/dev/null || true
+              git fetch -q origin "${{ github.ref_name }}"
+              git reset -q --hard FETCH_HEAD
+              echo "::warning::statistics were not saved this time"
+            fi
+          fi
 
       - name: Diagnose the Instagram token
         if: env.MODE == 'check' && github.event_name == 'workflow_dispatch'
