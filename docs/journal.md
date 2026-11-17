@@ -322,3 +322,16 @@ qo‘shildi). Musiqa: yangi `musicbox` uslubi (`pipeline/music.py`: celesta tish
 `checkmark.wav` (belgi), `jingle.wav` (chana qo‘ng‘iroqchalari); yana glass, whoosh, chime, pop. Ovoz: yo‘q (ovozli tajriba hali
 navbatda; ovozsizlar yaxshiroq). Matn chapga, x = 70; bloknot x 70–870, y 1052–1560 (matn ≤ 1530).
 Keyingi video uchun: musicbox, rosewood/yalpiz, Caveat/Rubik va ro‘yxat formatini takrorlamang.
+
+## 2026-11-18 — egasining yangi topshirig‘i: bitta Stars reklamasi (sinov)
+
+Egasi shu sahifada ikkinchi boti — **@StarsXonaBot** (Telegram Stars sotib olish) uchun bitta sinov videosi qo‘yishni so‘radi.
+Doimiy emas, hozircha bitta. Egasi bergan faktlar (faqat shularni ishlatish mumkin):
+
+- 1 Stars = 195 so‘m;
+- to‘lov O‘zbekiston bank kartasi orqali;
+- bot: @StarsXonaBot (Telegram).
+
+Bu videoda gift yo‘q, shuning uchun `"slugs": []`. Profil havolasi ArendagaGift botiga olib boradi, shuning uchun bu videoda
+"Havola profilda" deyilmaydi: tomoshabin Telegram’da @StarsXonaBot ni qidirishi aytiladi. Materiallar: `public/stars/logo-gold.png`
+(StarsXona logotipi) va `public/stars/telegram-stars.png` (kichik, 388×220 — yulduzni SVG bilan chizgan ma’qul).
