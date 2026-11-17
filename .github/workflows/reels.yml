@@ -2,8 +2,9 @@ name: Reels
 
 on:
   schedule:
-    # Hourly: GitHub starts scheduled runs late, so each run checks what is due
-    # (see pipeline/due.py) instead of relying on the hour it woke at.
+    # Hourly in name only: GitHub starts scheduled runs late and skips most of them
+    # (three a day in practice), so each run checks what is due (see pipeline/due.py),
+    # and the dispatcher session also starts a "stats" run before each creative session.
     - cron: '17 * * * *'
   # A new or released queue entry is posted right away.
   push:
@@ -12,9 +13,9 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "post: publish a video. check: test the Instagram connection without posting."
+        description: "post: publish a video. check: test the Instagram connection without posting. stats: only refresh statistics."
         type: choice
-        options: [post, check]
+        options: [post, check, stats]
         default: post
 
 concurrency:
@@ -42,7 +43,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Refresh statistics
-        if: env.IG_ACCESS_TOKEN != '' && github.event_name != 'push'
+        if: env.IG_ACCESS_TOKEN != ''
         run: |
           python3 -m pipeline.stats || echo "::warning::statistics refresh failed"
           git config user.name "reels-bot"
@@ -65,6 +66,7 @@ jobs:
         run: |
           run=$(python3 -m pipeline.due)
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then run=true; fi
+          if [ "$MODE" = "stats" ]; then run=false; fi
           # A push to the queue posts at once if something is ready and today's quota is not used up;
           # otherwise the entry waits for the next scheduled slot.
           if [ "${{ github.event_name }}" = "push" ]; then
