@@ -346,5 +346,27 @@
    "why": "Eng yaxshi postlar 0-kadrda savol + ochilishi kutilayotgan raqam bilan ochilgan (1000 tadan nechtasi?, Tablo). Egasi @StarsXonaBot uchun bitta sinov reklamasini so‘radi.",
    "differs": "Gift yo‘q, boshqa mahsulot; tungi indigo osmon va Stars oltini (yangi palitra), SVG oltin yulduz, bank kartasi va Telegram qidiruv maydoni; synthwave musiqa (oxirgi uchtasi musicbox, house, cinematic); CTA profil havolasi emas, Telegram qidiruvi"
   }
+ },
+ {
+  "name": "20261118-0212-V20261118c",
+  "published_at": "2026-11-17T21:15:29+00:00",
+  "style": "custom",
+  "hook": "V20261118c",
+  "gifts": [],
+  "slot_hour": 2,
+  "seconds": 18.0,
+  "media_id": "18418759786090351",
+  "permalink": "https://www.instagram.com/reel/Df232EsjupH/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261118c",
+  "concept": {
+   "title": "Telegram Stars 3D",
+   "hook": "Birinchi kadrda: \"TELEGRAM STARS\", haqiqiy Telegram Stars belgisi 3D ko‘rinishda, \"ARZON!\" va \"1 ⭐ = 195 so‘m\"",
+   "format": "To‘g‘ridan-to‘g‘ri taklif, 3D grafika: yulduz mayda yulduzlar oqimi ichida uchadi; narxlar, to‘lov usuli, bot nomi",
+   "why": "Egasi ikki versiyani rad etdi: birinchisi jumboqli va raqamlari kesilgan, ikkinchisi juda oddiy. Haqiqiy Telegram Stars belgisi va jozibali, boy ko‘rinish so‘raldi.",
+   "differs": "Birinchi marta haqiqiy 3D (WebGL): rasmiy belgidan ko‘chirilgan shakl, yaltiroq oltin material; binafsha-pushti koinot foni; akustik gitara musiqasi."
+  }
  }
 ]
