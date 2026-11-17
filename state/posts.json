@@ -288,5 +288,29 @@
    "differs": "Yangi format (ob-havo / sovuqdan yozga), yangi dunyo (yomg‘ir → basseyn, suv to‘lqini, plitkalar), yangi shrift Bricolage Grotesque, house musiqa (D-major, 120 bpm), yangi tovushlar rain/cork/splash, yangi gift Pool Float"
   },
   "measured_at": "2026-11-17T19:01:13+00:00"
+ },
+ {
+  "name": "20261118-0002-V20261117c",
+  "published_at": "2026-11-17T19:04:55+00:00",
+  "style": "custom",
+  "hook": "V20261117c",
+  "gifts": [
+   "vicecream-405488"
+  ],
+  "slot_hour": 0,
+  "seconds": 19.01,
+  "media_id": "17956878978300120",
+  "permalink": "https://www.instagram.com/reel/Df2o4xtiWSC/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261117c",
+  "concept": {
+   "title": "Yangi yil ro‘yxati",
+   "hook": "Birinchi kadrda yirik \"Yangi yilga tayyormisiz?\", katta archa-muzqaymoq (Vice Cream) va bo‘sh katakli bloknot; 0,6 soniyadan ro‘yxat qo‘lda yoziladi va belgilanadi: Archa, Mandarin, Sovg‘alar — oxirgi qator \"Profilingizda archa\" bo‘sh qoladi",
+   "format": "Qo‘lda yozilgan ro‘yxat / checklist (yangi): mavsumiy, hamma taniydigan tayyorgarlik ro‘yxati; oxirgi bandni giftning o‘zi sakrab belgilaydi, keyin tomoshabinga \"Ro‘yxatni do‘stingizga yuboring\" deyiladi",
+   "why": "Ko‘rishlar bor, lekin ulashish, saqlash va obuna hali 0. Ro‘yxat va Yangi yil — odamlar saqlaydigan va do‘stiga yuboradigan mavzu; ochiq qolgan oxirgi katak (savol) tomoshabinni ushlab turadi. Eng yaxshi postlardagi kabi: ovozsiz, birinchi kadrda savol va bitta katta gift, ko‘z oldida o‘zgaradigan narsa (to‘ldirilayotgan ro‘yxat).",
+   "differs": "Yangi format (checklist), yangi dunyo (qorli rosewood tuni, krem bloknot, qo‘l yozuvi), yangi shriftlar Caveat va Rubik, yangi `musicbox` musiqa uslubi (A-major, 92 bpm), yangi tovushlar scribble/checkmark/jingle, yangi gift Vice Cream, birinchi marta to‘g‘ridan-to‘g‘ri ulashishga chaqiruv"
+  }
  }
 ]
