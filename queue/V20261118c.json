@@ -7,12 +7,12 @@
   "hero_ms": 1200,
   "music": {
     "name": "bed_V20261118c",
-    "style": "acoustic",
-    "bpm": 100,
-    "root": 55,
+    "style": "calm",
+    "bpm": 60,
+    "root": 53,
     "scale": "major",
     "seconds": 19,
-    "seed": 12
+    "seed": 5
   },
   "concept": {
     "title": "Telegram Stars 3D",

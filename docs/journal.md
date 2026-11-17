@@ -390,3 +390,7 @@ oltin, yorug‘lik va soya bilan aylanadi, atrofida mayda yulduzlar oqimi. Birin
 "1 ⭐ = 195 so‘m". Keyin narxlar (100 / 500 / 1 000), to‘lov usuli, @StarsXonaBot. 18 soniya, ovozsiz.
 **Tanlovlar.** Binafsha-pushti koinot foni + oltin + pushti urg‘u; Unbounded + Manrope; musiqa: acoustic, 100 bpm, sol-major;
 3D uchun `"gl": "swangle"` (render ~9 daqiqa). Egasi ko‘rguncha `hold`.
+
+**Egasining fikri (V20261118c musiqasi).** "Orqa fondagi musiqa sokin emas, ting-ting ovozi buzyapti." Akustik gitara olib tashlandi.
+Yangi `calm` uslubi qo‘shildi (faqat cho‘zilgan yumshoq akkordlar; chertma, qo‘ng‘iroq va baraban yo‘q) va standart qilindi.
+Kartalar chiqqandagi "pop" tovushlari ham olib tashlandi. V20261118c endi: calm, 60 bpm, fa-major, urug‘ 5, past ovozda.

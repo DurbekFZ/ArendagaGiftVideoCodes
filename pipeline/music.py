@@ -133,6 +133,15 @@ def strings(notes, seconds):
     return pad(notes, seconds, bright=2600, attack=0.18)
 
 
+def glow(note, seconds):
+    """A soft sustained tone with a slow swell: no pluck, no click, nothing percussive."""
+    x = t(seconds)
+    f = hz(note)
+    tone = np.sin(2 * np.pi * f * x) + 0.22 * np.sin(4 * np.pi * f * x) + 0.08 * np.sin(6 * np.pi * f * x)
+    swell = np.minimum(1, x / 0.45) * np.minimum(1, (seconds - x) / 0.6)
+    return tone * swell * (1 + 0.03 * np.sin(2 * np.pi * 4.6 * x))
+
+
 def sub(note, seconds):
     x = t(seconds)
     f = hz(note)
@@ -224,6 +233,8 @@ STYLES = {
     "house": {"bpm": 122, "swing": 0.1, "sevenths": True, "reverb": 0.16, "density": 3},
     "acoustic": {"bpm": 96, "swing": 0.12, "sevenths": False, "reverb": 0.18, "density": 4},
     "kalimba": {"bpm": 110, "swing": 0.18, "sevenths": False, "reverb": 0.26, "density": 5},
+    # calm: only sustained sounds. No plucks, bells or drums; for videos that need quiet company.
+    "calm": {"bpm": 60, "swing": 0, "sevenths": True, "reverb": 0.45, "density": 2},
     "cinematic": {"bpm": 84, "swing": 0, "sevenths": False, "reverb": 0.36, "density": 2},
     "musicbox": {"bpm": 92, "swing": 0.08, "sevenths": False, "reverb": 0.3, "density": 4},
 }
@@ -325,6 +336,12 @@ def compose(name, style, bpm=None, root=57, scale="minor", seconds=20, seed=1, o
                 drums.add(shaker(rng), when(index, step), 0.06 if step % 4 == 2 else 0.03)
             for step in (4, 12):
                 drums.add(rim(), when(index, step), 0.16)
+        elif style == "calm":
+            music.add(pad(tones, bar + 1.2, bright=900, attack=1.4), index * bar, 0.085)
+            music.add(pad([tone + 12 for tone in tones[1:3]], bar + 1.2, bright=1300, attack=1.8), index * bar, 0.03)
+            music.add(sub(low, bar) * np.minimum(1, t(bar) / 0.5), index * bar, 0.2)
+            for step, tone in tune[:2]:
+                music.add(glow(tone, bar * 0.8), when(index, step - step % 8), 0.06)
         elif style == "cinematic":
             music.add(strings(tones, bar + 0.4), index * bar, 0.06)
             music.add(strings([tone + 12 for tone in tones[:2]], bar + 0.4), index * bar, 0.03)

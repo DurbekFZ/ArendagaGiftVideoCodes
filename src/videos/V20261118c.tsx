@@ -255,12 +255,9 @@ const Video: React.FC = () => {
         </div>
       )}
 
-      <Audio src={staticFile(`audio/bed_${ID}.wav`)} volume={(f) => interpolate(f, [0, 15, FRAMES - 40, FRAMES - 1], [0, 0.32, 0.32, 0], clamp)} />
+      <Audio src={staticFile(`audio/bed_${ID}.wav`)} volume={(f) => interpolate(f, [0, 20, FRAMES - 45, FRAMES - 1], [0, 0.3, 0.3, 0], clamp)} />
       {[LIST, PAY, CTA].map((at) => (
-        <Sequence key={at} from={at - 6}><Audio src={staticFile('audio/whoosh.wav')} volume={0.22} /></Sequence>
-      ))}
-      {[...ROWS, CTA + 44].map((at) => (
-        <Sequence key={at} from={at}><Audio src={staticFile('audio/pop.wav')} volume={0.26} /></Sequence>
+        <Sequence key={at} from={at - 6}><Audio src={staticFile('audio/whoosh.wav')} volume={0.14} /></Sequence>
       ))}
     </AbsoluteFill>
   );

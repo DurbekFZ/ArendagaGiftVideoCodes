@@ -121,9 +121,14 @@ must know what this is and that it is cheap", and "numbers and words were eaten"
   more than a few frames, and no placeholder "???" on a cover.
 - Check wide strings at their final size: a number and its unit must not touch
   the next element.
-- Music must be pleasant, never grating. The owner found a synthwave track
-  irritating; prefer the softer styles (lofi, acoustic, kalimba, musicbox,
-  ambient) at a modest volume, and treat synthwave and house as rare exceptions.
+- Music must be calm and pleasant, never grating. The owner rejected a synthwave
+  track ("irritating") and then an acoustic one ("the ting-ting sound spoils it"):
+  plucked, struck and bell-like sounds repeating through a video annoy them. Use
+  the `calm` style (sustained pads only, no plucks, bells or drums) by default, at
+  a low volume, and vary it by key, tempo and seed. Other styles only when a
+  concept truly needs them, and never synthwave, acoustic, kalimba or musicbox
+  without the owner asking. Keep sound effects sparse and soft too: no pops on
+  every element.
 
 ## Ambition
 
@@ -181,10 +186,9 @@ and choose something different on most of those axes:
   last few. The owner asked for this explicitly: never the same backing track, and
   make it beautiful. In the queue entry:
   `"music": {"name": "bed_<id>", "style", "bpm", "root", "scale", "seconds", "seed"}`.
-  `style` is one of `lofi`, `ambient`, `synthwave`, `house`, `acoustic`, `kalimba`,
-  `cinematic` (see `pipeline/music.py`); `root` is a MIDI note (48-62), `scale` is
-  `major` or `minor`, and `seed` changes the progression and the melody. Pick a
-  style none of the last three videos used, and a different key, tempo and seed;
+  `style` is `calm` by default (see "Say what it is at once"); `pipeline/music.py` also has
+  `lofi`, `ambient`, `cinematic`, `house`, `synthwave`, `acoustic`, `kalimba`; `root` is a MIDI note (48-62), `scale` is
+  `major` or `minor`, and `seed` changes the progression and the melody. Change the key, tempo and seed every time so no two tracks match;
   fit the mood to the video (calm, playful, tense, festive). Play it in the video
   with `<Audio src={staticFile('audio/bed_<id>.wav')} />` at a volume that leaves
   room for voice and effects. The stock `bed_*.wav` files are for templates only.
