@@ -254,3 +254,36 @@ seed 37, `bed_V20261117a`. Yangi tovushlar `pipeline/audio.py` da: `ticks.wav` (
 `bowl.wav` (urilgan kosacha); yana glass, whoosh, impact, pop. Ovoz: yo‘q. Matn chapga, x = 70; to‘r x 70–870, y 1205–1525.
 Keyingi video uchun: cinematic, qora-jigarrang/oltin, Chakra Petch va nuqtali to‘r formatini takrorlamang; ovozli yoki och
 fonli tajriba navbati kelmoqda.
+
+## 2026-11-17 — V20261117b "Tashqarida +5°"
+
+**Tahlil (2026-11-17 14:20 UTC o‘lchovi, 7 post).** Yangi yetakchi — "1000 tadan nechtasi?" (V20261117a, ertalab 10:30 da):
+224 ko‘rish, 195 qamrov, o‘tkazib yuborish 52,6%, o‘rtacha tomosha 6,4 s — hamma ko‘rsatkich bo‘yicha eng yaxshisi.
+Keyin "Tablo" (e) 156 ko‘rish, 63,4%, 4,1 s; "Chek" (g) 145, 69,2%, 3,5 s; "Topishmoq" (f) 157, 81,8%, lekin 6,1 s;
+"Mif yoki fakt" (c) 139, 85,3%, 2,2 s; "Makro" (b) 169, 89,9%, 2,0 s — eng yomoni; "Retsept" (d) 4 ko‘rish (tarqatilmagan).
+Ulashish, saqlash va izoh hamon hamma joyda 0, like 2–4; obunachi 1 ta, o‘zgarmagan. Eng yaxshi uchtasi (a, e, g) umumiy:
+ovozsiz, bitta katta gift, birinchi kadrda savol + ko‘z oldida o‘zgarishi kutilayotgan raqam (hisoblagich / tablo / chek).
+Sekin, ovozli, matnsiz ochilish eng yomon. Ertalabki slot bitta nuqta — vaqt haqida hali xulosa yo‘q (ko‘rishlar ham hali o‘syapti).
+
+**G‘oya.** Ob-havo prognozi: sovuqdan yozga (yangi format). 0-kadr: yomg‘irli kulrang ekran, yirik "Tashqarida +5°. Profilingizda-chi?",
+katta Pool Float va "Toshkent · noyabr +5°" ob-havo kartasi. 1,1 s da giftning o‘z animatsiyasidagi shampan probkasi otiladi,
+basseyn suvi pastdan ko‘tarilib ekranni bosadi, termometr +5° → +32° ga yuguradi, bulut quyoshga aylanadi, karta "Profilingizda".
+Keyin "Pool Float · Disco / Profilingizda yoz bo‘lsin", suzib keluvchi ikki qator: "Disco modeli 2%", "Beanie belgisi 0,5%".
+Yakun: "3–30 kun ijara · kuniga 750 so‘m", @ArendagaGiftBot, "↑ Havola profilda". 19,0 s, ovozsiz.
+Gift: Pool Float #125175 (Disco 2%, Old Gold fon 1,5%, Beanie 0,5%; kuniga 750 so‘m) — yangi. Fon foizi va −7% captionda.
+
+**O‘qish tezligi.** Hook 0-kadrdan 3,4 s (3 so‘z + raqam); "Profilingizda yoz bo‘lsin" + yorliq 3,9 s; qatorlar 1,2 s oraliq bilan,
+ikkinchisi to‘xtagach 3,6 s turadi; narx 6,1 s, bot 4,8 s, havola 3,6 s. Ekranda ≤ 7 so‘z.
+Gift: video 0-kadri giftning 60-kadri (tik, to‘g‘ri qaragan); animatsiya 1x davom etadi (84–90 da siqilish, ~94 da probka),
+179 dan keyin 0-kadr pozasi ushlab turiladi.
+
+**Nimani kuzatish kerak.** 3 soniyada o‘tkazib yuborish 52,6% dan pastmi (birinchi soniyadagi voqea — probka + suv bosishi —
+hisoblagichdan kuchliroqmi); o‘rtacha tomosha 6 s dan oshadimi; yorug‘, to‘yingan fon qorong‘i fonlardan farq qiladimi (tajriba).
+
+**Tanlovlar (takrorlamaslik uchun).** Format: ob-havo / sovuqdan yozga o‘tish (yangi). Ko‘rinish: kulrang-shifer yomg‘ir →
+basseyn (firuza gradient, to‘lqinlanuvchi plitkalar SVG displacement bilan, kaustik nur, ko‘pikli suv chizig‘i); harakat tili —
+suvdan qalqib chiqadigan, tebranuvchi bloklar. Palitra: basseyn firuzasi #17a7be / #7fdde8 / #0a5d78 (giftga analog),
+marjon #ff6a55 (komplementar urg‘u, marker va quyosh), ko‘pik oq #f4fbfb va to‘q-firuza siyoh #07303d; sovuq qism — shifer #2d3742.
+Shrift: Bricolage Grotesque 800/600 (yangi qo‘shildi). Musiqa: `house`, 120 bpm, D-major (root 50), seed 58, `bed_V20261117b`.
+Yangi tovushlar `pipeline/audio.py` da: `rain.wav`, `cork.wav`, `splash.wav`; yana sparkle, bubble, pop. Ovoz: yo‘q.
+Matn chapga, x = 70; qatorlar x 70–870. Keyingi video uchun: house, firuza/marjon, Bricolage va ob-havo formatini takrorlamang.

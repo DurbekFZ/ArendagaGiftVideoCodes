@@ -268,6 +268,41 @@ def bowl():
     save("bowl.wav", (out + strike) * np.minimum(1, x / 0.002))
 
 
+def rain():
+    """Steady cold rain on a window: soft broadband hiss with scattered droplet ticks (about 3.6 s)."""
+    x = t(3.6)
+    hiss = lowpass(rng.standard_normal(len(x)), 3800) * 0.35
+    track = hiss * np.minimum(1, x / 0.08)
+    for at in rng.uniform(0, 3.5, 160):
+        d = t(0.02)
+        place(track, np.sin(2 * np.pi * rng.uniform(2500, 5200) * d) * np.exp(-d * 300), at, rng.uniform(0.08, 0.3))
+    save("rain.wav", track)
+
+
+def cork():
+    """A cork popping out of a bottle: a hollow low thump with a quick upward squeak and a fizz tail (about 1.2 s)."""
+    x = t(1.2)
+    freq = 240 + 520 * np.exp(-x * 60)
+    thump = np.sin(2 * np.pi * np.cumsum(freq) / SR) * np.exp(-x * 28)
+    snap = rng.standard_normal(len(x)) * np.exp(-x * 220) * 0.6
+    fizz = lowpass(rng.standard_normal(len(x)), 9000) * np.exp(-((x - 0.25) ** 2) / 0.08) * 0.22
+    fizz -= lowpass(fizz, 2500)
+    save("cork.wav", thump + snap + fizz)
+
+
+def splash():
+    """Something dropped into a pool: a filtered noise splash with a few bubbling after-drops (about 1.3 s)."""
+    x = t(1.3)
+    noise = rng.standard_normal(len(x))
+    body = lowpass(noise, 1200 + 5000 * np.exp(-x * 6)) * (np.minimum(1, x / 0.012) * np.exp(-x * 4.2))
+    track = body
+    for i, at in enumerate((0.32, 0.45, 0.61, 0.8)):
+        d = t(0.08)
+        f = 600 + 900 * d / 0.08 + i * 140
+        place(track, np.sin(2 * np.pi * np.cumsum(f) / SR) * np.sin(np.pi * d / 0.08), at, 0.18)
+    save("splash.wav", track)
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -288,6 +323,9 @@ def build():
     till()
     ticks()
     bowl()
+    rain()
+    cork()
+    splash()
 
 
 def ensure():
@@ -311,6 +349,10 @@ def ensure():
     if not (OUT / "bowl.wav").exists():
         ticks()
         bowl()
+    if not (OUT / "splash.wav").exists():
+        rain()
+        cork()
+        splash()
 
 
 if __name__ == "__main__":
