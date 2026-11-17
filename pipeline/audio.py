@@ -303,6 +303,42 @@ def splash():
     save("splash.wav", track)
 
 
+def scribble():
+    """A felt pen writing one short word: papery strokes of filtered noise, each a quick swell (about 0.7 s)."""
+    x = t(0.7)
+    noise = rng.standard_normal(len(x))
+    paper = lowpass(noise, 5200) - lowpass(noise, 900)
+    strokes = np.zeros(len(x))
+    at = 0.0
+    while at < 0.62:
+        length = rng.uniform(0.05, 0.11)
+        seg = (x >= at) & (x < at + length)
+        strokes[seg] = np.sin(np.pi * (x[seg] - at) / length) * rng.uniform(0.6, 1.0)
+        at += length + rng.uniform(0.0, 0.025)
+    save("scribble.wav", paper * strokes)
+
+
+def checkmark():
+    """A pen ticking a box: a short down-stroke and a longer up-stroke on paper (about 0.3 s)."""
+    x = t(0.32)
+    noise = rng.standard_normal(len(x))
+    paper = lowpass(noise, 6500) - lowpass(noise, 1400)
+    env = np.exp(-((x - 0.05) ** 2) / 0.0006) * 0.7 + np.exp(-((x - 0.17) ** 2) / 0.0035)
+    save("checkmark.wav", paper * env)
+
+
+def jingle():
+    """Sleigh bells shaken twice: clusters of tiny inharmonic bell pings with a short shimmer (about 1.4 s)."""
+    track = np.zeros(int(SR * 1.4))
+    for shake, gain in ((0.0, 1.0), (0.42, 0.8)):
+        for _ in range(26):
+            d = t(0.5)
+            f = rng.uniform(3800, 8200)
+            ping = (np.sin(2 * np.pi * f * d) + 0.4 * np.sin(2 * np.pi * f * 1.52 * d)) * np.exp(-d * rng.uniform(12, 30))
+            place(track, ping, shake + rng.uniform(0, 0.12), gain * rng.uniform(0.2, 0.6))
+    save("jingle.wav", track)
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -326,6 +362,9 @@ def build():
     rain()
     cork()
     splash()
+    scribble()
+    checkmark()
+    jingle()
 
 
 def ensure():
@@ -353,6 +392,10 @@ def ensure():
         rain()
         cork()
         splash()
+    if not (OUT / "jingle.wav").exists():
+        scribble()
+        checkmark()
+        jingle()
 
 
 if __name__ == "__main__":

@@ -89,6 +89,25 @@ def bell(note, seconds):
     return fade(sum(a * np.sin(2 * np.pi * r * f * x) * np.exp(-x * d) for r, a, d in partials), attack=0.001)
 
 
+def celesta(note, seconds):  # music-box comb: bright struck tine, quick metallic decay
+    x = t(seconds)
+    f = hz(note)
+    out = (np.sin(2 * np.pi * f * x) * np.exp(-x * 3.2) + 0.3 * np.sin(2 * np.pi * 3.0 * f * x) * np.exp(-x * 9)
+           + 0.12 * np.sin(2 * np.pi * 5.93 * f * x) * np.exp(-x * 20))
+    return fade(out, attack=0.0008)
+
+
+def sleigh(rng):  # a shake of tiny jingle bells: clustered inharmonic pings
+    x = t(0.22)
+    out = np.zeros(len(x))
+    for _ in range(7):
+        f = rng.uniform(4200, 7800)
+        start = int(rng.uniform(0, 0.05) * SR)
+        ping = np.sin(2 * np.pi * f * x[: len(x) - start]) * np.exp(-x[: len(x) - start] * 38)
+        out[start:] += ping * rng.uniform(0.4, 1.0)
+    return out / 7
+
+
 def saw(note, seconds, harmonics=14):
     x = t(seconds)
     f = hz(note)
@@ -206,6 +225,7 @@ STYLES = {
     "acoustic": {"bpm": 96, "swing": 0.12, "sevenths": False, "reverb": 0.18, "density": 4},
     "kalimba": {"bpm": 110, "swing": 0.18, "sevenths": False, "reverb": 0.26, "density": 5},
     "cinematic": {"bpm": 84, "swing": 0, "sevenths": False, "reverb": 0.36, "density": 2},
+    "musicbox": {"bpm": 92, "swing": 0.08, "sevenths": False, "reverb": 0.3, "density": 4},
 }
 
 
@@ -315,6 +335,19 @@ def compose(name, style, bpm=None, root=57, scale="minor", seconds=20, seed=1, o
                 music.add(pluck(tones[0] + (12 if step % 4 else 0), sixteenth * 2), when(index, step), 0.08)
             for step, tone in tune:
                 music.add(bell(tone + 12, bar * 0.7), when(index, step), 0.07)
+
+        elif style == "musicbox":  # wind-up music box over pizzicato bass and sleigh bells (winter, festive)
+            for step in range(0, 16, 2):  # broken-chord comb
+                music.add(celesta(tones[(step // 2) % len(tones)] + 12, sixteenth * 6), when(index, step), 0.09)
+            for step, tone in tune:
+                music.add(celesta(tone + 24, sixteenth * 8), when(index, step), 0.16)
+            for step in (0, 8):
+                music.add(pluck(low, sixteenth * 5), when(index, step), 0.3)
+            music.add(pad(tones, bar + 0.5, bright=900, attack=0.6), index * bar, 0.035)
+            for step in (2, 6, 10, 14):
+                drums.add(sleigh(rng), when(index, step), 0.13 if step % 8 == 6 else 0.08)
+            if fill:
+                drums.add(sleigh(rng), when(index, 15), 0.12)
 
     length = int(SR * seconds)
     mix = reverb(music.mix[:length], rng, mix=spec["reverb"]) + drums.mix[:length]

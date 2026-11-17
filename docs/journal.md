@@ -287,3 +287,38 @@ marjon #ff6a55 (komplementar urg‘u, marker va quyosh), ko‘pik oq #f4fbfb va 
 Shrift: Bricolage Grotesque 800/600 (yangi qo‘shildi). Musiqa: `house`, 120 bpm, D-major (root 50), seed 58, `bed_V20261117b`.
 Yangi tovushlar `pipeline/audio.py` da: `rain.wav`, `cork.wav`, `splash.wav`; yana sparkle, bubble, pop. Ovoz: yo‘q.
 Matn chapga, x = 70; qatorlar x 70–870. Keyingi video uchun: house, firuza/marjon, Bricolage va ob-havo formatini takrorlamang.
+
+## 2026-11-17 — V20261117c "Yangi yil ro‘yxati" (egasining qo‘shimcha so‘rovi)
+
+**Tahlil (2026-11-17 o‘lchovi, 7 post o‘lchangan; V20261117b hali o‘lchanmagan).** Yetakchi hamon "1000 tadan nechtasi?"
+(V20261117a): 228 ko‘rish, o‘tkazib yuborish 51,8%, o‘rtacha tomosha 6,4 s. Keyin "Tablo" 156 / 63,4% / 4,1 s, "Chek" 145 /
+69,2% / 3,5 s, "Topishmoq" 157 / 81,8% / 6,1 s, "Mif yoki fakt" 139 / 85,3% / 2,2 s, "Makro" 169 / 89,9% / 2,0 s (eng yomoni),
+"Retsept" 4 ko‘rish (tarqatilmagan). Ulashish, saqlash va izoh hamma postda 0, like 2–4, obunachi 1 ta (o‘zgarmagan).
+Xulosa avvalgidek (ma’lumot kam): ovozsiz, birinchi kadrda savol + bitta katta gift + ko‘z oldida o‘zgaradigan narsa ishlaydi.
+Ko‘rish bor, lekin hech narsa odamni ulashish yoki saqlashga undamayapti — shu video aynan shuni sinaydi.
+
+**G‘oya.** Qo‘lda yozilgan Yangi yil ro‘yxati (checklist, yangi format). 0-kadr: yirik "Yangi yilga tayyormisiz?", katta
+Vice Cream (archa ko‘rinishidagi muzqaymoq) va bo‘sh katakli krem bloknot. 0,6 s dan qatorlar qo‘lda yoziladi va belgilanadi:
+Archa ✓, Mandarin ✓, Sovg‘alar ✓; "Profilingizda archa" bo‘sh qoladi, katak yashil miltillaydi, "Oxirgisi-chi?".
+6,5 s da gift sakraydi, qo‘ng‘iroqchalar jiringlaydi, strelka chiziladi va oxirgi katak belgilanadi ("Vice Cream #405488").
+Keyin "Ro‘yxatni do‘stingizga yuboring" (birinchi marta to‘g‘ridan-to‘g‘ri ulashishga chaqiruv). Yakun: "Kuniga · 3–30 kun",
+"750 so‘m", @ArendagaGiftBot, "↑ Havola profilda". 19,0 s, ovozsiz. Gift: Vice Cream #405488 (Pine Cone 3%, Rosewood fon 1,5%,
+Kudu Totem belgi 0,4%; kuniga 750 so‘m) — yangi; atributlar va −7% captionda.
+
+**O‘qish tezligi.** Hook 0–5,0 s (3 so‘z); qatorlar 1,2 s oraliq bilan yoziladi va 11 s gacha turadi; "Oxirgisi-chi?" 5,5–7,7 s;
+"Ro‘yxatni do‘stingizga yuboring" 8,1–11,5 s (3 so‘z, 3,1 s to‘liq); narx 12,2 s dan (6,8 s), bot 5,5 s, havola 4,2 s.
+Gift o‘z animatsiyasida "portlab" bo‘laklarga ajraladi — shuning uchun butun video davomida 0-kadr pozasi (Freeze) ushlab turiladi.
+
+**Nimani kuzatish kerak.** Ulashish (shares) va saqlash (saved) 0 dan chiqadimi — bu asosiy savol; o‘tkazib yuborish 52% atrofida
+qoladimi (hisoblagich o‘rniga yozilayotgan ro‘yxat ushlaydimi); o‘rtacha tomosha 6 s dan oshadimi (oxirgi katak 6,5 s da).
+Mavsumiy (Yangi yil) mavzu birinchi marta — yaxshi ishlasa, dekabrgacha davom ettirish mumkin.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: qo‘lda yozilgan checklist / ro‘yxat (yangi). Ko‘rinish: qorli rosewood tuni
+(#22100f → #4a2228, gift ortida #7e434c nur), krem spiralli bloknot, chiziqli qog‘oz, qo‘l yozuvi, yozilib boruvchi qatorlar,
+chizilgan belgi, strelka va tagiga chiziq. Palitra: rosewood (giftning o‘z foni) + yalpiz urg‘u #8fe3b4 (komplementar, archa rangi),
+qog‘ozda chuqur yalpiz #1f8a58, neytral qor-krem #fbf1ea va siyoh #2a1418. Shrift: Rubik 800/600 + Caveat 700 (ikkalasi yangi
+qo‘shildi). Musiqa: yangi `musicbox` uslubi (`pipeline/music.py`: celesta tishchalari, pizzicato bas, chana qo‘ng‘iroqchalari),
+92 bpm, A-major (root 57), seed 71, `bed_V20261117c`. Yangi tovushlar `pipeline/audio.py` da: `scribble.wav` (flomaster),
+`checkmark.wav` (belgi), `jingle.wav` (chana qo‘ng‘iroqchalari); yana glass, whoosh, chime, pop. Ovoz: yo‘q (ovozli tajriba hali
+navbatda; ovozsizlar yaxshiroq). Matn chapga, x = 70; bloknot x 70–870, y 1052–1560 (matn ≤ 1530).
+Keyingi video uchun: musicbox, rosewood/yalpiz, Caveat/Rubik va ro‘yxat formatini takrorlamang.
