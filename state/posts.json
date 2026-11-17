@@ -216,5 +216,29 @@
    "differs": "Yangi format (chek/hisob), yangi dunyo (qarag‘ay-yashil fon, oq termal qog‘oz, bitta qizil urg‘u, printer), yangi shriftlar (Space Grotesk + Space Mono), lofi musiqa (Eb-major, 80 bpm), yangi tovushlar printer/tear/till, yangi gift Candy Cane, ovozsiz"
   },
   "measured_at": "2026-11-17T05:06:39+00:00"
+ },
+ {
+  "name": "20261117-1030-V20261117a",
+  "published_at": "2026-11-17T05:32:18+00:00",
+  "style": "custom",
+  "hook": "V20261117a",
+  "gifts": [
+   "chillflame-164026"
+  ],
+  "slot_hour": 10,
+  "seconds": 18.67,
+  "media_id": "18182181004433667",
+  "permalink": "https://www.instagram.com/reel/Df1L6ACCntW/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261117a",
+  "concept": {
+   "title": "1000 tadan nechtasi?",
+   "hook": "Birinchi kadrda yirik \"1000 ta Chill Flame’dan nechtasi shunday?\", katta shamdon va 1000 ta yonib turgan nuqta; hisoblagich 1000 dan pastga yugura boshlaydi",
+   "format": "Infografika / nuqtali to‘r: 1000 nuqta o‘chib, 30 tasi qoladi (model 3%), qayta yonib, 4 tasi qoladi (belgi 0,4%); keyin narx va bot",
+   "why": "Eng yaxshi ikki post (Tablo 63% o‘tkazib yuborish, 4,0 s; Chek 68,5%, 3,4 s) birinchi kadrda savol + ochilishi kutilayotgan aylanayotgan raqamga ega edi. Shu mexanikani saqlab, foizni ko‘z bilan ko‘rinadigan son (1000 dan 4 ta) ga aylantiramiz.",
+   "differs": "Yangi format (nuqtali infografika), yangi dunyo (sham yoritgan qora-jigarrang xona, uchqunlar), yangi shrift Chakra Petch, cinematic musiqa (G-minor, 86 bpm), yangi tovushlar ticks/bowl, yangi gift Chill Flame, birinchi ertalabki post"
+  }
  }
 ]
