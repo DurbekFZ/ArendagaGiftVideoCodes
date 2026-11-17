@@ -125,6 +125,30 @@ must know what this is and that it is cheap", and "numbers and words were eaten"
   irritating; prefer the softer styles (lofi, acoustic, kalimba, musicbox,
   ambient) at a modest volume, and treat synthwave and house as rare exceptions.
 
+## Ambition
+
+The owner's verdict on a correct but plain video: "it looks as if someone with
+limited abilities made it; you are using one percent of what you can do; I am
+letting you work freely and you move like a bird in a cage." Clear and legible is
+the floor, not the goal. Every video should look like motion design someone would
+stop for:
+
+- Use the real thing. For a product with an official mark, find it and reproduce
+  it faithfully (the Telegram Stars icon is traced in `src/three/starShape.ts`);
+  never substitute a generic shape.
+- Use depth and light. `src/three/Stars3D.tsx` renders real 3D (WebGL) through
+  `@remotion/three`: a bevelled gold solid, image-based lighting, a swarm with
+  parallax. Build new 3D scenes the same way when a concept calls for it, and set
+  `"gl": "swangle"` in the queue entry (3D needs it; such a video renders in about
+  nine minutes instead of two).
+- Layer the frame: a living background (moving colour fields, dust, rays), a hero
+  with weight and shadow, glass or card surfaces, stickers, one accent colour that
+  pops against the palette. Empty flat areas read as unfinished.
+- Research before designing: look at how the brand itself presents the product
+  and at current motion-design practice, then make something of that calibre.
+- Still obey the rules above: the offer is readable on frame one, nothing covers
+  text, and the safe area is respected. Keep decoration out of the text column.
+
 ## Reading pace
 
 The owner's feedback on the third video: it moved too fast to read. A viewer

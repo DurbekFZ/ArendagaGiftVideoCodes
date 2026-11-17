@@ -14,7 +14,7 @@ from . import config, render
 def main(video_id: str) -> None:
     item = json.loads((config.QUEUE / f"{video_id}.json").read_text())
     plan = {"style": "custom", "slugs": item["slugs"], "props": {}, "composition": video_id,
-            "cover_composition": f"{video_id}Cover", "cover": {}, "voice": item.get("voice"), "music": item.get("music")}
+            "cover_composition": f"{video_id}Cover", "cover": {}, "voice": item.get("voice"), "music": item.get("music"), "gl": item.get("gl")}
     result = render.render(plan, video_id)
     sheet = config.OUT / f"{video_id}-sheet.jpg"
     columns = max(1, min(12, round(result["seconds"] / 0.6)))

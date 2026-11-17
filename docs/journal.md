@@ -379,3 +379,14 @@ Keyingi gift videosi uchun: synthwave, indigo/oltin, aylanuvchi tablo ochilishin
 Birinchi kadrda va muqovada: "Telegram Stars", katta oltin yulduz, "ARZON NARXDA · 1 Stars = 195 so‘m", @StarsXonaBot. Keyin narxlar
 ro‘yxati (100 / 500 / 1 000), to‘lov usuli, bot nomi. Jumboq yo‘q, aylanuvchi raqam yo‘q. 17,3 soniya, ovozsiz.
 **Tanlovlar.** Tungi ko‘k + oltin; Unbounded + Manrope; musiqa: lofi, 74 bpm, fa-major, past ovozda. Egasi ko‘rguncha `hold`.
+
+**Egasining fikri (V20261118b).** "Juda oddiy, odamni jalb qilmaydi; imkoniyatingning 1 foizini ishlatyapsan; haqiqiy Telegram
+Stars belgisini qo‘y." Video joylanmadi va olib tashlandi. `CLAUDE.md` ga "Ambition" bo‘limi qo‘shildi.
+
+## 2026-11-18 — V20261118c "Telegram Stars 3D" (Stars reklamasining uchinchi versiyasi)
+
+Haqiqiy Telegram Stars belgisi (qanotsimon kesimli yulduz) rasmiy tasvirdan ko‘chirildi va haqiqiy 3D model qilindi: yaltiroq
+oltin, yorug‘lik va soya bilan aylanadi, atrofida mayda yulduzlar oqimi. Birinchi kadrda: "TELEGRAM STARS", yulduz, "ARZON!" yorlig‘i,
+"1 ⭐ = 195 so‘m". Keyin narxlar (100 / 500 / 1 000), to‘lov usuli, @StarsXonaBot. 18 soniya, ovozsiz.
+**Tanlovlar.** Binafsha-pushti koinot foni + oltin + pushti urg‘u; Unbounded + Manrope; musiqa: acoustic, 100 bpm, sol-major;
+3D uchun `"gl": "swangle"` (render ~9 daqiqa). Egasi ko‘rguncha `hold`.

@@ -43,8 +43,10 @@ def render(plan: dict, name: str) -> dict:
     cover_props.write_text(json.dumps(plan["cover"], ensure_ascii=False))
     # Gift assets and voice lines are served from the bundle's public folder, so bundle after preparing them.
     run("npx", "remotion", "bundle", "src/index.ts", "--out-dir=build", "--log=error")
+    # Videos with real 3D (WebGL) need the software GL renderer; everything else is faster on the default.
+    gl = [f"--gl={plan['gl']}"] if plan.get("gl") else []
     run("npx", "remotion", "render", "build", plan["composition"], str(video),
-        f"--props={video_props}", "--crf=14", "--log=error")
+        f"--props={video_props}", "--crf=14", "--log=error", *gl)
     run("npx", "remotion", "still", "build", plan.get("cover_composition", "Cover"), str(cover), f"--props={cover_props}",
-        "--image-format=jpeg", "--jpeg-quality=96", "--log=error")
+        "--image-format=jpeg", "--jpeg-quality=96", "--log=error", *gl)
     return {"video": str(video), "cover_file": str(cover), "seconds": round(seconds(video), 2)}
