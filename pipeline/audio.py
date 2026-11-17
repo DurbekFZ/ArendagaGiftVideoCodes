@@ -339,6 +339,29 @@ def jingle():
     save("jingle.wav", track)
 
 
+def keys():
+    """Typing into a search field: thirteen soft plastic key taps at a human, uneven pace (about 1.1 s)."""
+    track = np.zeros(int(SR * 1.15))
+    at = 0.0
+    for _ in range(13):
+        d = t(0.05)
+        noise = rng.standard_normal(len(d))
+        click = (lowpass(noise, 4200) - lowpass(noise, 700)) * np.exp(-d * 120)
+        thock = np.sin(2 * np.pi * rng.uniform(260, 340) * d) * np.exp(-d * 90) * 0.5
+        place(track, click + thock, at, rng.uniform(0.5, 0.9))
+        at += rng.uniform(0.06, 0.1)
+    save("keys.wav", track)
+
+
+def coin():
+    """A gold coin set down on glass: a bright ring with two beating partials and a soft low tap (about 1.2 s)."""
+    x = t(1.2)
+    ring = sum(gain * np.sin(2 * np.pi * f * x) * np.exp(-x * decay)
+               for f, gain, decay in ((2093, 0.5, 4.5), (2113, 0.4, 4.8), (3520, 0.25, 7), (5270, 0.12, 11)))
+    tap = np.sin(2 * np.pi * 180 * x) * np.exp(-x * 40) * 0.5
+    save("coin.wav", (ring + tap) * np.minimum(1, x / 0.001))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -365,6 +388,8 @@ def build():
     scribble()
     checkmark()
     jingle()
+    keys()
+    coin()
 
 
 def ensure():
@@ -396,6 +421,9 @@ def ensure():
         scribble()
         checkmark()
         jingle()
+    if not (OUT / "coin.wav").exists():
+        keys()
+        coin()
 
 
 if __name__ == "__main__":

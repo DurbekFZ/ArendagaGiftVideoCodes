@@ -335,3 +335,37 @@ Doimiy emas, hozircha bitta. Egasi bergan faktlar (faqat shularni ishlatish mumk
 Bu videoda gift yo‘q, shuning uchun `"slugs": []`. Profil havolasi ArendagaGift botiga olib boradi, shuning uchun bu videoda
 "Havola profilda" deyilmaydi: tomoshabin Telegram’da @StarsXonaBot ni qidirishi aytiladi. Materiallar: `public/stars/logo-gold.png`
 (StarsXona logotipi) va `public/stars/telegram-stars.png` (kichik, 388×220 — yulduzni SVG bilan chizgan ma’qul).
+
+## 2026-11-18 — V20261118a "1 000 Stars necha so‘m?" (@StarsXonaBot sinov reklamasi)
+
+**Tahlil (2026-11-17 19:58 UTC o‘lchovi).** Yetakchi hamon "1000 tadan nechtasi?" (V20261117a): 246 ko‘rish, o‘tkazib yuborish
+51,9%, o‘rtacha tomosha 6,4 s. "Tablo" (e) 63,6% / 4,1 s, "Chek" (g) 69,1% / 3,5 s, "Ob-havo" (V20261117b) 150 ko‘rish,
+70,8%, 3,3 s — yorug‘ firuza fon va voqea bilan ochilish hisoblagichdan kuchsizroq chiqdi. "Makro" (b) 89,3% / 2,1 s eng yomoni.
+"Ro‘yxat" (V20261117c) hali o‘lchanmagan. Ulashish, saqlash, izoh hamon 0; obunachi 1 ta. Ma’lumot kam, lekin yo‘nalish barqaror:
+qorong‘i fon, ovozsiz, 0-kadrda yirik savol + ko‘z oldida ochiladigan raqam eng yaxshi ushlaydi. Shu formula bu reklamada ishlatildi.
+
+**G‘oya.** Savol-javob hisob reklamasi (gift yo‘q, `"slugs": []`). 0-kadr: yirik "1 000 Stars / necha so‘m?", katta SVG oltin yulduz
+(orbita halqasi bilan, logotipga ishora) va oynali tablo — raqamlar 0-kadrdan aylanmoqda, 1,5–2,5 s da birma-bir to‘xtab
+"195 000 so‘m" ni ochadi (tanga jiringlaydi, yulduzchalar sachraydi). 5,3 s: yulduz tepaga chiqib "1" muhri bosiladi —
+"Narxi oddiy: 1 Stars = 195 so‘m". 10 s: yulduz bank kartasining emblemasiga aylanadi — "To‘lov · O‘zbekiston bank kartasi bilan"
+(karta umumiy, hech qanday tizim/bank belgisi yo‘q). 14,3 s: StarsXona logotipi nur bilan, "Telegram’da qidiring:" va qidiruv
+maydoniga "@StarsXonaBot" yoziladi, ostida "1 Stars — 195 so‘m". 19,7 s, ovozsiz. Faqat egasi bergan faktlar: 195 so‘m, O‘zbekiston
+bank kartasi, @StarsXonaBot; hisob 1 000 × 195 = 195 000 (captionda 100 → 19 500, 500 → 97 500). "Havola profilda" va
+@ArendagaGiftBot ishlatilmadi.
+
+**O‘qish tezligi.** Hook 0–4,4 s (4 so‘z, 2,8 s kerak); javob 2,5–5,3 s; "Narxi oddiy…" (6 so‘z) ~6,2–10 s (3,8 s);
+"To‘lov…" (5 so‘z) ~10,7–14,3 s (3,6 s); qidiruv maydoni 16 s da to‘ladi va 3,6 s turadi; "1 Stars — 195 so‘m" 16,5 s dan 3,2 s.
+Ekranda ≤ 7 so‘z; bir soniyada ikki yangi blok yo‘q.
+
+**Nimani kuzatish kerak.** Bu boshqa mahsulot, shuning uchun ko‘rishlar gift videolari bilan to‘g‘ridan-to‘g‘ri solishtirilmaydi.
+O‘tkazib yuborish 52% atrofidami (aylanuvchi tablo gifsiz ham ushlaydimi); izoh yoki ulashish paydo bo‘ladimi; egasi botda
+yangi foydalanuvchilarni ko‘radimi (Instagram buni o‘lchamaydi — egasidan so‘rash kerak).
+
+**Tanlovlar (takrorlamaslik uchun).** Format: reklama / savol → raqam → qoida → to‘lov → Telegram qidiruvi (yangi). Ko‘rinish:
+tungi indigo osmon (#060920 → #121848, #283078 nur), miltillovchi yulduzlar, ko‘tariluvchi oltin chang, qirrali SVG oltin yulduz
+va orbita halqasi, oynali raqamli tablo, bank kartasi, oq qidiruv maydoni. Palitra: Stars oltini #ffc23a (urg‘u) + #ffe48a /
+#d9820f (logotipdan), fon — oltinning komplementi indigo, neytral — fil suyagi #fff5df; qo‘shimcha rang yo‘q. Shrift: Unbounded
+900/700 (raqamlar, sarlavha) + Manrope 800. Musiqa: `synthwave`, 100 bpm, F-minor (root 53), seed 95, `bed_V20261118a`.
+Yangi tovushlar `pipeline/audio.py` da: `keys.wav` (qidiruvga yozish), `coin.wav` (oynaga qo‘yilgan oltin tanga); yana riser,
+glass (raqamlar to‘xtashi), sparkle, whoosh, impact, chime. Ovoz: yo‘q. Pastki yarimdagi matn x 70–870, chapga tekislangan.
+Keyingi gift videosi uchun: synthwave, indigo/oltin, aylanuvchi tablo ochilishini darhol takrorlamang.
