@@ -252,5 +252,29 @@
    "differs": "Yangi format (nuqtali infografika), yangi dunyo (sham yoritgan qora-jigarrang xona, uchqunlar), yangi shrift Chakra Petch, cinematic musiqa (G-minor, 86 bpm), yangi tovushlar ticks/bowl, yangi gift Chill Flame, birinchi ertalabki post"
   },
   "measured_at": "2026-11-17T14:37:26+00:00"
+ },
+ {
+  "name": "20261117-1939-V20261117b",
+  "published_at": "2026-11-17T14:42:28+00:00",
+  "style": "custom",
+  "hook": "V20261117b",
+  "gifts": [
+   "poolfloat-125175"
+  ],
+  "slot_hour": 19,
+  "seconds": 19.01,
+  "media_id": "18120094918805883",
+  "permalink": "https://www.instagram.com/reel/Df2K3lNga2z/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261117b",
+  "concept": {
+   "title": "Tashqarida +5°",
+   "hook": "Birinchi kadrda yomg‘irli kulrang ekran, yirik \"Tashqarida +5°. Profilingizda-chi?\" va katta Pool Float; 1,1 soniyada giftning shampani otiladi, basseyn suvi pastdan ko‘tarilib ekranni bosadi va termometr +5° dan +32° gacha yuguradi",
+   "format": "Ob-havo prognozi / sovuqdan yozga o‘tish (yangi): tashqi ob-havo va profil ob-havosi qarama-qarshi qo‘yiladi, keyin noyoblik qatorlari va narx",
+   "why": "Eng yaxshi postlar (1000 nuqta: 52,6% o‘tkazib yuborish, 6,4 s; Tablo: 63%, 4,1 s) birinchi kadrda savol + o‘zgarishi kutilayotgan raqamga ega. Shu mexanikani saqlab, uni birinchi ikki soniyadagi voqea (probka otilishi, suv bosishi) bilan kuchaytiramiz. Tajriba: birinchi marta yorug‘, to‘yingan suv rangidagi fon.",
+   "differs": "Yangi format (ob-havo / sovuqdan yozga), yangi dunyo (yomg‘ir → basseyn, suv to‘lqini, plitkalar), yangi shrift Bricolage Grotesque, house musiqa (D-major, 120 bpm), yangi tovushlar rain/cork/splash, yangi gift Pool Float"
+  }
  }
 ]
