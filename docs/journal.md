@@ -218,3 +218,39 @@ Shrift: Space Grotesk 700 + Space Mono (ikkalasi yangi qo‘shildi). Musiqa: `lo
 `bed_V20261116g`. Yangi tovushlar `pipeline/audio.py` da: `printer.wav` (termal printer), `tear.wav` (qog‘oz yirtilishi),
 `till.wav` (kassa qo‘ng‘irog‘i). Ovoz: yo‘q. Gift: Candy Cane (yangi). Matn chek ichida, x 110–830 (markaz x = 470).
 Keyingi video uchun: lofi, yashil-qizil, mono shrift va chek formatini takrorlamang.
+
+## 2026-11-17 — V20261117a "1000 tadan nechtasi?"
+
+**Tahlil (2026-11-17 05:06 UTC o‘lchovi, 6 post).** O‘tkazib yuborish (dastlabki 3 s) va o‘rtacha tomosha bo‘yicha:
+"Tablo" (e) 153 ko‘rish, 63,3%, 4,0 s — eng yaxshisi; "Chek" (g) 140, 68,5%, 3,4 s; "Topishmoq" (f) 153, 81,6%, lekin
+o‘rtacha tomosha 6,0 s (qolganlar oxirigacha qiziqib ko‘rgan); "Mif yoki fakt" (c) 139, 85,3%, 2,2 s; "Makro" (b) 167, 90,4%,
+2,0 s — eng yomoni. "Retsept" (d) atigi 4 ko‘rish oldi (tarqatilmagan, hisobga olinmaydi). Ulashish, saqlash va izoh hamma joyda
+hali ham 0, like 1–4; obunachi 1 ta, o‘zgarmagan. Hammasi bir kecha (17–22 soatlar) joylangan, shuning uchun vaqt bo‘yicha
+xulosa yo‘q. Ma’lumot kam, lekin yo‘nalish barqaror: eng yaxshi ikkitasi (e, g) — ovozsiz, qorong‘i fon, bitta katta gift va
+birinchi kadrda savol + aylanayotgan, hali ochilmagan raqam. Eng yomoni — sekin, ovozli, matnsiz ochilish (b).
+Ovozli videolar ikkalasi ham kuchsiz, lekin bu ikki nuqta xolos.
+
+**G‘oya.** Infografika / nuqtali to‘r (yangi format). 0-kadr: "1000 ta Chill Flame’dan nechtasi shunday?", katta shamdon va
+1000 ta yonib turgan oltin nuqta; hisoblagich 0,5 s da 1000 dan pastga yuguradi va nuqtalar o‘chadi — 30 qoladi
+("Candelabra modeli · 3% — 30 tasi"). Keyin "Belgisi-chi?": nuqtalar to‘lqin bilan qayta yonadi va 4 tasi qoladi
+("Pawn belgisi · 0,4% — atigi 4 tasi"), kosacha qo‘ng‘irog‘i. Yakun: "Ijarasi kuniga 750 so‘m", @ArendagaGiftBot, "↑ Havola profilda".
+18,7 s, ovozsiz. Gift: Chill Flame #164026 (Candelabra 3%, Sapphire fon 1,2%, Pawn belgi 0,4%; kuniga 750 so‘m) — yangi.
+Har bir bosqich alohida atribut (1000 tadan 30 tasi modelga, 4 tasi belgiga ega), bir-biriga ko‘paytirilmaydi; shuning uchun
+nuqtalar har safar qayta yonadi. Fon foizi va "3–30 kun, 30 kunga −7%" captionda.
+
+**O‘qish tezligi.** Hook 0-kadrdan 3,7 s (6 so‘z, 3,6 s kerak); "30 tasi" bloki 3,2 s to‘liq (5 so‘z); "Belgisi-chi?" 1,7 s;
+"atigi 4 tasi" 3,6 s (6 so‘z); narx 5,7 s, bot 4,3 s, havola 3,1 s. Bloklar orasida kamida 1,2 s; ekranda ≤ 8 so‘z/raqam.
+Shamdon o‘z animatsiyasida qiyshayib, shamlari o‘chadi — shuning uchun 0-kadr pozasi (tik, shamlar yonib turgan) ushlab turiladi.
+
+**Nimani kuzatish kerak.** 3 soniyada o‘tkazib yuborish 63% dan pastmi (hisoblagich + 1000 nuqta Tablo darajasida ushlaydimi);
+o‘rtacha tomosha 4 s dan oshadimi (birinchi javob 3,1 s da); saqlash paydo bo‘ladimi. Bu birinchi ertalabki post (Toshkent ~10:40) —
+joylash vaqtini kechki postlar bilan solishtiring.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: nuqtali infografika / "1000 tadan N tasi" (yangi). Ko‘rinish: sham yoritgan
+qora-jigarrang xona (#100b07 → #24180e), shamdon ortida iliq nur, yuqoriga ko‘tarilayotgan uchqunlar, 50×20 nuqtali to‘r.
+Palitra: sham oltini #ffc95e (urg‘u), pergament #f6ead2 (matn), qo‘shimcha rang — shamdonning firuza-yashili #43c9a8 (faqat kichik
+yorliqlar). Shrift: Chakra Petch 700 (yangi qo‘shildi) + Manrope (yorliqlar). Musiqa: `cinematic`, 86 bpm, G-minor (root 55),
+seed 37, `bed_V20261117a`. Yangi tovushlar `pipeline/audio.py` da: `ticks.wav` (sekinlashuvchi hisoblagich chiqillashi),
+`bowl.wav` (urilgan kosacha); yana glass, whoosh, impact, pop. Ovoz: yo‘q. Matn chapga, x = 70; to‘r x 70–870, y 1205–1525.
+Keyingi video uchun: cinematic, qora-jigarrang/oltin, Chakra Petch va nuqtali to‘r formatini takrorlamang; ovozli yoki och
+fonli tajriba navbati kelmoqda.

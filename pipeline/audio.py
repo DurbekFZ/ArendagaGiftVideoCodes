@@ -245,6 +245,29 @@ def till():
     save("till.wav", out * np.minimum(1, x / 0.0015))
 
 
+def ticks():
+    """A counter running down: soft wooden ticks that start fast and slow to a stop (about 2.6 s)."""
+    track = np.zeros(int(SR * 2.7))
+    at, gap = 0.0, 0.028
+    while at < 2.45:
+        x = t(0.03)
+        body = np.sin(2 * np.pi * 1750 * x) * 0.6 + np.sin(2 * np.pi * 2900 * x) * 0.25
+        place(track, (body + rng.standard_normal(len(x)) * 0.25) * np.exp(-x * 260), at, 0.45 + 0.4 * (at / 2.45))
+        at += gap
+        gap *= 1.075
+    save("ticks.wav", track)
+
+
+def bowl():
+    """A struck singing bowl: a warm low tone with slowly beating partials (for a rare reveal, about 3 s)."""
+    x = t(3.2)
+    base = hz(55)
+    out = sum(a * np.sin(2 * np.pi * base * r * x + 0.4 * np.sin(2 * np.pi * beat * x)) * np.exp(-x * d)
+              for r, a, d, beat in ((1.0, 1.0, 1.1, 1.3), (2.71, 0.55, 1.8, 2.1), (5.15, 0.25, 3.2, 3.4), (8.2, 0.1, 5.0, 0.7)))
+    strike = rng.standard_normal(len(x)) * np.exp(-x * 90) * 0.15
+    save("bowl.wav", (out + strike) * np.minimum(1, x / 0.002))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -263,6 +286,8 @@ def build():
     printer()
     tear()
     till()
+    ticks()
+    bowl()
 
 
 def ensure():
@@ -283,6 +308,9 @@ def ensure():
         printer()
         tear()
         till()
+    if not (OUT / "bowl.wav").exists():
+        ticks()
+        bowl()
 
 
 if __name__ == "__main__":
