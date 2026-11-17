@@ -369,3 +369,13 @@ va orbita halqasi, oynali raqamli tablo, bank kartasi, oq qidiruv maydoni. Palit
 Yangi tovushlar `pipeline/audio.py` da: `keys.wav` (qidiruvga yozish), `coin.wav` (oynaga qo‘yilgan oltin tanga); yana riser,
 glass (raqamlar to‘xtashi), sparkle, whoosh, impact, chime. Ovoz: yo‘q. Pastki yarimdagi matn x 70–870, chapga tekislangan.
 Keyingi gift videosi uchun: synthwave, indigo/oltin, aylanuvchi tablo ochilishini darhol takrorlamang.
+
+**Egasining fikri (V20261118a, Stars reklamasi).** Yoqmadi: Telegram Stars ekani bilinmaydi; dizayn yoqmadi; raqam va so‘zlar
+"yeyilib" qolgan (aylanayotgan raqamlar, muqovada "??? ???"); musiqa (synthwave) g‘ashga tegdi. U allaqachon joylanib ketgan edi
+(sessiya `hold` qo‘ymagan). Qoidalar `CLAUDE.md` ga qo‘shildi ("Say what it is at once").
+
+## 2026-11-18 — V20261118b "Telegram Stars — 195 so‘m" (qayta ishlangan Stars reklamasi)
+
+Birinchi kadrda va muqovada: "Telegram Stars", katta oltin yulduz, "ARZON NARXDA · 1 Stars = 195 so‘m", @StarsXonaBot. Keyin narxlar
+ro‘yxati (100 / 500 / 1 000), to‘lov usuli, bot nomi. Jumboq yo‘q, aylanuvchi raqam yo‘q. 17,3 soniya, ovozsiz.
+**Tanlovlar.** Tungi ko‘k + oltin; Unbounded + Manrope; musiqa: lofi, 74 bpm, fa-major, past ovozda. Egasi ko‘rguncha `hold`.

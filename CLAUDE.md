@@ -108,6 +108,23 @@ large, clear text held more of them than the one with a slow, pretty entrance.
 - Length stays 13 to 20 seconds. The owner rejected cutting videos to 8-12 seconds
   as too short; fix the opening instead of shortening the video.
 
+## Say what it is at once
+
+The owner rejected a video that teased ("1 000 Stars necha so‘m?" with digits
+rolling, a cover reading "??? ???"): "from the cover and the first second a person
+must know what this is and that it is cheap", and "numbers and words were eaten".
+
+- The cover and frame one name the product and the offer in plain words (what it
+  is, what it costs). A question hook is fine only next to that, never instead.
+- Text is either fully legible or not on screen. No rolling, scrambling,
+  slot-machine digits, partial masks or wipes that leave half a word visible for
+  more than a few frames, and no placeholder "???" on a cover.
+- Check wide strings at their final size: a number and its unit must not touch
+  the next element.
+- Music must be pleasant, never grating. The owner found a synthwave track
+  irritating; prefer the softer styles (lofi, acoustic, kalimba, musicbox,
+  ambient) at a modest volume, and treat synthwave and house as rare exceptions.
+
 ## Reading pace
 
 The owner's feedback on the third video: it moved too fast to read. A viewer
