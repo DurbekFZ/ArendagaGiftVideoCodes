@@ -132,6 +132,15 @@ must know what this is and that it is cheap", and "numbers and words were eaten"
 
 ## Ambition
 
+**Scope: this section was written for the Telegram Stars advertisement.** For the
+regular gift-rental videos the owner said afterwards: "do not make Arendaga Gift
+as complicated as the Stars one; I liked the style we have been making all
+along." So gift videos keep the established look of the posts from 16-17
+November (bold 2D motion design built around the gift's own animation, clear
+type, one strong idea): no 3D scenes, no dense layered effects. What follows
+applies to gift videos only as "do not be dull", and in full only when the owner
+asks for something special or for another product.
+
 The owner's verdict on a correct but plain video: "it looks as if someone with
 limited abilities made it; you are using one percent of what you can do; I am
 letting you work freely and you move like a bird in a cage." Clear and legible is

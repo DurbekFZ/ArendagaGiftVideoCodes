@@ -394,3 +394,7 @@ oltin, yorug‘lik va soya bilan aylanadi, atrofida mayda yulduzlar oqimi. Birin
 **Egasining fikri (V20261118c musiqasi).** "Orqa fondagi musiqa sokin emas, ting-ting ovozi buzyapti." Akustik gitara olib tashlandi.
 Yangi `calm` uslubi qo‘shildi (faqat cho‘zilgan yumshoq akkordlar; chertma, qo‘ng‘iroq va baraban yo‘q) va standart qilindi.
 Kartalar chiqqandagi "pop" tovushlari ham olib tashlandi. V20261118c endi: calm, 60 bpm, fa-major, urug‘ 5, past ovozda.
+
+**Egasining qarori (2026-11-18).** Arendaga Gift videolari Stars reklamasidek murakkab bo‘lmasin: "oldingi, doim qilayotgan
+stilimiz yoqqan". Gift videolari 16–17-noyabrdagi ko‘rinishda davom etadi (2D, giftning o‘z animatsiyasi atrofida), 3D va og‘ir
+effektlarsiz. Sokin musiqa va "birinchi kadrda taklif ochiq aytiladi" qoidalari o‘z kuchida. Stars reklamasi bir martalik edi.
