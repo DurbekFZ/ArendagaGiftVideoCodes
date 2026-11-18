@@ -395,6 +395,25 @@ def stamp():
     pad_ = lowpass(rng.standard_normal(len(x)), 900) * np.exp(-x * 45) * 0.5
     save("stamp.wav", (body + pad_) * np.minimum(1, x / 0.002))
 
+def bite():
+    """A bite into a frozen ice-cream bar: a short, muffled crisp crunch with a soft low body (about 0.22 s)."""
+    x = t(0.22)
+    noise = rng.standard_normal(len(x))
+    grit = (lowpass(noise, 3800) - lowpass(noise, 900)) * (0.6 + 0.4 * (rng.random(len(x)) > 0.55))
+    env = np.minimum(1, x / 0.004) * np.exp(-x * 24)
+    body = np.sin(2 * np.pi * np.cumsum(140 + 60 * np.exp(-x * 50)) / SR) * np.exp(-x * 30) * 0.35
+    save("bite.wav", grit * env * 0.7 + body)
+
+
+def frost():
+    """Frost spreading over glass: an airy, high, filtered-noise swell that settles (no bells, about 1.2 s)."""
+    x = t(1.2)
+    noise = rng.standard_normal(len(x))
+    sweep = 2500 + 4500 * np.clip(x / 0.6, 0, 1)
+    air = lowpass(noise, sweep) - lowpass(noise, 1800)
+    env = np.sin(np.pi * np.clip(x / 1.2, 0, 1)) ** 2
+    save("frost.wav", air * env * 0.6)
+
 
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
@@ -427,6 +446,8 @@ def build():
     pageturn()
     hatch()
     stamp()
+    bite()
+    frost()
 
 
 def ensure():
@@ -466,6 +487,9 @@ def ensure():
     if not (OUT / "hatch.wav").exists():
         hatch()
         stamp()
+    if not (OUT / "frost.wav").exists():
+        bite()
+        frost()
 
 
 if __name__ == "__main__":

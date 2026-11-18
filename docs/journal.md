@@ -473,3 +473,41 @@ Stencil Display 900 (yangi qo‘shildi) + Manrope 800. Musiqa: `calm`, 70 bpm, D
 ovozda. Yangi tovushlar `pipeline/audio.py` da: `hatch.wav` (bunker lyuki: past zarb va havo shivirlashi, 1 marta), `stamp.wav`
 (yumshoq muhr, 3 marta, past); yana 3 ta juda past whoosh. Ovoz: yo‘q. Matn chapga, x = 70–870, plastinka y 968–1524.
 Keyingi video uchun: trafaret/bunker, zaytun + to‘q sariq, sanoq formati va po‘lat plastinkani takrorlamang.
+
+## 2026-11-18 — V20261118f "Tugamaydigan muzqaymoq"
+
+**Tahlil (2026-11-18 14:19 UTC o‘lchovi; Stars postlari va o‘chirilganlar solishtirilmadi, "1 000 Stars" postida `metrics_error`).**
+Yetakchi aniq — "Yangi yil ro‘yxati" (V20261117c): 486 ko‘rish, o‘tkazib yuborish 46,9%, o‘rtacha tomosha 6,4 s, yagona saqlash.
+Keyin "1000 tadan nechtasi?" 248 / 51,9% / 6,4 s, "SURGE jurnali" 230 / 55,8% / 6,0 s, "Bunker ochilmoqda" (V20261118e) 170 /
+61,9% / 3,9 s — sanoq kutilgandan kuchsiz: voqea 2,5 s gacha kutdirdi, ochilish oldidan ko‘pchilik ketdi. "Tablo" 63,9% / 4,1 s,
+"Chek" 68,6% / 3,5 s, "Ob-havo" 70,1% / 3,3 s, "Topishmoq" 81,5% / 6,0 s, "Mif yoki fakt" 85,5% / 2,2 s, "Makro" 89,4% / 2,1 s.
+Like 1–6, izoh va ulashish hamon 0, obunachi 1 ta (o‘zgarmagan). Ehtiyotkor xulosa (ma’lumot kam): eng yaxshilari 0-kadrda nom/narx,
+katta gift va darhol sodir bo‘layotgan voqeaga ega; tanish, kundalik mavzu (Yangi yil ro‘yxati) eng ko‘p tarqaldi. Kech tun/ertalabki
+slotlar (00, 05, 10) kechki slotlardan yaxshiroq ko‘rinadi, lekin bitta-ikkita nuqta.
+
+**G‘oya.** Giftning o‘z animatsiyasi — hikoyaning o‘zi. Ice Cream "Cold Steel" (po‘lat-ko‘k muzqaymoq) animatsiyasida uni kimdir yeydi:
+uch tishlam, faqat tayoqcha qoladi, keyin aylanib yana to‘ladi. 0-kadr: quyoshli oltin tekis plakat, "TELEGRAM NFT SOVG‘A",
+yirik "TUGAMAYDIGAN MUZQAYMOQ", siyoh stikerda "kuniga 750 so‘m", krem disk ustida katta gift; birinchi tishlam 0,3 s da.
+2,8 s: "Tugadimi?" stikeri (faqat tayoqcha), 4,9 s: "Yana to‘la!". 7,6 s: taqqoslash — ikki panel: chapda quyosh ostida chizilgan
+oddiy muzqaymoq erib, ko‘lmak va tayoqcha qoladi ("Oddiysi eriydi."), o‘ngda gift turadi ("Bunisi profilingizda 3–30 kun turadi").
+13,7 s: "Ijara · kuniga 750 so‘m", @ArendagaGiftBot, "↑ Havola profilda". 19,0 s, ovozsiz. Gift: Ice Cream #211816 (Cold Steel 3%,
+Old Gold fon 1,5%, Breeze belgi 0,4%; kuniga 750 so‘m) — birinchi marta yolg‘iz. Atributlar va −7% captionda.
+
+**Gift haqida muhim.** Animatsiya 180 kadr: tishlamlar ~16, 46, 78-kadrlarda, 96–112 faqat tayoqcha, 113–145 aylanib to‘ladi
+(o‘rtasida tor ko‘rinadi — faqat harakatda), 0 va ~170 — to‘la, diagonal poza. Video 6 kadr oldinda o‘ynatadi va keyin 0-pozani ushlaydi.
+
+**O‘qish tezligi.** Plakat matni (7 so‘z) 0–7,6 s; "Tugadimi?" ~3,1–4,7 s (1,6 s); "Yana to‘la!" ~5,1–7,6 s (2,5 s);
+"Oddiysi eriydi." ~8,2–13,3 s; "Bunisi profilingizda 3–30 kun turadi" ~9,7–13,3 s (3,6 s); narx 13,9 s dan (5 s), bot va havola
+14,9 s dan (4,1 s). Bir soniyada ikki yangi blok yo‘q; ekranda ≤ 8 so‘z.
+
+**Nimani kuzatish kerak.** Voqea 0,3 s da boshlanishi o‘tkazib yuborishni 47% dan pastga tushiradimi; yorug‘ oltin fon (tajriba —
+oldingi yaxshilar qorong‘i edi) ishlaydimi; o‘rtacha tomosha 6,4 s dan oshadimi ("Yana to‘la!" 5 s da); saqlash/ulashish bo‘ladimi.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: namoyish + taqqoslash (yangi). Ko‘rinish: yorug‘ oltin tekis plakat (#f2c95c → #d7a23c →
+#8a5d18), sekin nur, giftning Breeze naqshi, tushayotgan qor parchalari, qalin siyoh hoshiyali stikerlar va qattiq ofset soyalar,
+krem disk, ikki panel (quyosh / qor belgisi). Palitra: fon — giftning Old Gold foni; urg‘u — muzqaymoqning muz-ko‘ki #a9d3ff / #4f86cf
+(oltinga komplementar); neytral — krem #fff4dc va siyoh #1d1407. Shrift: Lilita One (yangi qo‘shildi; uning ‘ belgisi keng —
+`<Q />` bilan toraytirilgan) + Manrope 800. Musiqa: `calm`, 72 bpm, A♭-major (root 56), seed 47, `bed_V20261118f`, past ovozda.
+Yangi tovushlar `pipeline/audio.py` da: `bite.wav` (muzlagan muzqaymoqni tishlash, 3 marta, past), `frost.wav` (havodor ayoz
+shivirlashi, 1 marta); yana 2 ta juda past whoosh. Ovoz: yo‘q. Matn chapga, x = 70; panellar x 70–870, y 650–1490.
+Keyingi video uchun: oltin plakat, siyoh-hoshiyali stikerlar, Lilita One va taqqoslash panellarini takrorlamang.
