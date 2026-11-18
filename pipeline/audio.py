@@ -375,6 +375,27 @@ def pageturn():
     save("pageturn.wav", air * swell * 0.8 + flap * 0.5)
 
 
+def hatch():
+    """A heavy bunker hatch unlatching: a deep muffled clunk, then a soft sigh of air that fades (about 1.4 s)."""
+    x = t(1.4)
+    freq = 52 + 40 * np.exp(-x * 18)
+    clunk = np.sin(2 * np.pi * np.cumsum(freq) / SR) * np.exp(-x * 7)
+    knock = lowpass(rng.standard_normal(len(x)), 700) * np.exp(-x * 30) * 0.6
+    metal = sum(g * np.sin(2 * np.pi * f * x) for f, g in ((231, 0.12), (377, 0.07), (512, 0.04))) * np.exp(-x * 9)
+    noise = rng.standard_normal(len(x))
+    sigh = (lowpass(noise, 2200) - lowpass(noise, 500)) * np.clip((x - 0.12) / 0.15, 0, 1) * np.exp(-np.clip(x - 0.27, 0, None) * 2.6)
+    save("hatch.wav", (clunk + knock + metal + sigh * 0.35) * np.minimum(1, x / 0.002))
+
+
+def stamp():
+    """A rubber stamp pressed onto a metal tag: a short padded thud with a little body (about 0.25 s)."""
+    x = t(0.25)
+    freq = 90 + 60 * np.exp(-x * 40)
+    body = np.sin(2 * np.pi * np.cumsum(freq) / SR) * np.exp(-x * 22)
+    pad_ = lowpass(rng.standard_normal(len(x)), 900) * np.exp(-x * 45) * 0.5
+    save("stamp.wav", (body + pad_) * np.minimum(1, x / 0.002))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -404,6 +425,8 @@ def build():
     keys()
     coin()
     pageturn()
+    hatch()
+    stamp()
 
 
 def ensure():
@@ -440,6 +463,9 @@ def ensure():
         coin()
     if not (OUT / "pageturn.wav").exists():
         pageturn()
+    if not (OUT / "hatch.wav").exists():
+        hatch()
+        stamp()
 
 
 if __name__ == "__main__":

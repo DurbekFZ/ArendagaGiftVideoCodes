@@ -434,3 +434,42 @@ Musiqa: `calm`, 66 bpm, E-minor (root 52), seed 19, `bed_V20261118d`, past ovozd
 `pageturn.wav` (yumshoq varaq shitirlashi, faqat 3 marta, past ovozda); yana bitta juda past whoosh. Ovoz: yo‘q.
 Matn chapga, x = 100; sahifa x 60–940, matn ≤ 1520. Keyingi video uchun: jurnal formati, Bodoni, navy/kumush/qizil va varaqlashni
 takrorlamang.
+
+## 2026-11-18 — V20261118e "Bunker ochilmoqda"
+
+**Tahlil (2026-11-18 05:18 UTC o‘lchovi; Stars postlari solishtirilmadi, "1 000 Stars" postida `metrics_error`).** Gift videolari
+ichida yangi yetakchi — "Yangi yil ro‘yxati" (V20261117c): 295 ko‘rish, o‘tkazib yuborish 48,5%, o‘rtacha tomosha 5,8 s va birinchi
+**saqlash** (saved = 1). Keyin "1000 tadan nechtasi?" 247 / 51,7% / 6,4 s, "SURGE jurnali" (V20261118d) 218 / 56,3% / 5,8 s —
+narx 0-kadrda turgan jurnal muqovasi ham yaxshi ushladi. "Tablo" 63,6% / 4,1 s, "Chek" 69,1% / 3,5 s, "Ob-havo" 70,7% / 3,3 s,
+"Topishmoq" 82,1% / 6,0 s, "Mif yoki fakt" 85,4% / 2,2 s, "Makro" 89,3% / 2,1 s (eng yomoni). Ulashish va izoh hamon 0, like 0–5,
+obunachi 1 ta (o‘zgarmagan). Kechki/tungi slotlar (19–05 UTC) oxirgi uchta eng yaxshi postga to‘g‘ri keldi, lekin ma’lumot juda kam.
+Umumiy belgi (ehtiyotkor xulosa): qorong‘i fon, ovozsiz, 0-kadrda yirik nom/narx + katta gift + ko‘z oldida sodir bo‘ladigan voqea
+(to‘ldiriladigan ro‘yxat, ochiladigan raqam, varaqlanadigan sahifa). Sekin yoki ovozli ochilish eng yomon.
+
+**G‘oya.** Sanoq → ochilish (yangi format). Whip Cupcake modeli "Wasteland" — po‘lat eshikli kichkina bunker. 0-kadr: zaytun
+po‘lat bunker devori, trafaret harflar "WHIP CUPCAKE", "NFT SOVG‘A · IJARA", yorliq "kuniga 750 so‘m", yopiq eshikli katta gift va
+xavf chiziqli nishonda 3 · 2 · 1. 2,5 s da giftning o‘z animatsiyasida eshik ochiladi (lyuk tovushi, to‘q sariq nur va halqa).
+4,6 s: gift tepaga chiqadi, pastdan po‘lat plastinka ko‘tariladi — "NOYOBLIK": Model 2,5%, Fon 1,2%, Belgi 0,5% (har biri muhr bilan,
+1,4 s oraliqda). 10,4 s: "3–30 KUN · profilingizda turadi". 14,6 s: "kuniga 750 so‘m", @ArendagaGiftBot, "↑ Havola profilda".
+19,0 s, ovozsiz. Gift: Whip Cupcake #40503 (Wasteland 2,5%, Dark Green fon 1,2%, Rook belgi 0,5%; kuniga 750 so‘m) — birinchi marta.
+
+**Gift haqida muhim.** Bu giftning o‘z animatsiyasi taxminan 30-kadrdan keyin (30 fps) bo‘laklarga ajralib, qaymoq va eshik yo‘qolib,
+keyin qayta yig‘iladi. Shuning uchun 0-kadr (yopiq eshik) ushlab turiladi, 75–97-kadrlarda eshik ochiladi va 22-poza (ochiq eshik)
+oxirigacha ushlanadi. Diqqat: pozalarni qisqa (30 kadrli) sinov kompozitsiyasida ko‘rsangiz, `Freeze` kadrlari kompozitsiya uzunligiga
+qisiladi va noto‘g‘ri natija beradi — sinov kompozitsiyasini kamida 200 kadr qiling.
+
+**O‘qish tezligi.** Nom va narx 0–4,6 s; nishon raqamlari har biri 0,83 s (bitta raqam); NOYOBLIK qatorlari 5,1 / 6,5 / 7,9 s da
+chiqadi va 10,4 s gacha turadi (oxirgisi 2,5 s); "3–30 kun profilingizda turadi" ~10,8–14,6 s (4 so‘z, 3,8 s); narx 14,8–19,0 s
+(4,2 s), havola 15,5 s dan (3,5 s). Ekranda ≤ 8 qisqa so‘z.
+
+**Nimani kuzatish kerak.** 3-2-1 sanog‘i o‘tkazib yuborishni 48% dan pastga tushiradimi (voqea 2,5 s da — ro‘yxatdagidan erta);
+o‘rtacha tomosha 6 s dan oshadimi; "Wasteland" qorong‘i zaytun palitrasi yorqin giftlardan kam ko‘rinmaydimi; saqlash yana bo‘ladimi.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: sanoq va ochilish (yangi). Ko‘rinish: bunker — qorong‘i zaytun po‘lat devor (#3c4e31 →
+#18221a → #0c120d) choklar va parchinlar bilan, sekin prozhektor nuri, iliq chang, xavf chiziqlari (tepa va pastki chekka, nishon),
+po‘lat plastinka va qog‘oz yorliq. Palitra: fon — giftning Dark Green foni qoraytirilgan zaytun; urg‘u — qaymoqning to‘q sarig‘i
+#ff8f2e; neytral — suyak rang #f1e8d6; qo‘shimcha — giftning po‘lat kosasi #9db0b6 (faqat parchin va hoshiya). Shrift: Big Shoulders
+Stencil Display 900 (yangi qo‘shildi) + Manrope 800. Musiqa: `calm`, 70 bpm, D-minor (root 50), seed 33, `bed_V20261118e`, past
+ovozda. Yangi tovushlar `pipeline/audio.py` da: `hatch.wav` (bunker lyuki: past zarb va havo shivirlashi, 1 marta), `stamp.wav`
+(yumshoq muhr, 3 marta, past); yana 3 ta juda past whoosh. Ovoz: yo‘q. Matn chapga, x = 70–870, plastinka y 968–1524.
+Keyingi video uchun: trafaret/bunker, zaytun + to‘q sariq, sanoq formati va po‘lat plastinkani takrorlamang.
