@@ -346,7 +346,7 @@
    "why": "Eng yaxshi postlar 0-kadrda savol + ochilishi kutilayotgan raqam bilan ochilgan (1000 tadan nechtasi?, Tablo). Egasi @StarsXonaBot uchun bitta sinov reklamasini so‘radi.",
    "differs": "Gift yo‘q, boshqa mahsulot; tungi indigo osmon va Stars oltini (yangi palitra), SVG oltin yulduz, bank kartasi va Telegram qidiruv maydoni; synthwave musiqa (oxirgi uchtasi musicbox, house, cinematic); CTA profil havolasi emas, Telegram qidiruvi"
   },
-  "metrics_error": "Instagram API 400: Unsupported get request. Object with ID '18446605471176273' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api (code 100, subcode 33)"
+  "deleted": true
  },
  {
   "name": "20261118-0212-V20261118c",

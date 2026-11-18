@@ -20,13 +20,18 @@ def refresh() -> None:
     updated = 0
     for post in posts:
         age = now - datetime.datetime.fromisoformat(post["published_at"])
-        if not SCORE_AFTER <= age <= SCORE_UNTIL:
+        if post.get("deleted") or not SCORE_AFTER <= age <= SCORE_UNTIL:
             continue
         try:
             post["metrics"] = instagram.insights(post["media_id"])
         except instagram.ApiError as error:  # a deleted post must not block the others
             print(f"metrics skipped for {post['name']}: {error}")
             post["metrics_error"] = str(error)[:300]  # kept in the record so a session can see why numbers are missing
+            if "does not exist" in str(error) and post.get("metrics"):
+                # It was readable before and is gone now: the owner deleted it on Instagram. Stop asking.
+                post["deleted"] = True
+                post.pop("metrics_error", None)
+                continue
             try:  # without the insights permission, likes and comments are still better than nothing
                 post["metrics"] = instagram.basic_counts(post["media_id"])
             except instagram.ApiError:
