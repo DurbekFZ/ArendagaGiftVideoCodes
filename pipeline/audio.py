@@ -362,6 +362,19 @@ def coin():
     save("coin.wav", (ring + tap) * np.minimum(1, x / 0.001))
 
 
+def pageturn():
+    """A glossy magazine page turned by hand: a soft airy swish that swells and settles, with a muted paper flap (about 0.6 s)."""
+    x = t(0.62)
+    noise = rng.standard_normal(len(x))
+    swell = np.sin(np.pi * np.clip(x / 0.5, 0, 1)) ** 1.5
+    sweep = 900 + 2600 * np.sin(np.pi * np.clip(x / 0.5, 0, 1))
+    air = lowpass(noise, sweep) - lowpass(noise, 300)
+    flap = np.zeros(len(x))
+    d = t(0.09)
+    place(flap, lowpass(rng.standard_normal(len(d)), 1800) * np.exp(-d * 45), 0.42, 1.0)
+    save("pageturn.wav", air * swell * 0.8 + flap * 0.5)
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -390,6 +403,7 @@ def build():
     jingle()
     keys()
     coin()
+    pageturn()
 
 
 def ensure():
@@ -424,6 +438,8 @@ def ensure():
     if not (OUT / "coin.wav").exists():
         keys()
         coin()
+    if not (OUT / "pageturn.wav").exists():
+        pageturn()
 
 
 if __name__ == "__main__":

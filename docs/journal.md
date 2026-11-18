@@ -398,3 +398,39 @@ Kartalar chiqqandagi "pop" tovushlari ham olib tashlandi. V20261118c endi: calm,
 **Egasining qarori (2026-11-18).** Arendaga Gift videolari Stars reklamasidek murakkab bo‘lmasin: "oldingi, doim qilayotgan
 stilimiz yoqqan". Gift videolari 16–17-noyabrdagi ko‘rinishda davom etadi (2D, giftning o‘z animatsiyasi atrofida), 3D va og‘ir
 effektlarsiz. Sokin musiqa va "birinchi kadrda taklif ochiq aytiladi" qoidalari o‘z kuchida. Stars reklamasi bir martalik edi.
+## 2026-11-18 — V20261118d "SURGE jurnali"
+
+**Tahlil (2026-11-17 22:57 UTC o‘lchovi, 11 post; "1 000 Stars" postida `metrics_error` — faqat like/izoh bor, Instagram uni
+yuklay olmadi).** Gift videolari ichida yetakchi hamon "1000 tadan nechtasi?" (V20261117a): 246 ko‘rish, o‘tkazib yuborish 51,9%,
+o‘rtacha tomosha 6,4 s. Ikkinchi o‘rinda yangi o‘lchangan "Yangi yil ro‘yxati" (V20261117c): 176 ko‘rish, 57,1%, 5,0 s —
+ro‘yxat va mavsumiy mavzu yaxshi ushladi, lekin ulashish/saqlash baribir 0. Keyin "Tablo" 63,6% / 4,1 s, "Chek" 69,1% / 3,5 s,
+"Ob-havo" 71% / 3,3 s, "Topishmoq" 82,1% / 6,0 s, "Mif yoki fakt" 85,4% / 2,2 s, "Makro" 89,3% / 2,1 s (eng yomoni).
+"Telegram Stars 3D" (boshqa bot) 72 ko‘rish, 76,1%, 1,9 s, 0 like. Like 0–5, izoh, ulashish va saqlash hamma joyda 0;
+obunachi 1 ta (o‘zgarmagan). Xulosa (ma’lumot kam): eng yaxshilari qorong‘i fon, ovozsiz, birinchi kadrda yirik matn + katta gift
++ keyin ochiladigan raqam yoki to‘ldiriladigan narsa. Sekin, ovozli yoki matnsiz ochilish eng yomon.
+
+**G‘oya.** Jurnal (yangi format: jurnal varaqlash), egasining yangi qaroriga ko‘ra tekis 2D uslubda. 0-kadr — qorong‘i fonda jurnal muqovasi: "SURGE / BOARD"
+sarlavhasi, katta akula-sörf taxtasi (giftning o‘z animatsiyasida baliq sakrab og‘ziga tushadi, to‘lqin chiqadi), "NFT sovg‘a
+ijarasi" va qizil narx stikeri "kuniga 850 so‘m"; 1,3 s da "Ichkarida: 0,4%" yorlig‘i chiqadi (qolishga sabab).
+4,7 s: sahifa karta kabi chapga sirg‘alib ketadi → "02 · Model": akula og‘zi va baliqning yaqin kadri, "4% · Akula modeli ·
+Har 100 tadan 4 tasi". 9,7 s → "03 · Belgi": giftning o‘z naqshidan olingan burgut, "0,4% · Burgut belgisi · 1000 tadan 4 tasi".
+14,7 s → orqa muqova: "3–30 kunga ijara", "kuniga 850 so‘m", @ArendagaGiftBot, "↑ Havola profilda". 19,9 s, ovozsiz.
+Gift: Surge Board #19409 (model 4%, Silver Blue fon 1%, Eagle belgi 0,4%; kuniga 850 so‘m) — Surge Board birinchi marta.
+Model nomi (Blåhaj) boshqa brend nomi bo‘lgani uchun matnda "akula modeli" deyildi. Fon foizi va −7% captionda.
+
+**O‘qish tezligi.** Muqova 0–4,7 s (≤ 8 so‘z, narx 0-kadrdan); yorliq 1,3–4,7 s; model sahifasi to‘liq 5,4–9,7 s (7 so‘z, 4,3 s);
+belgi sahifasi 10,4–14,7 s (6 so‘z); orqa muqova 15,4–19,9 s (narx va bot 4,5 s), havola 16,8 s dan 3,1 s.
+
+**Nimani kuzatish kerak.** Narx 0-kadrda ko‘rinib turgan holda o‘tkazib yuborish 52% dan pastmi; "Ichkarida: 0,4%" va varaqlash
+o‘rtacha tomoshani 6 s dan oshiradimi; yorug‘ kumush-ko‘k muqova qorong‘i fonda ishlaydimi; 850 so‘mlik gift 750 so‘mliklardan
+farq qiladimi.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: jurnal varaqlash / muqova → ichki sahifalar → orqa muqova (yangi). Ko‘rinish:
+qorong‘i navy fon (#07141d → #1c4258), siyrak chang, sekin aylanuvchi burgut naqshi; tekis 2D jurnal sahifalari (tahririyat
+tipografiyasi, narx stikeri, fotosurat ramkasi), sahifa chapga sirg‘alib, ozgina og‘ib ketadi (3D, perspektiva va og‘ir effektlar yo‘q).
+Palitra: giftning Silver Blue foni #80a4b8 / #607c91 va naqsh navy #15374b (fon oilasi), urg‘u — akula og‘zining qizili #e5383b
+(ko‘kka komplementar), neytral — sovuq qog‘oz #f3f1ec. Shrift: Bodoni Moda 900 / 700 kursiv (yangi qo‘shildi) + Manrope 800.
+Musiqa: `calm`, 66 bpm, E-minor (root 52), seed 19, `bed_V20261118d`, past ovozda. Yangi tovush `pipeline/audio.py` da:
+`pageturn.wav` (yumshoq varaq shitirlashi, faqat 3 marta, past ovozda); yana bitta juda past whoosh. Ovoz: yo‘q.
+Matn chapga, x = 100; sahifa x 60–940, matn ≤ 1520. Keyingi video uchun: jurnal formati, Bodoni, navy/kumush/qizil va varaqlashni
+takrorlamang.
