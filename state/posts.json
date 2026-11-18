@@ -453,5 +453,29 @@
    "differs": "Format (sanoq va ochilish — yangi), ko‘rinish (bunker: zaytun po‘lat devor, xavf chiziqlari, prozhektor, trafaret harflar), shrift (Big Shoulders Stencil — yangi), gift (Whip Cupcake birinchi marta), musiqa (calm, D-minor, 70 bpm, seed 33), effektlar (lyuk va muhr tovushi — yangi)"
   },
   "measured_at": "2026-11-18T14:35:22+00:00"
+ },
+ {
+  "name": "20261118-1936-V20261118f",
+  "published_at": "2026-11-18T14:39:49+00:00",
+  "style": "custom",
+  "hook": "V20261118f",
+  "gifts": [
+   "icecream-211816"
+  ],
+  "slot_hour": 19,
+  "seconds": 19.01,
+  "media_id": "18045994103835961",
+  "permalink": "https://www.instagram.com/reel/Df4vWvvjjjr/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261118f",
+  "concept": {
+   "title": "Tugamaydigan muzqaymoq",
+   "hook": "Birinchi kadr — quyoshli oltin plakat: \"TELEGRAM NFT SOVG‘A\", yirik \"TUGAMAYDIGAN MUZQAYMOQ\", \"kuniga 750 so‘m\" yorlig‘i va katta po‘lat-ko‘k muzqaymoq; 0,3 s da giftning o‘z animatsiyasida birinchi tishlam, 3 s da faqat tayoqcha qoladi (\"Tugadimi?\"), 5 s da yana to‘ladi (\"Yana to‘la!\")",
+   "format": "Namoyish + taqqoslash (yangi): giftning o‘z animatsiyasi hikoya bo‘ladi (yeb tugatiladi va qayta to‘ladi), keyin ikki panel — chizilgan oddiy muzqaymoq erib ko‘lmakka aylanadi, gift esa turadi: \"Oddiysi eriydi. Bunisi profilingizda 3–30 kun turadi\"; narx, bot, havola",
+   "why": "Eng yaxshi postlar (Yangi yil ro‘yxati 46,9% o‘tkazib yuborish va 1 saqlash, 1000 tadan 51,9%, SURGE 55,8%) 0-kadrda nom/narx, katta gift va ko‘z oldida sodir bo‘ladigan voqeaga ega. Bunker sanog‘i (61,9%) voqeani 2,5 s gacha kutdirdi; bu yerda voqea 0,3 s da boshlanadi va giftning o‘zi bilan sodir bo‘ladi. Ro‘yxat kabi tanish, kundalik mavzu (muzqaymoq) tomoshabinga yaqinroq.",
+   "differs": "Format (namoyish + taqqoslash — yangi), ko‘rinish (yorug‘ oltin tekis plakat, qalin siyoh hoshiyali stikerlar, krem disk — oldingi qorong‘i fonlardan farqli tajriba), shrift (Lilita One — yangi), gift (Ice Cream Cold Steel birinchi marta yolg‘iz), musiqa (calm, A♭-major, 72 bpm, seed 47), effektlar (tishlam va ayoz tovushi — yangi)"
+  }
  }
 ]
