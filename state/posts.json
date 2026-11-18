@@ -417,5 +417,29 @@
    "differs": "Format (jurnal varaqlash), ko‘rinish (qorong‘i fonda tekis jurnal sahifalari, tahririyat tipografiyasi), shrift (Bodoni Moda — yangi), gift (Surge Board birinchi marta), musiqa (calm, E-minor, 66 bpm), effekt (sahifa varaqlash tovushi — yangi)"
   },
   "measured_at": "2026-11-18T05:41:47+00:00"
+ },
+ {
+  "name": "20261118-1105-V20261118e",
+  "published_at": "2026-11-18T06:10:20+00:00",
+  "style": "custom",
+  "hook": "V20261118e",
+  "gifts": [
+   "whipcupcake-40503"
+  ],
+  "slot_hour": 11,
+  "seconds": 19.01,
+  "media_id": "18039029924890484",
+  "permalink": "https://www.instagram.com/reel/Df31CqcDnmh/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261118e",
+  "concept": {
+   "title": "Bunker ochilmoqda",
+   "hook": "Birinchi kadr — to‘q zaytun bunker devori, trafaret harflarda \"WHIP CUPCAKE\", \"NFT SOVG‘A · IJARA\", \"kuniga 750 so‘m\" yorlig‘i va yopiq po‘lat eshikli katta gift; xavf belgili nishonda 3 · 2 · 1 sanaladi, 2,5 s da giftning o‘z animatsiyasida eshik ochiladi",
+   "format": "Sanoq → ochilish (yangi): 3-2-1, bunker eshigi ochiladi, po‘lat plastinkaga noyoblik muhrlanadi (model 2,5%, fon 1,2%, belgi 0,5%), \"3–30 kun profilingizda turadi\", narx, bot, havola",
+   "why": "Eng yaxshi postlar (Yangi yil ro‘yxati 48,5%, 1000 tadan 51,7%, SURGE 56,3% o‘tkazib yuborish): qorong‘i fon, ovozsiz, 0-kadrda yirik matn + narx + katta gift va ko‘z oldida sodir bo‘ladigan voqea. Sanoq 0-kadrdan qolishga sabab beradi, giftning o‘z animatsiyasi (eshik ochilishi) — voqeaning o‘zi.",
+   "differs": "Format (sanoq va ochilish — yangi), ko‘rinish (bunker: zaytun po‘lat devor, xavf chiziqlari, prozhektor, trafaret harflar), shrift (Big Shoulders Stencil — yangi), gift (Whip Cupcake birinchi marta), musiqa (calm, D-minor, 70 bpm, seed 33), effektlar (lyuk va muhr tovushi — yangi)"
+  }
  }
 ]
