@@ -489,5 +489,29 @@
    "differs": "Format (namoyish + taqqoslash — yangi), ko‘rinish (yorug‘ oltin tekis plakat, qalin siyoh hoshiyali stikerlar, krem disk — oldingi qorong‘i fonlardan farqli tajriba), shrift (Lilita One — yangi), gift (Ice Cream Cold Steel birinchi marta yolg‘iz), musiqa (calm, A♭-major, 72 bpm, seed 47), effektlar (tishlam va ayoz tovushi — yangi)"
   },
   "measured_at": "2026-11-19T05:32:04+00:00"
+ },
+ {
+  "name": "20261119-1051-V20261119a",
+  "published_at": "2026-11-19T05:54:42+00:00",
+  "style": "custom",
+  "hook": "V20261119a",
+  "gifts": [
+   "vicecream-405492"
+  ],
+  "slot_hour": 10,
+  "seconds": 19.01,
+  "media_id": "18131956477852255",
+  "permalink": "https://www.instagram.com/reel/Df6YDNXjEoF/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261119a",
+  "concept": {
+   "title": "Muzqaymoq avtomati",
+   "hook": "Birinchi kadr — butun ekranni egallagan tekis 2D qulupnay-rang savdo avtomati: chiroqli peshlavhada \"TELEGRAM NFT SOVG‘A · Ijara · kuniga 750 so‘m\", oynada katta ko‘k paket titraydi, tanga tushadi; 0,9 s da giftning o‘z animatsiyasida paket yorilib, ichidan yaltiroq vafli muzqaymoq chiqadi (\"Ichida — MUZQAYMOQ!\")",
+   "format": "Savdo avtomati / ochish (unboxing, yangi): giftning o‘z animatsiyasi voqea bo‘ladi (paket yoriladi), keyin avtomat yorliqlari kabi noyoblik qatorlari (A1 model 2%, B2 fon 1,5%, C3 belgi 0,4%), so‘ng \"3–30 kunga ijara · profilingizda turadi\", bot va havola; narx peshlavhada butun video davomida turadi",
+   "why": "Tugamaydigan muzqaymoq (V20261118f) barcha postlardan ancha oldinda: 880 ko‘rish, o‘tkazib yuborish 27,7%, o‘rtacha tomosha 9,9 s, 2 saqlash. Uning sirri: 0-kadrda nom va narx, katta gift va 0,3 s da giftning o‘zi bilan sodir bo‘ladigan voqea, tanish kundalik mavzu. Bu video shu formulani saqlaydi (voqea 0,9 s da, giftning o‘z animatsiyasi, muzqaymoq) va boshqa dunyoda sinaydi. Bunker (2,5 s kutish) 61% bilan yutqazgan, shuning uchun sanoq yo‘q.",
+   "differs": "Format (savdo avtomati / unboxing — yangi), ko‘rinish (qorong‘i rezavor xonada qulupnay-rang avtomat, chiroqli peshlavha, shisha oyna va spiral tokchalar — siyoh hoshiyali stikerlar va oltin plakat yo‘q), shrift (Bungee — yangi qo‘shildi), gift (Vice Cream Vanilla birinchi marta), palitra (qulupnay + paket ko‘ki + vanil krem), musiqa (calm, B-major, 64 bpm, seed 58), effektlar (folga yirtilishi va yumshoq tanga zarbi — yangi)"
+  }
  }
 ]
