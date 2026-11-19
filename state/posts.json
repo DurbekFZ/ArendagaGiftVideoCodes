@@ -525,5 +525,29 @@
    "differs": "Format (savdo avtomati / unboxing — yangi), ko‘rinish (qorong‘i rezavor xonada qulupnay-rang avtomat, chiroqli peshlavha, shisha oyna va spiral tokchalar — siyoh hoshiyali stikerlar va oltin plakat yo‘q), shrift (Bungee — yangi qo‘shildi), gift (Vice Cream Vanilla birinchi marta), palitra (qulupnay + paket ko‘ki + vanil krem), musiqa (calm, B-major, 64 bpm, seed 58), effektlar (folga yirtilishi va yumshoq tanga zarbi — yangi)"
   },
   "measured_at": "2026-11-19T14:34:21+00:00"
+ },
+ {
+  "name": "20261119-1951-V20261119b",
+  "published_at": "2026-11-19T14:53:26+00:00",
+  "style": "custom",
+  "hook": "V20261119b",
+  "gifts": [
+   "hexpot-42707"
+  ],
+  "slot_hour": 19,
+  "seconds": 19.01,
+  "media_id": "18067652744794876",
+  "permalink": "https://www.instagram.com/reel/Df7VtUzlX5N/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261119b",
+  "concept": {
+   "title": "Sehrli qozon: sovuqdan issiqqa",
+   "hook": "Birinchi kadr — sovuq kulrang-shifer dunyo: \"TELEGRAM SOVG‘ASI · SEHRLI QOZON IJARADA · kuniga 750 so‘m\" va katta Hex Pot; 0,2 s da qozon giftning o‘z animatsiyasida alangalanadi va uning olovi butun kadrni isitadi: shifer cho‘g‘ rangiga o‘tadi, \"IJARADA\" yonib ketadi, uchqunlar ko‘tariladi",
+   "format": "Oldin / keyin (yangi): kulrang, bo‘sh gift kataklari bor profil kartasi → strelka → iliq profil kartasi, qozon katakka tushib yana alangalanadi (\"Gift profilingizda 3–30 kun turadi\"); keyin narx, bot va havola",
+   "why": "Eng yaxshi post — \"Tugamaydigan muzqaymoq\" (o‘tkazib yuborish 27,7%, 9,9 s): 0-kadrda nom va narx, voqea 0,3 s da giftning o‘z animatsiyasi bilan. \"Muzqaymoq avtomati\"da voqea 0,9 s da edi va o‘tkazib yuborish 49% chiqdi; shuning uchun voqea yana 0,2 s ga qaytarildi. Hex Pot birinchi postida atigi 9 ko‘rish olgan (tarqatilmagan), uning olovi esa eng kuchli o‘z voqealaridan biri.",
+   "differs": "Format (oldin/keyin profil kartalari — yangi), ko‘rinish (sovuq shifer → cho‘g‘ rangiga o‘tuvchi dunyo, yorug‘lik giftning olovidan; stikerlar, plakat, avtomat yo‘q), shrift (Space Grotesk — birinchi marta), gift oilasi (muzqaymoq emas — qozon), palitra (shifer + olov to‘q sarig‘i + kam magenta), musiqa (calm, F#-minor, 68 bpm, seed 83), effekt (yangi ignite.wav — olov yonishi)"
+  }
  }
 ]
