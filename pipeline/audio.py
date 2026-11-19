@@ -415,6 +415,32 @@ def frost():
     save("frost.wav", air * env * 0.6)
 
 
+def foil():
+    """A foil snack packet torn open: a soft crinkle that builds and bursts into a muffled puff of air (about 0.6 s)."""
+    track = np.zeros(int(SR * 0.65))
+    at = 0.0
+    while at < 0.34:
+        x = t(0.02)
+        noise = rng.standard_normal(len(x))
+        crinkle = lowpass(noise, 5200) - lowpass(noise, 2200)
+        place(track, crinkle * np.exp(-x * 220), at, 0.25 + 0.75 * (at / 0.34) ** 2)
+        at += 0.008 + rng.uniform(0, 0.018)
+    x = t(0.32)
+    noise = rng.standard_normal(len(x))
+    puff = lowpass(noise, 700 + 900 * np.exp(-x * 9)) * np.minimum(1, x / 0.01) * np.exp(-x * 9)
+    place(track, puff, 0.32, 0.9)
+    save("foil.wav", lowpass(track, 6500))
+
+
+def thunk():
+    """Something soft dropping into a vending-machine tray: a padded low thud with a short plastic knock (about 0.3 s)."""
+    x = t(0.3)
+    body = np.sin(2 * np.pi * np.cumsum(70 + 90 * np.exp(-x * 40)) / SR) * np.exp(-x * 16)
+    noise = rng.standard_normal(len(x))
+    knock = (lowpass(noise, 1600) - lowpass(noise, 500)) * np.exp(-x * 60) * 0.4
+    save("thunk.wav", (body + knock) * np.minimum(1, x / 0.003))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -448,6 +474,8 @@ def build():
     stamp()
     bite()
     frost()
+    foil()
+    thunk()
 
 
 def ensure():
@@ -490,6 +518,9 @@ def ensure():
     if not (OUT / "frost.wav").exists():
         bite()
         frost()
+    if not (OUT / "thunk.wav").exists():
+        foil()
+        thunk()
 
 
 if __name__ == "__main__":

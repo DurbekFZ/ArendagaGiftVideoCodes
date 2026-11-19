@@ -511,3 +511,42 @@ krem disk, ikki panel (quyosh / qor belgisi). Palitra: fon — giftning Old Gold
 Yangi tovushlar `pipeline/audio.py` da: `bite.wav` (muzlagan muzqaymoqni tishlash, 3 marta, past), `frost.wav` (havodor ayoz
 shivirlashi, 1 marta); yana 2 ta juda past whoosh. Ovoz: yo‘q. Matn chapga, x = 70; panellar x 70–870, y 650–1490.
 Keyingi video uchun: oltin plakat, siyoh-hoshiyali stikerlar, Lilita One va taqqoslash panellarini takrorlamang.
+
+## 2026-11-19 — V20261119a "Muzqaymoq avtomati"
+
+**Tahlil (2026-11-19 05:17 UTC o‘lchovi; Stars postlari va o‘chirilgan post solishtirilmadi).** Yangi va aniq yetakchi —
+"Tugamaydigan muzqaymoq" (V20261118f): 880 ko‘rish, 709 qamrov, o‘tkazib yuborish 27,7% (oldingi eng yaxshisi 46,3% edi),
+o‘rtacha tomosha 9,9 s (19 s lik videoning yarmi), 2 saqlash, 6 like; obunachilar 1 dan 2 ga chiqdi. Keyin "Yangi yil ro‘yxati"
+571 / 46,3% / 6,4 s / 1 saqlash, "1000 tadan nechtasi?" 255 / 51,6% / 6,4 s, "SURGE jurnali" 233 / 56,3% / 6,0 s, "Tablo" 63,4%,
+"Bunker" 181 / 61% / 4,0 s, "Chek" 68,8%, "Ob-havo" 71,5%, "Topishmoq" 82,3%, "Mif yoki fakt" 85%, "Makro" 88,8% / 2,1 s (eng yomoni).
+Izoh va ulashish hamon hamma joyda 0. Muzqaymoqning farqi: voqea 0,3 s da giftning **o‘z animatsiyasi** bilan boshlanadi (tishlanadi),
+0-kadrda nom va narx, tanish kundalik mavzu, yorug‘ fon. Bitta post — kuchli, lekin hali tasodif bo‘lishi mumkin; shuning uchun formula
+(giftning o‘zi bilan darhol voqea + kundalik mavzu) saqlanadi, ko‘rinish va format esa o‘zgartiriladi.
+
+**G‘oya.** Savdo avtomati / unboxing (yangi format). 0-kadr: butun ekranda tekis 2D qulupnay-rang avtomat; chiroqli (yuguruvchi
+lampochkali) peshlavhada "TELEGRAM NFT SOVG‘A · Ijara · kuniga 750 SO‘M" (butun video davomida turadi), oynada katta ko‘k paket titraydi,
+yon panelda tanga tushadi. 0,9 s da giftning o‘z animatsiyasida paket yorilib, yaltiroq vafli muzqaymoq chiqadi (folga tovushi,
+nur va kichik parchalar). 1,8 s: stiker "Ichida — MUZQAYMOQ!". 6,4 / 7,8 / 9,2 s: avtomat yorliqlari kabi qatorlar — A1 Vanilla modeli 2%,
+B2 Strawberry fon 1,5%, C3 Bamboo belgisi 0,4%. 12,9 s: "3–30 KUNGA IJARA · profilingizda turadi", 14,1 s: @ArendagaGiftBot va
+"↑ Havola profilda". 19,0 s, ovozsiz. Gift: Vice Cream #405492 (Vanilla 2%, Strawberry fon 1,5%, Bamboo belgi 0,4%; kuniga 750 so‘m) —
+birinchi marta.
+
+**Gift haqida muhim.** Animatsiya 180 kadr: 0–56 paket chayqaladi, 60–74 yoriladi, 76–132 nur sochayotgan to‘g‘ri turgan konus,
+136–179 yana paketga o‘raladi. Video 36 kadr oldinda o‘ynatadi (yorilish ~26-kadrda), 78-kadrdan keyin 104–124 orasida sekin
+tebranadi (hammasi tomoshabinga to‘g‘ri qaragan pozalar).
+
+**O‘qish tezligi.** Peshlavha (5 so‘z) 0–19 s; stiker 2,1–6,0 s (2 so‘z); qatorlar 1,4 s oraliqda, oxirgisi ~9,4–12,5 s (3,1 s);
+"3–30 kunga ijara profilingizda turadi" ~13,2–19 s; bot va havola ~14,4–19 s (4,6 s). Bir soniyada ikki yangi blok yo‘q.
+
+**Nimani kuzatish kerak.** O‘tkazib yuborish muzqaymoqdagi 27,7% ga yaqin qoladimi (voqea 0,9 s da, 0,3 s emas); o‘rtacha tomosha 9 s
+atrofida bo‘ladimi; qorong‘i xona + yorqin avtomat yorug‘ oltin plakat kabi ishlaydimi; saqlash yana bo‘ladimi.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: savdo avtomati / unboxing (yangi). Ko‘rinish: qorong‘i rezavor xona (#5a1830 → #2c0b18 →
+#16040b), qulupnay-rang avtomat korpusi (#ec6f86 / #d24a66 / #a4304c), vanil-krem peshlavha va yuguruvchi lampochkalar, qorong‘i shisha
+oyna, spiral tokchalar, yaltiroq chiziq, tugmalar paneli, tanga, olish tarnovi; yorliq qatorlari (ko‘k kod katagi). Palitra: fon —
+giftning Strawberry foni; urg‘u — paketning ko‘ki #3f7cf2 / #1f4fc4; neytral — vanil krem #fff1e2 va rezavor siyoh #2b0a15; qo‘shimcha —
+vafli qahrabosi #f6ad4a (lampochkalar, tanga, "KUNGA"). Shrift: Bungee (yangi qo‘shildi, `@fontsource/bungee`) + Manrope 800.
+Musiqa: `calm`, 64 bpm, B-major (root 59), seed 58, `bed_V20261119a`, past ovozda. Yangi tovushlar `pipeline/audio.py` da: `foil.wav`
+(folga paket yirtilishi, 1 marta), `thunk.wav` (yumshoq tanga zarbi, 1 marta); yana 2 ta juda past whoosh. Ovoz: yo‘q.
+Matn x 110–840, oyna y 600–1560. Keyingi video uchun: avtomat, qulupnay/ko‘k, Bungee, lampochkali peshlavha va yorliq qatorlarini
+takrorlamang.
