@@ -550,3 +550,43 @@ Musiqa: `calm`, 64 bpm, B-major (root 59), seed 58, `bed_V20261119a`, past ovozd
 (folga paket yirtilishi, 1 marta), `thunk.wav` (yumshoq tanga zarbi, 1 marta); yana 2 ta juda past whoosh. Ovoz: yo‘q.
 Matn x 110–840, oyna y 600–1560. Keyingi video uchun: avtomat, qulupnay/ko‘k, Bungee, lampochkali peshlavha va yorliq qatorlarini
 takrorlamang.
+
+## 2026-11-19 — V20261119b "Sehrli qozon: sovuqdan issiqqa"
+
+**Tahlil (2026-11-19 14:20 UTC o‘lchovi; Stars postlari va o‘chirilgan post solishtirilmadi).** Yetakchi hamon "Tugamaydigan muzqaymoq"
+(V20261118f): 883 ko‘rish, o‘tkazib yuborish 27,7%, o‘rtacha tomosha 9,9 s, 2 saqlash. Bugungi "Muzqaymoq avtomati" (V20261119a):
+221 ko‘rish, 49% / 5,3 s, 1 like, saqlash yo‘q — o‘rtacha natija, yetakchidan ancha past. Keyin "Yangi yil ro‘yxati" 571 / 46,3% / 6,4 s /
+1 saqlash, "1000 tadan nechtasi?" 255 / 51,6% / 6,4 s, "SURGE jurnali" 233 / 56,3% / 6,0 s, "Bunker" 181 / 61% / 4,0 s, "Tablo" 63,4%,
+"Chek" 68,8%, "Ob-havo" 71,5%, "Topishmoq" 82,3%, "Mif yoki fakt" 85%, "Makro" 88,8% / 2,1 s. Izoh va ulashish hamon hamma joyda 0;
+obunachi 2 ta (o‘zgarmagan). Ehtiyotkor xulosa (ma’lumot kam): ikki muzqaymoq videosi farqi — voqea 0,3 s da (27,7%) va 0,9 s da (49%);
+birinchi soniyaning birinchi uchdan biri hal qiluvchi ko‘rinadi. Shuning uchun bu videoda giftning o‘z voqeasi 0,2 s da boshlanadi.
+Muzqaymoq oilasi ketma-ket ikki marta bo‘ldi — bu safar boshqa gift. Hex Pot birinchi postida (V20261116d) atigi 9 ko‘rish olgan
+(tarqatilmagan), olovi esa katalogdagi eng kuchli o‘z voqealaridan biri.
+
+**G‘oya.** Sovuqdan issiqqa + oldin/keyin (yangi format). 0-kadr: sovuq kulrang-shifer dunyo, "TELEGRAM SOVG‘ASI", yirik
+"SEHRLI QOZON / IJARADA", "kuniga 750 so‘m" yorlig‘i va katta Hex Pot. 0,2 s da qozon o‘z animatsiyasida alangalanadi (yangi ignite.wav),
+olov yorug‘i butun kadrni isitadi: shifer cho‘g‘ rangiga o‘tadi, "IJARADA" olov rangida yonadi, chang o‘rniga uchqunlar ko‘tariladi.
+6,2 s: oldin/keyin — tepada kulrang profil kartasi (avatar silueti, bo‘sh chiziqlar, 4 ta bo‘sh gift katagi), strelka, pastda iliq karta;
+qozon kichrayib katakka tushadi va 7,8 s da yana alangalanadi; sarlavha "Gift profilingizda 3–30 kun turadi". 12,6 s: "Ijara · kuniga
+750 so‘m", @ArendagaGiftBot, "↑ Havola profilda". 19,0 s, ovozsiz. Gift: Hex Pot #42707 (Sangria 2,5%, Silver Blue fon 1%, Scarecrow
+belgi 2%; kuniga 750 so‘m). Atributlar va −7% captionda.
+
+**Gift haqida muhim.** Animatsiya ~150 kadr: 0–14 qaynayotgan qozon (to‘g‘ri poza), 16 da olov yonadi, 20–60 to‘liq alanga, 64–90 tutun,
+94–130 ko‘z tashqarida aylanib yuradi, ~136 sachrash, 148 dan keyin yana 0-pozaga teng. Videoda 10 kadr oldinda o‘ynatiladi; kartada
+30–60 oralig‘ida oldinga-orqaga aylantirib "yonib turish" saqlanadi; muqovada 0-poza (olov kadrda qozon yarim yashirinadi).
+
+**O‘qish tezligi.** Ochilish (≈8 so‘z) 0–6,2 s; "Gift profilingizda 3–30 kun turadi" 6,7–12,6 s (5 so‘z, 3,2 s kerak); kartalarda so‘z yo‘q;
+narx 13,1–19 s (5,9 s), bot va havola 14,3–19 s (4,7 s). Bir soniyada ikki yangi blok yo‘q.
+
+**Nimani kuzatish kerak.** O‘tkazib yuborish 27,7% ga yaqinlashadimi (voqea 0,2 s da, muzqaymoqsiz) — agar ha, "voqea 0,3 s gacha" qoidasi
+kuchayadi; sovuq→issiq rang o‘zgarishi ushlaydimi; muzqaymoq bo‘lmagan gift tanish kundalik mavzusiz qanday ishlaydi; saqlash.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: sovuqdan issiqqa + oldin/keyin profil kartalari (yangi). Ko‘rinish: kulrang-shifer
+(#33434e → #1a242b → #0b1014) → cho‘g‘ (#6a3322 → #2a1510 → #120806), giftning olovidan radial nur va miltillash, sovuq chang → ko‘tariluvchi
+uchqunlar, yarim shaffof profil kartalari (siluet avatar, chiziqlar, punktir kataklar), strelka. Palitra: fon — giftning Silver Blue
+foni qoraytirilgan shifer; urg‘u — olov to‘q sarig‘i #ff7a2f / #ffb35c (shiferga komplementar); neytral — iliq oq #fbf3ea va shifer siyoh
+#0d1317; qo‘shimcha — iksir magentasi #ff3d7f (faqat nur ichida). Shrift: Space Grotesk 700 (birinchi marta; o‘rnatilgan edi) + Manrope 800.
+Musiqa: `calm`, 68 bpm, F#-minor (root 54), seed 83, `bed_V20261119b`, past ovozda. Yangi tovush `pipeline/audio.py` da: `ignite.wav`
+(yumshoq olov "vuh"i va qisqa chirsillash, 2 marta: 0,2 s va 7,7 s, ikkinchisi pastroq); yana 2 ta juda past whoosh. Ovoz: yo‘q.
+Matn chapga, x = 70; kartalar x 70–870, y 452–1520. Keyingi video uchun: shifer→cho‘g‘, profil kartalari, Space Grotesk va oldin/keyin
+formatini takrorlamang.

@@ -1,0 +1,14 @@
+{
+  "id": "V20261119b",
+  "slugs": ["hexpot-42707"],
+  "caption": "Hex Pot #42707 — sehrli qozon. Bu Telegram NFT sovg‘asi: ijaraga olsangiz, profilingizda 3 kundan 30 kungacha ko‘rinib turadi. Kuniga 750 so‘m, 30 kunga −7%.\n\nSangria modeli 2,5%, Silver Blue fon 1%, Scarecrow belgisi 2%.\n\nIjaraga olish: @ArendagaGiftBot — havola profilda.\n\n#telegram #nft #telegramgifts #nftsovga #ijara #uzbekistan",
+  "hero_ms": 1200,
+  "music": {"name": "bed_V20261119b", "style": "calm", "bpm": 68, "root": 54, "scale": "minor", "seconds": 20, "seed": 83},
+  "concept": {
+    "title": "Sehrli qozon: sovuqdan issiqqa",
+    "hook": "Birinchi kadr — sovuq kulrang-shifer dunyo: \"TELEGRAM SOVG‘ASI · SEHRLI QOZON IJARADA · kuniga 750 so‘m\" va katta Hex Pot; 0,2 s da qozon giftning o‘z animatsiyasida alangalanadi va uning olovi butun kadrni isitadi: shifer cho‘g‘ rangiga o‘tadi, \"IJARADA\" yonib ketadi, uchqunlar ko‘tariladi",
+    "format": "Oldin / keyin (yangi): kulrang, bo‘sh gift kataklari bor profil kartasi → strelka → iliq profil kartasi, qozon katakka tushib yana alangalanadi (\"Gift profilingizda 3–30 kun turadi\"); keyin narx, bot va havola",
+    "why": "Eng yaxshi post — \"Tugamaydigan muzqaymoq\" (o‘tkazib yuborish 27,7%, 9,9 s): 0-kadrda nom va narx, voqea 0,3 s da giftning o‘z animatsiyasi bilan. \"Muzqaymoq avtomati\"da voqea 0,9 s da edi va o‘tkazib yuborish 49% chiqdi; shuning uchun voqea yana 0,2 s ga qaytarildi. Hex Pot birinchi postida atigi 9 ko‘rish olgan (tarqatilmagan), uning olovi esa eng kuchli o‘z voqealaridan biri.",
+    "differs": "Format (oldin/keyin profil kartalari — yangi), ko‘rinish (sovuq shifer → cho‘g‘ rangiga o‘tuvchi dunyo, yorug‘lik giftning olovidan; stikerlar, plakat, avtomat yo‘q), shrift (Space Grotesk — birinchi marta), gift oilasi (muzqaymoq emas — qozon), palitra (shifer + olov to‘q sarig‘i + kam magenta), musiqa (calm, F#-minor, 68 bpm, seed 83), effekt (yangi ignite.wav — olov yonishi)"
+  }
+}

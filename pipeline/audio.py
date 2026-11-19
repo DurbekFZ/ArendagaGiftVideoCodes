@@ -441,6 +441,23 @@ def thunk():
     save("thunk.wav", (body + knock) * np.minimum(1, x / 0.003))
 
 
+def ignite():
+    """A burner catching fire: a soft rounded whoomp of air with a brief warm crackle that fades (about 1.3 s)."""
+    x = t(1.3)
+    noise = rng.standard_normal(len(x))
+    swell = np.minimum(1, x / 0.06) * np.exp(-x * 3.2)
+    whoomp = lowpass(noise, 260 + 900 * np.exp(-x * 6)) * swell
+    body = np.sin(2 * np.pi * np.cumsum(55 + 45 * np.exp(-x * 9)) / SR) * np.minimum(1, x / 0.03) * np.exp(-x * 5) * 0.5
+    crackle = np.zeros(len(x))
+    for _ in range(18):
+        at = int(SR * rng.uniform(0.08, 0.9))
+        n = int(SR * 0.006)
+        if at + n < len(x):
+            crackle[at:at + n] += rng.standard_normal(n) * np.exp(-np.arange(n) / (SR * 0.0015)) * rng.uniform(0.1, 0.3)
+    crackle = lowpass(crackle, 3200) * np.exp(-x * 2.5)
+    save("ignite.wav", whoomp * 0.9 + body + crackle)
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -476,6 +493,7 @@ def build():
     frost()
     foil()
     thunk()
+    ignite()
 
 
 def ensure():
@@ -521,6 +539,8 @@ def ensure():
     if not (OUT / "thunk.wav").exists():
         foil()
         thunk()
+    if not (OUT / "ignite.wav").exists():
+        ignite()
 
 
 if __name__ == "__main__":
