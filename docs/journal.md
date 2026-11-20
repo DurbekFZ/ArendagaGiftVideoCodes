@@ -633,3 +633,51 @@ Musiqa: `calm`, 76 bpm, E♭-major (root 51), seed 121, `bed_V20261120a`, past o
 `snowthud.wav` (qorga yumshoq tushish, 2 marta), `snap.wav` (qand tayoqchasi sinishi, 1 marta, past); yana 3 ta juda past whoosh.
 Ovoz: yo‘q. Matn chapga, x = 70; gift x = 470 markazda. Keyingi video uchun: qog‘oz-kesma qish, yalpiz + qizil, Paytone One,
 tashlash testi va konfet-chiziqli yorliqlarni takrorlamang.
+
+## 2026-11-20 — V20261120b "1 yoki 2?"
+
+**Tahlil (2026-11-20 14:19 UTC o‘lchovi; Stars postlari va o‘chirilgan post solishtirilmadi).** Yetakchi hamon "Tugamaydigan muzqaymoq"
+(V20261118f): 886 ko‘rish, 714 qamrov, o‘tkazib yuborish 27,7%, o‘rtacha tomosha 9,9 s, 2 saqlash. Undan keyingi uchta video yomonlashib bordi:
+"Muzqaymoq avtomati" (119a) 222 / 49,2% / 5,4 s, "Sehrli qozon" (119b) 174 / 57,7% / 4,5 s, "Sinmaydigan konfet" (120a) 173 / 70,4% /
+3,9 s, 0 like — 17-noyabrdan beri eng yomoni. Qolganlar: "Yangi yil ro‘yxati" 573 / 46,3% / 6,3 s / 1 saqlash, "1000 tadan nechtasi?"
+256 / 51,4%, "SURGE jurnali" 233 / 56,3%, "Bunker" 181 / 61%, 16-noyabr postlari 64–89%. Izoh va ulashish hamma joyda 0, obunachi 2 ta.
+
+**118f haqidagi qaysi tushuntirish inkor etildi (halol).** Oldingi sessiyalar uning muvaffaqiyatini to‘rt narsaga bog‘lagan: (1) tanish
+narsa haqida paradoks sarlavha, (2) 0,3 s gacha voqea, (3) savol → javob stikerlari, (4) yorug‘ fon. 120a da to‘rttasi ham bor edi
+(paradoks "Sinmaydigan konfet", voqea 0,27 s, "Sinmadi!/Yana bir bor?/Hamon butun!", och yalpiz fon) — natija eng yomon (70,4%).
+119b da voqea 0,2 s da edi — 57,7%. Demak bu formula 118f ni tushuntirmaydi; uni to‘rtinchi marta takrorlamadim.
+Birinchi kadrlarni yonma-yon render qilib solishtirdim: 118f da gift kadrning ~70% kengligini egallaydi, 120a da ~yarmi va pastki yarim
+bo‘sh oq qor; lekin 117c (46,3%, ikkinchi o‘rin) da gift kichkina — demak "katta gift" ham yolg‘iz tushuntirmaydi.
+Hali inkor etilmagan yagona belgi — **gift oilasi**: muzqaymoq giftli videolar (118f 27,7%, 117c 46,3%, 119a 49,2%) to‘rtta eng yaxshidan
+uchtasi; boshqa giftlar 51–89%. (116f — uchta muzqaymoq, 82% — 16-noyabrning yangi akkauntidagi yashirin-foizli topishmoq edi.)
+Boshqa izoh ham ehtimoliy: 118f ni Instagram tasodifan kengroq auditoriyaga ko‘rsatgan (714 qamrov, boshqalar 140–460). Ma’lumot juda kam
+(bir post — bitta nuqta), shuning uchun bu video aynan gift farazini toza sinaydi: muzqaymoq gifti, lekin format, ko‘rinish, sarlavha,
+shrift va palitra butunlay boshqa. Agar u ham 50% dan yomon bo‘lsa — 118f asosan tarqatish omadi bo‘lgan.
+
+**G‘oya.** Ovoz berish "1 yoki 2?" (yangi format; tajriba — birinchi marta izohga chaqiruv). 0-kadr: qiya sariq chiziq bilan ikkiga bo‘lingan
+sport-plakat — chapda och osmon-ko‘k, o‘ngda makkajo‘xori-ko‘k maydon, har birida ulkan "1"/"2" raqami va katta muzqaymoq; tepada
+"TELEGRAM NFT SOVG‘A · IJARA" va yirik "1 YOKI 2?", o‘rtada sariq "YOKI" nishoni, pastda "har biri · kuniga 750 SO‘M". 0,3 va 0,75 s da
+giftlar o‘z animatsiyasida birinchi tishlamni oladi. 4,4 s: 1-maydon butun kadrni egallaydi, gift o‘z aylanishi bilan yana butun bo‘ladi —
+"① SHOKOLADLI · CHOCO ALMOND #62286". 8,4 s: 2-maydon ustidan supurib o‘tadi — "② UCH SHARLI · TRIO SCOOP #192500". 12,4 s: ikkalasi
+yonma-yon, "IZOHDA: 1 YOKI 2", 13,8 s narx, 14,8 s "3–30 kun profilingizda", 15,8 s @ArendagaGiftBot va "↑ Havola profilda". 19,0 s, ovozsiz.
+Giftlar: Ice Cream #62286 (Choco Almond 3%, Shamrock Green fon 1,5%, Cash belgi 0,7%) va Ice Cream #192500 (Trio Scoop 3%, Dark Green
+fon 1,5%, Beanie belgi 0,5%); ikkalasi kuniga 750 so‘m, hech qachon alohida ko‘rsatilmagan. Atributlar va −7% captionda.
+
+**Gift haqida muhim.** Ikkala Ice Cream modeli ham 118f dagi kabi yeyiladi: 180 kadr, tishlamlar ~16, 44, 80, 112–132 aylanib to‘ladi,
+136–179 to‘la. Videoda: birinchi tishlamdan keyin 36–38-poza ushlanadi; gift butun kadrni egallaganda 112→140 aylanishi (harakat paytida)
+o‘ynaydi, keyin 150-poza (to‘la) ushlanadi. Muqovada 0-poza.
+
+**O‘qish tezligi.** Ochilish (≈9 qisqa so‘z, uch blok) 0–4,4 s; "Shokoladli" bloki ~5,1–8,4 s (4 so‘z, 3,3 s); "Uch sharli" ~9,1–12,4 s;
+"Izohda: 1 yoki 2" 12,8 s dan, narx 13,8 s dan (5,2 s), "3–30 kun profilingizda" 14,8 s dan, bot va havola 15,8–19 s (3,2 s).
+Yangi bloklar orasida kamida 1 s.
+
+**Nimani kuzatish kerak.** O‘tkazib yuborish 50% dan pastmi (gift farazi) yoki 60% dan yuqorimi (118f — omad); birinchi izohlar keladimi;
+yorqin ko‘k split-ekran oldingi qorong‘i/oltin fonlarga nisbatan qanday.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: ovoz berish / ikki variant split-ekran. Ko‘rinish: qiya chiziqli sport-plakat, ikki ko‘k maydon
+(#c4e2ff / #a9d2fb va #6d98f7 / #5a86ec), yarim ton nuqtalar, maydon rangidagi ulkan Anton raqamlar, sariq-navy chiziq (faqat y 500–1060),
+sariq "YOKI" nishoni va narx yorlig‘i (qattiq navy soya). Palitra: fon — ko‘k oila (issiq giftlarga qarama-qarshi); urg‘u — limon sariq #ffd43b
+(tayoqcha va o‘rta shardan); neytral — navy siyoh #0e1a3d va oq. Shrift: Anton (16c dan beri birinchi marta) + Manrope 800.
+Musiqa: `calm`, 74 bpm, G-major (root 55), seed 137, `bed_V20261120b`, past ovozda. Yangi tovush `pipeline/audio.py` da: `swipe.wav`
+(maydon siljishi — yumshoq havo shivirlashi, 3 marta, past); `bite.wav` 2 marta (past). Ovoz: yo‘q. Keyingi video uchun: split-ekran,
+ko‘k + limon, Anton, ulkan raqamlar va "1 yoki 2" formatini takrorlamang.

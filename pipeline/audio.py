@@ -482,6 +482,16 @@ def snap():
     save("snap.wav", lowpass(track, 3600))
 
 
+def swipe():
+    """A flat colour panel sliding across the frame: a short, soft swish of air falling in pitch, no click (about 0.4 s)."""
+    x = t(0.42)
+    noise = rng.standard_normal(len(x))
+    shape = np.sin(np.pi * np.clip(x / 0.4, 0, 1)) ** 2
+    sweep = 3200 * np.exp(-x * 4) + 500
+    air = lowpass(noise, sweep) - lowpass(noise, 260)
+    save("swipe.wav", lowpass(air * shape, 3800))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -520,6 +530,7 @@ def build():
     ignite()
     snowthud()
     snap()
+    swipe()
 
 
 def ensure():
@@ -570,6 +581,8 @@ def ensure():
     if not (OUT / "snap.wav").exists():
         snowthud()
         snap()
+    if not (OUT / "swipe.wav").exists():
+        swipe()
 
 
 if __name__ == "__main__":
