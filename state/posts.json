@@ -597,5 +597,30 @@
    "differs": "Format (tashlash testi — yangi), ko‘rinish (qog‘oz-kesma qishki manzara: och yalpiz osmon, archalar qatori, qatlamli qor tepaliklari, qog‘oz qor parchalari; siyoh hoshiyali stikerlar va panellar yo‘q), shrift (Paytone One — yangi qo‘shildi), palitra (yalpiz-yashil + konfet qizili + qarag‘ay siyohi), gift (Candy Cane, muzqaymoq emas), musiqa (calm, E♭-major, 76 bpm, seed 121), effektlar (yangi snowthud.wav va snap.wav)"
   },
   "measured_at": "2026-11-20T14:36:08+00:00"
+ },
+ {
+  "name": "20261120-1937-V20261120b",
+  "published_at": "2026-11-20T14:40:42+00:00",
+  "style": "custom",
+  "hook": "V20261120b",
+  "gifts": [
+   "icecream-62286",
+   "icecream-192500"
+  ],
+  "slot_hour": 19,
+  "seconds": 19.01,
+  "media_id": "18197499019394090",
+  "permalink": "https://www.instagram.com/reel/Df95EE-D1up/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261120b",
+  "concept": {
+   "title": "1 yoki 2?",
+   "hook": "Birinchi kadr — qiya chiziq bilan ikkiga bo‘lingan sport-plakat: och osmon-ko‘k va makkajo‘xori-ko‘k maydonlar, har birida ulkan \"1\" va \"2\" raqami va katta muzqaymoq gift; tepada \"TELEGRAM NFT SOVG‘A · IJARA\" va yirik \"1 YOKI 2?\", o‘rtada sariq \"YOKI\" nishoni, pastda \"har biri · kuniga 750 SO‘M\"; 0,3 va 0,75 s da giftlar o‘z animatsiyasida birinchi tishlamni oladi",
+   "format": "Tomoshabin ovozi / ikki variantdan tanlash (yangi): ochilishdan keyin har bir maydon navbat bilan butun kadrni egallaydi (1 — Shokoladli, Choco Almond; 2 — Uch sharli, Trio Scoop), keyin ikkalasi yonma-yon: \"IZOHDA: 1 YOKI 2\", narx, 3–30 kun, bot va havola",
+   "why": "\"Tugamaydigan muzqaymoq\" (V20261118f) muvaffaqiyatini tushuntirgan formula (paradoks sarlavha + 0,3 s dagi voqea + savol-javob stikerlari + yorug‘ fon) V20261120a da to‘liq takrorlandi va eng yomon natija berdi (70,4%) — demak u noto‘g‘ri. Hali inkor etilmagan yagona belgi — gift oilasi: muzqaymoq giftli videolar 27,7%, 46,3%, 49,2% bilan to‘rtta eng yaxshining uchtasi. Bu video formulani emas, shu farazni sinaydi: muzqaymoq gifti butunlay boshqa format, ko‘rinish va sarlavha bilan. Qo‘shimcha tajriba: izohga chaqiruv (hamma postda izoh 0).",
+   "differs": "Format (ovoz berish / 1 yoki 2 — yangi; 116f dagi yashirin foizli topishmoq emas, narx 0-kadrda), ko‘rinish (qiya chiziqli sport-plakat split-ekran, ulkan raqamlar, yarim ton nuqtalar; qog‘oz, stiker panellar yoki maket yo‘q), palitra (ko‘k fon oilasi + limon sariq + navy siyoh), shrift (Anton — 16-noyabrdan beri birinchi marta), gift (Choco Almond va Trio Scoop — hech qachon alohida ko‘rsatilmagan), musiqa (calm, G-major, 74 bpm, seed 137), effekt (yangi swipe.wav)"
+  }
  }
 ]
