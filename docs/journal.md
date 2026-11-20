@@ -590,3 +590,46 @@ Musiqa: `calm`, 68 bpm, F#-minor (root 54), seed 83, `bed_V20261119b`, past ovoz
 (yumshoq olov "vuh"i va qisqa chirsillash, 2 marta: 0,2 s va 7,7 s, ikkinchisi pastroq); yana 2 ta juda past whoosh. Ovoz: yo‘q.
 Matn chapga, x = 70; kartalar x 70–870, y 452–1520. Keyingi video uchun: shifer→cho‘g‘, profil kartalari, Space Grotesk va oldin/keyin
 formatini takrorlamang.
+
+## 2026-11-20 — V20261120a "Sinmaydigan konfet"
+
+**Tahlil (2026-11-20 05:18 UTC o‘lchovi; Stars postlari va o‘chirilgan post solishtirilmadi).** Yetakchi hamon "Tugamaydigan muzqaymoq"
+(V20261118f): 886 ko‘rish, 713 qamrov, o‘tkazib yuborish 27,7%, o‘rtacha tomosha 9,9 s, 2 saqlash, 6 like. Keyin "Yangi yil ro‘yxati"
+572 / 46,2% / 6,4 s / 1 saqlash, "1000 tadan nechtasi?" 256 / 51,4% / 6,4 s, "Muzqaymoq avtomati" 222 / 49,2% / 5,4 s, "SURGE jurnali"
+233 / 56,3% / 6,0 s, "Sehrli qozon" (V20261119b) 174 / 57,7% / 4,5 s, "Bunker" 181 / 61% / 4,0 s, "Tablo" 63,7%, "Chek" 68,3%,
+"Ob-havo" 71%, "Qaysi biri eng nodir?" 82,4%, "Mif yoki fakt" 85%, "Makro" 88,8% / 2,1 s. Izoh va ulashish hamon hamma joyda 0;
+obunachi 2 ta (o‘zgarmagan). Slot bo‘yicha xulosa yo‘q: 19:00 da ham eng yaxshi (muzqaymoq), ham o‘rtacha (qozon) post chiqdi.
+**Muzqaymoq nimasi bilan farq qildi** (ma’lumot kam, ehtiyotkor xulosa): (1) sarlavha — tanish kundalik narsa haqida paradoks va’da
+("tugamaydigan"), tomoshabin uni o‘z ko‘zi bilan tekshirmoqchi bo‘ladi; (2) giftning o‘zi bilan 0,3 s da hamma tushunadigan voqea
+(tishlanadi); (3) savol → javob stikerlari ("Tugadimi?" → "Yana to‘la!"); (4) yagona yorug‘ fonli video. Qozonda voqea 0,2 s da edi,
+lekin fon qorong‘i, sarlavha tasviriy (paradokssiz) — 57,7%. Demak "voqea 0,3 s gacha" yolg‘iz yetmaydi; paradoks + yorug‘lik ham
+muhim bo‘lishi mumkin. Top-3 dan ikkitasi muzqaymoq giftlari — gift oilasi ham ta’sir qilgan bo‘lishi mumkin; uni ajratib bo‘lmaydi.
+
+**G‘oya.** Tashlash testi (yangi format). 0-kadr: och yalpiz rangli qog‘oz-kesma qishki manzara, "TELEGRAM SOVG‘A · IJARA", yirik
+"SINMAYDIGAN / KONFET", "kuniga 750 so‘m" yorlig‘i, havoda katta Candy Cane. 0,27 s da qorga tushadi (qor sachraydi, snowthud),
+sakrab o‘z animatsiyasida aylanadi; 1,0 s "Sinmadi!", 3,7 s "Yana bir bor?", ko‘tarilib yana tashlanadi (6,2 s), 6,5 s "Hamon butun!".
+8,7 s: tepadagi qorli qog‘oz tokchaga oddiy chizilgan oq-qizil konfet tushib uch bo‘lakka sinadi (snap), "Oddiysi sinadi.";
+10,8 s "Bunisi profilingizda 3–30 kun turadi" (gift pastda butun turadi). 14,4 s: "CANDY CANE", "Ijara · kuniga 750 so‘m",
+15,4 s @ArendagaGiftBot va "↑ Havola profilda". 19,0 s, ovozsiz. Gift: Candy Cane #194062 (Amber Glitter 2,6%, Gunship Green fon 1,5%,
+Candle belgi 1,6%; kuniga 750 so‘m) — 16-noyabrdan beri birinchi marta. Atributlar va −7% captionda.
+
+**Gift haqida muhim.** Animatsiya 180 kadr: 0–84 va 150–179 to‘la diagonal poza (faqat bant hilpiraydi), 84–150 kichrayib aylanadi
+(~120 da tik, 90–140 tor ko‘rinadi). Videoda aylanish faqat sakrash paytida o‘ynatiladi (80-kadrdan boshlanadi), qolgan vaqt faqat
+to‘la pozalar. Ko‘rinadigan qism qutining ~53% i; oyog‘i markazdan ~0,3 × o‘lcham pastda.
+
+**O‘qish tezligi.** Ochilish (8 qisqa so‘z) 0–8,7 s; "Sinmadi!" 1,2–3,5 s; "Yana bir bor?" 3,9–6,3 s; "Hamon butun!" 6,7–8,7 s;
+"Oddiysi sinadi." 10,2–14,1 s; "Bunisi profilingizda 3–30 kun turadi" 11,0–14,1 s (5 so‘z, 3,1 s); narx 14,6–19 s, bot va havola
+15,6–19 s (3,4 s). Bir soniyada ikki yangi blok yo‘q.
+
+**Nimani kuzatish kerak.** Paradoks sarlavha + yorug‘ fon + 0,27 s dagi voqea muzqaymoqsiz ham o‘tkazib yuborishni 40% dan pastga
+tushiradimi; o‘rtacha tomosha 7 s dan oshadimi (ikkinchi tashlash 6,2 s da); Yangi yil mavzusi saqlash/ulashish beradimi.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: tashlash testi + oddiysi bilan taqqoslash (yangi). Ko‘rinish: qog‘oz-kesma qish — och yalpiz
+osmon (#eef6ec → #d6e9d7 → #a8ccb2), oq qishki quyosh doirasi, ikki qator qog‘oz archa (#a8ccb2 va #2f6a4f), qatlamli qor tepaliklari,
+qog‘oz qor parchalari, qor sachrashi, konfet-chiziqli qog‘oz yorliqlar, qorli tokcha. Palitra: fon — giftning Gunship Green foni
+yalpizgacha ochartirilgan; urg‘u — konfet qizili #e0303a / #a3141f (yashilga komplementar); neytral — qor oqi va qarag‘ay siyohi #0f3326;
+qo‘shimcha — amber #f2b54a (faqat mayda yaltirashlar). Shrift: Paytone One (yangi qo‘shildi, `@fontsource/paytone-one`) + Manrope 800.
+Musiqa: `calm`, 76 bpm, E♭-major (root 51), seed 121, `bed_V20261120a`, past ovozda. Yangi tovushlar `pipeline/audio.py` da:
+`snowthud.wav` (qorga yumshoq tushish, 2 marta), `snap.wav` (qand tayoqchasi sinishi, 1 marta, past); yana 3 ta juda past whoosh.
+Ovoz: yo‘q. Matn chapga, x = 70; gift x = 470 markazda. Keyingi video uchun: qog‘oz-kesma qish, yalpiz + qizil, Paytone One,
+tashlash testi va konfet-chiziqli yorliqlarni takrorlamang.

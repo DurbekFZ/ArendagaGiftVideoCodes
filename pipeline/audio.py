@@ -458,6 +458,30 @@ def ignite():
     save("ignite.wav", whoomp * 0.9 + body + crackle)
 
 
+def snowthud():
+    """Something light landing in deep snow: a muffled low thump with a soft, short crunch of packed snow (about 0.4 s)."""
+    x = t(0.4)
+    body = np.sin(2 * np.pi * np.cumsum(62 + 70 * np.exp(-x * 30)) / SR) * np.exp(-x * 14)
+    noise = rng.standard_normal(len(x))
+    crunch = (lowpass(noise, 2400) - lowpass(noise, 600)) * (0.5 + 0.5 * (rng.random(len(x)) > 0.6))
+    crunch *= np.minimum(1, x / 0.006) * np.exp(-x * 26) * 0.45
+    save("snowthud.wav", lowpass((body + crunch) * np.minimum(1, x / 0.004), 3000))
+
+
+def snap():
+    """A hard sugar stick snapping in two: a dry, muffled crack with a small brittle scatter after it (about 0.35 s)."""
+    track = np.zeros(int(SR * 0.35))
+    x = t(0.05)
+    noise = rng.standard_normal(len(x))
+    crack = (lowpass(noise, 3200) - lowpass(noise, 700)) * np.exp(-x * 90)
+    place(track, crack, 0.0, 1.0)
+    for at in (0.07, 0.12, 0.19):
+        y = t(0.02)
+        bit = lowpass(rng.standard_normal(len(y)), 2600) * np.exp(-y * 200)
+        place(track, bit, at + rng.uniform(0, 0.02), 0.25)
+    save("snap.wav", lowpass(track, 3600))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -494,6 +518,8 @@ def build():
     foil()
     thunk()
     ignite()
+    snowthud()
+    snap()
 
 
 def ensure():
@@ -541,6 +567,9 @@ def ensure():
         thunk()
     if not (OUT / "ignite.wav").exists():
         ignite()
+    if not (OUT / "snap.wav").exists():
+        snowthud()
+        snap()
 
 
 if __name__ == "__main__":

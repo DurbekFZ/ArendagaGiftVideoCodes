@@ -1,0 +1,14 @@
+{
+  "id": "V20261120a",
+  "slugs": ["CandyCane-194062"],
+  "caption": "Candy Cane #194062 — sinmaydigan konfet. Bu Telegram NFT sovg‘asi: ijaraga olsangiz, profilingizda 3 kundan 30 kungacha ko‘rinib turadi. Kuniga 750 so‘m, 30 kunga −7%.\n\nAmber Glitter modeli 2,6%, Gunship Green fon 1,5%, Candle belgisi 1,6%.\n\nIjaraga olish: @ArendagaGiftBot — havola profilda.\n\n#telegram #nft #telegramgifts #nftsovga #ijara #yangiyil #uzbekistan",
+  "hero_ms": 1200,
+  "music": {"name": "bed_V20261120a", "style": "calm", "bpm": 76, "root": 51, "scale": "major", "seconds": 20, "seed": 121},
+  "concept": {
+    "title": "Sinmaydigan konfet",
+    "hook": "Birinchi kadr — och yalpiz rangli qog‘oz qishki manzara: \"TELEGRAM SOVG‘A · IJARA\", yirik \"SINMAYDIGAN KONFET\", \"kuniga 750 so‘m\" yorlig‘i va havoda tushayotgan katta Candy Cane; 0,27 s da qorga tushadi, qor sachraydi, sakrab o‘z animatsiyasida aylanadi — \"Sinmadi!\"",
+    "format": "Sinov / tashlash testi (yangi): gift ikki marta qorga tashlanadi (\"Sinmadi!\" → \"Yana bir bor?\" → \"Hamon butun!\"), keyin tepadagi qorli tokchaga oddiy chizilgan konfet tushib uch bo‘lakka sinadi (\"Oddiysi sinadi.\"), gift esa pastda butun turadi: \"Bunisi profilingizda 3–30 kun turadi\"; keyin narx, bot va havola",
+    "why": "\"Tugamaydigan muzqaymoq\" (886 ko‘rish, 27,7% o‘tkazib yuborish, 9,9 s, 2 saqlash) boshqalardan nimasi bilan farq qildi: (1) sarlavha — tanish kundalik narsa haqida paradoks va'da (\"tugamaydigan\"), uni tomoshabin o‘z ko‘zi bilan tekshirmoqchi bo‘ladi; (2) giftning o‘zi bilan sodir bo‘ladigan va hamma tushunadigan voqea 0,3 s da; (3) ochiq savol → javob stikerlari; (4) yorug‘ fon (qolganlarning hammasi qorong‘i). Voqea 0,2 s da bo‘lgan, lekin qorong‘i va paradokssiz \"Sehrli qozon\" 57,7% oldi — demak tezlik yolg‘iz yetmaydi. Shu to‘rt narsa saqlandi, muzqaymoq va uning maketi emas: Candy Cane — tanish shirinlik va Yangi yil (\"Yangi yil ro‘yxati\" ikkinchi o‘rinda), 16-noyabrdan beri ko‘rsatilmagan.",
+    "differs": "Format (tashlash testi — yangi), ko‘rinish (qog‘oz-kesma qishki manzara: och yalpiz osmon, archalar qatori, qatlamli qor tepaliklari, qog‘oz qor parchalari; siyoh hoshiyali stikerlar va panellar yo‘q), shrift (Paytone One — yangi qo‘shildi), palitra (yalpiz-yashil + konfet qizili + qarag‘ay siyohi), gift (Candy Cane, muzqaymoq emas), musiqa (calm, E♭-major, 76 bpm, seed 121), effektlar (yangi snowthud.wav va snap.wav)"
+  }
+}
