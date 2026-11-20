@@ -561,5 +561,29 @@
    "differs": "Format (oldin/keyin profil kartalari — yangi), ko‘rinish (sovuq shifer → cho‘g‘ rangiga o‘tuvchi dunyo, yorug‘lik giftning olovidan; stikerlar, plakat, avtomat yo‘q), shrift (Space Grotesk — birinchi marta), gift oilasi (muzqaymoq emas — qozon), palitra (shifer + olov to‘q sarig‘i + kam magenta), musiqa (calm, F#-minor, 68 bpm, seed 83), effekt (yangi ignite.wav — olov yonishi)"
   },
   "measured_at": "2026-11-20T05:31:52+00:00"
+ },
+ {
+  "name": "20261120-1033-V20261120a",
+  "published_at": "2026-11-20T05:37:11+00:00",
+  "style": "custom",
+  "hook": "V20261120a",
+  "gifts": [
+   "candycane-194062"
+  ],
+  "slot_hour": 10,
+  "seconds": 19.01,
+  "media_id": "18080255765439751",
+  "permalink": "https://www.instagram.com/reel/Df862WcILzb/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261120a",
+  "concept": {
+   "title": "Sinmaydigan konfet",
+   "hook": "Birinchi kadr — och yalpiz rangli qog‘oz qishki manzara: \"TELEGRAM SOVG‘A · IJARA\", yirik \"SINMAYDIGAN KONFET\", \"kuniga 750 so‘m\" yorlig‘i va havoda tushayotgan katta Candy Cane; 0,27 s da qorga tushadi, qor sachraydi, sakrab o‘z animatsiyasida aylanadi — \"Sinmadi!\"",
+   "format": "Sinov / tashlash testi (yangi): gift ikki marta qorga tashlanadi (\"Sinmadi!\" → \"Yana bir bor?\" → \"Hamon butun!\"), keyin tepadagi qorli tokchaga oddiy chizilgan konfet tushib uch bo‘lakka sinadi (\"Oddiysi sinadi.\"), gift esa pastda butun turadi: \"Bunisi profilingizda 3–30 kun turadi\"; keyin narx, bot va havola",
+   "why": "\"Tugamaydigan muzqaymoq\" (886 ko‘rish, 27,7% o‘tkazib yuborish, 9,9 s, 2 saqlash) boshqalardan nimasi bilan farq qildi: (1) sarlavha — tanish kundalik narsa haqida paradoks va'da (\"tugamaydigan\"), uni tomoshabin o‘z ko‘zi bilan tekshirmoqchi bo‘ladi; (2) giftning o‘zi bilan sodir bo‘ladigan va hamma tushunadigan voqea 0,3 s da; (3) ochiq savol → javob stikerlari; (4) yorug‘ fon (qolganlarning hammasi qorong‘i). Voqea 0,2 s da bo‘lgan, lekin qorong‘i va paradokssiz \"Sehrli qozon\" 57,7% oldi — demak tezlik yolg‘iz yetmaydi. Shu to‘rt narsa saqlandi, muzqaymoq va uning maketi emas: Candy Cane — tanish shirinlik va Yangi yil (\"Yangi yil ro‘yxati\" ikkinchi o‘rinda), 16-noyabrdan beri ko‘rsatilmagan.",
+   "differs": "Format (tashlash testi — yangi), ko‘rinish (qog‘oz-kesma qishki manzara: och yalpiz osmon, archalar qatori, qatlamli qor tepaliklari, qog‘oz qor parchalari; siyoh hoshiyali stikerlar va panellar yo‘q), shrift (Paytone One — yangi qo‘shildi), palitra (yalpiz-yashil + konfet qizili + qarag‘ay siyohi), gift (Candy Cane, muzqaymoq emas), musiqa (calm, E♭-major, 76 bpm, seed 121), effektlar (yangi snowthud.wav va snap.wav)"
+  }
  }
 ]
