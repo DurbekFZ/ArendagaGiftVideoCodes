@@ -1,0 +1,14 @@
+{
+  "id": "V20261121b",
+  "slugs": ["chillflame-164026"],
+  "caption": "Tilak qiling va shamlarni puflang 🕯️ Tilagingiz ushalsin!\n\nChill Flame (shamdon) — Telegram NFT sovg‘asi. Ijaraga olsangiz, profilingizda 3 kundan 30 kungacha ko‘rinib turadi. Kuniga 750 so‘m, 30 kunga −7%.\n\nChill Flame #164026: Candelabra modeli 3%, Sapphire fon 1,2%, Pawn belgisi 0,4%.\n\nIjaraga olish: @ArendagaGiftBot — havola profilda.\n\n#telegram #nft #telegramgifts #nftsovga #ijara #uzbekistan",
+  "hero_ms": 300,
+  "music": {"name": "bed_V20261121b", "style": "calm", "bpm": 68, "root": 51, "scale": "major", "seconds": 20, "seed": 163},
+  "concept": {
+    "title": "Tilak qiling",
+    "hook": "Birinchi kadr — iliq terrakota g‘isht devor va krem hoshiyali ravoq (tokcha), ichida katta firuza shamdon: shamlar uchqun bilan yonib ketmoqda; tepada \"TELEGRAM SOVG‘A · IJARA\" va yirik \"TILAK QILING!\", pastda \"Shamdon · kuniga 750 so‘m\" yorlig‘i",
+    "format": "Tilak marosimi / interaktiv POV (yangi): \"Tilak qiling!\" → 5,2 s \"Endi puflang!\", shamol chiziqlari supurib o‘tadi va giftning o‘z animatsiyasida shamlar o‘chadi, xona qorong‘ilashadi; 9,3 s shamlar o‘z-o‘zidan qayta yonadi — \"Tilagingiz ushaldi!\", \"Shamdon 3–30 kun profilingizda\"; keyin narx, bot va havola",
+    "why": "Past o‘tkazib yuborishli postlarning (118f, 117c, 119a) birinchi 1,5 soniyasi iliq, to‘yingan, butun kadrni to‘ldirgan fonda katta, kadrni to‘ldiradigan asosiy obraz va darhol boshlangan voqeaga ega; yuqori o‘tkazib yuborishli 120a va 121a da gift kichikroq va kadrning katta qismi bo‘sh (oq qor, qorong‘i halqalar). Bu kuchsiz dalil (har biri bitta post), lekin shu yo‘nalishda: katta gift, iliq to‘la kadr, 0-kadrda shamlar yonmoqda. Yangi yil yaqin — tilak qilish hammaga tanish odat.",
+    "differs": "Format (tilak / puflash — yangi), ko‘rinish (terrakota g‘isht devor, ravoq-tokcha, 8 qirrali yulduz — yangi), palitra (terrakota + firuza + krem, oltin faqat alangada; 121a ning indigo-oltinidan va 120b ning ko‘k-limonidan farqli), shrift (Fredoka 700 — 16f dan beri birinchi marta), gift (Chill Flame — 17a dan beri birinchi marta, so‘nggi uchtadan boshqa oila), musiqa (calm, E♭-major, 68 bpm, seed 163), effektlar (yangi blow.wav va kindle.wav)"
+  }
+}

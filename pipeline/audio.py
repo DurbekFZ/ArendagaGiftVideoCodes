@@ -506,6 +506,34 @@ def fingersnap():
     save("fingersnap.wav", lowpass(track, 5200))
 
 
+def blow():
+    """Someone blowing out candles: one soft, breathy gust of air that swells and falls away, no hiss peak (about 1.1 s)."""
+    x = t(1.1)
+    noise = rng.standard_normal(len(x))
+    shape = np.minimum(1, x / 0.12) ** 2 * np.exp(-np.maximum(0, x - 0.25) * 4.5)
+    breath = lowpass(noise, 1400 + 600 * np.exp(-x * 3)) - lowpass(noise, 180)
+    flutter = 1 + 0.25 * np.sin(2 * np.pi * 11 * x)
+    save("blow.wav", lowpass(breath * shape * flutter, 2600))
+
+
+def kindle():
+    """Three candle wicks catching one after another: soft rounded puffs of warm air with a faint crackle (about 1.2 s)."""
+    track = np.zeros(int(SR * 1.2))
+    for i, at in enumerate((0.0, 0.16, 0.3)):
+        x = t(0.5)
+        noise = rng.standard_normal(len(x))
+        puff = lowpass(noise, 500 + 700 * np.exp(-x * 9)) * np.minimum(1, x / 0.025) * np.exp(-x * 9)
+        place(track, puff, at, 0.8 - i * 0.15)
+    x = t(1.2)
+    crackle = np.zeros(len(x))
+    for _ in range(10):
+        at = int(SR * rng.uniform(0.05, 0.8))
+        n = int(SR * 0.005)
+        crackle[at:at + n] += rng.standard_normal(n) * np.exp(-np.arange(n) / (SR * 0.0012)) * rng.uniform(0.05, 0.15)
+    track += lowpass(crackle, 2600) * np.exp(-x * 2.5)
+    save("kindle.wav", lowpass(track, 3000))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -546,6 +574,8 @@ def build():
     snap()
     swipe()
     fingersnap()
+    blow()
+    kindle()
 
 
 def ensure():
@@ -600,6 +630,9 @@ def ensure():
         swipe()
     if not (OUT / "fingersnap.wav").exists():
         fingersnap()
+    if not (OUT / "kindle.wav").exists():
+        blow()
+        kindle()
 
 
 if __name__ == "__main__":

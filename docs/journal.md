@@ -728,3 +728,51 @@ va indigo siyoh #0b0a24; qo‘shimcha — rubin #ff4f6d (faqat changlarda). Shri
 `fingersnap.wav` (yumshoq barmoq qarsillashi, 1 marta, 9,0 s); yana 3 ta juda past whoosh. Ovoz: yo‘q. Matn chapga, x = 70; mayatnik
 x = 470 da osilgan (ilgak y = 604), tebranish ±17°. Keyingi video uchun: indigo + oltin, konsentrik halqalar, Fraunces, sanoq va
 mayatnik formatini takrorlamang.
+
+## 2026-11-21 — V20261121b "Tilak qiling"
+
+**Tahlil (2026-11-21 14:17 UTC o‘lchovi; Stars postlari va o‘chirilgan post solishtirilmadi).** Yetakchilar o‘zgarmagan: "Tugamaydigan
+muzqaymoq" (118f) 887 ko‘rish / o‘tkazib yuborish 27,6% / o‘rtacha 9,9 s / 2 saqlash; "Yangi yil ro‘yxati" (117c) 573 / 46,3% / 6,3 s;
+"Muzqaymoq avtomati" (119a) 222 / 49,2% / 5,4 s. Eng kuchsizlari: "Gipnoz" (121a) 140 / 72,4% / 4,2 s, "Sinmaydigan konfet" (120a)
+176 / 69,7%, "Ijara cheki" (116g) 68,3%, 16-noyabr ochilishlari 82–89%. Izoh va ulashish hamon hamma joyda 0; like 0–6; obunachi 2 ta.
+So‘nggi besh post 140–222 ko‘rish — 2 obunachi bilan qamrov tarqatish bilan cheklangan bo‘lishi mumkin, bitta post juda shovqinli.
+**Birinchi 1,5 soniyani yonma-yon solishtirdim** (0, 0,7, 1,5 s kadrlari render qilindi). Past o‘tkazib yuborishlilar (118f, 117c, 119a):
+iliq, to‘yingan fon butun kadrni to‘ldiradi (oltin plakat, to‘q bordo, malina-qizil avtomat), asosiy obraz katta va kadr markazini
+egallaydi (118f da gift ~70% kenglik, 119a da avtomat butun kadr), voqea 0,3–1 s da boshlanadi (tishlam, yozuv, paket yorilishi).
+Yuqori o‘tkazib yuborishlilar (120a, 121a): gift kengligi ~35–40%, kadrning katta qismi bo‘sh (pastki yarmi oq qor; qorong‘i
+halqalar), sovuq/och palitra. Voqea ikkalasida ham bor edi (konfet tushadi, kulon tebranadi), demak farq "voqea bormi"da emas,
+ko‘proq **kadr to‘laligi, gift kattaligi va iliq to‘yingan rang**da bo‘lishi mumkin. Bu kuchsiz xulosa: har biri bitta post, 118f
+tarqatish omadi bo‘lishi ham mumkin. Shuning uchun g‘oya o‘z xususiyatlari bilan tanlandi, lekin shu yo‘nalishga qarab.
+
+**G‘oya.** Tilak marosimi / interaktiv POV (yangi format). 0-kadr: iliq terrakota g‘isht devor, krem hoshiyali ravoq-tokcha, ichida
+katta firuza shamdon — shamlar shu zahoti uchqun bilan yonib ketadi (giftning o‘z animatsiyasi, 140-kadrdan); tepada
+"TELEGRAM SOVG‘A · IJARA" va yirik "TILAK QILING!", pastda "Shamdon · kuniga 750 so‘m" yorlig‘i. 5,2 s "ENDI PUFLANG!",
+6,0 s shamol chiziqlari supurib o‘tadi, giftning o‘z animatsiyasida shamdon chayqaladi va shamlar tutun bilan o‘chadi, xona
+qorong‘ilashadi. 9,3 s shamlar o‘z-o‘zidan qayta yonadi — "TILAGINGIZ USHALDI!", 10,3 s "Shamdon 3–30 kun profilingizda".
+14,7 s "CHILL FLAME · SHAMDON", "Ijara · kuniga 750 so‘m", 15,7 s @ArendagaGiftBot va "↑ Havola profilda". 19,6 s, ovozsiz.
+Gift: Chill Flame #164026 (Candelabra 3%, Sapphire fon 1,2%, Pawn belgi 0,4%; kuniga 750 so‘m) — 17a dan beri birinchi marta;
+so‘nggi uchtadan (Candy Cane, Ice Cream, Moon Pendant) boshqa oila. Atributlar va −7% captionda.
+
+**Gift haqida muhim.** Candelabra animatsiyasi 180 kadrlik sikl (video kadrlarida): 0–40 tik turib yonadi (alanga miltillaydi),
+40–80 chayqaladi (xuddi puflangandek), ~84–126 shamlar o‘chadi, tutun chiqadi va gift biroz kichrayadi, ~130–150 uchqun bilan qayta
+yonadi, 150–179 to‘la yonadi. Videoda: tik yonib turgan pozalar [150–179, 0–36] oldinga-orqaga aylantiriladi (chayqalishsiz miltillash),
+puflash 40→126 o‘ynatiladi, 126 (o‘chgan) ushlanadi, qayta yonish 126→179. Shamdon qutining ~40% kengligi va ~55% balandligini egallaydi;
+quti 1320 px, markaz (470, 1100).
+
+**O‘qish tezligi.** Ochilish (kicker + "Tilak qiling!" + narx yorlig‘i, ≈9 so‘z) 0–5,0 s; "Endi puflang!" 5,2–8,9 s; narx yorlig‘i 0–8,9 s;
+"Tilagingiz ushaldi!" 9,3–14,4 s; "Shamdon 3–30 kun profilingizda" 10,3–14,4 s (4 so‘z, 4,1 s); narx 14,7–19,6 s (4,9 s), bot va havola
+15,7–19,6 s (3,9 s). Bir soniyada ikki yangi blok yo‘q.
+
+**Nimani kuzatish kerak.** O‘tkazib yuborish 60% dan pastmi (iliq to‘la kadr + katta gift + 0-kadrda yonayotgan shamlar farazi);
+o‘rtacha tomosha 6 s dan oshadimi (puflash 6 s da, qayta yonish 9,3 s da). Ko‘rish yana 140–222 oralig‘ida bo‘lsa — bu tarqatish
+chegarasi haqida yana bir dalil.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: tilak / puflash / qayta yonish (yangi). Ko‘rinish: terrakota g‘isht devor (#f2915f →
+#d4623c → #8e3020, nozik g‘isht chiziqlari), krem hoshiyali ravoq-tokcha (ichi to‘q vino #3c120d, firuza nuqtali ichki hoshiya), krem
+tokcha, devorda ikki kichik aylanuvchi 8 qirrali yulduz, ko‘tariluvchi oltin uchqunlar, krem shamol chiziqlari (jingalak uchli), shamlar
+o‘chganda butun xona qorong‘ilashadi. Palitra: fon — terrakota (shamdon firuzasiga komplementar); urg‘u — firuza #5fe3c3; neytral — krem
+#fff1dc va jigarrang siyoh #2b0f0a; qo‘shimcha — alanga oltini #ffd36b (faqat narx va "PUFLANG!"). Stikerlar qattiq siyoh soyali.
+Shrift: Fredoka 700 (16f dan beri birinchi marta) + Manrope 800. Musiqa: `calm`, 68 bpm, E♭-major (root 51), seed 163,
+`bed_V20261121b`, past ovozda, shamlar o‘chganda pasayadi. Yangi tovushlar `pipeline/audio.py` da: `blow.wav` (yumshoq puflash, 1 marta),
+`kindle.wav` (uch pilikning ketma-ket yonishi, 0 va 9,3 s, past); yakunda bitta juda past whoosh. Ovoz: yo‘q. Matn chapga, x = 70.
+Keyingi video uchun: terrakota + firuza, g‘isht devor va ravoq, Fredoka, tilak/puflash formatini takrorlamang.
