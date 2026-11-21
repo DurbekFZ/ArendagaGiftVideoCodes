@@ -681,3 +681,50 @@ sariq "YOKI" nishoni va narx yorlig‘i (qattiq navy soya). Palitra: fon — ko�
 Musiqa: `calm`, 74 bpm, G-major (root 55), seed 137, `bed_V20261120b`, past ovozda. Yangi tovush `pipeline/audio.py` da: `swipe.wav`
 (maydon siljishi — yumshoq havo shivirlashi, 3 marta, past); `bite.wav` 2 marta (past). Ovoz: yo‘q. Keyingi video uchun: split-ekran,
 ko‘k + limon, Anton, ulkan raqamlar va "1 yoki 2" formatini takrorlamang.
+
+## 2026-11-21 — V20261121a "Gipnoz"
+
+**Tahlil (2026-11-21 05:18 UTC o‘lchovi; Stars postlari va o‘chirilgan post solishtirilmadi).** Yetakchi hamon "Tugamaydigan muzqaymoq"
+(V20261118f): 886 ko‘rish, o‘tkazib yuborish 27,7%, o‘rtacha tomosha 9,9 s, 2 saqlash. Keyin "Yangi yil ro‘yxati" (117c) 573 / 46,3% / 6,3 s /
+1 saqlash, "Muzqaymoq avtomati" (119a) 222 / 49,2%, "1000 tadan nechtasi?" (117a) 256 / 51,4%, "SURGE jurnali" 233 / 56,3%, "Sehrli qozon"
+175 / 58%, "1 yoki 2?" (120b) 172 / 59,7% / 4,8 s, "Bunker" 181 / 61%, "Sinmaydigan konfet" 176 / 69,7%, 16-noyabr postlari 64–89%.
+Izoh va ulashish hamma joyda 0; obunachi 2 ta (o‘zgarmagan). Like eng oxirgi ikkita postda 0.
+**Nima ma’lum va nima noma’lum (halol).** (1) 120b muzqaymoq farazini tasdiqlamadi (59,7%, oddiy natija) — demak gift oilasi ham 118f ni
+tushuntirmaydi. 118f bitta tasodifiy tarqatish omadi bo‘lgan bo‘lishi mumkin; bitta postga qurilgan hikoya endi qurilmaydi. (2) So‘nggi
+to‘rt post o‘tkazib yuborish 58–70% bo‘lishidan qat’i nazar 172–222 ko‘rish oldi: 2 obunachi bilan qamrov kreativga emas, tarqatishga
+bog‘liq bo‘lishi mumkin; bitta postning natijasi juda shovqinli. (3) Kuchsiz, lekin barqaror kuzatuv: 0-kadrda yirik, aniq matn va mahsulot
+bilan ochilgan postlar (17-noyabrdan beri) sekin ochilgan 16-noyabr postlaridan (82–89%) yaxshiroq ushlaydi — bu qoida saqlanadi.
+Slot va ovozli/ovozsiz bo‘yicha xulosa yo‘q. Shuning uchun g‘oya o‘z xususiyatlari bilan tanlandi: aniq taklif, kuchli birinchi kadr,
+giftga nimadir bo‘layotgani, so‘nggi uch postdan (Hex Pot, Candy Cane, Ice Cream) boshqa gift oilasi.
+
+**G‘oya.** Gipnoz seansi (yangi format). 0-kadr: tungi indigo, giftdan tarqaluvchi sekin konsentrik halqalar; tepada "TELEGRAM SOVG‘A · IJARA",
+yirik "OY KULONI", "kuniga 750 so‘m" yorlig‘i; ostida Moon Pendant oltin zanjirda mayatnikdek tebranib turibdi (0-kadrdan harakatda).
+1,3 s "Kulonga qarang…"; 4,9 s "Uchgacha sanayman", 6,0 / 7,1 / 8,2 s da 1, 2, 3 kartochkalari birma-bir chiqadi, tebranish so‘nadi;
+9,0 s barmoq qarsillashi — kulon to‘xtaydi, o‘z animatsiyasida bir marta tez aylanadi, halqalar va nur oltin rangda chaqnaydi;
+9,4 s "Endi siz uni xohlaysiz."; 12,6 s "3–30 kun profilingizda"; 15,4 s "MOON PENDANT · IJARA", "kuniga atigi 750 so‘m";
+16,4 s @ArendagaGiftBot va "↑ Havola profilda". 19,5 s, ovozsiz. Gift: Moon Pendant #95850 (Ruby Core 3%, Sapphire fon 1,2%,
+Phoenix belgi 0,5%; kuniga 750 so‘m) — 16-noyabrdagi birinchi postdan beri birinchi marta. Atributlar va −7% captionda.
+
+**Gift haqida muhim.** Animatsiya 180 kadrlik sikl: 36–132 kulon vertikal o‘q atrofida aylanadi (o‘rtasida ingichka chiziq va orqa
+tomoni — ko‘rsatmang), 136–212 (mod 180) to‘g‘ri qaraydi. `Freeze` + `<Lottie>` bilan 140–204 oralig‘ida oldinga-orqaga aylantirildi
+(yaltirash harakatlanadi), aylanish faqat barmoq qarsillaganda 25 kadrda o‘ynatiladi. Diqqat: `remotion still` bilan Freeze pozalarini
+render qilish ishonchsiz (hamma kataklar 0-poza ko‘rindi); pozalarni tayyor mp4 dan ffmpeg bilan ajratib tekshiring.
+Disk qutining ~49% i; bail (halqa) quti markazidan ~0,30 × o‘lcham yuqorida.
+
+**O‘qish tezligi.** Ochilish (≈6 so‘z) 0–4,5 s; "Kulonga qarang…" 1,3–4,5 s; "Uchgacha sanayman" 4,9–9,1 s; raqamlar har biri ≥ 0,9 s
+alohida va birga 9,1 s gacha; "Endi siz uni xohlaysiz." 9,4–12,3 s (4 so‘z, 2,8 s kerak); "3–30 kun profilingizda" 12,6–15,1 s
+(3 so‘z, 2,4 s); narx 15,4–19,5 s, bot va havola 16,4–19,5 s (3,1 s). Bir soniyada ikki yangi blok yo‘q.
+
+**Nimani kuzatish kerak.** Tebranayotgan gift + "Kulonga qarang…" 3 soniyadan o‘tkazib yuborishni 55% dan pastga tushiradimi; sanoq
+o‘rtacha tomoshani 6 s dan oshiradimi (qarsillash 9 s da); hazil yakun like/saqlash beradimi. Natija 172–222 oralig‘ida bo‘lsa — bu yana
+tarqatish chegarasi haqida dalil, kreativ haqida emas.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: gipnoz / sanoq 1–2–3 / mayatnik (yangi). Ko‘rinish: tungi indigo (#2c2a86 → #1d1a5c → #0d0b2e)
+radial, giftdan tarqaluvchi konsentrik halqalar (#4a4fc4, qarsillashda oltinga o‘tadi), mayda oltin-krem-rubin changlar, oltin zanjir va
+ilgak, krem stikerlar (oltin pastki soya), krem/oltin raqam kartochkalari, oltin halqa portlashi. Palitra: fon — giftning Sapphire foni
+binafsha tomonga surilgan tungi indigo (analog); urg‘u — kulonning oltini #ffc24a / #e08a1e (split-komplementar); neytral — krem #fff4de
+va indigo siyoh #0b0a24; qo‘shimcha — rubin #ff4f6d (faqat changlarda). Shrift: Fraunces 900 / 900 kursiv (16d dan beri birinchi marta)
++ Manrope 800. Musiqa: `calm`, 62 bpm, A-minor (root 57), seed 151, `bed_V20261121a`, past ovozda. Yangi tovush `pipeline/audio.py` da:
+`fingersnap.wav` (yumshoq barmoq qarsillashi, 1 marta, 9,0 s); yana 3 ta juda past whoosh. Ovoz: yo‘q. Matn chapga, x = 70; mayatnik
+x = 470 da osilgan (ilgak y = 604), tebranish ±17°. Keyingi video uchun: indigo + oltin, konsentrik halqalar, Fraunces, sanoq va
+mayatnik formatini takrorlamang.

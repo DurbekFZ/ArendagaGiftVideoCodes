@@ -492,6 +492,20 @@ def swipe():
     save("swipe.wav", lowpass(air * shape, 3800))
 
 
+def fingersnap():
+    """A hypnotist's finger snap, kept soft: a short dry click with a little body and a small room tail (about 0.5 s)."""
+    track = np.zeros(int(SR * 0.5))
+    x = t(0.03)
+    noise = rng.standard_normal(len(x))
+    click = (lowpass(noise, 4200) - lowpass(noise, 1100)) * np.exp(-x * 160)
+    body = np.sin(2 * np.pi * 1350 * x) * np.exp(-x * 120) * 0.35
+    place(track, click + body, 0.0, 1.0)
+    y = t(0.45)
+    tail = lowpass(rng.standard_normal(len(y)), 2200) * np.exp(-y * 14) * 0.05
+    place(track, tail, 0.01, 1.0)
+    save("fingersnap.wav", lowpass(track, 5200))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -531,6 +545,7 @@ def build():
     snowthud()
     snap()
     swipe()
+    fingersnap()
 
 
 def ensure():
@@ -583,6 +598,8 @@ def ensure():
         snap()
     if not (OUT / "swipe.wav").exists():
         swipe()
+    if not (OUT / "fingersnap.wav").exists():
+        fingersnap()
 
 
 if __name__ == "__main__":
