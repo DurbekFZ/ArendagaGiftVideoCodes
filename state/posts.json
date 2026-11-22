@@ -742,5 +742,29 @@
    "differs": "Format (hikoyasiz plakat — yangi), ko‘rinish (tekis elektr-binafsha, oq bo‘yoq dog‘lari — yangi), palitra (binafsha + kislotali laym + oq; avvalgi terrakota, indigo-oltin, ko‘k-limondan farqli), shrift (Rubik 800 sarlavha sifatida — birinchi marta), gift (Surge Board Graffiti — birinchi marta), musiqa (calm, D-major, 80 bpm, seed 181), effekt (yangi splat.wav), joylashuv (kicker pill va narx stikeri yo‘q)"
   },
   "measured_at": "2026-11-22T14:35:12+00:00"
+ },
+ {
+  "name": "20261122-1936-V20261122b",
+  "published_at": "2026-11-22T14:39:29+00:00",
+  "style": "custom",
+  "hook": "V20261122b",
+  "gifts": [
+   "poolfloat-125175"
+  ],
+  "slot_hour": 19,
+  "seconds": 18.88,
+  "media_id": "18114160583234463",
+  "permalink": "https://www.instagram.com/reel/DgDCfh5gAWv/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261122b",
+  "concept": {
+   "title": "Narx yorlig‘i",
+   "hook": "Birinchi kadr — iliq shampan-oltin xona, disko-shar aks-nurlari; kadrning yuqori yarmida katta Pool Float (Disco modeli), unga ip bilan bog‘langan katta krem narx yorlig‘ida \"Telegram NFT sovg‘a ijarasi / Kuniga / 750 so‘m\"; 0,45 s da giftning o‘z animatsiyasida shampan probkasi otiladi, ko‘pik sachraydi va yorliq ipida chayqaladi",
+   "format": "Butik narx yorlig‘i (yangi): matn faqat ipda osilgan yorliqda, yorliq qo‘lda o‘girilgandek uch marta aylanadi — Disco modeli · noyoblik 2%, 3–30 kun profilingizda turadi, narx + bot + havola (probka yana otiladi)",
+   "why": "22a (Graffiti) reklama qolipini tashladi va o‘tkazib yuborish 72–84% dan 57,6% ga tushdi (bitta nuqta, 139 ko‘rish). Bu video qolipdan yanada uzoqlashadi: sarlavha bandi ham yo‘q, matn bitta jismoniy narsada — yorliqda; 0,5 s ichida giftning o‘zida katta voqea (probka, ko‘pik), narx 0-kadrda eng yirik yozuv.",
+   "differs": "Format (o‘giriladigan narx yorlig‘i — yangi), ko‘rinish (shampan-oltin xona, disko aks-nurlari, pufakchalar, krem qog‘oz yorliq ipda), palitra (oltin + zumrad + krem; avvalgi binafsha-laym, terrakota-firuza, indigo-oltindan farqli), shrift (Playfair Display 900 / 900 kursiv — 16-noyabrdan beri birinchi marta), joylashuv (matn yuqori bandda emas, giftga osilgan yorliqda), gift (Pool Float — 17b dan beri birinchi marta), musiqa (calm, F-major, 72 bpm, seed 197), yangi tovush cardflip.wav"
+  }
  }
 ]
