@@ -549,6 +549,20 @@ def splat():
     save("splat.wav", lowpass(track, 2400))
 
 
+def cardflip():
+    """A stiff paper price tag flicked over on its string: a short airy swish and a soft papery tick (about 0.35 s)."""
+    track = np.zeros(int(SR * 0.35))
+    x = t(0.22)
+    noise = rng.standard_normal(len(x))
+    swell = np.sin(np.pi * np.clip(x / 0.2, 0, 1)) ** 2
+    air = (lowpass(noise, 600 + 2200 * swell) - lowpass(noise, 350)) * swell
+    place(track, air, 0.0, 0.7)
+    y = t(0.05)
+    tick = (lowpass(rng.standard_normal(len(y)), 2600) - lowpass(rng.standard_normal(len(y)), 500)) * np.exp(-y * 90)
+    place(track, tick, 0.19, 0.5)
+    save("cardflip.wav", lowpass(track, 3200))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -651,6 +665,8 @@ def ensure():
         kindle()
     if not (OUT / "splat.wav").exists():
         splat()
+    if not (OUT / "cardflip.wav").exists():
+        cardflip()
 
 
 if __name__ == "__main__":

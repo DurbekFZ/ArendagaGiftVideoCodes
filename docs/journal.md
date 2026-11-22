@@ -833,3 +833,49 @@ bo‘limda yangi shakl). Palitra: fon — binafsha (taxtaning binafsha konturi v
 (sarlavha sifatida birinchi marta) + Manrope 800. Musiqa: `calm`, 80 bpm, D-major (root 62), seed 181, `bed_V20261122a`, past ovozda.
 Yangi tovush `pipeline/audio.py` da: `splat.wav` (yumshoq ho‘l bo‘yoq shapillashi, 3 marta, past); bitta juda past whoosh. Ovoz: yo‘q.
 Matn chapga, x = 66–70. Keyingi video uchun: binafsha + laym, bo‘yoq dog‘i, Rubik, hikoyasiz plakat formatini takrorlamang.
+
+## 2026-11-22 — V20261122b "Narx yorlig‘i"
+
+**Tahlil (2026-11-22 14:18 UTC o‘lchovi; Stars postlari va o‘chirilgan post solishtirilmadi).** 22a "Graffiti" 8 soatda: 139 ko‘rish,
+qamrov 122, o‘tkazib yuborish 57,6%, o‘rtacha tomosha 5,3 s (18,5 s video), 0 like/saqlash/ulashish/izoh. Oldingi ikkitasi: 121b
+"Tilak qiling" 108 / 83,7% / 2,8 s, 121a "Gipnoz" 144 / 72,3% / 4,3 s. Yetakchilar o‘zgarmagan: 118f 887 / 27,6% / 9,9 s / 2 saqlash;
+117c 573 / 46,3% / 6,3 s; 119a 223 / 49,5% / 5,4 s. Izoh va ulashish hamon hamma postda 0; obunachi 2 ta (o‘zgarmagan); `metrics_error`
+yo‘q. 22a reklama qolipini (kicker pill, narx stikeri) tashlagan va 0,5 s ichida katta o‘zgarish bergan birinchi post — yaxshilanish
+bor, lekin bu bitta nuqta, 139 ko‘rish; ishonchli xulosa emas, faqat yo‘nalish. Slot, ovoz va gift bo‘yicha hali ham xulosa yo‘q.
+
+**Graffiti bilan solishtirganda nima o‘zgartirildi (keyingi solishtirish toza bo‘lishi uchun).** Saqlandi: kicker pill va narx stikeri
+yo‘q; 0-kadrda narx eng yirik yozuv; 0,5 s ichida giftning o‘zida katta voqea; ovozsiz; calm musiqa. O‘zgartirildi: (1) yuqori chap
+sarlavha bandi ham yo‘q — matn faqat giftga ip bilan osilgan bitta jismoniy narsada, krem narx yorlig‘ida (kadr markazidan pastda,
+x = 80–860); (2) bo‘limlar dog‘ bilan emas, yorliqning qo‘lda o‘girilishi (rotateY, 0,4 s) bilan almashadi; (3) iliq oltin fon (22a
+sovuq binafsha edi); (4) serif shrift (22a Rubik grotesk edi); (5) gift kadrning yuqori yarmida, matn ostida emas, ustida.
+
+**G‘oya.** Butik narx yorlig‘i (yangi format). 0-kadr: shampan-oltin xona, disko-shar aks-nurlari va pufakchalar; tepada katta Pool Float,
+undan ip bilan osilgan katta krem yorliq: "TELEGRAM NFT SOVG‘A IJARASI / Kuniga / 750 so‘m". 0,45 s da giftning o‘z animatsiyasida
+probka otiladi, shampan ko‘pigi va rangli tomchilar sachraydi, yorliq ipida chayqaladi. 5,0 s yorliq o‘giriladi — "Bu — Pool Float /
+Disco / modeli / noyoblik atigi 2%"; 10,0 s — "Ijaraga oling / 3–30 kun / profilingizda turadi"; 14,3 s — "Pool Float · kuniga /
+750 so‘m"; 15,7 s yorliqda @ArendagaGiftBot va "↑ Havola profilda", shu payt probka yana otiladi. 18,9 s, ovozsiz.
+Gift: Pool Float #125175 (Disco 2%, Old Gold fon 1,5%, Beanie belgi 0,5%; kuniga 750 so‘m) — 17b dan beri birinchi marta. −7% captionda.
+
+**Gift haqida muhim.** Animatsiya 180 kadrlik sikl: 0–60 tik, uchqunlar bilan (32–48 shisha biroz qiyshayadi), 64–88 shisha halqaga
+cho‘kadi, ~92 probka otiladi, 96–136 ko‘pik otilib chiqadi (qutining yuqori ~12% igacha yetadi), 144–179 tinchlanadi. Videoda 0-kadr
+gift kadri 78 dan boshlanadi (probka video ~14-kadrda), keyin [150 → 179 → 0 → 56] oldinga-orqaga; yakunda 60 → 150 qayta o‘ynaydi.
+Muqovada 160-poza. Ko‘rinadigan gift qutining ~30–73% kengligi, ~29–78% balandligi; quti 1300 px, markaz (500, 585).
+Diqqat: ko‘pik otilganda ~1,5 s davomida shisha bo‘yni va ko‘pik yuqori 220 px ga biroz kiradi (faqat harakat, matn emas).
+
+**O‘qish tezligi.** Yorliq old tomoni (7 so‘z) 0–5,0 s; Disco tomoni (8 so‘z) ~5,4–10,0 s (4,6 s); 3–30 kun tomoni (6 so‘z) ~10,4–14,3 s
+(3,9 s); narx 14,7–18,9 s (4,2 s), bot va havola 15,7–18,9 s (3,2 s). Bir soniyada ikki yangi blok yo‘q; o‘girilishning o‘rtasida
+(90°) yorliq 1–2 kadr ko‘rinmaydi.
+
+**Nimani kuzatish kerak.** O‘tkazib yuborish 22a ning 57,6% iga yaqin yoki pastmi (qolipsiz + 0,5 s dagi voqea farazi ikkinchi marta
+sinaladi, boshqa ko‘rinishda). Agar yana ~55–60% bo‘lsa — "qolipsiz, birinchi yarim soniyada voqea" yo‘nalishi mustahkamlanadi; agar 70%+
+bo‘lsa — 22a natijasi tasodif bo‘lishi mumkin. O‘rtacha tomosha 5 s dan oshadimi (birinchi o‘girilish 5,0 s da).
+
+**Tanlovlar (takrorlamaslik uchun).** Format: o‘giriladigan narx yorlig‘i (yangi). Ko‘rinish: shampan-oltin radial xona (#f4c862 →
+#cf9a34 → #7a5214 → #3e2707), aylanib yuruvchi disko-shar yorug‘lik dog‘lari (krem, pushti, muz-ko‘k, screen), ko‘tariluvchi halqa
+pufakchalar, sekin satin yaltirash, krem qog‘oz yorliq (qirralari kesilgan, oltin punktir hoshiya, oltin ko‘zcha, krem ip), halqada
+to‘rt qirrali yaltiroqlar, probka sachrashi. Palitra: fon — oltin (giftning Old Gold foni va folgasiga analog); urg‘u — shishaning
+zumradi #0f7a4c (iliq oltinga taxminan komplementar); neytral — krem #fff5de va espresso siyoh #2a1806; qo‘shimcha — pushti #ffb6d3
+(faqat yorug‘lik dog‘larida). Shrift: Playfair Display 900 / 900 kursiv (16-noyabrdan beri birinchi marta) + Manrope 800. Musiqa:
+`calm`, 72 bpm, F-major (root 53), seed 197, `bed_V20261122b`, past ovozda. Yangi tovush `pipeline/audio.py` da: `cardflip.wav`
+(qog‘oz yorliq o‘girilishi, 3 marta, past); `cork.wav` 2 marta, past. Ovoz: yo‘q. Matn yorliqda, markaz x = 470. Keyingi video uchun:
+oltin + zumrad, narx yorlig‘i, disko dog‘lari, Playfair, o‘giriladigan karta formatini takrorlamang.
