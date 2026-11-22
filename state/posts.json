@@ -706,5 +706,29 @@
    "differs": "Format (tilak / puflash — yangi), ko‘rinish (terrakota g‘isht devor, ravoq-tokcha, 8 qirrali yulduz — yangi), palitra (terrakota + firuza + krem, oltin faqat alangada; 121a ning indigo-oltinidan va 120b ning ko‘k-limonidan farqli), shrift (Fredoka 700 — 16f dan beri birinchi marta), gift (Chill Flame — 17a dan beri birinchi marta, so‘nggi uchtadan boshqa oila), musiqa (calm, E♭-major, 68 bpm, seed 163), effektlar (yangi blow.wav va kindle.wav)"
   },
   "measured_at": "2026-11-22T05:35:01+00:00"
+ },
+ {
+  "name": "20261122-1036-V20261122a",
+  "published_at": "2026-11-22T05:39:57+00:00",
+  "style": "custom",
+  "hook": "V20261122a",
+  "gifts": [
+   "surgeboard-25384"
+  ],
+  "slot_hour": 10,
+  "seconds": 18.52,
+  "media_id": "18133328623693855",
+  "permalink": "https://www.instagram.com/reel/DgCEwslCQMf/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261122a",
+  "concept": {
+   "title": "Graffiti",
+   "hook": "Birinchi kadr — tekis elektr-binafsha fon, tepada uch qator taklif (\"Telegram NFT sovg‘a ijarasi / Kuniga / 850 so‘m\"), ostida kadrni deyarli to‘ldirgan Surge Board (Graffiti modeli) o‘z animatsiyasida harakatda; 0,15–0,5 s da orqasida katta oq bo‘yoq dog‘i portlaydi va taxtadan rang sachraydi",
+   "format": "Bitta oddiy plakat (yangi: hikoyasiz, faqat mahsulot va taklif): har bo‘limda yangi bo‘yoq dog‘i — nom va noyoblik (Graffiti modeli · atigi 4%), \"3–30 kun profilingizda\", keyin narx, bot va havola",
+   "why": "Birinchi soniyalarni yonma-yon render qilib solishtirish: mahsulotsiz ochilishlar (116b makro, 116c faqat matn) eng yomon; lekin 121b va 118f deyarli bir xil tuzilishda (kicker pill + ikki qatorli sarlavha + markazda gift + narx stikeri) bo‘lsa ham 85% va 28% — demak kadr tuzilishi tushuntirmaydi, va oxirgi oltita post shu bir xil qolipda edi. Bu video qolipni buzadi (pill va stiker yo‘q), giftni 118f dagidan ham katta qiladi va birinchi soniyada katta maydonli o‘zgarish beradi (119a va 117c da 1 s kadri 0-kadrdan aniq farq qiladi, yomonlarida deyarli farq yo‘q).",
+   "differs": "Format (hikoyasiz plakat — yangi), ko‘rinish (tekis elektr-binafsha, oq bo‘yoq dog‘lari — yangi), palitra (binafsha + kislotali laym + oq; avvalgi terrakota, indigo-oltin, ko‘k-limondan farqli), shrift (Rubik 800 sarlavha sifatida — birinchi marta), gift (Surge Board Graffiti — birinchi marta), musiqa (calm, D-major, 80 bpm, seed 181), effekt (yangi splat.wav), joylashuv (kicker pill va narx stikeri yo‘q)"
+  }
  }
 ]
