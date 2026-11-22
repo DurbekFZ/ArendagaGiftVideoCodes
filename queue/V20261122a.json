@@ -1,0 +1,14 @@
+{
+  "id": "V20261122a",
+  "slugs": ["surgeboard-25384"],
+  "caption": "Graffiti uslubidagi serf taxtasi — profilingiz uchun 🎨\n\nSurge Board — Telegram NFT sovg‘asi. Ijaraga olsangiz, profilingizda 3 kundan 30 kungacha ko‘rinib turadi. Kuniga 850 so‘m, 30 kunga −7%.\n\nSurge Board #25384: Graffiti modeli 4%, Sapphire fon 1,2%, Tulip belgisi 0,4%.\n\nIjaraga olish: @ArendagaGiftBot — havola profilda.\n\n#telegram #nft #telegramgifts #nftsovga #ijara #uzbekistan",
+  "hero_ms": 600,
+  "music": {"name": "bed_V20261122a", "style": "calm", "bpm": 80, "root": 62, "scale": "major", "seconds": 19, "seed": 181},
+  "concept": {
+    "title": "Graffiti",
+    "hook": "Birinchi kadr — tekis elektr-binafsha fon, tepada uch qator taklif (\"Telegram NFT sovg‘a ijarasi / Kuniga / 850 so‘m\"), ostida kadrni deyarli to‘ldirgan Surge Board (Graffiti modeli) o‘z animatsiyasida harakatda; 0,15–0,5 s da orqasida katta oq bo‘yoq dog‘i portlaydi va taxtadan rang sachraydi",
+    "format": "Bitta oddiy plakat (yangi: hikoyasiz, faqat mahsulot va taklif): har bo‘limda yangi bo‘yoq dog‘i — nom va noyoblik (Graffiti modeli · atigi 4%), \"3–30 kun profilingizda\", keyin narx, bot va havola",
+    "why": "Birinchi soniyalarni yonma-yon render qilib solishtirish: mahsulotsiz ochilishlar (116b makro, 116c faqat matn) eng yomon; lekin 121b va 118f deyarli bir xil tuzilishda (kicker pill + ikki qatorli sarlavha + markazda gift + narx stikeri) bo‘lsa ham 85% va 28% — demak kadr tuzilishi tushuntirmaydi, va oxirgi oltita post shu bir xil qolipda edi. Bu video qolipni buzadi (pill va stiker yo‘q), giftni 118f dagidan ham katta qiladi va birinchi soniyada katta maydonli o‘zgarish beradi (119a va 117c da 1 s kadri 0-kadrdan aniq farq qiladi, yomonlarida deyarli farq yo‘q).",
+    "differs": "Format (hikoyasiz plakat — yangi), ko‘rinish (tekis elektr-binafsha, oq bo‘yoq dog‘lari — yangi), palitra (binafsha + kislotali laym + oq; avvalgi terrakota, indigo-oltin, ko‘k-limondan farqli), shrift (Rubik 800 sarlavha sifatida — birinchi marta), gift (Surge Board Graffiti — birinchi marta), musiqa (calm, D-major, 80 bpm, seed 181), effekt (yangi splat.wav), joylashuv (kicker pill va narx stikeri yo‘q)"
+  }
+}

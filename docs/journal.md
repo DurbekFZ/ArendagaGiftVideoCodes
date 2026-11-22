@@ -776,3 +776,60 @@ Shrift: Fredoka 700 (16f dan beri birinchi marta) + Manrope 800. Musiqa: `calm`,
 `bed_V20261121b`, past ovozda, shamlar o‘chganda pasayadi. Yangi tovushlar `pipeline/audio.py` da: `blow.wav` (yumshoq puflash, 1 marta),
 `kindle.wav` (uch pilikning ketma-ket yonishi, 0 va 9,3 s, past); yakunda bitta juda past whoosh. Ovoz: yo‘q. Matn chapga, x = 70.
 Keyingi video uchun: terrakota + firuza, g‘isht devor va ravoq, Fredoka, tilak/puflash formatini takrorlamang.
+
+## 2026-11-22 — V20261122a "Graffiti"
+
+**Tahlil (2026-11-22 05:18 UTC o‘lchovi; Stars postlari va o‘chirilgan post solishtirilmadi).** Natijalar barqaror yomonlashmoqda:
+so‘nggi olti post o‘tkazib yuborish 49,2% (119a) → 58% (119b) → 69,7% (120a) → 59,7% (120b) → 71,8% (121a) → 85,3% (121b). Ko‘rish
+222 → 175 → 176 → 172 → 141 → 104, qamrov 192 → 90. 121b "Tilak qiling": 104 ko‘rish, o‘rtacha tomosha 2,7 s, 0 like. Yetakchilar
+o‘zgarmagan: 118f 887 / 27,6% / 9,9 s / 2 saqlash; 117c 573 / 46,3% / 6,3 s / 1 saqlash; 119a 222 / 49,2% / 5,4 s. Izoh va ulashish
+hamon hamma joyda 0; obunachi 2 ta (o‘zgarmagan); `metrics_error` yo‘q.
+
+**Birinchi soniyani yonma-yon solishtirish (halol).** `npx remotion still` bilan 0-kadr va 1,0 s kadri render qilindi: eng past
+o‘tkazib yuborishli uchta (118f, 117c, 119a) va eng yuqori uchta (116b 88,8%, 121b 85,3%, 116c 85%; 9 ko‘rishli 116d tashlandi),
+qo‘shimcha 121a. Ko‘rganlarim:
+- Mahsulotsiz ochilishlar eng yomon: 116b — matnsiz, kadrni to‘ldirgan qorong‘i makro (nima ekani noma’lum), 116c — faqat matn,
+  gift yo‘q. Bu yagona aniq ajraladigan belgi: 0-kadrda gift va taklif ko‘rinmasa — yomon.
+- Lekin 121b (85%) va 118f (28%) deyarli bir xil qolipda: ink rangli kicker pill, ikki qatorli yirik sarlavha, markazda gift, pastda
+  narx stikeri, iliq to‘yingan fon. 121a (72%) ham shu qolipda (pill, sarlavha, narx chipi, markazda gift). Demak "katta gift + iliq
+  to‘la fon" (kechagi 121b xulosasi) tasdiqlanmadi — 121b aynan shu farazni sinadi va eng yomon natija berdi. Gift kattaligi ham
+  ajratmaydi: 117c da gift kichik, natija ikkinchi o‘rin.
+- 1 s dagi o‘zgarish: 119a da paket yoriladi (kadrning katta qismi o‘zgaradi), 117c da qo‘l yozuvi boshlanadi; 121a, 121b, 116b da
+  0-kadr va 1 s kadri deyarli bir xil (faqat mayda miltillash, tebranish). Lekin 118f da ham 1 s da katta o‘zgarish yo‘q — demak bu
+  ham to‘liq tushuntirmaydi, faqat moyillik.
+- Yorqinlik ajratmaydi (117c qorong‘i va yaxshi, 116c och va yomon). Matn hajmi yaxshilarda 2–4 so‘z yirik, 121b da ~9 so‘z — kuchsiz farq.
+- Eng kuchli naqsh vizual emas, vaqt: 119a dan beri har post deyarli avvalgisidan yomon, dizayndan qat’i nazar, qamrov ham kamaymoqda.
+  Mumkin sabablar: Instagram akkauntni sinov auditoriyasiga torroq ko‘rsatmoqda; oxirgi oltita post bir xil "reklama qolipi"da
+  (pill + sarlavha + markaz gift + narx stikeri) — ko‘ruvchi uni bir qarashda reklama deb taniydi.
+**Noaniq qoladi:** har bir nuqta bitta post, 2 obunachi, qamrov 90–716 — shovqin juda katta; 118f tarqatish omadi bo‘lishi mumkin;
+slot (10 yoki 19) deyarli hamma postda bir xil, uni ajratib bo‘lmaydi. Xulosalar faraz, qoida emas.
+
+**Birinchi soniya shu kuzatuvdan loyihalandi.** (1) 0-kadrda mahsulot va taklif aniq: "Telegram NFT sovg‘a ijarasi / Kuniga / 850 so‘m"
+(6 so‘z) va kadrni deyarli to‘ldirgan gift. (2) Oxirgi oltita postning qolipi buzildi: kicker pill yo‘q, narx stikeri yo‘q, narx
+sarlavhaning o‘zi. (3) 1 s gacha katta maydonli o‘zgarish: 0-kadrda gift tekis binafsha fonda, 0,15–0,5 s da orqasida katta oq
+bo‘yoq dog‘i portlaydi va giftning o‘z animatsiyasidagi rang sachrashlari otiladi. Videoning qolgani ataylab oddiy.
+
+**G‘oya.** Bitta plakat, hikoyasiz (yangi format). 0–4,9 s ochilish taklifi; 5,0 s yangi dog‘ — "Bu — Surge Board / Graffiti /
+modeli · atigi 4%"; 9,7 s yangi dog‘ — "Ijaraga oling — / profilingizda / 3–30 kun"; 13,6 s "Surge Board · ijara / Kuniga / 850 so‘m",
+14,6 s @ArendagaGiftBot va "↑ Havola profilda" (gift kichrayib yuqoriga suriladi). 18,5 s, ovozsiz.
+Gift: Surge Board #25384 (Graffiti modeli 4%, Sapphire fon 1,2%, Tulip belgisi 0,4%; kuniga 850 so‘m) — birinchi marta. −7% captionda.
+
+**Gift haqida muhim.** Animatsiya 180 kadr: 0–54 taxta aylanadi (12–24 va 42–54 atrofida yupqa ko‘rinadi — ushlamang), ~60 da
+qo‘nadi, 66–170 rang sachraydi, 140–179 tinch tik-diagonal poza. Videoda: 0-kadrdan 60→179 o‘ynaydi, keyin 140–179 oldinga-orqaga;
+har bo‘lim boshida sachrash 84→140 qayta o‘ynaydi. Muqovada 0-poza (toza diagonal). Ko‘rinadigan taxta qutining ~36–51% kengligi,
+~50% balandligi, markazi (48%, 51%); quti 1480 px, markaz (440, 1085) — o‘ng tugmalar zonasidan tashqarida.
+
+**O‘qish tezligi.** Ochilish (6 so‘z) 0–4,9 s; nom bloki (7 so‘z) ~5,3–9,5 s; "3–30 kun" bloki (5 so‘z) ~9,9–13,5 s; narx 13,9–18,5 s
+(4,6 s), bot va havola 14,8–18,5 s (3,7 s). Bir soniyada ikki yangi blok yo‘q.
+
+**Nimani kuzatish kerak.** O‘tkazib yuborish 121b ning 85% idan sezilarli pastmi (qolipni buzish + 1 s dagi katta o‘zgarish farazi).
+Agar u ham 70–85% bo‘lsa — dizayndan ko‘ra tarqatish/akkaunt omili kuchliroq degan dalil; unda keyingi sessiyalar slot vaqtini yoki
+mutlaqo boshqa ochilish turini (masalan, inson qo‘li/telefon ekrani POV) sinashi kerak.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: hikoyasiz plakat, bo‘limlar bo‘yoq dog‘lari bilan almashadi. Ko‘rinish: tekis elektr-binafsha
+(#8b4dff → #6a2cf0 → #3f12b0), ikki sekin rang buluti, xira nuqta to‘ri faqat chetlarda, katta oq bo‘yoq dog‘i va tomchilar (har
+bo‘limda yangi shakl). Palitra: fon — binafsha (taxtaning binafsha konturi va Sapphire fonga analog); urg‘u — kislotali laym #d6ff3f
+(taxtadagi laym sachrashdan, binafshaga deyarli komplementar); neytral — oq #fbf8ff va binafsha siyoh #1b0750. Shrift: Rubik 800
+(sarlavha sifatida birinchi marta) + Manrope 800. Musiqa: `calm`, 80 bpm, D-major (root 62), seed 181, `bed_V20261122a`, past ovozda.
+Yangi tovush `pipeline/audio.py` da: `splat.wav` (yumshoq ho‘l bo‘yoq shapillashi, 3 marta, past); bitta juda past whoosh. Ovoz: yo‘q.
+Matn chapga, x = 66–70. Keyingi video uchun: binafsha + laym, bo‘yoq dog‘i, Rubik, hikoyasiz plakat formatini takrorlamang.

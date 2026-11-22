@@ -534,6 +534,21 @@ def kindle():
     save("kindle.wav", lowpass(track, 3000))
 
 
+def splat():
+    """A blob of wet paint thrown onto a wall: a soft, muffled low slap with a short wet spatter, no click (about 0.45 s)."""
+    track = np.zeros(int(SR * 0.45))
+    x = t(0.3)
+    body = np.sin(2 * np.pi * np.cumsum(95 + 80 * np.exp(-x * 35)) / SR) * np.exp(-x * 18) * 0.7
+    noise = rng.standard_normal(len(x))
+    slap = (lowpass(noise, 1500) - lowpass(noise, 300)) * np.minimum(1, x / 0.006) * np.exp(-x * 30)
+    place(track, body + slap, 0.0, 1.0)
+    for _ in range(6):
+        y = t(0.03)
+        drop = lowpass(rng.standard_normal(len(y)), 1800) * np.exp(-y * 140)
+        place(track, drop, rng.uniform(0.05, 0.3), rng.uniform(0.08, 0.2))
+    save("splat.wav", lowpass(track, 2400))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -576,6 +591,7 @@ def build():
     fingersnap()
     blow()
     kindle()
+    splat()
 
 
 def ensure():
@@ -633,6 +649,8 @@ def ensure():
     if not (OUT / "kindle.wav").exists():
         blow()
         kindle()
+    if not (OUT / "splat.wav").exists():
+        splat()
 
 
 if __name__ == "__main__":
