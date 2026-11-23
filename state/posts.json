@@ -778,5 +778,29 @@
    "differs": "Format (o‘giriladigan narx yorlig‘i — yangi), ko‘rinish (shampan-oltin xona, disko aks-nurlari, pufakchalar, krem qog‘oz yorliq ipda), palitra (oltin + zumrad + krem; avvalgi binafsha-laym, terrakota-firuza, indigo-oltindan farqli), shrift (Playfair Display 900 / 900 kursiv — 16-noyabrdan beri birinchi marta), joylashuv (matn yuqori bandda emas, giftga osilgan yorliqda), gift (Pool Float — 17b dan beri birinchi marta), musiqa (calm, F-major, 72 bpm, seed 197), yangi tovush cardflip.wav"
   },
   "measured_at": "2026-11-23T05:38:01+00:00"
+ },
+ {
+  "name": "20261123-1039-V20261123a",
+  "published_at": "2026-11-23T05:42:12+00:00",
+  "style": "custom",
+  "hook": "V20261123a",
+  "gifts": [
+   "jackinthebox-71197"
+  ],
+  "slot_hour": 10,
+  "seconds": 19.82,
+  "media_id": "17921408430547627",
+  "permalink": "https://www.instagram.com/reel/DgEpz64COYp/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261123a",
+  "concept": {
+   "title": "Syurpriz quti",
+   "hook": "Birinchi kadr — pop-art komiks sahifasi (firuza fon, rastr nuqtalar, qalin siyoh ramka): sariq yorliqda \"Telegram NFT sovg‘a ijarasi\", katta krem nutq pufagida \"Kuniga 750 so‘m!\", ostida katta Jack-in-the-Box; 0,2 s da qopqoq ochila boshlaydi, 0,4 s da rok qo‘l otilib chiqadi, orqasida sariq komiks portlashi va tezlik chiziqlari chaqnaydi, kadr silkinadi",
+   "format": "Gapiradigan syurpriz quti (yangi): quti har safar ochilganda ichidan yangi komiks nutq pufagi sakrab chiqadi — narx; Let’s Rock modeli · atigi 1,5%; 3–30 kun profilingizda; narx + bot + havola",
+   "why": "Qolipsiz ochilishlar (22a 58%, 22b 47%) o‘tkazib yuborishni pasaytirdi — narx 0-kadrda eng yirik yozuv va 0,5 s ichida giftning o‘zida katta voqea saqlanadi. Jack-in-the-Box animatsiyasining o‘zi syurpriz (qopqoq otilib ochiladi), shuning uchun voqea giftning o‘zida. Har 5 soniyada qayta ochilish — oxirigacha qolish uchun sabab. Like/saqlash/ulashish hamon 0 — captionda ulashish va izoh so‘rovi sinovdan o‘tkaziladi.",
+   "differs": "Format (gapiradigan quti, nutq pufaklari — yangi), ko‘rinish (pop-art komiks: firuza rastr nuqtalar, sariq portlash, tezlik chiziqlari, qalin siyoh ramka — yangi), palitra (CMY bosma ranglari: firuza + magenta + sariq; oldingi oltin-zumrad, binafsha-laym, terrakota-firuzadan farqli), shrift (Bangers — yangi qo‘shildi), gift (Jack-in-the-Box — 16c dan beri birinchi marta, u yerda gift ko‘rsatilmagan edi), musiqa (calm, C-major, 70 bpm, seed 211), yangi tovush springbox.wav"
+  }
  }
 ]
