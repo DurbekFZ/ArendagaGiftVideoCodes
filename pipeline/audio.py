@@ -563,6 +563,21 @@ def cardflip():
     save("cardflip.wav", lowpass(track, 3200))
 
 
+def springbox():
+    """A jack-in-the-box lid springing open: a soft padded lid knock, then a low, muted spring wobble (about 0.7 s)."""
+    track = np.zeros(int(SR * 0.7))
+    y = t(0.12)
+    noise = rng.standard_normal(len(y))
+    knock = (lowpass(noise, 1400) - lowpass(noise, 300)) * np.exp(-y * 55)
+    body = np.sin(2 * np.pi * np.cumsum(110 + 60 * np.exp(-y * 50)) / SR) * np.exp(-y * 30)
+    place(track, knock * 0.5 + body, 0.0, 0.8)
+    x = t(0.6)
+    wobble = 210 + 70 * np.exp(-x * 5) * np.sin(2 * np.pi * 9 * x)
+    spring = np.sin(2 * np.pi * np.cumsum(wobble) / SR) * np.exp(-x * 6.5) * np.minimum(1, x / 0.01)
+    place(track, lowpass(spring, 1500), 0.05, 0.45)
+    save("springbox.wav", lowpass(track, 2400))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -667,6 +682,8 @@ def ensure():
         splat()
     if not (OUT / "cardflip.wav").exists():
         cardflip()
+    if not (OUT / "springbox.wav").exists():
+        springbox()
 
 
 if __name__ == "__main__":

@@ -879,3 +879,48 @@ zumradi #0f7a4c (iliq oltinga taxminan komplementar); neytral — krem #fff5de v
 `calm`, 72 bpm, F-major (root 53), seed 197, `bed_V20261122b`, past ovozda. Yangi tovush `pipeline/audio.py` da: `cardflip.wav`
 (qog‘oz yorliq o‘girilishi, 3 marta, past); `cork.wav` 2 marta, past. Ovoz: yo‘q. Matn yorliqda, markaz x = 470. Keyingi video uchun:
 oltin + zumrad, narx yorlig‘i, disko dog‘lari, Playfair, o‘giriladigan karta formatini takrorlamang.
+
+## 2026-11-23 — V20261123a "Syurpriz quti"
+
+**Tahlil (2026-11-23 05:18 UTC o‘lchovi; Stars postlari va o‘chirilgan post solishtirilmadi; `metrics_error` yo‘q).** Qolipsiz ikki post
+tiklandi: 22a "Graffiti" 142 ko‘rish / o‘tkazib yuborish 58,3% / o‘rtacha 5,3 s; 22b "Narx yorlig‘i" 115 / 47,1% / 5,1 s (18,9 s video).
+Oldingi ikkitasi 121a 144 / 72,3%, 121b 108 / 83,7%. 22b — 118f (27,6%) va 117c (46,3%) dan keyingi uchinchi eng past o‘tkazib yuborish.
+Ikki nuqta, 115–142 ko‘rish: bir xil yo‘nalishdagi ishora, isbot emas. Ko‘rish o‘smayapti (so‘nggi to‘rt post 108–144), obunachi 2 ta
+(o‘zgarmagan). Like, saqlash, ulashish, izoh so‘nggi beshta postda 0 — ushlab qolish yaxshilandi, lekin harakat (like/saqlash/obuna) yo‘q.
+Izohlar hamma postda bo‘sh. Slot (10 / 19) va ovoz bo‘yicha hali ham xulosa yo‘q.
+**Xulosa (ehtiyotkor):** saqlanadi — 0-kadrda narx eng yirik yozuv, reklama qolipi (kicker pill + narx stikeri) yo‘q, 0,5 s ichida giftning
+o‘zida katta voqea. Yangi sinov — harakatga undash: captionda "Rokni yaxshi ko‘radigan do‘stingizga yuboring" va "Qaysi giftni keyingi
+videoda ko‘rmoqchisiz? Izohda yozing" (videodagi matnni ko‘paytirmaslik uchun faqat captionda). Natijani keyingi sessiyalar ulashish
+va izoh bo‘yicha solishtirsin.
+
+**G‘oya.** Gapiradigan syurpriz quti, pop-art komiks (yangi format). 0-kadr: firuza komiks sahifasi, rastr nuqtalar, qalin siyoh ramka;
+sariq yorliqda "TELEGRAM NFT SOVG‘A IJARASI", krem nutq pufagida "KUNIGA / 750 SO‘M!", ostida katta Jack-in-the-Box (yopiq) va sariq
+komiks portlashi. 0,2 s qopqoq ochiladi, 0,4 s rok qo‘l otilib chiqadi — portlash kattalashadi, tezlik chiziqlari chaqnaydi, kadr
+silkinadi, pufak siltanadi. Keyin qo‘l qaytib kiradi, qopqoq yopiladi va har safar ochilganda yangi pufak sakrab chiqadi: 5,5 s
+"Bu — Jack-in-the-Box" / "“LET’S ROCK” MODELI · ATIGI 1,5%"; 11,2 s "Ijaraga oling" / "3–30 KUN · PROFILINGIZDA"; 15,7 s
+"KUNIGA 750 SO‘M" + @ArendagaGiftBot + "↑ Havola profilda" (bitta blok). 19,8 s, ovozsiz.
+Gift: Jack-in-the-Box #71197 (Let’s Rock 1,5%, Persimmon fon 1%, Spider Web belgi 0,3%; kuniga 750 so‘m) — 16c da faqat nomi bor edi,
+gift birinchi marta ko‘rsatildi. Atributlar va −7% captionda.
+
+**Gift haqida muhim.** Animatsiya 180 kadrlik sikl (video kadrlarida): 0–24 qo‘l tashqarida, 26–35 qo‘l tushadi va qopqoq yopiladi,
+36–84 yopiq, notalar uchadi (yopiq quti ochiqdan kichikroq ko‘rinadi), 86 qopqoq ochila boshlaydi, 92 qo‘l chiqadi, 96–179 qo‘l
+tashqarida chayqaladi. 0–20 da quti burilgan va tor ko‘rinadi — ushlamang; tinch pozalar 104–176 oldinga-orqaga. Har ochilish:
+14→35, keyin 80→99 (qo‘l aynan pop kadrida chiqadi). Muqovada 112-poza. Quti 1000 px, markaz (470, 1190); ko‘rinadigan qism
+~y 840–1490. Bangers shriftida ‘ belgisi ’ shaklida chiqadi (o‘qiladi).
+
+**O‘qish tezligi.** Ochilish (7 so‘z) 0–4,5 s; model bloki (8 so‘z) ~5,8–10,2 s (4,4 s); 3–30 kun bloki (5 so‘z) ~11,4–14,6 s (3,2 s);
+narx, bot va havola (6 so‘z, bitta blok) ~15,9–19,8 s (3,9 s). Bloklar orasida ~0,7 s matnsiz (quti yopilib ochiladi).
+
+**Nimani kuzatish kerak.** O‘tkazib yuborish 47–58% oralig‘ida qoladimi (qolipsiz yo‘nalishning uchinchi sinovi, butunlay boshqa
+ko‘rinishda); o‘rtacha tomosha 5,5 s dan oshadimi (ikkinchi ochilish 5,5 s da); captiondagi ulashish/izoh so‘rovi birinchi ulashish
+yoki izohni beradimi.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: gapiradigan syurpriz quti / komiks nutq pufaklari (yangi). Ko‘rinish: pop-art komiks —
+firuza radial fon (#3fd0c4 → #14a8a3 → #0a6f78 → #063f4a), chetlarda siyoh rastr nuqtalar, qalin siyoh ramka, sariq 14 uchli
+portlash, tezlik chiziqlari, to‘q firuza "pol" sariq nuqtalar bilan, krem pufaklar qattiq magenta soyali, kadr silkinishi.
+Palitra: CMY bosma ranglari — fon firuza (quti magentasi/qizilining komplementi); urg‘u — qopqoq magentasi #ff2e8c; qo‘shimcha — sariq
+#ffd23f (portlash va yorliqlar); neytral — krem #fff7e8 va siyoh #1a1020. Shrift: Bangers (yangi qo‘shildi, `@fontsource/bangers`) +
+Manrope 800. Musiqa: `calm`, 70 bpm, C-major (root 60), seed 211, `bed_V20261123a`, past ovozda. Yangi tovush `pipeline/audio.py` da:
+`springbox.wav` (yumshoq qopqoq taqillashi + past prujina tebranishi, 4 marta, past); cardflip 1 marta juda past. Ovoz: yo‘q.
+Matn chapda x = 70–870, gift x = 470. Keyingi video uchun: firuza + magenta + sariq, komiks/rastr, Bangers, nutq pufagi formatini
+takrorlamang.
