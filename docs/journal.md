@@ -924,3 +924,42 @@ Manrope 800. Musiqa: `calm`, 70 bpm, C-major (root 60), seed 211, `bed_V20261123
 `springbox.wav` (yumshoq qopqoq taqillashi + past prujina tebranishi, 4 marta, past); cardflip 1 marta juda past. Ovoz: yo‘q.
 Matn chapda x = 70–870, gift x = 470. Keyingi video uchun: firuza + magenta + sariq, komiks/rastr, Bangers, nutq pufagi formatini
 takrorlamang.
+
+## 2026-11-23 — V20261123b "Mif yoki fakt"
+
+**Tahlil (2026-11-23 14:23 UTC o‘lchovi; Stars posti 118c va o‘chirilgan post solishtirilmadi; `metrics_error` yo‘q).** 23a "Syurpriz quti"
+8 soatda: 145 ko‘rish, qamrov 131, o‘tkazib yuborish 76,7%, o‘rtacha tomosha 3,1 s. Oldingi ikkitasi: 22b 116 / 46,6% / 5,1 s, 22a 143 / 57,8% /
+5,3 s. Demak 22a–22b dan keyin yozilgan "reklama qolipi" izohi ham tasdiqlanmadi: 23a ham qolipsiz edi, lekin 76,7%. Halol xulosa: har postda
+taxminan 100–150 ko‘rish bo‘lganda o‘tkazib yuborish 47% dan 84% gacha sakraydi va bu sakrashni ma’lumot ajratib bera olmaydi. Barqaror faktlar:
+18-noyabrdan beri har bir post 100–220 ko‘rish oladi (yagona istisno 118f — 887); like so‘nggi oltita postda 0, saqlash/ulashish/izoh hamma joyda
+deyarli 0; obunachi 2 ta, o‘zgarmagan; izohlar bo‘sh. Bitta post haqida yangi sabab-hikoya yozilmaydi. Bu video uchun faqat doim saqlanib kelgan
+qoidalar qo‘llandi: 0-kadrda mahsulot va narx oddiy so‘zlarda, katta gift, 0,3 s da giftga nimadir bo‘ladi, qulay o‘qish tezligi, so‘nggi to‘rt
+postda bo‘lmagan gift oilasi.
+
+**G‘oya.** Mif va fakt (yangi format). 0-kadr: to‘q o‘rmon-yashil sahna, prozhektor ostida katta yashil kristall Liberty Figure; tepada
+"TELEGRAM NFT SOVG‘A IJARASI / Kuniga / 750 so‘m"; 0,3 s da "Kuniga" yoniga yashil "FAKT ✓" rezina muhri uriladi, sahna silkinadi, gift
+sakraydi va kristall uchqunlar sochiladi. 5,0 s marjon-qizil "MIF ✕" — "“Sotib olish shart”" (6,0 s da qizil chiziq bilan chiziladi, so‘zlar
+o‘qiladigan qoladi), 6,8 s "FAKT ✓ — Ijara: 3–30 kun". 10,0 s "MIF ✕ — “Ijaradagi gift ko‘rinmaydi”", 11,8 s "FAKT ✓ — Profilingizda turadi".
+15,0 s "LIBERTY FIGURE · IJARA / Kuniga 750 so‘m" + FAKT muhri, 16,0 s @ArendagaGiftBot va "↑ Havola profilda". 19,5 s, ovozsiz.
+Gift: Liberty Figure #188694 (Peridot modeli 3%, Amber fon 1,2%, Corn belgisi 0,5%; kuniga 750 so‘m) — birinchi marta. Atributlar va −7% captionda;
+captionda "Yana qaysi mifni eshitgansiz? Izohda yozing."
+
+**Gift haqida muhim.** Animatsiya 180 kadrlik sikl (60 fps Lottie, video kadrlarida 0–179): 160–179–0–16 to‘g‘ri qaraydi (yaltirashlar bilan),
+~36–150 figura burilib qo‘lidagi lavhaga qaraydi (100–150 tor ko‘rinadi — ushlamang). Videoda tinch pozalar 160→16 oldinga-orqaga, har MIF
+muhrida 36→82 o‘ynaydi. Muqovada 175-poza. Figura qutining ~29–71% kengligi, ~19–81% balandligi; quti 1040 px, markaz (470, 1200).
+
+**O‘qish tezligi.** Ochilish (7 so‘z + muhr) 0–4,7 s; mif 1 (3 so‘z) 5,0–9,7 s; fakt 1 (3 so‘z) 6,8–9,7 s (2,9 s); mif 2 10,0–14,7 s; fakt 2
+11,8–14,7 s; narx 15,0–19,5 s (4,5 s), bot va havola 16,0–19,5 s (3,5 s). Bir soniyada ikki yangi blok yo‘q.
+
+**Nimani kuzatish kerak.** Faqat qatorni to‘ldirish uchun: ko‘rish 100–220 oralig‘ida qoladimi, birinchi izoh keladimi (captiondagi savol).
+O‘tkazib yuborish bitta raqami asosida sabab-xulosa chiqarmang.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: mif va fakt, rezina muhrlar (yangi). Ko‘rinish: to‘q o‘rmon-yashil radial sahna (#245a3c → #133524 →
+#071a10), yashil prozhektor konusi va pol yorug‘ligi, chetlarda sekin suzuvchi peridot kristall parchalari, qo‘sh hoshiyali stencil muhrlar,
+mif ustidan marjon chiziq, muhr urilganda sahna silkinishi va gift sakrashi (faqat siljish, siqilmaydi). Palitra: fon — o‘rmon-yashil (gift
+peridotiga analog, ancha to‘q); urg‘u — marjon-qizil #ff6a50 (yashilga komplementar, faqat MIF); neytral — krem #fbf3e2 va yashil-qora siyoh
+#0b1f14; FAKT va uchqunlar giftning o‘z peridot yashili #b4e86a. Shrift: Bricolage Grotesque 800 (17b dan beri) + Big Shoulders Stencil
+Display 900 (18e dan beri, faqat muhrlarda) + Manrope 800. Musiqa: `calm`, 76 bpm, B♭-major (root 58), seed 229, `bed_V20261123b`, past ovozda.
+Yangi tovush `pipeline/audio.py` da: `inkstamp.wav` (qog‘ozga rezina muhr — yumshoq bo‘g‘iq zarb, 6 marta, past); `checkmark.wav` 2 marta juda
+past (mif chizilganda). Ovoz: yo‘q. Matn chapda x = 70, gift x = 470. Keyingi video uchun: yashil + marjon, muhrlar, mif/fakt formatini,
+prozhektorli sahnani takrorlamang.

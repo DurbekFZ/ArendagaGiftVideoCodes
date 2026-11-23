@@ -1,0 +1,14 @@
+{
+  "id": "V20261123b",
+  "slugs": ["libertyfigure-188694"],
+  "caption": "Mif yoki fakt? 🟢\n\nTelegram NFT sovg‘asini profilingizda ko‘rsatish uchun uni sotib olish shart emas. Ijaraga oling: gift 3 kundan 30 kungacha profilingizda ko‘rinib turadi. Kuniga 750 so‘m, 30 kunga −7%.\n\nLiberty Figure #188694: Peridot modeli 3%, Amber fon 1,2%, Corn belgisi 0,5%.\n\nYana qaysi mifni eshitgansiz? Izohda yozing.\n\nIjaraga olish: @ArendagaGiftBot — havola profilda.\n\n#telegram #nft #telegramgifts #nftsovga #ijara #uzbekistan",
+  "hero_ms": 600,
+  "music": {"name": "bed_V20261123b", "style": "calm", "bpm": 76, "root": 58, "scale": "major", "seconds": 21, "seed": 229},
+  "concept": {
+    "title": "Mif yoki fakt",
+    "hook": "Birinchi kadr — to‘q o‘rmon-yashil sahna, prozhektor ostida katta yashil kristall Liberty Figure; tepada \"Telegram NFT sovg‘a ijarasi / Kuniga 750 so‘m\"; 0,3 s da narx yoniga yashil \"FAKT ✓\" muhri uriladi, sahna silkinadi, gift sakraydi va kristall uchqunlar sochiladi",
+    "format": "Mif va fakt (yangi): ikki mif marjon-qizil \"MIF ✕\" muhri bilan chiziladi, har biriga yashil \"FAKT ✓\" javob beradi — \"Sotib olish shart\" → \"Ijara: 3–30 kun\"; \"Ijaradagi gift ko‘rinmaydi\" → \"Profilingizda turadi\"; yakunda narx + bot + havola",
+    "why": "Statistika (100–220 ko‘rish, o‘tkazib yuborish 47–84%) kreativ sabablarni ajratib bermaydi, shuning uchun doimiy qoidalar qo‘llandi: 0-kadrda mahsulot va narx aniq, katta gift, 0,3 s da giftga nimadir bo‘ladi, o‘qish uchun qulay temp. Mif/fakt formati ijara haqidagi ikki asosiy shubhaga to‘g‘ridan-to‘g‘ri javob beradi.",
+    "differs": "Format (mif va fakt muhrlari — yangi), ko‘rinish (to‘q o‘rmon-yashil sahna, prozhektor, kristall parchalar, rezina muhrlar — yangi), palitra (yashil + marjon-qizil + krem; oldingi firuza-magenta, oltin-zumrad, binafsha-laymdan farqli), shrift (Big Shoulders Stencil — 18e dan beri, Bricolage Grotesque — 17b dan beri), gift (Liberty Figure — birinchi marta), musiqa (calm, B♭-major, 76 bpm, seed 229), yangi tovush inkstamp.wav"
+  }
+}

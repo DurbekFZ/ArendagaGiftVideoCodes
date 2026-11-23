@@ -578,6 +578,16 @@ def springbox():
     save("springbox.wav", lowpass(track, 2400))
 
 
+def inkstamp():
+    """A rubber stamp pressed onto thick paper: a soft, padded low thump with a dry papery crush, no ring (about 0.3 s)."""
+    x = t(0.3)
+    freq = 70 + 50 * np.exp(-x * 35)
+    body = np.sin(2 * np.pi * np.cumsum(freq) / SR) * np.exp(-x * 26)
+    noise = rng.standard_normal(len(x))
+    crush = (lowpass(noise, 3200) - lowpass(noise, 600)) * np.exp(-x * 38) * 0.35
+    save("inkstamp.wav", lowpass((body + crush) * np.minimum(1, x / 0.004), 4000))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -621,6 +631,7 @@ def build():
     blow()
     kindle()
     splat()
+    inkstamp()
 
 
 def ensure():
@@ -684,6 +695,8 @@ def ensure():
         cardflip()
     if not (OUT / "springbox.wav").exists():
         springbox()
+    if not (OUT / "inkstamp.wav").exists():
+        inkstamp()
 
 
 if __name__ == "__main__":
