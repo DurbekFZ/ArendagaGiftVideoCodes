@@ -814,5 +814,29 @@
    "differs": "Format (gapiradigan quti, nutq pufaklari — yangi), ko‘rinish (pop-art komiks: firuza rastr nuqtalar, sariq portlash, tezlik chiziqlari, qalin siyoh ramka — yangi), palitra (CMY bosma ranglari: firuza + magenta + sariq; oldingi oltin-zumrad, binafsha-laym, terrakota-firuzadan farqli), shrift (Bangers — yangi qo‘shildi), gift (Jack-in-the-Box — 16c dan beri birinchi marta, u yerda gift ko‘rsatilmagan edi), musiqa (calm, C-major, 70 bpm, seed 211), yangi tovush springbox.wav"
   },
   "measured_at": "2026-11-23T14:44:09+00:00"
+ },
+ {
+  "name": "20261123-1958-V20261123b",
+  "published_at": "2026-11-23T15:03:17+00:00",
+  "style": "custom",
+  "hook": "V20261123b",
+  "gifts": [
+   "libertyfigure-188694"
+  ],
+  "slot_hour": 19,
+  "seconds": 19.52,
+  "media_id": "17957356239306605",
+  "permalink": "https://www.instagram.com/reel/DgFqBZCAlt6/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261123b",
+  "concept": {
+   "title": "Mif yoki fakt",
+   "hook": "Birinchi kadr — to‘q o‘rmon-yashil sahna, prozhektor ostida katta yashil kristall Liberty Figure; tepada \"Telegram NFT sovg‘a ijarasi / Kuniga 750 so‘m\"; 0,3 s da narx yoniga yashil \"FAKT ✓\" muhri uriladi, sahna silkinadi, gift sakraydi va kristall uchqunlar sochiladi",
+   "format": "Mif va fakt (yangi): ikki mif marjon-qizil \"MIF ✕\" muhri bilan chiziladi, har biriga yashil \"FAKT ✓\" javob beradi — \"Sotib olish shart\" → \"Ijara: 3–30 kun\"; \"Ijaradagi gift ko‘rinmaydi\" → \"Profilingizda turadi\"; yakunda narx + bot + havola",
+   "why": "Statistika (100–220 ko‘rish, o‘tkazib yuborish 47–84%) kreativ sabablarni ajratib bermaydi, shuning uchun doimiy qoidalar qo‘llandi: 0-kadrda mahsulot va narx aniq, katta gift, 0,3 s da giftga nimadir bo‘ladi, o‘qish uchun qulay temp. Mif/fakt formati ijara haqidagi ikki asosiy shubhaga to‘g‘ridan-to‘g‘ri javob beradi.",
+   "differs": "Format (mif va fakt muhrlari — yangi), ko‘rinish (to‘q o‘rmon-yashil sahna, prozhektor, kristall parchalar, rezina muhrlar — yangi), palitra (yashil + marjon-qizil + krem; oldingi firuza-magenta, oltin-zumrad, binafsha-laymdan farqli), shrift (Big Shoulders Stencil — 18e dan beri, Bricolage Grotesque — 17b dan beri), gift (Liberty Figure — birinchi marta), musiqa (calm, B♭-major, 76 bpm, seed 229), yangi tovush inkstamp.wav"
+  }
  }
 ]
