@@ -1002,3 +1002,45 @@ tovush yoylari. Palitra: fon — krem; ink va doira — navy #13234a (gift ko‘
 seed 241, `bed_V20261124a`, past ovozda. Tovush: whoosh 2 marta juda past; yangi `feltdrop.wav` (`pipeline/audio.py`: yumshoq mato javonga
 qo‘yilgan bo‘g‘iq zarb, jaranglamaydi) 2 marta. Qo‘ng‘iroq tovushi ataylab yo‘q. Ovoz: yo‘q. Matn chapda x = 70, gift x = 470.
 Keyingi video uchun: och krem fon, navy+safir+o‘rik, profil kartasi, izoh pufagi, Unbounded sarlavhalarni takrorlamang.
+
+## 2026-11-24 — V20261124b "Sehrli shira"
+
+**Tahlil (2026-11-24 14:19 UTC o‘lchovi; Stars posti 118c va o‘chirilgan 118a solishtirilmadi; `metrics_error` yo‘q).** 24a "Nega aynan
+ijara?" 8,5 soatda: 46 ko‘rish, qamrov 39, o‘tkazib yuborish 73,8%, o‘rtacha tomosha 3,8 s — so‘nggi postlarning uchdan biri. Post boshiga
+qamrov pasaymoqda: 18f 716 (887 ko‘rish), keyin ~150–190 (19a–20b), ~95–125 (21a–23b) va endi 39. Bu tarqatish haqidagi fakt; sababi
+noma’lum va uni bitta dizayn bilan bog‘lab bo‘lmaydi (24a hali yosh, o‘lchov 8,5 soatlik). 23b yakuni: 133 / 56,3% / 5,8 s, 2 izoh.
+Obunachi 2 ta (o‘zgarmagan); like, saqlash, ulashish so‘nggi to‘qqizta postda deyarli 0. Yangi izoh yo‘q. Ma’lumot kam, sabab-xulosa
+chiqarilmadi. Bu video uchun egasi yoqtirgan va hech qachon inkor etilmagan narsalarga qaytildi: gift — yulduz, katta va harakatda,
+o‘z ranglaridan boy palitra, 0-kadrda mahsulot va narx oddiy so‘zlarda, kam so‘z, qulay sur’at. Tushuntirish formati va qog‘oz ko‘rinishi yo‘q.
+
+**G‘oya.** Giftning o‘z ritmi montajni boshqaradi (yangi format). 0-kadr: to‘q binafsha sahna, lava-lampa dog‘lari va pufakchalar,
+ulkan neon Hex Pot (quti 1120 px); tepada firuza pill "TELEGRAM NFT SOVG‘A IJARASI", "Kuniga / 750 so‘m" (pushti, Paytone One 176 px).
+0,27 s da qozon o‘z alangasi bilan yonadi va sakraydi (ignite.wav). Qozon har 5 s da qayta alangalanadi: har safar tepadagi pushti shira
+pardasi qozon ORTIDAN oqib tushadi (qozon oldida qoladi), eski qatorni yopadi va keyingisini ochib orqaga ko‘tariladi. 5,7 s
+"Profilingizda turadi" + 6,7 s "3 kundan 30 kungacha"; 10,7 s "Hex Pot" + 11,7 s "Silver Blue fon — atigi 1%"; 15,7 s "Kuniga 750 so‘m",
+16,7 s @ArendagaGiftBot va "↑ Havola profilda". 19,8 s, ovozsiz. Gift: Hex Pot #42707 (Silver Blue fon 1%, Scarecrow belgisi 2%; kuniga
+750 so‘m) — 19b dan beri birinchi marta. Model nomi ataylab aytilmadi (spirtli ichimlik nomi). −7% captionda; captionda "Qaysi giftni
+keyingi videoda ko‘rmoqchisiz? Izohda yozing."
+
+**Gift haqida muhim.** Remotion kadrlarida sikl 150 kadr: 0–14 qaynayotgan to‘g‘ri poza, 16 olov yonadi, 20–60 to‘liq alanga (qozon
+yarim yashirinadi), 64–92 tutun, keyin ko‘z tashqarida yuradi va ~148 da 0-pozaga qaytadi. Videoda 8 kadr oldinda o‘ynatiladi (alanga
+8, 158, 308, 458-kadrlarda). Qozon qutining ~20–80% kengligi, ~18–82% balandligi; quti 1120 px markaz (470, 1170), yakunda 980 px (470, 1222).
+Muqovada 4-poza. Gift aylanmaydi — siqilgan poza yo‘q.
+
+**O‘qish tezligi.** Ochilish (7 so‘z) 0–5,0 s; "Profilingizda turadi" 5,7–10,0 s, "3 kundan 30 kungacha" 6,7–10,0 s (3,3 s); "Hex Pot"
+10,7–15,0 s, "Silver Blue fon — atigi 1%" 11,7–15,0 s (3,3 s); narx 15,7–19,8 s (4,1 s), bot va havola 16,7–19,8 s (3,1 s). Eski qator
+shira yetib kelishidan oldin 3 kadrda so‘nadi — yarim yopilgan so‘z qolmaydi. Bir soniyada ikki yangi blok yo‘q, ekranda ≤ 7 so‘z.
+
+**Nimani kuzatish kerak.** Qamrov 24a ning 39 tasidan tiklanadimi yoki pasayish davom etadimi (agar davom etsa — bu dizayndan tashqari,
+tarqatish masalasi bo‘lishi mumkin, egasiga aytish kerak). O‘tkazib yuborish va o‘rtacha tomosha 19b (58,2% / 4,5 s, xuddi shu gift)
+bilan solishtirilsin. Bitta raqamdan sabab-xulosa chiqarmang.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: gift sikli boshqaradigan montaj, shira pardasi o‘tishlari (yangi). Ko‘rinish: to‘q binafsha
+radial sahna (#53208a → #2a0b4a → #0f0322), screen rejimida sekin suzuvchi pushti/firuza/binafsha lava dog‘lari, ko‘tariluvchi halqa
+pufakchalar, qozon ostida pushti pol nuri (alangada kuchayadi), tepada doimiy pushti shira chizig‘i tomchilari bilan (faqat yuqori 220 px
+ichida), o‘tishda kadr pastigacha oqadi. Palitra: fon — to‘q binafsha (iksir pushtisi va qozon ko‘ki orasida, analog); urg‘u — iksir
+pushtisi #ff4694 (narx, shira); neytral — pushti-oq krem #fff3fa va binafsha-qora siyoh #170722; qo‘shimcha — qozonning firuzasi
+#45f0d6 (pill, bot tugmasi, hoshiya). Shrift: Paytone One (20a dan beri) + Manrope 800. Musiqa: `calm`, 70 bpm, C#-minor (root 49),
+seed 263, `bed_V20261124b`, past ovozda. Yangi tovush `pipeline/audio.py` da: `syrup.wav` (quyuq shira oqishi — yumshoq havo shishi va
+ikki dumaloq bo‘g‘iq "g‘ulq", jaranglamaydi, 3 marta); ignite.wav 1 marta (0,27 s). Ovoz: yo‘q. Matn chapda x = 70, y 250–800; gift x = 470.
+Keyingi video uchun: to‘q binafsha neon, pushti shira pardasi, lava dog‘lari, Paytone One, sikl bilan montajni takrorlamang.

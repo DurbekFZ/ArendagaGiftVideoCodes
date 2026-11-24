@@ -598,6 +598,21 @@ def feltdrop():
     save("feltdrop.wav", lowpass((body + cloth) * np.minimum(1, x / 0.006), 2400))
 
 
+def syrup():
+    """A thick curtain of syrup sliding down: a soft low swell of air with two round, slow, muffled glugs, no ring (about 0.7 s)."""
+    x = t(0.7)
+    noise = rng.standard_normal(len(x))
+    swell = np.sin(np.pi * np.minimum(1, x / 0.7)) ** 2
+    air = lowpass(noise, 300 + 500 * swell) * swell * 0.45
+    track = air
+    for at, f0 in ((0.12, 150), (0.34, 120)):
+        y = np.maximum(0, x - at)
+        freq = f0 + 90 * (1 - np.exp(-y * 18))
+        glug = np.sin(2 * np.pi * np.cumsum(freq) / SR) * (x >= at) * np.minimum(1, y / 0.015) * np.exp(-y * 16) * 0.5
+        track = track + glug
+    save("syrup.wav", lowpass(track * np.minimum(1, x / 0.01), 1800))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -642,6 +657,8 @@ def build():
     kindle()
     splat()
     inkstamp()
+    feltdrop()
+    syrup()
 
 
 def ensure():
@@ -709,6 +726,8 @@ def ensure():
         inkstamp()
     if not (OUT / "feltdrop.wav").exists():
         feltdrop()
+    if not (OUT / "syrup.wav").exists():
+        syrup()
 
 
 if __name__ == "__main__":
