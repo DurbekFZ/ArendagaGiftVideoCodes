@@ -963,3 +963,42 @@ Display 900 (18e dan beri, faqat muhrlarda) + Manrope 800. Musiqa: `calm`, 76 bp
 Yangi tovush `pipeline/audio.py` da: `inkstamp.wav` (qog‘ozga rezina muhr — yumshoq bo‘g‘iq zarb, 6 marta, past); `checkmark.wav` 2 marta juda
 past (mif chizilganda). Ovoz: yo‘q. Matn chapda x = 70, gift x = 470. Keyingi video uchun: yashil + marjon, muhrlar, mif/fakt formatini,
 prozhektorli sahnani takrorlamang.
+
+## 2026-11-24 — V20261124a "Nega aynan ijara?"
+
+**Tahlil (2026-11-24 05:18 UTC o‘lchovi; Stars posti 118c va o‘chirilgan 118a solishtirilmadi; `metrics_error` yo‘q).** 23b "Mif yoki fakt"
+yakuniy holati: 133 ko‘rish, qamrov 113, o‘tkazib yuborish 56,3%, o‘rtacha tomosha 5,8 s (19,5 s video), like 0, saqlash 0, ulashish 0,
+**izoh 2** — akkauntdagi birinchi izohlar. 23a "Syurpriz quti": 145 / 76,7% / 3,1 s. Ko‘rish hamon 100–260 oralig‘ida (istisnolar 117c 573 va
+118f 887), obunachi 2 ta (o‘zgarmagan), like so‘nggi sakkizta postda 0–1, saqlash va ulashish deyarli hamma joyda 0. Har postda ~100–150
+ko‘rish bo‘lganda o‘tkazib yuborish 46% dan 84% gacha sakraydi va buning sababini ma’lumot ajratmaydi — bitta post haqida sabab-hikoya
+yozilmadi. Yagona yangi, haqiqiy signal — 23b ostidagi izoh (norasmiy o‘zbekcha, mazmuni): "bularni shunchaki sotsa bo‘lmaydimi, umuman
+tushunmadim". Ya’ni kamida bitta tomoshabin gift nega IJARAGA olinishini tushunmagan. Bu video aynan shu savolga javob.
+
+**G‘oya.** Tomoshabin savoliga javob (yangi format). 0-kadr: krem qog‘oz fon, nuqtali to‘r; navy pill "TELEGRAM NFT SOVG‘A IJARASI",
+"Kuniga / 1 000 so‘m" (safir, Unbounded 900); ostida to‘q ko‘k doira oldida katta Jingle Bells, 0-kadrdan tebranib turibdi, yonida tovush
+yoylari. 4,6 s izoh pufagi "Nega aynan ijara?" (yuzsiz "?" avatar), qo‘ng‘iroqlar yana chalinadi. 7,8 s "JAVOB" + "Sotib olmaysiz —
+profilingizda turadi": pastdan sxematik profil kartasi chiqadi (avatar doirasi, ism o‘rnida chiziqlar, logo va interfeys yo‘q), qo‘ng‘iroqlar
+uning javoniga tushadi (feltdrop). 11,8 s "3 kundan 30 kungacha" va 30 katakli chiziq 3-kundan 30-kungacha to‘ladi (faqat "3" va "30"
+yorliqlari, sanaydigan raqam yo‘q). 15,4 s "Kuniga 1 000 so‘m", 16,0 s @ArendagaGiftBot va "↑ Havola profilda". 19,5 s, ovozsiz.
+Gift: Jingle Bells #64028 (Blue Sapphire modeli 0,3%, Purple fon 2,1%, Gingerbread belgisi 1,9%; kuniga 1 000 so‘m) — 16e dan beri birinchi marta.
+Atributlar va "30 kunga −7%" captionda; captionda "Yana savolingiz bormi? Izohda yozing — keyingi videoda javob beramiz." Xarid narxi
+aytilmadi (katalogda yo‘q), faqat "qimmat NFT sotib olish shart emas".
+
+**Gift haqida muhim.** Remotion videosida Lottie sikli qo‘ng‘iroqlarni yonboshga burib, tor qilib ko‘rsatadi (birinchi renderda kontakt
+varag‘ida ko‘rindi; `remotion still` bilan qilingan pozalar to‘ri buni ko‘rsatmadi — u ishonchsiz, pozani video kadrlarida tekshiring).
+Shuning uchun faqat 0-poza (to‘g‘ri, eng keng) ushlab turiladi; harakat — kamon tepasidagi o‘q atrofida aylanib tebranish (faqat rotate,
+siqilmaydi), suzish va uchqunlar. Gift ~19–81% kenglik, ~21–78% balandlik; ochilishda quti 1060 px markaz (470, 1110), kartada 840 px (470, 1240).
+
+**O‘qish tezligi.** Ochilish (7 so‘z) 0–4,3 s; savol (3 so‘z) 4,9–7,5 s; javob 1 (5 so‘z) 8,1–11,3 s; javob 2 (4 so‘z) 12,1–14,9 s; narx 15,7–19,5 s
+(3,8 s), bot va havola 16,0–19,5 s. Bir soniyada ikki yangi blok yo‘q, ekranda ≤ 7 so‘z.
+
+**Nimani kuzatish kerak.** Izoh yana keladimi (javob formati va captiondagi taklif); 1 000 so‘mlik gift 750 lik postlardan farq qiladimi —
+bitta raqam bilan xulosa chiqarmang. Agar izohlar ko‘paysa, "savolga javob" seriyasini davom ettirish mumkin.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: izohga javob + profil kartasi namoyishi (yangi). Ko‘rinish: OCH krem qog‘oz (#f6efe3 → #e7dac4),
+navy nuqtali to‘r, sekin suzuvchi osmon-ko‘k va o‘rik dog‘lari, navy konturli tekis kartalar qattiq navy soyali (neo-brutalist), navy doira,
+tovush yoylari. Palitra: fon — krem; ink va doira — navy #13234a (gift ko‘kiga analog); urg‘u — giftning safiri #1f7fe8; qo‘shimcha — o‘rik
+#ff9a52 (komplementar, faqat pill, chiziq, uchqun). Shrift: Unbounded 900/700 + Manrope 800. Musiqa: `calm`, 66 bpm, E-major (root 52),
+seed 241, `bed_V20261124a`, past ovozda. Tovush: whoosh 2 marta juda past; yangi `feltdrop.wav` (`pipeline/audio.py`: yumshoq mato javonga
+qo‘yilgan bo‘g‘iq zarb, jaranglamaydi) 2 marta. Qo‘ng‘iroq tovushi ataylab yo‘q. Ovoz: yo‘q. Matn chapda x = 70, gift x = 470.
+Keyingi video uchun: och krem fon, navy+safir+o‘rik, profil kartasi, izoh pufagi, Unbounded sarlavhalarni takrorlamang.

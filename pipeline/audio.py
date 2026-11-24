@@ -588,6 +588,16 @@ def inkstamp():
     save("inkstamp.wav", lowpass((body + crush) * np.minimum(1, x / 0.004), 4000))
 
 
+def feltdrop():
+    """Something soft set down on a felt-covered shelf: a round, muffled low thud with a hush of cloth, no ring (about 0.35 s)."""
+    x = t(0.35)
+    freq = 62 + 38 * np.exp(-x * 30)
+    body = np.sin(2 * np.pi * np.cumsum(freq) / SR) * np.exp(-x * 18)
+    noise = rng.standard_normal(len(x))
+    cloth = (lowpass(noise, 1600) - lowpass(noise, 300)) * np.exp(-x * 30) * 0.28
+    save("feltdrop.wav", lowpass((body + cloth) * np.minimum(1, x / 0.006), 2400))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -697,6 +707,8 @@ def ensure():
         springbox()
     if not (OUT / "inkstamp.wav").exists():
         inkstamp()
+    if not (OUT / "feltdrop.wav").exists():
+        feltdrop()
 
 
 if __name__ == "__main__":

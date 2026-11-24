@@ -1,0 +1,14 @@
+{
+  "id": "V20261124a",
+  "slugs": ["jinglebells-64028"],
+  "caption": "Nega aynan ijara? Javob beramiz 🔔\n\nNoyob Telegram NFT sovg‘asini profilingizda ko‘rsatish uchun qimmat NFT sotib olish shart emas. Ijaraga oling: gift 3 kundan 30 kungacha profilingizda ko‘rinib turadi, siz esa faqat tanlagan kunlaringiz uchun to‘laysiz. Kuniga 1 000 so‘m, 30 kunga −7%.\n\nJingle Bells #64028: Blue Sapphire modeli 0,3%, Purple fon 2,1%, Gingerbread belgisi 1,9%.\n\nYana savolingiz bormi? Izohda yozing — keyingi videoda javob beramiz.\n\nIjaraga olish: @ArendagaGiftBot — havola profilda.\n\n#telegram #nft #telegramgifts #nftsovga #ijara #uzbekistan",
+  "hero_ms": 600,
+  "music": {"name": "bed_V20261124a", "style": "calm", "bpm": 66, "root": 52, "scale": "major", "seconds": 21, "seed": 241},
+  "concept": {
+    "title": "Nega aynan ijara?",
+    "hook": "Birinchi kadr — krem qog‘oz fon, to‘q ko‘k doira oldida katta safir Jingle Bells qo‘ng‘iroqlari tebranib turibdi (tovush yoylari bilan); tepada \"Telegram NFT sovg‘a ijarasi / Kuniga 1 000 so‘m\"",
+    "format": "Tomoshabin savoliga javob (yangi): 4,6 s da izoh pufagi \"Nega aynan ijara?\", keyin javob ko‘rsatiladi — profil kartasi pastdan chiqadi, qo‘ng‘iroqlar unga tushadi (\"Sotib olmaysiz — profilingizda turadi\"), 3 dan 30 gacha kunlar chizig‘i to‘ladi (\"3 kundan 30 kungacha\"), yakunda narx + bot + havola",
+    "why": "23b ga birinchi izoh keldi: tomoshabin giftni nega ijaraga olishini tushunmagan. Statistika (100–260 ko‘rish, o‘tkazib yuborish 46–84%) kreativ sababni ajratmaydi, shuning uchun video shu savolga oddiy so‘zlarda javob beradi va doimiy qoidalarni saqlaydi: 0-kadrda mahsulot va narx, katta gift, giftga darhol nimadir bo‘ladi, qulay o‘qish tezligi.",
+    "differs": "Format (izohga javob + profil kartasi namoyishi — yangi), ko‘rinish (och krem qog‘oz, nuqtali to‘r, navy kontur va qattiq soyali tekis kartalar — oxirgi haftaning to‘q sahnalaridan farqli), palitra (krem + navy + safir + o‘rik), shrift (Unbounded 900/700 + Manrope), gift (Jingle Bells — 16e dan beri birinchi marta), musiqa (calm, E-major, 66 bpm, seed 241), yangi tovush feltdrop.wav"
+  }
+}
