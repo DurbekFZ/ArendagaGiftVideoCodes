@@ -891,5 +891,29 @@
    "differs": "Format (izohga javob + profil kartasi namoyishi — yangi), ko‘rinish (och krem qog‘oz, nuqtali to‘r, navy kontur va qattiq soyali tekis kartalar — oxirgi haftaning to‘q sahnalaridan farqli), palitra (krem + navy + safir + o‘rik), shrift (Unbounded 900/700 + Manrope), gift (Jingle Bells — 16e dan beri birinchi marta), musiqa (calm, E-major, 66 bpm, seed 241), yangi tovush feltdrop.wav"
   },
   "measured_at": "2026-11-24T14:34:13+00:00"
+ },
+ {
+  "name": "20261124-1936-V20261124b",
+  "published_at": "2026-11-24T14:41:20+00:00",
+  "style": "custom",
+  "hook": "V20261124b",
+  "gifts": [
+   "hexpot-42707"
+  ],
+  "slot_hour": 19,
+  "seconds": 19.82,
+  "media_id": "17967710658229727",
+  "permalink": "https://www.instagram.com/reel/DgIMTUqgVMb/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261124b",
+  "concept": {
+   "title": "Sehrli shira",
+   "hook": "Birinchi kadr — to‘q binafsha sahnada ulkan neon Hex Pot (firuza qozon, pushti iksir, bitta ko‘z); tepada \"Telegram NFT sovg‘a ijarasi / Kuniga 750 so‘m\"; 0,27 s da qozon o‘z alangasi bilan yonib sakraydi",
+   "format": "Giftning o‘z ritmi montajni boshqaradi (yangi): qozon har 5 s da qayta alangalanadi va har safar qozon ORTIDAN pushti shira pardasi oqib tushib eski qatorni yopadi, keyingisini olib chiqadi. Uch qator: \"Profilingizda turadi / 3 kundan 30 kungacha\", \"Hex Pot / Silver Blue fon — atigi 1%\", narx + bot + havola",
+   "why": "Qamrov 886 dan ~200, ~140 va 46 gacha tushdi (sababi noma’lum). Shuning uchun hech qachon inkor etilmagan narsaga qaytildi: gift — yulduz, katta va harakatda, o‘z ranglaridan boy palitra, 0-kadrda mahsulot va narx, kam so‘z, qulay sur’at. Tushuntirish formati va qog‘oz ko‘rinishi yo‘q.",
+   "differs": "Format (gift sikli bilan boshqariladigan montaj, shira pardasi o‘tishlari — yangi), ko‘rinish (to‘q binafsha neon, lava-lampa dog‘lari, pufakchalar — 24a krem qog‘ozidan butunlay farqli), palitra (binafsha + pushti + firuza), shrift (Paytone One — so‘nggi beshtada yo‘q), musiqa (calm, C#-minor, 70 bpm, seed 263), yangi syrup.wav tovushi, gift (Hex Pot — so‘nggi oltitada yo‘q)"
+  }
  }
 ]
