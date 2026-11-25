@@ -963,5 +963,29 @@
    "differs": "Format (texnik chizma, yetakchi chiziqli yorliqlar — yangi), ko‘rinish (ko‘k chizma varag‘i — yangi), palitra (chizma ko‘ki + qahrabo + akvamarin), shrift (Chakra Petch + Space Mono — so‘nggi o‘ntada yo‘q), musiqa (calm, G-major, 74 bpm, seed 307), yangi draft.wav tovushi, gift (Liberty Figure #45183 — birinchi marta)"
   },
   "measured_at": "2026-11-25T14:32:05+00:00"
+ },
+ {
+  "name": "20261125-1933-V20261125b",
+  "published_at": "2026-11-25T14:37:13+00:00",
+  "style": "custom",
+  "hook": "V20261125b",
+  "gifts": [
+   "chillflame-55224"
+  ],
+  "slot_hour": 19,
+  "seconds": 18.52,
+  "media_id": "17874930564643312",
+  "permalink": "https://www.instagram.com/reel/DgKwnx3O2Cu/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261125b",
+  "concept": {
+   "title": "Suzani",
+   "hook": "Birinchi kadr — to‘q firuza mato ustida oltin chok bilan tikilgan suzani medalyoni, uning markazida ulkan oltin Chill Flame kosasi qizil olovi bilan; tepada \"Telegram NFT sovg‘a ijarasi / Kuniga 750 so‘m\"; 0,3 s da olov chaqnaydi, medalyon gullaydi va kosa sakraydi",
+   "format": "Tikilgan sahifalar (yangi): har bir qator ostiga oltin chok o‘zi tikiladi, har yangi qatorda medalyon gullari ochiladi — \"Chill Flame / Flashlight belgisi — atigi 0,4%\", \"Profilingizda turadi / 3 kundan 30 kungacha\"; keyin narx, bot va havola",
+   "why": "Qamrov har postda ~100–125 atrofida barqaror, like, saqlash va ulashish deyarli 0, obunachi 2; bitta post raqamlari shovqin. Shuning uchun doim amal qilgan qoidalar: gift — yulduz, katta va harakatda, palitra uning o‘z ranglaridan (Pacific Green fon → to‘q firuza, kosaning oltini urg‘u, olov qizili faqat uchqunlarda), 0-kadrda mahsulot va narx, kam so‘z, qulay sur’at. Hech qachon ko‘rsatilmagan gift (#55224).",
+   "differs": "Ko‘rinish (suzani mato, gullaydigan medalyon, kashta hoshiyalar — yangi), palitra (to‘q firuza + oltin + fil suyagi, olov qizili uchqunlarda), shrift (Bodoni Moda 900 / kursiv — 18d dan beri birinchi marta — + Manrope), harakat (oltin chok tikilishi, medalyon gullashi), musiqa (calm, A-minor, 64 bpm, seed 331), yangi silk.wav tovushi, gift (Chill Flame #55224 — birinchi marta)"
+  }
  }
 ]
