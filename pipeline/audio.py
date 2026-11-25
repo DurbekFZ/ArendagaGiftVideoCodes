@@ -623,6 +623,16 @@ def draft():
     save("draft.wav", lowpass((grain + body) * np.minimum(1, x / 0.02), 3600))
 
 
+def silk():
+    """A length of embroidered cloth unrolled on a table: a soft, airy fabric swish with a gentle flutter, no click (about 0.6 s)."""
+    x = t(0.6)
+    noise = rng.standard_normal(len(x))
+    swell = np.sin(np.pi * np.minimum(1, x / 0.6)) ** 2
+    weave = 1 + 0.3 * np.sin(2 * np.pi * (18 + 10 * x) * x)
+    air = (lowpass(noise, 2400) - lowpass(noise, 350)) * swell * weave * 0.5
+    save("silk.wav", lowpass(air * np.minimum(1, x / 0.02), 2800))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -670,6 +680,7 @@ def build():
     feltdrop()
     syrup()
     draft()
+    silk()
 
 
 def ensure():
@@ -739,6 +750,8 @@ def ensure():
         feltdrop()
     if not (OUT / "syrup.wav").exists():
         syrup()
+    if not (OUT / "silk.wav").exists():
+        silk()
 
 
 if __name__ == "__main__":

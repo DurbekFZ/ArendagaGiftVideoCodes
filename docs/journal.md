@@ -1084,3 +1084,45 @@ beri). Musiqa: `calm`, 74 bpm, G-major (root 55), seed 307, `bed_V20261125a`, pa
 (chizg‘ich bo‘ylab qalam — yumshoq qog‘oz shitirlashi, jaranglamaydi, 3 marta); feltdrop 1 marta (narx). Ovoz: yo‘q. Matn chapda x = 70,
 y 250–760; gift x = 470. Keyingi video uchun: chizma ko‘ki + qahrabo, to‘r va o‘lcham chiziqlari, yetakchi chiziqli yorliqlar, Chakra
 Petch/Space Mono ni takrorlamang.
+
+## 2026-11-25 — V20261125b "Suzani"
+
+**Tahlil (2026-11-25 14:18 UTC o‘lchovi; Stars posti 118c va o‘chirilgan 118a solishtirilmadi; `metrics_error` yo‘q).** 25a "Chizma"
+~8,5 soatda: 124 ko‘rish, qamrov 116, o‘tkazib yuborish 55,2%, o‘rtacha tomosha 4,3 s (19,0 s video), 1 like, saqlash/ulashish/izoh 0.
+24a "Nega aynan ijara?" yakuni 108 / 72,4% / 3,6 s; 24b "Sehrli shira" 103 / 67,0% / 3,8 s. Qamrov post boshiga ~90–120 atrofida
+barqarorlashdi (ertalabki pasayish to‘xtadi; 25a 8,5 soatda allaqachon 24a/24b ning yakunidan oshdi — ko‘rishlar sekin keladi).
+Obunachi 2 ta (o‘zgarmagan). Yetakchilar o‘zgarmagan: 118f 887 / 27,6% / 9,9 s, 117c 573 / 46,3% / 6,3 s, 117a 256 / 51,4% / 6,4 s.
+Like, saqlash, ulashish so‘nggi o‘nta postda deyarli 0; yangi izoh yo‘q. Bitta postning o‘tkazib yuborish foizi bu hajmda shovqin —
+raqamlar yozildi, sabab-hikoya chiqarilmadi. Video doimiy qoidalar bo‘yicha: gift — yulduz, katta va harakatda, palitra o‘z
+ranglaridan, 0-kadrda mahsulot va narx, kam so‘z, qulay sur’at; hech qachon ko‘rsatilmagan gift.
+
+**G‘oya.** Suzani (yangi ko‘rinish). 0-kadr: to‘q firuza mato (mayda to‘rt qirrali yulduzlar to‘ri), tepada va pastda kashta
+hoshiyalar (gulli medalyonlar va pechak, sekin siljiydi), markazda oltin chok bilan tikilgan suzani medalyoni (16 tashqi va 8 ichki
+gulbarg, uchlarida qizil nuqtalar), uning ustida ulkan oltin Chill Flame kosasi (quti 1060 px); tepada fil suyagi pill "TELEGRAM NFT
+SOVG‘A IJARASI", "Kuniga / 750 so‘m" (oltin, Bodoni Moda 900, 188 px) va ostida oltin chok. 0,3 s da olov chaqnaydi (kindle.wav),
+medalyon gullaydi, kosa sakraydi; olovdan uchqunlar ko‘tariladi. Har yangi qatorda medalyon qayta gullaydi va qator ostiga oltin chok
+o‘zi tikiladi: 4,6 s "Chill Flame / Flashlight belgisi — atigi 0,4%"; 8,9 s "Profilingizda turadi / 3 kundan 30 kungacha"; 13,3 s
+"Kuniga 750 so‘m", 14,5 s @ArendagaGiftBot va "↑ Havola profilda". 18,5 s, ovozsiz. Gift: Chill Flame #55224 (Bowl of Hygeia modeli 3%,
+Pacific Green fon 1,2%, Flashlight belgisi 0,4%; kuniga 750 so‘m) — birinchi marta. Model va fon captionda, −7% captionda.
+Holiday Drink #3492 ham hech qachon ko‘rsatilmagan, lekin nomi ichimlik — ataylab olinmadi.
+
+**Gift haqida muhim.** Remotion kadrlarida sikl 180 kadr: 120–179 va 0–10 kosa to‘g‘ri qaraydi; ~15–115 kosa buriladi va olov
+otilib chiqadi (20–40 atrofida tor — ushlamang). Videoda 120→179→0→10 va orqaga ping-pong. Kosa qutining ~33–74% kengligi, ~18–81%
+balandligi; olov (0,52; 0,25). Muqovada 150-poza. Pozalar video kadrlaridan tekshirildi (vaqtinchalik render, har 10 kadrda to‘r).
+
+**O‘qish tezligi.** Ochilish (7 so‘z) 0–4,2 s; blok 1 (6 so‘z) 4,9–8,6 s (3,7 s); blok 2 (6 so‘z) 9,2–12,9 s (3,7 s); narx 13,5–18,5 s
+(5,0 s), bot va havola 14,7–18,5 s (3,8 s). Bir soniyada ikki yangi blok yo‘q, ekranda ≤ 7 so‘z. Uchqunlar faqat olovdan ~110 px
+yuqoriga chiqadi — matn ustuniga yetmaydi (birinchi renderda "Havola profilda" yonigacha chiqqan edi, tuzatildi).
+
+**Nimani kuzatish kerak.** Qamrov ~90–120 da qoladimi; milliy naqshli ko‘rinish like yoki saqlash olib keladimi (hozir deyarli 0).
+Bitta raqamdan sabab-xulosa chiqarmang.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: tikiladigan qatorlar + gullaydigan medalyon (oddiy 3 blok + narx). Ko‘rinish: suzani —
+to‘q firuza radial mato (#13695d → #0b463e → #052520), to‘rt qirrali yulduz to‘ri, kashta hoshiyalar tepada va pastda, oltin konturli
+gulbargli medalyon (sekin aylanadi, sakrashda gullaydi), olov nuri (screen), ko‘tariluvchi uchqunlar, oltin punktir chok. Palitra:
+fon — to‘q firuza (giftning Pacific Green foniga analog, ancha to‘q); urg‘u — kosaning oltini #f4c24e; neytral — fil suyagi #fff4de va
+firuza siyoh #06281f; qo‘shimcha — olov qizili #ff5a35 (faqat nuqta va uchqunlarda). Shrift: Bodoni Moda 900 / 900 kursiv (18d dan beri)
++ Manrope 800. Musiqa: `calm`, 64 bpm, A-minor (root 57), seed 331, `bed_V20261125b`, past ovozda. Yangi tovush `pipeline/audio.py`
+da: `silk.wav` (stol ustida yoyilayotgan kashta mato — yumshoq havo shitirlashi, jaranglamaydi, 3 marta past); kindle.wav 1 marta (0,3 s).
+Ovoz: yo‘q. Matn chapda x = 70, y 250–780; gift x = 470. Keyingi video uchun: firuza + oltin, suzani medalyoni, kashta hoshiyalar,
+oltin chok, Bodoni Moda ni takrorlamang.
