@@ -1044,3 +1044,43 @@ pushtisi #ff4694 (narx, shira); neytral — pushti-oq krem #fff3fa va binafsha-q
 seed 263, `bed_V20261124b`, past ovozda. Yangi tovush `pipeline/audio.py` da: `syrup.wav` (quyuq shira oqishi — yumshoq havo shishi va
 ikki dumaloq bo‘g‘iq "g‘ulq", jaranglamaydi, 3 marta); ignite.wav 1 marta (0,27 s). Ovoz: yo‘q. Matn chapda x = 70, y 250–800; gift x = 470.
 Keyingi video uchun: to‘q binafsha neon, pushti shira pardasi, lava dog‘lari, Paytone One, sikl bilan montajni takrorlamang.
+
+## 2026-11-25 — V20261125a "Chizma"
+
+**Tahlil (2026-11-25 05:19 UTC o‘lchovi; Stars posti 118c va o‘chirilgan 118a solishtirilmadi; `metrics_error` yo‘q).** 24a "Nega aynan
+ijara?" ~23 soatda: 106 ko‘rish, qamrov 89, o‘tkazib yuborish 72,9%, o‘rtacha tomosha 3,5 s (8 soatda 46 edi — ko‘rishlar endi sekin
+keladi, 8 soatlik o‘lchov postni kam ko‘rsatadi). 24b "Sehrli shira" ~14 soatda: 68 ko‘rish, qamrov 63, 70,8%, 3,2 s. Ikkalasida like,
+saqlash, ulashish, izoh 0. Post boshiga qamrov tushishda davom etmoqda: 18f 716, keyin ~150–190, ~95–125, endi ~65–90. Obunachi 2 ta
+(o‘zgarmagan). Yetakchilar o‘zgarmagan: 118f 887 / 27,6% / 9,9 s, 117c 573 / 46,3% / 6,3 s, 117a 256 / 51,4%. Slotlar bo‘yicha median
+deyarli bir xil (10:00 — 145 ko‘rish / 69%, 19:00 — 146 / 59%, 7–8 tadan post — kuchsiz farq). Sababi noma’lum va hech bir dizayn
+o‘zgarishi (format, ko‘rinish, gift, narx, ovozli/ovozsiz) bu pasayishni qimirlatmadi — buni bitta video bilan tushuntirmayman; bu
+tarqatish/akkaunt darajasidagi masala bo‘lishi mumkin va egasi bilishi kerak. Video doim amal qilgan qoidalar bo‘yicha qilindi.
+
+**G‘oya.** Texnik chizma (yangi format va ko‘rinish). 0-kadr: to‘q ko‘k chizma varag‘i (mayda va yirik to‘r, ikki qavat ramka shkala
+belgilari bilan, aylanuvchi punktir aylanalar, markaz chiziqlari, figura bo‘yi va eni o‘lcham chiziqlari strelkalar bilan); markazda
+ulkan akvamarin Liberty Figure (quti 1060 px); tepada oq ramkali "TELEGRAM NFT SOVG‘A IJARASI", "Kuniga / 850 so‘m" (qahrabo, Chakra
+Petch 178 px). 0,3 s da mash’al qahrabo nur bilan chaqnaydi, chizma chiziqlari yonadi, figura sakraydi. 4,6 s chizma yorlig‘i "Liberty
+Figure / Fedora belgisi — atigi 0,2%" — yorliqdan figuragacha chiziq tortiladi, uchida firuza nuqta. 8,9 s "Profilingizda turadi /
+3 kundan 30 kungacha" — chiziq poydevorga. 13,2 s "Kuniga 850 so‘m", 14,4 s @ArendagaGiftBot va "↑ Havola profilda". 19,0 s, ovozsiz.
+Gift: Liberty Figure #45183 (Aquamarine modeli 3%, Navy Blue fon 1,2%, Fedora belgisi 0,2%; kuniga 850 so‘m) — birinchi marta.
+
+**Gift haqida muhim.** Remotion kadrlarida sikl 180 kadr: 150–179 va 0–90 to‘g‘ri qaraydi, ~95–145 figura buriladi (tor — ushlamang).
+Videoda 150→179→0→60 va orqaga ping-pong. Figura qutining ~31–73% kengligi, ~19–81% balandligi; mash’al (0,33; 0,25). Muqovada
+165-poza. `pattern.json` dagi "Color Icon" qatlami (Fedora) kichik o‘lchamda shapka sifatida o‘qilmaydi (olti burchakli dog‘) —
+ishlatilmadi; belgi faqat matnda.
+
+**O‘qish tezligi.** Ochilish (7 so‘z) 0–4,2 s; yorliq 1 (6 so‘z) 4,9–8,5 s (3,7 s); yorliq 2 (6 so‘z) 9,1–12,8 s (3,7 s); narx 13,5–19,0 s
+(5,5 s), bot va havola 14,7–19,0 s (4,3 s). Bir soniyada ikki yangi blok yo‘q, ekranda ≤ 7 so‘z.
+
+**Nimani kuzatish kerak.** Qamrov ~65–90 dan yana pastga tushadimi. Agar tushsa — bu dizayn masalasi emas, egasiga alohida aytish kerak
+(akkaunt holati, Reels tarqatish cheklovi va h.k. tekshirilsin). Bitta raqamdan sabab-xulosa chiqarmang.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: texnik chizma, yetakchi chiziqli yorliqlar (yangi). Ko‘rinish: ko‘k chizma varag‘i
+(#2352a8 → #15327c → #0a1a4c), sekin siljiydigan to‘r, ramka shkalasi, aylanuvchi punktir aylanalar, o‘lcham chiziqlari, mash’al
+qahrabo nuri (screen), qattiq qahrabo soyali oq ramkali yorliqlar, qahrabo burchak kvadratchalari. Palitra: fon — chizma ko‘ki (giftning
+Navy Blue foniga analog); urg‘u — mash’al qahrabosi #ffb547 (ko‘kka komplementar); neytral — muz-oq #eef4ff va navy siyoh #0a1640;
+qo‘shimcha — figuraning akvamarini #62f2d2 (faqat chiziq uchidagi nuqta). Shrift: Chakra Petch 700 (17a dan beri) + Space Mono 700 (16g dan
+beri). Musiqa: `calm`, 74 bpm, G-major (root 55), seed 307, `bed_V20261125a`, past ovozda. Yangi tovush `pipeline/audio.py` da: `draft.wav`
+(chizg‘ich bo‘ylab qalam — yumshoq qog‘oz shitirlashi, jaranglamaydi, 3 marta); feltdrop 1 marta (narx). Ovoz: yo‘q. Matn chapda x = 70,
+y 250–760; gift x = 470. Keyingi video uchun: chizma ko‘ki + qahrabo, to‘r va o‘lcham chiziqlari, yetakchi chiziqli yorliqlar, Chakra
+Petch/Space Mono ni takrorlamang.

@@ -613,6 +613,16 @@ def syrup():
     save("syrup.wav", lowpass(track * np.minimum(1, x / 0.01), 1800))
 
 
+def draft():
+    """A pencil drawn along a ruler on drafting paper: a short, soft, papery hiss that swells and fades, no ring (about 0.45 s)."""
+    x = t(0.45)
+    noise = rng.standard_normal(len(x))
+    swell = np.sin(np.pi * np.minimum(1, x / 0.45)) ** 1.5
+    grain = (lowpass(noise, 3200) - lowpass(noise, 900)) * swell * 0.38
+    body = lowpass(noise, 420) * swell * 0.22
+    save("draft.wav", lowpass((grain + body) * np.minimum(1, x / 0.02), 3600))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -659,6 +669,7 @@ def build():
     inkstamp()
     feltdrop()
     syrup()
+    draft()
 
 
 def ensure():
