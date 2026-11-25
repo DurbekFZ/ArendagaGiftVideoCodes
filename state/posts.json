@@ -927,5 +927,29 @@
    "differs": "Format (gift sikli bilan boshqariladigan montaj, shira pardasi o‘tishlari — yangi), ko‘rinish (to‘q binafsha neon, lava-lampa dog‘lari, pufakchalar — 24a krem qog‘ozidan butunlay farqli), palitra (binafsha + pushti + firuza), shrift (Paytone One — so‘nggi beshtada yo‘q), musiqa (calm, C#-minor, 70 bpm, seed 263), yangi syrup.wav tovushi, gift (Hex Pot — so‘nggi oltitada yo‘q)"
   },
   "measured_at": "2026-11-25T05:33:16+00:00"
+ },
+ {
+  "name": "20261125-1035-V20261125a",
+  "published_at": "2026-11-25T05:39:35+00:00",
+  "style": "custom",
+  "hook": "V20261125a",
+  "gifts": [
+   "libertyfigure-45183"
+  ],
+  "slot_hour": 10,
+  "seconds": 19.01,
+  "media_id": "17879228964588307",
+  "permalink": "https://www.instagram.com/reel/DgJzGIUTTpy/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261125a",
+  "concept": {
+   "title": "Chizma",
+   "hook": "Birinchi kadr — to‘q ko‘k chizma varag‘ida (to‘r, ramka, aylanalar, o‘lcham chiziqlari) ulkan akvamarin Liberty Figure; tepada \"Telegram NFT sovg‘a ijarasi / Kuniga 850 so‘m\"; 0,3 s da mash’al qahrabo rangda chaqnaydi, chiziqlar yonadi va figura sakraydi",
+   "format": "Texnik chizma (yangi): ikki chizma yorlig‘i, har biri o‘zidan figuragacha chiziq tortadi — \"Liberty Figure / Fedora belgisi — atigi 0,2%\", \"Profilingizda turadi / 3 kundan 30 kungacha\"; keyin narx, bot va havola",
+   "why": "Qamrov post sayin pasaymoqda (886 → ~200 → ~140 → ~100), sababi noma’lum va hech bir dizayn o‘zgarishi uni qimirlatmadi. Shuning uchun doim amal qilgan qoidalar: gift — yulduz, katta va harakatda, palitra uning o‘z ranglaridan (Navy Blue fon → chizma ko‘ki, mash’al qahrabosi urg‘u), 0-kadrda mahsulot va narx, kam so‘z, qulay sur’at. Hech qachon ko‘rsatilmagan gift (#45183).",
+   "differs": "Format (texnik chizma, yetakchi chiziqli yorliqlar — yangi), ko‘rinish (ko‘k chizma varag‘i — yangi), palitra (chizma ko‘ki + qahrabo + akvamarin), shrift (Chakra Petch + Space Mono — so‘nggi o‘ntada yo‘q), musiqa (calm, G-major, 74 bpm, seed 307), yangi draft.wav tovushi, gift (Liberty Figure #45183 — birinchi marta)"
+  }
  }
 ]
