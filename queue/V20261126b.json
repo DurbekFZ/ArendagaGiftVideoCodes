@@ -1,10 +1,17 @@
 {
   "id": "V20261126b",
   "slugs": [],
-  "hold": true,
-  "caption": "Tayyor taqdimot kerakmi? 📊\n\nMavzuni @TaqdimotKerakBot ga yozing — bot narxini ko‘rsatadi. Taqdimot sizga buyurtma asosida tayyorlanadi: slaydlar matni bilan birga yozilgan holda.\n\nVideodagi slaydlar — haqiqiy namunalar.\n\nTelegramda qidiring: @TaqdimotKerakBot\n\n#taqdimot #prezentatsiya #slayd #talaba #oqituvchi #uzbekistan",
+  "caption": "Tayyor taqdimot kerakmi? 📊\n\n@TaqdimotKerakBot ga kiring — bot narxlarni ko‘rsatadi. Taqdimot sizga buyurtma asosida tayyorlanadi: slaydlar matni bilan birga yozilgan holda.\n\nVideodagi slaydlar — haqiqiy namunalar.\n\nTelegramda qidiring: @TaqdimotKerakBot\n\n#taqdimot #prezentatsiya #slayd #talaba #oqituvchi #uzbekistan",
   "hero_ms": 300,
-  "music": {"name": "bed_V20261126b", "style": "calm", "bpm": 68, "root": 52, "scale": "major", "seconds": 19, "seed": 412},
+  "music": {
+    "name": "bed_V20261126b",
+    "style": "calm",
+    "bpm": 68,
+    "root": 52,
+    "scale": "major",
+    "seconds": 19,
+    "seed": 412
+  },
   "concept": {
     "product": "taqdimot",
     "title": "Uch qadam",

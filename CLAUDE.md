@@ -213,8 +213,9 @@ avoid them.
 ## Second product: @TaqdimotKerakBot (one video a day)
 
 The same Instagram page also advertises the owner's Telegram bot **@TaqdimotKerakBot**:
-a person tells the bot what presentation they need, the bot shows the prices, and the
-finished presentation (slides with the text already written) is made for them to order.
+the bot shows the prices; when a person presses the order button the order goes to the
+owner, the person tells the owner (not the bot) the topic, and the finished presentation
+(slides with the text already written) is made for them.
 One video a day is about this bot; the gift videos continue as before.
 
 - **What to show.** Real work: three sample presentations are in `public/taqdimot/`
@@ -233,6 +234,9 @@ One video a day is about this bot; the gift videos continue as before.
   in these videos and never mention @ArendagaGiftBot in them.
 - **True claims only.** Known facts: the service makes presentations to order; the
   slides come with the text written; the bot shows the prices; the samples are real.
+  The topic is NOT typed into the bot (the owner said so after the first video, which
+  wrongly had "Mavzuni botga yozing"): never write that; say "botga kiring", "narxlarni
+  ko‘ring", "buyurtma bering" instead.
   Not known, so never state: any price, discount, delivery time, number of customers,
   guarantee of a grade, or how the slides are produced. No "bepul". When the owner
   gives prices or deadlines they will be added here.
