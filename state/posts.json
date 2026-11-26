@@ -1040,5 +1040,28 @@
    "differs": "Ko‘rinish (och shalfey studiya, perspektiv pol to‘ri, magnit taglik, maydon halqalari — yangi; so‘nggi 4 ta to‘q fonli edi), palitra (shalfey + binafsha + o‘rmon siyohi, firuza faqat halqalarda), shrift (Lilita One — 18f dan beri birinchi marta — + Manrope), harakat (taxta pog‘onama-pog‘ona ko‘tariladi, sakrash yo‘q), musiqa (calm, D♭-major, 62 bpm, seed 359), yangi hover.wav tovushi, gift (Surge Board #3194 — birinchi marta)"
   },
   "measured_at": "2026-11-26T08:55:54+00:00"
+ },
+ {
+  "name": "20261126-1357-V20261126b",
+  "published_at": "2026-11-26T09:00:52+00:00",
+  "style": "custom",
+  "hook": "V20261126b",
+  "gifts": [],
+  "slot_hour": 13,
+  "seconds": 18.71,
+  "media_id": "18508887055128207",
+  "permalink": "https://www.instagram.com/reel/DgMu7lqBcrT/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261126b",
+  "concept": {
+   "product": "taqdimot",
+   "title": "Uch qadam",
+   "hook": "Birinchi kadr — och sovuq qog‘oz stol, tepada \"O‘zbekiston va jahon hamjamiyati\" taqdimotining titul slaydi katta va o‘qiladigan, ortida yana ikki slayd yelpig‘ichday ochiladi; pastda \"Tayyor taqdimot kerakmi?\" (Rubik 800, 124 px, \"kerakmi?\" ostida qahrabo marker) va to‘q ko‘k pill \"Buyurtma qiling\"",
+   "format": "Qo‘llanma, uch raqamli qadam: 1 \"Mavzuni botga yozing\", 2 \"Narxini bot ko‘rsatadi\", 3 \"Slaydlar matni bilan tayyor\"; har qadamda tepadagi dasta bitta slaydni chapga uloqtiradi (jahon, keyin islom), oxirida ikki taqdimotdan 5 slaydli yelpig‘ich ustida @TaqdimotKerakBot va \"Telegramda qidiring\"",
+   "why": "Taqdimot uchun birinchi video — solishtiradigan post yo‘q. Gift postlaridan faqat inkor etilmagan umumiy saboqlar: 0-kadrda mahsulot va taklif oddiy so‘zlarda, mahsulotning o‘zi (slayd) katta, darhol harakat, kam so‘z, qulay o‘qish sur’ati. Uch qadam — xizmat qanday ishlashini faqat ma’lum faktlar bilan aytadi.",
+   "differs": "Birinchi taqdimot videosi. Gift videolaridan: mahsulot (slaydlar), yorug‘ sovuq qog‘oz/yalpiz fon (deka rangiga qarab o‘zgaradi), qo‘llanma formati raqamli qadamlar bilan, Rubik 800 + Manrope, calm E-major 68 bpm seed 412, pageturn/cardflip tovushlari"
+  }
  }
 ]
