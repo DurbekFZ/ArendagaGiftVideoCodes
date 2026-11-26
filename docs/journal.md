@@ -1185,3 +1185,36 @@ Egasi shu sahifada har kuni 1 ta video bilan @TaqdimotKerakBot (buyurtmaga tayyo
 - Bot havolasi profilda yo‘q: videoda @TaqdimotKerakBot yoziladi, "Telegramda qidiring".
 - Narx va muddat hali ma’lum emas — videoda aytilmaydi.
 - Tahlilda taqdimot videolari faqat o‘zaro solishtiriladi (concept.product = "taqdimot").
+
+## 2026-11-26 — V20261126b "Uch qadam" (@TaqdimotKerakBot, birinchi video)
+
+**Tahlil.** Taqdimot videolari hali yo‘q — solishtiradigan narsa yo‘q. Gift postlaridan faqat inkor etilmagan umumiy saboqlar
+olindi: 0-kadrda mahsulot va taklif oddiy so‘zlarda, mahsulotning o‘zi katta, darhol harakat, kam so‘z, qulay o‘qish sur’ati.
+Navbat bo‘sh edi. Dispetcher egasi nomidan so‘ragani uchun navbat yozuvida `"hold": true` — egasi ko‘rib chiqadi.
+
+**Namunalarni tekshirish (ism).** "Ism Familiya" almashtirilgan, lekin ba’zi slaydlarda haqiqiy shaxs ismlari bor va ular
+ishlatilmadi: `jahon/05` va `jahon/06` (Prezident ismi), `chatgpt/03` (kompaniya asoschilari ismlari); `islom/03` va `islom/08`
+tarixiy olimlar ismlari bilan — ehtiyot uchun olinmadi. `chatgpt` dekasi umuman ishlatilmadi.
+
+**G‘oya.** Qo‘llanma: uch raqamli qadam. 0-kadr: och sovuq qog‘oz stol (nuqtali to‘r, sekin suzuvchi rang dog‘lari), tepada
+"O‘zbekiston va jahon hamjamiyati" titul slaydi (1000 px, o‘qiladi), ortida ikki slayd 0,15 s da yelpig‘ichday ochiladi; pastda
+"Tayyor taqdimot kerakmi?" (Rubik 800, 124 px, "kerakmi?" ostida qahrabo marker) va to‘q ko‘k pill "Buyurtma qiling".
+4,2 s "1 · Mavzuni botga yozing" (jahon dekasi chapga uloqtiriladi: 04, 09); 7,3 s "2 · Narxini bot ko‘rsatadi" (islom dekasi
+keladi: 09, 02; fon yalpizga o‘tadi); 10,4 s "3 · Slaydlar matni bilan tayyor" (islom titul slaydi katta, ustida hech narsa yo‘q);
+13,8 s ikki dekadan 5 slaydli yelpig‘ich, "@TaqdimotKerakBot" (to‘q ko‘k plashka, qahrabo @) va "Telegramda qidiring". 18,7 s,
+ovozsiz. Narx, muddat, kafolat aytilmagan.
+
+**O‘qish tezligi.** Ochilish (5 so‘z) 0–3,9 s; qadam 1 (3 so‘z) 4,5–7,0 s; qadam 2 (3 so‘z) 7,6–10,1 s; qadam 3 (4 so‘z) 10,7–13,5 s;
+bot 14,0–18,7 s (4,7 s), "Telegramda qidiring" 14,6–18,7 s (4,1 s). Ekranda ≤ 6 so‘z, bir soniyada ikki yangi blok yo‘q.
+Matn x 70–870, y 950–1500; slaydlar y 280–850 oralig‘ida (o‘ng tugmalar zonasiga tushmaydi).
+
+**Nimani kuzatish kerak.** Egasining fikri (hold). Chiqqandan keyin: o‘tkazib yuborish, o‘rtacha tomosha; keyingi taqdimot
+videolari faqat shu bilan solishtiriladi.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: qo‘llanma, 3 raqamli qadam + dasta tarqatish. Ko‘rinish: och muz-ko‘k qog‘oz →
+yalpiz (deka rangiga qarab), nuqtali to‘r, soyali slayd kartalari, oxirida yelpig‘ich. Palitra: fon — och muz-ko‘k/yalpiz; urg‘u —
+qahrabo #f5b83d (marker, raqam halqasi, @); neytral — to‘q ko‘k siyoh #0d1f3c va oq; qo‘shimcha — jahon firuzasi #1aa3b8 (faqat
+nuqta). Shrift: Rubik 800 + Manrope 800. Musiqa: `calm`, 68 bpm, E-major (root 52), seed 412, `bed_V20261126b`, past ovozda.
+Tovush: pageturn.wav 3 marta (qadamlarda), cardflip.wav 1 marta (yelpig‘ich). Ovoz: yo‘q. Dekalar: jahon 01/04/09/10/03/07,
+islom 01/02/09. Keyingi taqdimot videosi uchun: qadamli qo‘llanma, och qog‘oz fon, tepada dasta, Rubik ni takrorlamang;
+boshqa deka bilan ochilish.
