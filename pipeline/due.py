@@ -16,7 +16,7 @@ import sys
 STATE = pathlib.Path(__file__).resolve().parent.parent / "state" / "posts.json"
 OFFSET = datetime.timedelta(hours=5)  # Tashkent
 # Local hours at which the day's posts should go out.
-TARGETS = {2: [12.75, 21.6], 3: [8.4, 13.2, 21.6], 4: [8.4, 12.75, 18.2, 21.6]}
+TARGETS = {2: [12.75, 21.6], 3: [12.0, 14.5, 21.6], 4: [8.4, 12.75, 18.2, 21.6]}
 MIN_GAP = datetime.timedelta(hours=3)
 
 
@@ -40,7 +40,7 @@ def on_arrival(posts: list[dict], now: datetime.datetime, per_day: int, queue: l
 if __name__ == "__main__":
     posts = json.loads(STATE.read_text()) if STATE.exists() else []
     now = datetime.datetime.now(datetime.timezone.utc)
-    per_day = int(os.environ.get("POSTS_PER_DAY") or 2)
+    per_day = int(os.environ.get("POSTS_PER_DAY") or 3)
     if sys.argv[1:] == ["arrival"]:
         queue = [json.loads(path.read_text()) for path in (STATE.parent.parent / "queue").glob("*.json")]
         print(str(on_arrival(posts, now, per_day, queue)).lower())

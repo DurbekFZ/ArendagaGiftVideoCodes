@@ -32,7 +32,7 @@ env:
   IG_LOGIN: ${{ vars.IG_LOGIN || 'auto' }}
   # Rendered files are served from this repository's `media` branch.
   MEDIA_BASE_URL: ${{ vars.MEDIA_BASE_URL || format('https://raw.githubusercontent.com/{0}/media', github.repository) }}
-  POSTS_PER_DAY: ${{ vars.POSTS_PER_DAY || '2' }}
+  POSTS_PER_DAY: ${{ vars.POSTS_PER_DAY || '3' }}
   MODE: ${{ inputs.mode || 'post' }}
 
 jobs:

@@ -1175,3 +1175,13 @@ Yangi tovush `pipeline/audio.py` da: `hover.wav` (maydon zaryadi — yumshoq pas
 jaranglamaydi, 4 marta past). Whoosh, zarb, qo‘ng‘iroq yo‘q. Ovoz: yo‘q. Matn chapda x = 70, y 250–710; gift x = 470.
 Keyingi video uchun: och shalfey + binafsha, studiya poli to‘ri, magnit taglik/halqalar, pog‘onama-pog‘ona ko‘tarilish, Lilita One ni
 takrorlamang.
+
+## 2026-11-26 — ikkinchi mahsulot: @TaqdimotKerakBot
+
+Egasi shu sahifada har kuni 1 ta video bilan @TaqdimotKerakBot (buyurtmaga tayyor taqdimot) ni ham reklama qilishni so‘radi. Gift videolari avvalgidek davom etadi (10:17 va 19:17), taqdimot videosi 12:17 da; kunlik chegara 3 ta post.
+
+- Qoidalar: CLAUDE.md, "Second product: @TaqdimotKerakBot". Topshiriq: docs/session-prompt-taqdimot.md.
+- Namunalar: public/taqdimot/ (3 ta haqiqiy taqdimot, 42 slayd, slides.json). Ismlar "Ism Familiya" ga almashtirilgan.
+- Bot havolasi profilda yo‘q: videoda @TaqdimotKerakBot yoziladi, "Telegramda qidiring".
+- Narx va muddat hali ma’lum emas — videoda aytilmaydi.
+- Tahlilda taqdimot videolari faqat o‘zaro solishtiriladi (concept.product = "taqdimot").

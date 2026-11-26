@@ -210,6 +210,48 @@ and choose something different on most of those axes:
 Record in the journal which choices each video made, so the next session can
 avoid them.
 
+## Second product: @TaqdimotKerakBot (one video a day)
+
+The same Instagram page also advertises the owner's Telegram bot **@TaqdimotKerakBot**:
+a person tells the bot what presentation they need, the bot shows the prices, and the
+finished presentation (slides with the text already written) is made for them to order.
+One video a day is about this bot; the gift videos continue as before.
+
+- **What to show.** Real work: three sample presentations are in `public/taqdimot/`
+  (`slides.json` lists every slide image, its deck, subject and title). Show the slides
+  themselves, large and sharp, with `<Img src={staticFile('taqdimot/jahon/01.jpg')} />`:
+  flipping through a deck, a fan or stack of slides, a slide building up, before
+  (a blank or ugly slide you draw yourself) and after (a real one). The slides are the
+  hero the way the gift is in gift videos. Never squeeze or crop them so text is cut;
+  when one is on screen long enough to read, make it wide enough to read.
+- **Say what it is at once.** Cover and frame one say in plain words that this is
+  ready-made presentations to order ("Tayyor taqdimot kerakmi?", "Taqdimot buyurtma
+  qiling") with a slide visible.
+- **Call to action.** The bot's link is NOT in the profile. Every video ends with the
+  handle written out large, `@TaqdimotKerakBot`, and "Telegramda qidiring" (or
+  "Telegramda yozing"); it holds for at least 3 seconds. Never say "havola profilda"
+  in these videos and never mention @ArendagaGiftBot in them.
+- **True claims only.** Known facts: the service makes presentations to order; the
+  slides come with the text written; the bot shows the prices; the samples are real.
+  Not known, so never state: any price, discount, delivery time, number of customers,
+  guarantee of a grade, or how the slides are produced. No "bepul". When the owner
+  gives prices or deadlines they will be added here.
+- **The samples.** Names on the samples were replaced with "Ism Familiya"; never put a
+  real person's name on screen. The `islom` deck quotes scripture: show its slides
+  respectfully and unaltered, no jokes, stickers or effects over them. The `chatgpt`
+  deck is about another company's product: it may appear as one sample among others,
+  never as the opening slide or the cover, and nothing may suggest that company is
+  involved. Do not invent slides and present them as samples.
+- **Audience and tone.** Students and teachers in Uzbekistan who need a presentation
+  for a class or a defence. Formal "siz", short spoken Uzbek, no promises about marks.
+- **Look.** The same bold 2D motion design as the gift videos: palette taken from the
+  deck being shown, one accent, calm music by the same rules, safe area, reading pace,
+  13 to 20 seconds. Vary deck, format and look from one video to the next as under
+  Variety, comparing against earlier @TaqdimotKerakBot videos.
+- **Files.** `src/videos/V<YYYYMMDD><letter>.tsx` as usual; `queue/<id>.json` with
+  `"slugs": []` (no gifts) and `"product": "taqdimot"` inside `"concept"`. In the
+  analysis compare these videos with each other, not with the gift videos.
+
 ## Rules for content
 
 - Uzbek, Latin script, with `‘` in o‘ and g‘. Short, spoken, no officialese.
