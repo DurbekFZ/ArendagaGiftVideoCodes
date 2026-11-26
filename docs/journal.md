@@ -1126,3 +1126,52 @@ firuza siyoh #06281f; qo‘shimcha — olov qizili #ff5a35 (faqat nuqta va uchqu
 da: `silk.wav` (stol ustida yoyilayotgan kashta mato — yumshoq havo shitirlashi, jaranglamaydi, 3 marta past); kindle.wav 1 marta (0,3 s).
 Ovoz: yo‘q. Matn chapda x = 70, y 250–780; gift x = 470. Keyingi video uchun: firuza + oltin, suzani medalyoni, kashta hoshiyalar,
 oltin chok, Bodoni Moda ni takrorlamang.
+
+## 2026-11-26 — V20261126a "Levitatsiya"
+
+**Tahlil (2026-11-26 05:18 UTC o‘lchovi; Stars posti 118c va o‘chirilgan 118a solishtirilmadi; `metrics_error` yo‘q).** 25a "Chizma"
+yakuniga yaqin: 142 ko‘rish, qamrov 133, o‘tkazib yuborish 52,6%, o‘rtacha tomosha 4,7 s (19,0 s video), 3 like va bitta "🔥🔥🔥" izoh —
+18-noyabrdan beri eng yaxshi faollik. 25b "Suzani" ~14 soatda: 56 ko‘rish, qamrov 50, 86,5%, 1,9 s, faollik 0 — hozircha eng yomon
+ushlab qolish (lekin post yosh, ko‘rishlar sekin keladi). 24a yakuni 109 / 72,7% / 3,5 s; 24b 107 / 64,3% / 3,9 s. Obunachi 2 ta
+(o‘zgarmagan). Yetakchilar o‘zgarmagan: 118f 887 / 27,6% / 9,9 s, 117c 573 / 46,3% / 6,3 s, 117a 256 / 51,4% / 6,4 s. Saqlash va ulashish
+so‘nggi o‘nta postda 0. 19-noyabrdan beri slotlar: 10:00 — 7 post, median 144 ko‘rish / 69% / 4,3 s; 19:00 — 7 post, median 117 /
+60% / 4,5 s. Ertalab ko‘proq qamrov — ehtimol, xulosa emas (7 tadan post, farq kichik, o‘tkazib yuborish esa aksincha).
+**0-kadr solishtiruvi (still render).** 25a: yorqin ko‘k fon, qahrabo narx, figura — yuzli, tiniq siluet, fondan keskin ajraladi.
+25b: to‘q yashil fon ustida oltin chiziqli gulbarg medalyoni, uning ustida oltin kosa — gift naqsh bilan bir xil tusda, siluet
+kamroq ajraladi, narx ham gift bilan bir xil oltin. Bu farq ko‘rinadi, lekin ikki post bilan sabab deyish mumkin emas (25b hali
+yosh, bitta postning o‘tkazib yuborish foizi shovqin). Shunga qaramay bu video uchun ehtiyot tanlov: yorug‘ fon, gift yagona yorqin
+obyekt, naqsh yo‘q, narx giftdan farqli rangda.
+
+**G‘oya.** Levitatsiya (yangi ko‘rinish va format). 0-kadr: och shalfey studiya (devor + perspektiv pol to‘ri), polda binafsha magnit
+taglik, uning ustida havoda ulkan Surge Board (quti 1250 px, (470, 1170)); tepada binafsha pill "TELEGRAM NFT SOVG‘A IJARASI",
+"Kuniga / 850 so‘m" (binafsha, Lilita One 190 px). 0,3 s da taglik zaryadlanadi: binafsha va firuza maydon halqalari polga yoyiladi,
+taxta bir pog‘ona ko‘tariladi (hover.wav). Har yangi qatorda yana zaryad va yana bir pog‘ona: 4,5 s "Surge Board / Fried Egg
+belgisi — atigi 0,5%"; 9,1 s "Profilingizda turadi / 3 kundan 30 kungacha"; 13,1 s "Kuniga 850 so‘m", 14,3 s @ArendagaGiftBot va
+"↑ Havola profilda". 18,7 s, ovozsiz. Taglikdan binafsha/firuza zarrachalar ko‘tariladi (matngacha yetmaydi). Gift: Surge Board #3194
+(Rune Nova modeli 2%, Shamrock Green fon 1,5%, Fried Egg belgisi 0,5%; kuniga 850 so‘m) — katalogdagi yagona hech qachon
+ko‘rsatilmagan nusxa (Holiday Drink nomi ichimlik — olinmadi). Model va fon captionda, −7% captionda.
+
+**Gift haqida muhim.** Rune Nova taxtasining o‘z animatsiyasi (180 Remotion kadr) taxtani kadr tekisligida aylantiradi (diagonal →
+deyarli gorizontal → tik → diagonal), g‘ildirak o‘rnida nur disklari paydo bo‘ladi, ~160–175-kadrlarda qisqa iz-sharpa. Uzunligi
+o‘zgarmaydi — siqilgan poza yo‘q, shuning uchun animatsiya to‘liq o‘ynatildi. `<Freeze>` bilan pozalar sinovi bu gift uchun bir xil
+kadr qaytardi — pozalarni render qilingan mp4 dan kesib tekshirildi. Tik pozada taxta tepasi ~y 720 gacha chiqadi: birinchi renderda
+yakuniy "↑ Havola profilda" ga juda yaqinlashdi, shuning uchun quti 1290 → 1250, markaz 1150 → 1170, pog‘ona 20 → 14 px; endi ≥ 40 px
+bo‘sh joy. O‘ng chegara ≤ 830 px. Muqovada 0-poza (diagonal).
+
+**O‘qish tezligi.** Ochilish (7 so‘z) 0–4,2 s; blok 1 (7 so‘z) 4,7–8,7 s (4,0 s); blok 2 (6 so‘z) 9,3–12,8 s (3,7 s); narx 13,4–18,7 s
+(5,3 s), bot va havola 14,6–18,7 s (4,1 s). Bir soniyada ikki yangi blok yo‘q, ekranda ≤ 7 so‘z.
+
+**Nimani kuzatish kerak.** Yorug‘, naqshsiz fon va gift yagona yulduz bo‘lgan 0-kadr 25b dan yaxshiroq ushlaydimi (o‘tkazib yuborish,
+o‘rtacha tomosha); 25b ning yakuniy raqamlari. Bitta raqamdan sabab-xulosa chiqarmang.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: zaryad pog‘onalari — har qatorda taglik zaryadi va taxta bir pog‘ona ko‘tariladi (yangi).
+Ko‘rinish: och shalfey studiya (#eef4e4 → #d5e5c3 → #a9c98f devor, #c4dbad → #8fb672 pol), sekin oqadigan oq perspektiv to‘r, ufq
+chizig‘i, binafsha magnit taglik (aylanuvchi oq punktir halqa, firuza-binafsha nur), zaryadda uchta kengayuvchi halqa, ko‘tariluvchi
+zarrachalar, polda kichrayadigan soya. So‘nggi to‘rtta video to‘q fonli edi — bu yorug‘. Palitra: fon — och shalfey (giftning Shamrock
+Green foni, yorug‘langan); urg‘u — toshning binafshasi #6a2fd0 (yashilga komplementar); neytral — o‘rmon siyohi #17331c va iliq oq
+#fbfdf5; qo‘shimcha — taxtaning firuzasi #34cfdc (faqat halqa va zarrachalarda). Shrift: Lilita One (18f dan beri; ‘ `<Q />` bilan
+toraytirilgan) + Manrope 800. Musiqa: `calm`, 62 bpm, D♭-major (root 61, birinchi marta), seed 359, `bed_V20261126a`, past ovozda.
+Yangi tovush `pipeline/audio.py` da: `hover.wav` (maydon zaryadi — yumshoq past g‘uvillash biroz ko‘tariladi, havo nafasi,
+jaranglamaydi, 4 marta past). Whoosh, zarb, qo‘ng‘iroq yo‘q. Ovoz: yo‘q. Matn chapda x = 70, y 250–710; gift x = 470.
+Keyingi video uchun: och shalfey + binafsha, studiya poli to‘ri, magnit taglik/halqalar, pog‘onama-pog‘ona ko‘tarilish, Lilita One ni
+takrorlamang.

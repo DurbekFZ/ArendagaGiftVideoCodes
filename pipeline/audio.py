@@ -633,6 +633,18 @@ def silk():
     save("silk.wav", lowpass(air * np.minimum(1, x / 0.02), 2800))
 
 
+def hover():
+    """A hoverboard field charging: a soft low hum that swells and glides up a little, with a breath of air, no ring (about 0.9 s)."""
+    x = t(0.9)
+    swell = np.sin(np.pi * np.minimum(1, x / 0.9)) ** 2
+    freq = 92 + 26 * (x / 0.9) ** 1.5
+    phase = 2 * np.pi * np.cumsum(freq) / SR
+    hum = (np.sin(phase) + 0.35 * np.sin(2 * phase) + 0.12 * np.sin(3 * phase)) * swell * 0.5
+    noise = rng.standard_normal(len(x))
+    air = (lowpass(noise, 1500) - lowpass(noise, 400)) * swell * 0.12
+    save("hover.wav", lowpass((hum + air) * np.minimum(1, x / 0.03), 1800))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -681,6 +693,7 @@ def build():
     syrup()
     draft()
     silk()
+    hover()
 
 
 def ensure():
@@ -752,6 +765,8 @@ def ensure():
         syrup()
     if not (OUT / "silk.wav").exists():
         silk()
+    if not (OUT / "hover.wav").exists():
+        hover()
 
 
 if __name__ == "__main__":
