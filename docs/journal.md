@@ -1259,3 +1259,7 @@ Shrift: Fredoka 700 (21b dan beri) + Manrope 800. Musiqa: `calm`, 72 bpm, F-majo
 Yangi tovush `pipeline/audio.py` da: `poof.wav` (fokus tutuni — yumshoq past havo puflashi, jaranglamaydi, 3 marta). Ovoz: yo‘q.
 Matn chapda x = 70, y 250–750; gift x = 470. Keyingi video uchun: sirk chodiri, prožektor, chiziqli baraban, bayroqchalar,
 dengiz-ko‘k + pushti, Fredoka, fokus formatini takrorlamang.
+
+## 2026-11-26 — ikkita yangi namuna
+
+Egasi ertangi taqdimot videosi uchun ikkita yangi taqdimot berdi: `pvid` (tibbiyot, "Sifatni oshirish sikli", 15 slayd) va `gemini` (12 slayd). public/taqdimot/ va slides.json ga qo‘shildi, ismlar "Ism Familiya" ga almashtirildi. Ertangi videoda birinchi navbatda `pvid` ko‘rsatilsin (hali ishlatilmagan, betaraf mavzu); pvid/02 va pvid/03 ishlatilmaydi.

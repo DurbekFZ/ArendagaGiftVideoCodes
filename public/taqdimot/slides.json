@@ -121,5 +121,85 @@
    "Cheklovlar va xavfsizlik",
    "Rahmat!"
   ]
+ },
+ {
+  "deck": "gemini",
+  "subject": "Informatika / AI",
+  "title": "Gemini",
+  "look": "qorong‘i tungi osmon, yulduzlar turkumi chiziqlari",
+  "slides": 12,
+  "width": 1600,
+  "height": 899,
+  "files": [
+   "taqdimot/gemini/01.jpg",
+   "taqdimot/gemini/02.jpg",
+   "taqdimot/gemini/03.jpg",
+   "taqdimot/gemini/04.jpg",
+   "taqdimot/gemini/05.jpg",
+   "taqdimot/gemini/06.jpg",
+   "taqdimot/gemini/07.jpg",
+   "taqdimot/gemini/08.jpg",
+   "taqdimot/gemini/09.jpg",
+   "taqdimot/gemini/10.jpg",
+   "taqdimot/gemini/11.jpg",
+   "taqdimot/gemini/12.jpg"
+  ],
+  "slide_titles": [
+   "POLLUKS",
+   "Gemini nima?",
+   "Bard’dan Gemini 4 gacha",
+   "Raqamlarda Gemini",
+   "Gemini 4 oilasi",
+   "Rasm va video yaratish",
+   "Gemini endi o‘zi ishlaydi",
+   "Gemini qayerda ishlaydi?",
+   "Narxlar: bepuldan Ultra’gacha",
+   "Bir yil bepul",
+   "Nimalarga ehtiyot bo‘lish kerak",
+   "Rahmat."
+  ]
+ },
+ {
+  "deck": "pvid",
+  "subject": "Tibbiyot",
+  "title": "Sifatni oshirish sikli (PVID)",
+  "look": "(rasmlarga qarang)",
+  "slides": 15,
+  "width": 1600,
+  "height": 899,
+  "files": [
+   "taqdimot/pvid/01.jpg",
+   "taqdimot/pvid/02.jpg",
+   "taqdimot/pvid/03.jpg",
+   "taqdimot/pvid/04.jpg",
+   "taqdimot/pvid/05.jpg",
+   "taqdimot/pvid/06.jpg",
+   "taqdimot/pvid/07.jpg",
+   "taqdimot/pvid/08.jpg",
+   "taqdimot/pvid/09.jpg",
+   "taqdimot/pvid/10.jpg",
+   "taqdimot/pvid/11.jpg",
+   "taqdimot/pvid/12.jpg",
+   "taqdimot/pvid/13.jpg",
+   "taqdimot/pvid/14.jpg",
+   "taqdimot/pvid/15.jpg"
+  ],
+  "slide_titles": [
+   "Sifatni oshirish sikli",
+   "Reja",
+   "Sifatni oshirish sikli nima?",
+   "Sifatni oshirishning to‘rt bosqichi",
+   "O‘zgarishdan oldin — uchta savol",
+   "PVID sikli",
+   "P — Rejalashtir",
+   "V — Tadbiq qil",
+   "I — O‘rgan",
+   "D — Harakat qil",
+   "Ketma-ket PVID sikllari",
+   "Qo‘l gigiyenasi: bitta PVID sikli",
+   "Sifatni oshirish siklini baholash",
+   "Natijani ko‘rinadigan qilish",
+   "Asosiy fikrlar"
+  ]
  }
 ]
