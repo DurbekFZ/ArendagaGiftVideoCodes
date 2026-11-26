@@ -1218,3 +1218,44 @@ nuqta). Shrift: Rubik 800 + Manrope 800. Musiqa: `calm`, 68 bpm, E-major (root 5
 Tovush: pageturn.wav 3 marta (qadamlarda), cardflip.wav 1 marta (yelpig‘ich). Ovoz: yo‘q. Dekalar: jahon 01/04/09/10/03/07,
 islom 01/02/09. Keyingi taqdimot videosi uchun: qadamli qo‘llanma, och qog‘oz fon, tepada dasta, Rubik ni takrorlamang;
 boshqa deka bilan ochilish.
+
+## 2026-11-26 — V20261126c "Fokus"
+
+**Tahlil (2026-11-26 14:19 UTC o‘lchovi; Stars posti 118c, o‘chirilgan 118a va taqdimot posti 126b solishtirilmadi; `metrics_error` yo‘q).**
+26a "Levitatsiya" ~8,5 soatda: 138 ko‘rish, qamrov 123, o‘tkazib yuborish 53,7%, o‘rtacha tomosha 4,4 s (18,7 s video), 1 like.
+25a "Chizma" 144 / 53,0% / 4,7 s, 3 like, 1 izoh. 25b "Suzani" 79 / 75,3% / 2,1 s, faollik 0. 24a 109 / 72,7% / 3,5 s; 24b 107 / 64,3% /
+3,9 s. Obunachi bugun 2 dan 3 ga. Saqlash va ulashish so‘nggi o‘nta gift postida 0. Yetakchilar o‘zgarmagan: 118f 888 / 9,9 s,
+117c 573 / 6,3 s, 117a 256 / 6,4 s. So‘nggi uchta ertalabki post kechkilaridan ko‘proq qamrov oldi — ehtimol, xulosa emas.
+Bitta postning o‘tkazib yuborish foizi shovqin: raqamlar yozildi, sabab-hikoya chiqarilmadi. Video doimiy qoidalar bo‘yicha.
+
+**Gift tanlovi.** Katalogda hech qachon ko‘rsatilmagan yagona nusxa — Holiday Drink #3492, modeli "Crystal Shot" (ryumka) — ichimlikka
+ishora, ataylab olinmadi. Vice Cream #405489 (Circus modeli 3%, Marine Blue fon 1,5%, Police Hat belgisi 0,4%; kuniga 750 so‘m) faqat
+16-noyabrda uch giftli viktorinada ko‘ringan, bosh qahramon bo‘lmagan.
+
+**G‘oya.** Sirk fokusi. 0-kadr: dengiz-ko‘k sirk chodiri (tepadan yelpig‘ich chiziqlar), prožektor konusi, tepada bayroqchalar,
+qizil-krem chiziqli baraban ustida ulkan Vice Cream (quti 1200 px, x = 470); tepada qizil pill "TELEGRAM NFT SOVG‘A IJARASI",
+"Kuniga / 750 so‘m" (pushti, Fredoka 700, 200 px). Giftning o‘z animatsiyasi — fokus: 1,2 s da muzqaymoq tutun bilan yo‘qoladi
+(poof.wav, krem bulutlar), kosa bo‘sh, shira qayta o‘sadi, 3,8 s da kosa sakraydi. Fokus har matn almashinuvida takrorlanadi
+(7,5 s va 11,7 s). 4,5 s "Vice Cream / Police Hat belgisi — atigi 0,4%"; 9,1 s "Profilingizda turadi / 3 kundan 30 kungacha";
+13,3 s "Kuniga 750 so‘m", 14,5 s @ArendagaGiftBot va "↑ Havola profilda". 18,7 s, ovozsiz.
+
+**Gift haqida muhim.** 180 kadrlik sikl: 0–30 to‘la kosa, ~35–60 muzqaymoq sachrab yo‘qoladi (kosa qiyshayadi — ushlamang),
+60–110 shira o‘sadi, 120–179 to‘la, qoshiq bilan, to‘g‘ri qaraydi. Fokusdan keyin 120↔179 ping-pong (`<Freeze>` ishlaydi).
+Kosa qutining ~30–75% kengligi, ~19–80% balandligi; shokolad uchi ~0,19. Muqovada 170-poza.
+
+**O‘qish tezligi.** Ochilish (7 so‘z) 0–4,2 s; blok 1 (7 so‘z) 4,7–8,7 s (4,0 s); blok 2 (6 so‘z) 9,3–12,9 s (3,6 s); narx 13,5–18,7 s
+(5,2 s), bot va havola 14,7–18,7 s (4,0 s). Bir soniyada ikki yangi blok yo‘q, ekranda ≤ 7 so‘z. Sepkilar y < 960 da ko‘rinmaydi
+(matn ustiga tushmaydi); oxirgi fokusda shokolad uchi "Havola profilda" dan ≥ 30 px pastda.
+
+**Nimani kuzatish kerak.** 1,2 s dagi yo‘qolish birinchi 3 soniyadagi chiqib ketishni kamaytiradimi (o‘tkazib yuborish, o‘rtacha
+tomosha); 18f (muzqaymoq qayta to‘lishi) bilan solishtirish qiziq, lekin bitta postdan xulosa chiqarmang.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: sirk fokusi — giftning o‘z animatsiyasi (yo‘qolish va qaytish) har matn
+almashinuvida (yangi). Ko‘rinish: dengiz-ko‘k sirk chodiri (#3a5592 / #2a3f73 yelpig‘ich chiziqlar, chetlari #18264c), krem prožektor
+konusi (screen), qizil/krem/pushti bayroqchalar, qizil-krem chiziqli baraban, tushuvchi sepkilar, krem tutun bulutlari. Palitra:
+fon — dengiz-ko‘k (giftning Marine Blue foni, to‘qlashtirilgan); urg‘u — qulupnay pushtisi #ff9cc4 (narx, 0,4%, muddat pill);
+neytral — krem #fff3e3 va to‘q navy siyoh #0f1a38; qo‘shimcha — kosa qizili #e5452f (faqat pill, bot tugmasi, baraban, bayroqcha).
+Shrift: Fredoka 700 (21b dan beri) + Manrope 800. Musiqa: `calm`, 72 bpm, F-major (root 53), seed 433, `bed_V20261126c`, past ovozda.
+Yangi tovush `pipeline/audio.py` da: `poof.wav` (fokus tutuni — yumshoq past havo puflashi, jaranglamaydi, 3 marta). Ovoz: yo‘q.
+Matn chapda x = 70, y 250–750; gift x = 470. Keyingi video uchun: sirk chodiri, prožektor, chiziqli baraban, bayroqchalar,
+dengiz-ko‘k + pushti, Fredoka, fokus formatini takrorlamang.

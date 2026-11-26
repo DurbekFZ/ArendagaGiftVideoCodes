@@ -645,6 +645,16 @@ def hover():
     save("hover.wav", lowpass((hum + air) * np.minimum(1, x / 0.03), 1800))
 
 
+def poof():
+    """A magician's puff of smoke: a short, rounded breath of low air that blooms and thins out, no click or ring (about 0.8 s)."""
+    x = t(0.8)
+    noise = rng.standard_normal(len(x))
+    shape = np.minimum(1, x / 0.045) ** 1.5 * np.exp(-x * 5.5)
+    body = lowpass(noise, 700 + 900 * np.exp(-x * 6)) - lowpass(noise, 90)
+    thump = np.sin(2 * np.pi * np.cumsum(70 + 40 * np.exp(-x * 20)) / SR) * np.exp(-x * 14) * 0.35
+    save("poof.wav", lowpass(body * shape + thump, 1500))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -767,6 +777,8 @@ def ensure():
         silk()
     if not (OUT / "hover.wav").exists():
         hover()
+    if not (OUT / "poof.wav").exists():
+        poof()
 
 
 if __name__ == "__main__":
