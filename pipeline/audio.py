@@ -655,6 +655,16 @@ def poof():
     save("poof.wav", lowpass(body * shape + thump, 1500))
 
 
+def lift():
+    """A glass cake dome lifted off its stand: a soft muffled suction release, then a gentle rising breath of air, no ring (about 0.7 s)."""
+    x = t(0.7)
+    noise = rng.standard_normal(len(x))
+    release = np.sin(2 * np.pi * np.cumsum(110 + 60 * np.exp(-x * 25)) / SR) * np.exp(-x * 22) * 0.3
+    swell = np.minimum(1, x / 0.12) ** 1.4 * np.exp(-np.maximum(0, x - 0.15) * 6)
+    air = (lowpass(noise, 900 + 1400 * np.minimum(1, x / 0.5)) - lowpass(noise, 160)) * swell * 0.55
+    save("lift.wav", lowpass((air + release) * np.minimum(1, x / 0.004), 2600))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -704,6 +714,7 @@ def build():
     draft()
     silk()
     hover()
+    lift()
 
 
 def ensure():
@@ -779,6 +790,8 @@ def ensure():
         hover()
     if not (OUT / "poof.wav").exists():
         poof()
+    if not (OUT / "lift.wav").exists():
+        lift()
 
 
 if __name__ == "__main__":

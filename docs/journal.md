@@ -1337,3 +1337,48 @@ qahrabo #f4a93a (plashkalar, @); neytral — deka siyohi #0e343f va oq; qo‘shi
 (birinchi ag‘darilish), swipe.wav 1 marta (yelpig‘ich). Ovoz: yo‘q. Muqova: pvid/01 + "Tayyor taqdimot buyurtma qiling" +
 @TaqdimotKerakBot. Keyingi taqdimot videosi uchun: to‘q yashil to‘yingan fon, ag‘darish, sikl halqasi, Bricolage ni takrorlamang;
 boshqa deka bilan oching (masalan, och fonli deka yoki "oldin/keyin" formati).
+
+## 2026-11-27 — V20261127c "Vitrina"
+
+**Tahlil (2026-11-27 ~14:20 UTC o‘lchovi; Stars posti 118c, o‘chirilgan 118a va taqdimot postlari 126b, 127b solishtirilmadi; `metrics_error` yo‘q).**
+27a "Qadoq" (ertalab, ~8,5 soat) 130 ko‘rish / o‘tkazib yuborish 41,9% / o‘rtacha tomosha 5,2 s (18,7 s video), 1 like — 18-noyabrdan beri eng past
+o‘tkazib yuborish. 26c "Fokus" yakuni 110 / 63,7% / 3,5 s, 1 like. 26a "Levitatsiya" 145 / 52,3% / 4,4 s. 25b "Suzani" 106 / 90,8% / 1,7 s.
+25a "Chizma" 145 / 53,3% / 4,7 s, 3 like, 1 izoh. So‘nggi o‘nta gift posti 106–146 ko‘rish; saqlash va ulashish hammasida 0; like 0–3; yangi izoh
+yo‘q. Obunachi 3 (o‘zgarmagan). Yetakchilar o‘zgarmagan: 118f 888 / 27,6% / 9,9 s, 117c 574 / 46,2% / 6,4 s, 117a 257 / 51,6% / 6,4 s.
+Besh kun ketma-ket ertalabki gift posti kechkisidan yaxshiroq ushladi — qayd etildi, unga tayanilmadi. Bitta postning o‘tkazib yuborish foizi
+shovqin: raqamlar yozildi, sabab-hikoya chiqarilmadi, "Qadoq" nusxalanmadi. Video doimiy qoidalar bo‘yicha.
+
+**Gift tanlovi.** Katalogdagi hech qachon ko‘rsatilmagan yagona nusxa — Holiday Drink #3492 (ichimlik — olinmadi). Whip Cupcake #40503
+(Wasteland modeli 2,5%, Dark Green fon 1,2%, Rook belgisi 0,5%; kuniga 750 so‘m) faqat bir marta, 18-noyabrda (18e "Bunker") ko‘rsatilgan;
+so‘nggi kunlardagi muzqaymoqlardan farqli.
+
+**G‘oya.** Vitrina. 0-kadr: shiferrang-ko‘k qandolatxona vitrinasi (keng sekin siljiydigan chiziqli devor, kekscha ortida iliq nur,
+o‘rik chiziqli peshtaxta qirrasi), qog‘oz to‘rli krem taglik ustida ulkan Whip Cupcake (quti 1180 px, kekscha markazi ~x 470) shisha
+qopqoq ostida; tepada o‘rik pill "TELEGRAM NFT SOVG‘A IJARASI", "Kuniga / 750 so‘m" (krem + o‘rik, Fraunces 900, 168 px), ostida
+to‘lqinli o‘rik qaymoq chizig‘i. 0,2–0,9 s qopqoq yuqoriga ko‘tarilib chiqib ketadi (lift.wav). 1,5 s da kekscha o‘z animatsiyasida
+eshigi, mashinasi, shoxchalarini otib yuboradi (poof.wav juda past), qaymoq qayta siqiladi va hammasi qayta yig‘iladi. 4,5 s
+"Whip Cupcake / Rook belgisi — atigi 0,5%"; 9,1 s "Profilingizda turadi / 3 kundan 30 kungacha" (8,7 s dan kekscha ikkinchi marta
+parchalanib yig‘iladi); 13,3 s "Kuniga 750 so‘m", 14,5 s @ArendagaGiftBot va "↑ Havola profilda". Har sarlavha ostida qaymoq chizig‘i
+o‘zi chiziladi. 18,7 s, ovozsiz.
+
+**Gift haqida muhim.** 180 kadrlik sikl: 0–20 butun, to‘g‘ri qaraydi; 20–48 eshik, mashina, shoxchalar uchib ketadi; 50–62 qaymoqsiz
+kosa; 64–96 qaymoq siqiladi; 100–150 qismlar qaytadi; 160–179 butun va tinch (0 bilan uzluksiz). Videoda 0 → 164 o‘ynaydi, keyin
+164↔179 ping-pong; ikkinchi sikl 262-kadrda (ping-pong 179 da turganda) 0 dan boshlanadi. Kekscha qutining ~22–74% kengligi, ~20–80%
+balandligi; o‘ng chekka x ≈ 780, tepa y ≈ 810 — yakuniy "Havola profilda" dan ~90 px pastda. Muqovada 0-poza. Pozalar 200 kadrlik
+sinov kompozitsiyasida (har 8 kadrda to‘r) tekshirildi.
+
+**O‘qish tezligi.** Ochilish (7 so‘z) 0–4,2 s; blok A (6 so‘z) 4,8–8,7 s (3,9 s); blok B (6 so‘z) 9,4–13,0 s (3,6 s); narx 13,6–18,7 s
+(5,1 s), bot va havola 14,9–18,7 s (3,8 s). Bir soniyada ikki yangi blok yo‘q, ekranda ≤ 7 so‘z. Sepkilar y < 860 da ko‘rinmaydi.
+
+**Nimani kuzatish kerak.** Shisha qopqoq ko‘tarilishi va 1,5 s dagi parchalanish birinchi 3 soniyada ushlaydimi; kechki slotda
+ham. Bitta postdan xulosa chiqarmang.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: vitrina ochilishi + giftning parchalanib qayta yig‘ilishi (ikki marta), sarlavha ostida
+qaymoq chizig‘i (yangi). Ko‘rinish: shiferrang-ko‘k vitrina (#3a5062 → #263746 → #16222d, keng tik chiziqlar #4c6578), iliq nur,
+peshtaxta, qog‘oz to‘rli taglik (aylanuvchi punktir o‘rik halqa), shisha qopqoq, uchta rangli shakar sepkilar. Palitra: fon — shiferrang-ko‘k
+(giftning po‘lat kosasi, to‘qlashtirilgan); urg‘u — keksning o‘rigi #ffaa4f / #d9772a (komplementar); neytral — krem #fff3dc va
+shifer siyoh #13202b; qo‘shimcha rang yo‘q. Shrift: Fraunces 900 (21a dan beri) + Manrope 800. Matn pastdan ko‘tarilib kiradi, yuqoriga
+so‘nib chiqadi. Musiqa: `calm`, 68 bpm, A♭-major (root 56, birinchi marta), seed 541, `bed_V20261127c`, past ovozda. Yangi tovush
+`pipeline/audio.py` da: `lift.wav` (shisha qopqoq ko‘tarilishi — yumshoq so‘rilish va havo nafasi, jaranglamaydi, 1 marta); poof.wav
+1 marta juda past. Ovoz: yo‘q. Matn chapda x = 70, y 250–760; gift x = 470. Keyingi video uchun: shiferrang-ko‘k + o‘rik, vitrina,
+shisha qopqoq, qog‘oz taglik, qaymoq chizig‘i, Fraunces ni takrorlamang.
