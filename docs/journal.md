@@ -1305,3 +1305,35 @@ komplementar); neytral — kakao siyoh #3b1c0e va krem; qo‘shimcha rang yo‘q
 66 bpm, D-major (root 50), seed 457, `bed_V20261127a`, past ovozda. Tovush: foil.wav 1 marta (qadoq ochilishi), bite.wav 1 marta
 (birinchi tishlam), boshqa effekt yo‘q. Ovoz: yo‘q. Matn chapda x = 70, y 250–720; gift x = 470. Keyingi video uchun: vanil + pista +
 kakao, oqayotgan shokolad hoshiya, tishli muhr, qadoq ochilishi, Bungee ni takrorlamang.
+
+## 2026-11-27 — V20261127b "Varaqlash" (@TaqdimotKerakBot, ikkinchi video)
+
+**Tahlil (2026-11-27 05:31 UTC o‘lchovi).** Taqdimot videolari bittagina: 126b "Uch qadam" ~20 soatda 109 ko‘rish, qamrov 78,
+o‘tkazib yuborish 89,9%, o‘rtacha tomosha 6,9 s (18,7 s video), 1 like, izoh yo‘q. Ko‘pchilik darhol o‘tib ketgan, qolganlar uzoq
+ko‘rgan — yo‘qotish ochilishda. Bitta post, xulosa emas; faqat taxmin: 0-kadr (och qog‘oz fonda qiyshiq slayd, sarlavha pastda) bir
+qarashda yetarlicha tez o‘qilmagan. Gift postlari bilan solishtirilmadi (qoidaga ko‘ra). Obunachi 3. Navbat bo‘sh edi.
+
+**G‘oya.** Varaqlash. Asosiy deka — `pvid` (tibbiyot, "Sifatni oshirish sikli"), egasi bergan yangi namuna. 0-kadr: to‘yingan
+firuza-yashil fon (dekaning V-yoyi rangi), tepada pvid/01 titul slaydi tik, 940 px kenglikda, aniq; ortidan ikki slayd mo‘ralaydi;
+pastda oq "Tayyor / taqdimot" (Bricolage Grotesque 800, 124 px) va qahrabo plashkada "buyurtma qiling". 0,6–1,0 s da slayd gorizontal
+o‘q atrofida ag‘dariladi va keyingisi chiqadi: pvid 01 → 06 → 10 → 11 → 12 → 14 (har ~1,4 s). 4,6 s "Slaydlar matni bilan / tayyor" —
+dasta kadr kengligiga (1080 px) kattalashadi, pvid/12 va pvid/14 o‘qiladigan bo‘ladi. 8,8 s "Botga kiring, / narxlarni / ko‘ring" —
+islom/01, jahon/01 va pvid/15 dan yelpig‘ich (islom slaydi o‘zgartirilmagan, ustida hech narsa yo‘q). 13,2 s yelpig‘ich kichrayadi,
+to‘q plashkada katta "@TaqdimotKerakBot" (qahrabo @, x 70–1010, y 700–850), ostida "Telegramda / qidiring". 18,7 s, ovozsiz.
+pvid/02, pvid/03, chatgpt, gemini ishlatilmadi. Narx, muddat, kafolat, "bepul" yo‘q; "Mavzuni botga yozing" yo‘q.
+
+**O‘qish tezligi.** Ochilish (4 so‘z) 0–4,2 s; blok 1 (4 so‘z) 4,9–8,4 s (3,5 s); blok 2 (4 so‘z) 9,1–12,8 s (3,7 s); bot va
+"Telegramda qidiring" 13,6–18,7 s (≈5 s). Ekranda ≤ 4 so‘z (slaydlarning o‘z matnidan tashqari), bir soniyada ikki yangi blok yo‘q.
+Matn x 70–870, y 880–1340; slaydlar y 250–860; halqa bezagi pastki o‘ngda (markaz 900,1640, r 300), matnga tegmaydi.
+
+**Nimani kuzatish kerak.** 126b bilan solishtirish: o‘tkazib yuborish 89,9% dan pasayadimi (to‘yingan fon + katta oq sarlavha +
+1-soniyadagi ag‘darilish). Ikkita post — hali ham xulosa emas.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: varaqlash/ag‘darish dasta + kadr kengligiga zoom + namunalar yelpig‘ichi (qadamlar
+ro‘yxati yo‘q). Ko‘rinish: to‘yingan firuza-yashil fon (#13a48c → #0b7a69 → #075a4f), nozik diagonal chiziqlar, pastki o‘ngda
+aylanuvchi to‘rt yoyli sikl halqasi (qahrabo, yalpiz, och yalpiz, to‘q yashil). Palitra: fon — pvid g‘ildiragining yashili; urg‘u —
+qahrabo #f4a93a (plashkalar, @); neytral — deka siyohi #0e343f va oq; qo‘shimcha rang yo‘q. Shrift: Bricolage Grotesque 800 + Manrope
+800 (muqovada). Musiqa: `calm`, 76 bpm, B♭-major (root 58), seed 509, `bed_V20261127b`, ovoz 0,3. Tovush: pageturn.wav 1 marta
+(birinchi ag‘darilish), swipe.wav 1 marta (yelpig‘ich). Ovoz: yo‘q. Muqova: pvid/01 + "Tayyor taqdimot buyurtma qiling" +
+@TaqdimotKerakBot. Keyingi taqdimot videosi uchun: to‘q yashil to‘yingan fon, ag‘darish, sikl halqasi, Bricolage ni takrorlamang;
+boshqa deka bilan oching (masalan, och fonli deka yoki "oldin/keyin" formati).
