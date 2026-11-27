@@ -1263,3 +1263,45 @@ dengiz-ko‘k + pushti, Fredoka, fokus formatini takrorlamang.
 ## 2026-11-26 — ikkita yangi namuna
 
 Egasi ertangi taqdimot videosi uchun ikkita yangi taqdimot berdi: `pvid` (tibbiyot, "Sifatni oshirish sikli", 15 slayd) va `gemini` (12 slayd). public/taqdimot/ va slides.json ga qo‘shildi, ismlar "Ism Familiya" ga almashtirildi. Ertangi videoda birinchi navbatda `pvid` ko‘rsatilsin (hali ishlatilmagan, betaraf mavzu); pvid/02 va pvid/03 ishlatilmaydi.
+
+## 2026-11-27 — V20261127a "Qadoq"
+
+**Tahlil (2026-11-27 05:18 UTC o‘lchovi; Stars posti 118c, o‘chirilgan 118a va taqdimot posti 126b solishtirilmadi; `metrics_error` yo‘q).**
+26a "Levitatsiya" (ertalab) 144 ko‘rish / o‘tkazib yuborish 52% / o‘rtacha tomosha 4,5 s (18,7 s video), 1 like. 26c "Fokus" (kechqurun,
+~14 soat) 108 / 64% / 3,5 s, 1 like. 25b "Suzani" yakuni 105 / 90,7% / 1,7 s, faollik 0. 25a "Chizma" 144 / 53% / 4,7 s, 3 like, 1 izoh.
+So‘nggi o‘nta gift posti 105–145 ko‘rish oralig‘ida; saqlash va ulashish hammasida 0; like 0–3. Obunachi 3 (o‘zgarmagan). Yetakchilar
+o‘zgarmagan: 118f 888 / 27,6% / 9,9 s (Ice Cream), 117c 574 / 46,2% / 6,4 s, 117a 257 / 51,6% / 6,4 s. To‘rt kun ketma-ket ertalabki gift
+posti kechkisidan ko‘proq qamrov va kamroq o‘tkazib yuborish oldi — qayd etildi, lekin nuqtalar kam, unga tayanilmadi. Bitta postning
+o‘tkazib yuborish foizi shovqin: sabab-hikoya chiqarilmadi. Video doimiy qoidalar bo‘yicha.
+
+**Gift tanlovi.** Hech qachon yolg‘iz ko‘rsatilmagan nusxalar: Ice Cream #62286 (20b da ikki giftli ovoz berishda), Ice Cream #192500
+(16f va 20b), Vice Cream #48461 (16f). Vice Cream kecha kechqurun bosh qahramon edi, shuning uchun Ice Cream #62286 olindi: Choco Almond
+modeli 3%, Shamrock Green fon 1,5%, Cash belgisi 0,7%; kuniga 750 so‘m. Holiday Drink ichimlikka ishora — olinmadi.
+
+**G‘oya.** Qadoq. Video — muzqaymoq qadog‘ining o‘zi. 0-kadr: vanil-krem fon, sekin sirpanuvchi och pista chiziqlar, tepada oqib turgan
+shokolad (y < 220), pastda qadoqning tishli pista choki; markazda aylanuvchi tishli pista muhr ustida ulkan Choco Almond (quti 1300 px,
+bar markazi (470, ~1140)); atrofida yirtilgan chiziqli qadoq yarimlari — 0,2–0,9 s da ikki tomonga uchib ketadi (foil.wav). Tepada yashil
+pill "TELEGRAM NFT SOVG‘A IJARASI", "Kuniga / 750 SO‘M" (kakao, Bungee 150 px, pista soya). 1,3 s da birinchi tishlam (bite.wav), uch
+tishlam, aylanib yana butun bo‘ladi. 4,5 s kakao yorliq "ICE CREAM / Cash belgisi — / ATIGI 0,7%"; 9,1 s "PROFILINGIZDA TURADI /
+3 kundan 30 kungacha" (shu payt muzqaymoq yana yeyiladi va butun qaytadi); 13,3 s narx, 14,5 s @ArendagaGiftBot va "↑ Havola profilda".
+18,7 s, ovozsiz. Matnlar chapdan sirpanib kiradi va chapga chiqadi.
+
+**Gift haqida muhim.** Choco Almond — 180 kadr: 0 to‘la diagonal; tishlamlar ~16, 44, 80; ~100 faqat tayoqcha va bo‘lak; 112–145
+aylanib to‘ladi (o‘rtada qiyshiq — faqat harakatda); 150–179 to‘la diagonal. Videoda 24-kadrgacha 0-poza, keyin 0→150 o‘ynaydi, keyin
+150↔179 ping-pong; ikkinchi yeyish 262-kadrdan (179→0 uzluksiz). Bar qutining ~30–80% kengligi, ~18–79% balandligi. Muqovada 0-poza.
+Tayoqcha uchi y ≈ 1535, bar tepasi y ≈ 742 — yakuniy "Havola profilda" dan ~40 px pastda; o‘ng chekka x ≈ 790.
+
+**O‘qish tezligi.** Ochilish (7 so‘z) 0–4,2 s; yorliq A (6 so‘z) 4,8–8,7 s (3,9 s); blok B (6 so‘z) 9,4–13,0 s (3,6 s); narx 13,7–18,7 s
+(5,0 s), bot va havola 14,9–18,7 s (3,8 s). Bir soniyada ikki yangi blok yo‘q, ekranda ≤ 7 so‘z.
+
+**Nimani kuzatish kerak.** 0-kadrdagi qadoq ochilishi va 1,3 s dagi tishlam birinchi 3 soniyada ushlaydimi; Ice Cream oilasi (118f)
+yana yaxshiroq tarqaladimi — bitta postdan xulosa chiqarmang.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: qadoq ochilishi + qadoqdagi kabi yorliq-stikerlar (yangi). Ko‘rinish: vanil-krem fon
+(#fff7e8 → #f6e4c4 → #ecd2a6), sirpanuvchi och pista diagonal chiziqlar, tepada oqib turgan kakao shokolad, pastda tishli pista chok,
+aylanuvchi tishli pista muhr (punktir krem halqa), yirtilgan chiziqli qadoq yarimlari, ko‘tariluvchi bodom bo‘laklari (y < 830 da
+ko‘rinmaydi). Palitra: fon — vanil-krem (bodom va tayoqchaga analog); urg‘u — fonning pista yashili #8cc063 / #3f8a3a (shokoladga deyarli
+komplementar); neytral — kakao siyoh #3b1c0e va krem; qo‘shimcha rang yo‘q. Shrift: Bungee (19a dan beri) + Manrope 800. Musiqa: `calm`,
+66 bpm, D-major (root 50), seed 457, `bed_V20261127a`, past ovozda. Tovush: foil.wav 1 marta (qadoq ochilishi), bite.wav 1 marta
+(birinchi tishlam), boshqa effekt yo‘q. Ovoz: yo‘q. Matn chapda x = 70, y 250–720; gift x = 470. Keyingi video uchun: vanil + pista +
+kakao, oqayotgan shokolad hoshiya, tishli muhr, qadoq ochilishi, Bungee ni takrorlamang.
