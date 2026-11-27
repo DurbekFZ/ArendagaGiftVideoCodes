@@ -1382,3 +1382,7 @@ so‘nib chiqadi. Musiqa: `calm`, 68 bpm, A♭-major (root 56, birinchi marta), 
 `pipeline/audio.py` da: `lift.wav` (shisha qopqoq ko‘tarilishi — yumshoq so‘rilish va havo nafasi, jaranglamaydi, 1 marta); poof.wav
 1 marta juda past. Ovoz: yo‘q. Matn chapda x = 70, y 250–760; gift x = 470. Keyingi video uchun: shiferrang-ko‘k + o‘rik, vitrina,
 shisha qopqoq, qog‘oz taglik, qaymoq chizig‘i, Fraunces ni takrorlamang.
+
+## 2026-11-27 — uchta yangi qisqa namuna
+
+Egasining iltimosi bilan dispetcher uchta 4 slaydli taqdimot yasadi va public/taqdimot/ ga qo‘shdi: `quyosh` (Astronomiya, "Quyosh tizimi"), `suv` (Geografiya, "Suvning tabiatda aylanishi"), `marketing` (Iqtisodiyot, "Marketing kompleksi: 4P"). 28-noyabr videosida shu uchtasi ko‘rsatilsin. Taqdimot videolari hozircha 90–93% o‘tkazib yuborilmoqda (2 ta post) — sababi noma’lum.

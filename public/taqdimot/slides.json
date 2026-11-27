@@ -201,5 +201,68 @@
    "Natijani ko‘rinadigan qilish",
    "Asosiy fikrlar"
   ]
+ },
+ {
+  "deck": "quyosh",
+  "subject": "Astronomiya",
+  "title": "Quyosh tizimi",
+  "look": "to‘q tungi ko‘k, oltin urg‘u, orbitalar",
+  "slides": 4,
+  "width": 1600,
+  "height": 900,
+  "files": [
+   "taqdimot/quyosh/01.jpg",
+   "taqdimot/quyosh/02.jpg",
+   "taqdimot/quyosh/03.jpg",
+   "taqdimot/quyosh/04.jpg"
+  ],
+  "slide_titles": [
+   "Muqova",
+   "Asosiy slayd",
+   "Raqamlar / misol",
+   "Xulosa"
+  ]
+ },
+ {
+  "deck": "suv",
+  "subject": "Geografiya",
+  "title": "Suvning tabiatda aylanishi",
+  "look": "och havorang-oq, to‘q moviy va feruza, yumaloq kartalar",
+  "slides": 4,
+  "width": 1600,
+  "height": 900,
+  "files": [
+   "taqdimot/suv/01.jpg",
+   "taqdimot/suv/02.jpg",
+   "taqdimot/suv/03.jpg",
+   "taqdimot/suv/04.jpg"
+  ],
+  "slide_titles": [
+   "Muqova",
+   "Asosiy slayd",
+   "Raqamlar / misol",
+   "Xulosa"
+  ]
+ },
+ {
+  "deck": "marketing",
+  "subject": "Iqtisodiyot",
+  "title": "Marketing kompleksi: 4P",
+  "look": "iliq krem fon, marjon-qizil urg‘u, to‘q ko‘mir matn, serif sarlavha",
+  "slides": 4,
+  "width": 1600,
+  "height": 900,
+  "files": [
+   "taqdimot/marketing/01.jpg",
+   "taqdimot/marketing/02.jpg",
+   "taqdimot/marketing/03.jpg",
+   "taqdimot/marketing/04.jpg"
+  ],
+  "slide_titles": [
+   "Muqova",
+   "Asosiy slayd",
+   "Raqamlar / misol",
+   "Xulosa"
+  ]
  }
 ]

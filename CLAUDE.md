@@ -218,7 +218,7 @@ owner, the person tells the owner (not the bot) the topic, and the finished pres
 (slides with the text already written) is made for them.
 One video a day is about this bot; the gift videos continue as before.
 
-- **What to show.** Real work: five sample presentations are in `public/taqdimot/`
+- **What to show.** Real work: eight sample presentations are in `public/taqdimot/`
   (`slides.json` lists every slide image, its deck, subject and title). Show the slides
   themselves, large and sharp, with `<Img src={staticFile('taqdimot/jahon/01.jpg')} />`:
   flipping through a deck, a fan or stack of slides, a slide building up, before
@@ -248,8 +248,11 @@ One video a day is about this bot; the gift videos continue as before.
   involved; the `gemini` deck (added 26 Nov) is the same case and follows the same
   rule. The `pvid` deck (medicine, added 26 Nov) is neutral and has not been shown
   yet; its slide 02 rendered with one line too small, so do not use that slide, and
-  slide 03 names historical people, so skip it too. Do not invent slides and present
-  them as samples.
+  slide 03 names historical people, so skip it too. Three short four-slide decks were
+  added on 27 Nov at the owner's request, made for this page: `quyosh` (astronomy,
+  dark blue and gold), `suv` (geography, light blue) and `marketing` (economics, cream
+  and coral). They are neutral, name no one and may be used freely, cover included.
+  Do not invent further slides inside a video and present them as samples.
 - **Audience and tone.** Students and teachers in Uzbekistan who need a presentation
   for a class or a defence. Formal "siz", short spoken Uzbek, no promises about marks.
 - **Look.** The same bold 2D motion design as the gift videos: palette taken from the
