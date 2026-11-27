@@ -1147,5 +1147,28 @@
    "differs": "Ko‘rinish (vanil-krem qadoq: sirpanuvchi pista chiziqlar, tepada oqib turgan shokolad, pastda qadoqning tishli choki, aylanuvchi tishli pista muhr, bodom bo‘laklari — yangi), format (qadoq ochilishi va yorliq-stikerlar — yangi), palitra (vanil + pista-yashil + kakao — oldingi beshtadan farqli), shrift (Bungee — 19a dan beri birinchi marta — + Manrope), musiqa (calm, D-major, 66 bpm, seed 457), tovush (foil.wav va bite.wav bir martadan, poof/hover/silk yo‘q), gift (Ice Cream #62286 — birinchi marta yolg‘iz)"
   },
   "measured_at": "2026-11-27T07:26:13+00:00"
+ },
+ {
+  "name": "20261127-1227-V20261127b",
+  "published_at": "2026-11-27T07:29:56+00:00",
+  "style": "custom",
+  "hook": "V20261127b",
+  "gifts": [],
+  "slot_hour": 12,
+  "seconds": 18.71,
+  "media_id": "17894529168619211",
+  "permalink": "https://www.instagram.com/reel/DgPJT-dJYJ1/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261127b",
+  "concept": {
+   "product": "taqdimot",
+   "title": "Varaqlash",
+   "hook": "Birinchi kadr — to‘yingan firuza-yashil fonda \"Sifatni oshirish sikli\" (pvid) titul slaydi tik, deyarli to‘liq kenglikda va o‘qiladigan, ortidan ikki slayd mo‘ralaydi; pastda \"Tayyor taqdimot / buyurtma qiling\" (Bricolage Grotesque 800, oq, \"buyurtma qiling\" qahrabo plashkada); 1 s dan slayd ag‘darilib PVID g‘ildiragi slaydlari ko‘rinadi",
+   "format": "Varaqlash: dasta har ~1,4 s da ag‘dariladi (pvid 01 → 06 → 10 → 11 → 12 → 14); \"Slaydlar matni bilan tayyor\" paytida slayd kadr kengligiga kattalashadi; \"Botga kiring, narxlarni ko‘ring\" paytida islom, jahon va pvid namunalaridan yelpig‘ich; oxirida katta @TaqdimotKerakBot plashkasi va \"Telegramda qidiring\"",
+   "why": "Birinchi taqdimot videosi (126b) 89,9% o‘tkazib yuborishga, lekin 6,9 s o‘rtacha tomoshaga ega: qolganlar uzoq ko‘radi, yo‘qotish ochilishda. Shuning uchun 0-kadr tezroq o‘qiladigan qilindi: to‘yingan fon, tik va keng slayd, katta oq sarlavha, birinchi soniyada harakat (ag‘darilish). Bitta post — xulosa emas.",
+   "differs": "126b dan: to‘q to‘yingan firuza-yashil fon (och qog‘oz o‘rniga), qadamlar ro‘yxati yo‘q — varaqlash/ag‘darish formati, pvid dekasi bosh qahramon, Bricolage Grotesque (Rubik emas), aylanuvchi to‘rt yoyli sikl bezagi, calm B♭-major 76 bpm seed 509, tovush: bitta pageturn va bitta swipe"
+  }
  }
 ]
