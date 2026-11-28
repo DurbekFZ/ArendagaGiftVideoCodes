@@ -665,6 +665,23 @@ def lift():
     save("lift.wav", lowpass((air + release) * np.minimum(1, x / 0.004), 2600))
 
 
+def icecrack():
+    """An ice block giving way: a muffled low creak, a dull crack and a soft hush of crumbling ice, no ring (about 0.9 s)."""
+    track = np.zeros(int(SR * 0.9))
+    x = t(0.22)
+    noise = rng.standard_normal(len(x))
+    creak = (lowpass(noise, 900) - lowpass(noise, 250)) * np.sin(np.pi * np.clip(x / 0.22, 0, 1)) * 0.35
+    place(track, creak, 0.0, 1.0)
+    y = t(0.12)
+    crack = (lowpass(rng.standard_normal(len(y)), 2200) - lowpass(rng.standard_normal(len(y)), 400)) * np.exp(-y * 45)
+    thud = np.sin(2 * np.pi * np.cumsum(85 + 50 * np.exp(-y * 40)) / SR) * np.exp(-y * 28) * 0.5
+    place(track, (crack + thud) * np.minimum(1, y / 0.002), 0.2, 0.9)
+    z = t(0.6)
+    hush = (lowpass(rng.standard_normal(len(z)), 1800) - lowpass(rng.standard_normal(len(z)), 500)) * np.exp(-z * 6) * 0.25
+    place(track, hush, 0.26, 1.0)
+    save("icecrack.wav", lowpass(track, 2600))
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     # A minor / F / C / G flavours, voiced as MIDI notes.
@@ -792,6 +809,8 @@ def ensure():
         poof()
     if not (OUT / "lift.wav").exists():
         lift()
+    if not (OUT / "icecrack.wav").exists():
+        icecrack()
 
 
 if __name__ == "__main__":

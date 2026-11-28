@@ -1386,3 +1386,45 @@ shisha qopqoq, qog‘oz taglik, qaymoq chizig‘i, Fraunces ni takrorlamang.
 ## 2026-11-27 — uchta yangi qisqa namuna
 
 Egasining iltimosi bilan dispetcher uchta 4 slaydli taqdimot yasadi va public/taqdimot/ ga qo‘shdi: `quyosh` (Astronomiya, "Quyosh tizimi"), `suv` (Geografiya, "Suvning tabiatda aylanishi"), `marketing` (Iqtisodiyot, "Marketing kompleksi: 4P"). 28-noyabr videosida shu uchtasi ko‘rsatilsin. Taqdimot videolari hozircha 90–93% o‘tkazib yuborilmoqda (2 ta post) — sababi noma’lum.
+
+## 2026-11-28 — V20261128a "Muz"
+
+**Tahlil (2026-11-28 05:18 UTC o‘lchovi; Stars posti 118c, o‘chirilgan 118a va taqdimot postlari 126b, 127b solishtirilmadi; `metrics_error` yo‘q).**
+27a "Qadoq" 131 ko‘rish / o‘tkazib yuborish 41,5% / o‘rtacha tomosha 5,2 s (18,7 s video), 1 like; 27c "Vitrina" (kechqurun, ~14 soat) 123 / 44% / 5,0 s,
+1 like — 18-noyabrdan beri eng yaxshi juftlik, kechki post ham yaxshi ushladi, ya’ni "kechki postlar yomonroq" kuzatuvi kecha tasdiqlanmadi.
+Zaif so‘nggilar: 25b "Suzani" 106 / 90,8% / 1,7 s, 26c "Fokus" 110 / 63,7% / 3,5 s. 26a "Levitatsiya" 145 / 52,3% / 4,4 s. So‘nggi gift postlari
+106–146 ko‘rish; saqlash va ulashish hammasida 0; like 0–3; yangi izoh yo‘q. Obunachi 3 (o‘zgarmagan). Yetakchilar o‘zgarmagan: 118f 888 / 27,6% / 9,9 s.
+**Taxmin (ikki post, ishonch past):** "Qadoq" va "Vitrina" ikkalasida birinchi soniyada giftni yopib turgan narsa olib tashlanadi (qadoq yirtiladi,
+shisha qopqoq ko‘tariladi), ikkalasi shirinlik va fon iliqroq/yorug‘roq; "Suzani" va "Fokus" da bunday "ochilish" yo‘q, fon to‘q. Bu sabab ekani
+isbotlanmagan (gift, slot, kun ham farq qiladi). Shuning uchun faqat "1-soniyada gift ozod bo‘ladi" harakati yana sinaldi, tartib va ko‘rinish
+nusxalanmadi.
+
+**Gift tanlovi.** Vice Cream #48461 — hech qachon yolg‘iz ko‘rsatilmagan (faqat 16f dagi uch giftli taqqoslashda). Sub-Zero modeli 1,5%,
+Tactical Pine fon 1,5%, Bunny belgisi 0,3%; kuniga 750 so‘m (katalogdan, available). Holiday Drink ichimlik — olinmadi; Ice Cream #192500 ham yolg‘iz
+ko‘rsatilmagan, lekin muzqaymoq kecha bo‘lgan — keyingi seanslar uchun qoldi.
+
+**G‘oya.** Muz. 0-kadr: qarag‘ay-yashil fon, tepada markazda shaffof muz bloki ichida ulkan Sub-Zero kosa (quti 1150 px, markaz 540,610; ko‘rinadigan
+kosa ~470 × 700 px); pastki ustunda (x = 70, y 1040–1460) muz-firuza pill "TELEGRAM NFT SOVG‘A IJARASI", "Kuniga / 750 SO‘M" (Anton 214 px).
+0,3 s da blokda yoriqlar yuguradi (icecrack.wav), 0,9 s da muz 40 ta parchaga bo‘linib uchib ketadi (y > 880 dan oldin eriydi), sovuq bug‘ puflaydi,
+kosa ozod bo‘lib suzadi. Matn "muzlab" kiradi (xiradan tiniqlashadi, 106% → 100%). 4,5 s "VICE CREAM / Bunny belgisi — / ATIGI 0,3%"; 9,1 s
+"PROFILINGIZDA TURADI / 3 kundan 30 kungacha"; 13,5 s "Kuniga 750 SO‘M" (kosa sakraydi), 14,8 s @ArendagaGiftBot va "↑ Havola profilda". Har blokda
+kosa ortida muz halqa kengayadi (y < 1000 da qoladi), burchaklarda qirov naqshlari o‘sadi, qor faqat matn ustunidan tashqarida. 18,7 s, ovozsiz.
+
+**Gift haqida muhim.** Sub-Zero Lottie (60 fps, 180 kadr) videoda o‘z animatsiyasini o‘ynaydi: kosa muz qobig‘i bilan boshlanadi, qobiq va qopqoq
+uchib ketadi, muzqaymoq sachrab qayta to‘ladi — hech qachon qisilmaydi, doim to‘g‘ri qaraydi. Diqqat: `<Freeze>` bilan qilingan poza to‘ri hamma
+kadrda bir xil ko‘rsatdi (bu gift uchun Freeze ishlamadi) — pozalarni videoni render qilib tekshiring. Kosa qutining ~29–70% kengligi, ~19–80% balandligi.
+
+**O‘qish tezligi.** Ochilish (7 so‘z) 0–4,2 s; blok A (6 so‘z) 4,9–8,7 s (3,9 s); blok B (6 so‘z) 9,5–13,2 s (3,7 s); narx 13,9–18,7 s (4,8 s), bot va
+havola 15,1–18,7 s (3,6 s). Bir soniyada ikki yangi blok yo‘q, ekranda ≤ 7 so‘z. "750 SO‘M" o‘ng cheti x ≈ 855 (< 870).
+
+**Nimani kuzatish kerak.** 1-soniyadagi muz sinishi o‘tkazib yuborishni "Qadoq"/"Vitrina" darajasida (≈ 42–44%) ushlab turadimi; tepada gift, pastda
+matn tartibi birinchi 3 soniyaga qanday ta’sir qiladi. Bitta postdan xulosa chiqarmang.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: muzdan chiqarish — blok yoriladi va sinadi (yangi). Tartib: gift tepada markazda, matn pastki ustunda
+(yangi; oldingi videolarda matn tepada). Ko‘rinish: qarag‘ay-yashil radial fon (#2c6a5c → #1b4842 → #0b2624), sekin diagonal nur chiziqlari, sovuq nur,
+muz bloki, yoriqlar, uchuvchi uchburchak muz parchalari, bug‘, muz halqa, qirov naqshlari (o‘ng burchaklar va pastki chap), qor. Palitra: fon —
+qarag‘ay-yashil (giftning Tactical Pine foni); urg‘u — muz-firuza #9fe6ff (kosadan, analog); neytral — qirov-oq #effbff va qarag‘ay siyoh #06201e;
+qo‘shimcha rang yo‘q. Shrift: Anton (20b dan beri) + Manrope 800. Musiqa: `calm`, 70 bpm, F♯-major (root 54), seed 587, `bed_V20261128a`, past ovozda.
+Yangi tovush `pipeline/audio.py` da: `icecrack.wav` (bo‘g‘iq g‘ichirlash, xira sinish va muz to‘kilishi shivirlashi, jaranglamaydi, 1 marta); frost.wav
+juda past 1 marta. Ovoz: yo‘q. Keyingi video uchun: qarag‘ay-yashil + muz-firuza, muz bloki/sinish, qirov naqshlari, Anton, "xiradan tiniqlashish"
+kirishini takrorlamang.
