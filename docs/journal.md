@@ -1428,3 +1428,39 @@ qo‘shimcha rang yo‘q. Shrift: Anton (20b dan beri) + Manrope 800. Musiqa: `c
 Yangi tovush `pipeline/audio.py` da: `icecrack.wav` (bo‘g‘iq g‘ichirlash, xira sinish va muz to‘kilishi shivirlashi, jaranglamaydi, 1 marta); frost.wav
 juda past 1 marta. Ovoz: yo‘q. Keyingi video uchun: qarag‘ay-yashil + muz-firuza, muz bloki/sinish, qirov naqshlari, Anton, "xiradan tiniqlashish"
 kirishini takrorlamang.
+
+## 2026-11-28 — V20261128b "Uch olam" (@TaqdimotKerakBot, uchinchi video)
+
+**Tahlil (2026-11-28 05:18 UTC o‘lchovi).** Taqdimot videolari ikkita, faqat o‘zaro solishtirildi: 126b "Uch qadam" 112 ko‘rish, qamrov 82,
+o‘tkazib yuborish 90,2%, o‘rtacha tomosha 6,7 s, 1 like; 127b "Varaqlash" 104 ko‘rish, qamrov 81, 92,9%, 2,0 s, 1 like. Izoh, saqlash, ulashish
+yo‘q; obunachi 3. Ikkalasi ham ~105–110 ko‘rishda, ikkalasida deyarli hamma darhol chiqib ketgan (shu sahifadagi so‘nggi gift videolari 41–64%).
+Umumiy jihati: 0-kadrda slayd (hujjat) birinchi o‘rinda, taklif matni uning ostida. Ikki post — sabab noma’lum; taxmin (isbotlanmagan): sahifa
+auditoriyasi Telegram sovg‘alari uchun kelgan va slaydni ko‘rib "bu men uchun emas" deydi. Bugun shu taxmin sinaldi: 0-kadr odamga tanish
+vaziyat haqida juda katta qisqa savol bilan gapiradi, slaydlar pastda kichik va keyin javob bo‘lib keladi. Navbat bo‘sh edi.
+
+**G‘oya.** Uch olam. Egasining iltimosi bilan uchta yangi qisqa deka: quyosh, suv, marketing. 0-kadr: to‘q siyoh fon (#14161f), uch dekaning
+rangidagi uchta yumshoq nur (tungi ko‘k, suv ko‘ki, marjon) sekin suzadi; tepada oq "Ertaga / taqdimotmi?" (Space Grotesk 700, 150 px), ostida
+oltin yorliq "Tayyor taqdimot — / buyurtma qiling"; pastda uch muqova yelpig‘ichi (suv oldinda), 1,1 s va 2,3 s da aralashadi (suv → marketing →
+quyosh). 3,4 s quyosh muqovasi tepaga katta (1000 px) ko‘tariladi va kadr aylana bilan tungi koinotga aylanadi (yulduzlar, pastki o‘ngda quyosh
+va orbitalar): "ASTRONOMIYA / Slaydlar matni bilan tayyor", 5,0 s da quyosh/03 o‘ngdan suriladi. 7,6 s suv olami (och moviy, katta yumshoq
+doiralar, ko‘tariluvchi tomchilar, to‘lqin halqalari): suv/01 tepadan tushadi, keyin suv/03; "GEOGRAFIYA / Bular — haqiqiy namunalar".
+11,4 s marketing olami (iliq krem, dekaning marjon/ko‘mir/qahrabo/firuza kvadrat va doiralari chetlarda): marketing/01, keyin marketing/02;
+"IQTISODIYOT / Botga kiring, narxlarni ko‘ring". 15,6 s siyoh fonga qaytadi: tepada uch muqova kichik yelpig‘ich, oq qidiruv maydonida
+lupa va "@TaqdimotKerakBot" (marjon @, 80 px, x 40–1040, y 712–842), ostida "Telegramda / qidiring" (120 px). 19,4 s, ovozsiz.
+Narx, muddat, tezlik, kafolat, "bepul" yo‘q; "Mavzuni botga yozing" yo‘q; ism yo‘q (muqovalardagi "Ism Familiya" kichik).
+
+**O‘qish tezligi.** Ochilish (savol 2 so‘z + yorliq 4 so‘z) 0–3,1 s; olam 1 (5 so‘z) 4,0–7,2 s (3,2 s); olam 2 (4 so‘z) 8,2–11,0 s (2,8 s);
+olam 3 (5 so‘z) 12,0–15,2 s (3,2 s); bot va "Telegramda qidiring" ≈ 16,0–19,4 s (3,4 s). Ekranda ≤ 6 so‘z (slaydlarning o‘z matnidan
+tashqari), bir soniyada ikki yangi blok yo‘q. Matn x 70–870, y 880–1290; slaydlar y 250–815; bezaklar matn ustunidan tashqarida.
+
+**Nimani kuzatish kerak.** O‘tkazib yuborish 90–93% dan pasayadimi — ya’ni slayd o‘rniga katta savol bilan ochilish auditoriyani ushlaydimi.
+Agar pasaymasa, sabab ochilishda emas, mavzuning o‘zida bo‘lishi mumkin. Uch post — hali ham zaif dalil.
+
+**Tanlovlar (takrorlamaslik uchun).** Format: savol → har deka butun kadrni o‘z rang olamiga aylantiradi (aylana bilan ochilish), muqova
+tushadi, ikkinchi slayd o‘ngdan suriladi (yangi; qadamlar ham, ag‘darish ham emas). Ko‘rinish: siyoh + uch rang nuri va nuqta to‘r (ochilish va
+yakun), tungi koinot, suv, krem bozor olamlari; yakunda qidiruv maydoni. Palitra: har olam o‘z dekasidan (fon oilasi, dekaning urg‘usi —
+oltin #ffc24b / suv ko‘ki #0f86b8 / marjon #e4572e, dekaning siyohi va oq). Shrift: Space Grotesk 700 (19b dan beri birinchi marta), boshqa
+shrift yo‘q. Matn pastdan ko‘tarilib kiradi (3 kadr stagger), pastga cho‘kib chiqadi; belgilangan so‘z ostida qalin chiziq (descenderlarni
+chetlab o‘tadi). Musiqa: `calm`, 64 bpm, C-major (root 48, birinchi marta), seed 613, `bed_V20261128b`, ovoz 0,28. Tovush: swipe.wav 2 marta
+juda past (birinchi olam va yakun). Ovoz: yo‘q. Dekalar: quyosh 01/03, suv 01/03, marketing 01/02. Keyingi taqdimot videosi uchun: siyoh fon +
+uch nur, "Ertaga taqdimotmi?" ochilishi, olam almashinuvi, qidiruv maydoni, Space Grotesk ni takrorlamang.
