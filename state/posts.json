@@ -1218,5 +1218,29 @@
    "differs": "Ko‘rinish (shiferrang-ko‘k qandolatxona vitrinasi: keng sekin chiziqli devor, iliq nur, peshtaxta qirrasi, qog‘oz to‘rli taglik, shisha qopqoq, shakar sepkilar — yangi), format (vitrina ochilishi + giftning parchalanib qayta yig‘ilishi ikki marta — yangi), palitra (shiferrang-ko‘k + o‘rik + krem — oldingi beshtadan farqli), shrift (Fraunces 900 — 21a dan beri birinchi marta — + Manrope), matn harakati (pastdan ko‘tariladi, chapdan emas), musiqa (calm, A♭-major, 68 bpm, seed 541), tovush (yangi lift.wav — qopqoq ko‘tarilishi; poof.wav juda past, bir marta), gift (Whip Cupcake — 18e bunkeridan butunlay boshqa dunyo)"
   },
   "measured_at": "2026-11-28T05:29:27+00:00"
+ },
+ {
+  "name": "20261128-1031-V20261128a",
+  "published_at": "2026-11-28T05:34:13+00:00",
+  "style": "custom",
+  "hook": "V20261128a",
+  "gifts": [
+   "vicecream-48461"
+  ],
+  "slot_hour": 10,
+  "seconds": 18.67,
+  "media_id": "17869949793676992",
+  "permalink": "https://www.instagram.com/reel/DgRg3qYhOzr/",
+  "metrics": null,
+  "score": null,
+  "comments": [],
+  "queue_id": "V20261128a",
+  "concept": {
+   "title": "Muz",
+   "hook": "Birinchi kadr — qarag‘ay-yashil fonda shaffof muz bloki ichida qotib qolgan ulkan Sub-Zero Vice Cream (tepada, markazda); pastda muz-firuza pill \"Telegram NFT sovg‘a ijarasi\" va \"Kuniga 750 so‘m\" (Anton 214 px); 0,3 s da blokda yoriqlar yuguradi, 0,9 s da muz parchalanib uchib ketadi, sovuq bug‘ puflaydi va kosa ozod bo‘ladi",
+   "format": "Muzdan chiqarish (yangi): ochilishda muz bloki yorilib sinadi; keyin gift tepada suzib turadi, matn pastki ustunda muzlab paydo bo‘ladi (xiradan tiniqlashadi): \"Vice Cream / Bunny belgisi — atigi 0,3%\", \"Profilingizda turadi / 3 kundan 30 kungacha\", keyin narx, bot va havola; har blokda gift ortida muz halqa kengayadi, burchaklarda qirov naqshlari o‘sadi",
+   "why": "27a \"Qadoq\" 131 / 41,5% / 5,2 s va 27c \"Vitrina\" 123 / 44% / 5,0 s — 18-noyabrdan beri eng yaxshi juftlik; ikkalasida ham birinchi soniyada giftni yopib turgan narsa olib tashlanadi (qadoq yirtiladi, shisha qopqoq ko‘tariladi). Zaif postlar 25b \"Suzani\" 90,8% va 26c \"Fokus\" 63,7% da bunday ochilish yo‘q edi va fon to‘q edi. Bu ikki postga asoslangan taxmin, qoida emas; shuning uchun ochilishdagi harakat sinab ko‘riladi, lekin tartib va ko‘rinish butunlay boshqa. Vice Cream #48461 hech qachon yolg‘iz ko‘rsatilmagan.",
+   "differs": "Tartib (gift tepada markazda, matn pastki ustunda — so‘nggi videolarda matn tepada edi), ko‘rinish (qarag‘ay-yashil + muz: muz bloki, yoriqlar, uchuvchi muz parchalari, qirov naqshlari, qor — yangi), palitra (qarag‘ay-yashil + muz-firuza + qirov-oq, analog), shrift (Anton — 20b dan beri birinchi marta — + Manrope), matn harakati (xiradan tiniqlashib muzlaydi), tovush (yangi icecrack.wav, calm F♯-major 70 bpm)"
+  }
  }
 ]
